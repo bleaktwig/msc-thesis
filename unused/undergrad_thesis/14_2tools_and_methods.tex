@@ -1,0 +1,25 @@
+\subsection{Tool Comparison} \label{ssec:prof_tools}
+Due to the large significance of the profiling process and its effects on the final results of any analysis, a detailed analysis of the many tools available to profile applications is performed.
+They are compared based on four criteria:
+
+    \begin{itemize}
+        \item \textbf{CPU Profiling}: How accurate and fast are the sampling and profiling processes available in the application, and if the tool can provide an immediate view into the \textbf{hotspots} in the application.
+        A hotspot is the common term used to describe a specific method or code segment that takes up a large portion of the total computation time~\cite{hunt2011java}.
+        
+        \item \textbf{Memory Analysis}: Since the main focus of the profiling process for this project is the analysis of the CPU time used, the only memory analysis systems required for that purpose are the detection of memory leaks and the count of class instances generated since both of these can impact the computation time.
+        A memory leak occurs when object references that are no longer needed are unnecessarily maintained, which is a precise problem related to the java garbage collector~\cite{xu2008precise}.
+        
+        \item \textbf{Remote Profiling}: Considering that the application will run at the computer facilities at JLab, some of the performance analysis should be done in this environment to assert that the results obtained in a personal computer are correlated to the ones found in it.
+        For this, it is crucial that the selected tool allows for remote profiling, so that it is possible to perform analysis locally and remotely.
+        
+        \item \textbf{License}: Finally, the cost of the profiling application is evaluated to see if the additional features outweigh this price.
+    \end{itemize}
+
+\newpage
+
+Using each criterion, the tools analyzed are the default java profiler, \textbf{jvisualvm}, a set of paid tools, \textbf{JProfiler}, \textbf{YourKit}, \textbf{XRebel} and \textbf{JProbe}, and a small set of free applications, including \textbf{Callgrind}, \textbf{Honest Profiler} and \textbf{JIProf}.
+While this set is far from comprehensive, the tools analyzed are the ones mainly used in the market as reported in ~\cite{maple2015developer} and ~\cite{maple2015top}, along with various scattered sources.
+
+As mentioned before, it was decided to use \textbf{jvisualvm} due to price restrictions and the fact that it is a robust tool despite being free, contrasted with the fact that the other applications proposed cost at least $\$499$ USD at the time of publication.
+Java VisualVM or jvisualvm for short is a graphical user interface that provides tools to profile, monitor and troubleshoot Java applications while they are running on the Java Virtual Machine (JVM)~\cite{java2019jvisualvm}.
+The tool was developed by Oracle, the company behind Java, and is provided to programmers for free.

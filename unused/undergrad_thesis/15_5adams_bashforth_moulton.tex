@@ -1,0 +1,26 @@
+\subsection{Fourth Order Adams-Bashforth-Moulton Method Proof of Concept} \label{ssec:prop_abm}
+% Explain why it's a good idea, the separation between two regions and the amount of measurements with a regular step size that can be taken.
+As can be seen in figure \ref{fig:dc_horizontal_cut} from subsection \ref{ssec:framework_dc}, the measurements can be divided in the three regions due to the geometry of the detector.
+While most of the distances between measurements are usually at most $4$ or $5$ [cm], the distance between regions can be more than a meter.
+Also, due to the way that the Kalman Filter works, after transporting the state vector from the first measurement site to the last, this vector needs to be transported back to run the KF again, which requires it to be moved for around $3.5$ meters.
+
+Currently, this movement of the state vector is done through Runge Kutta 4, as is described in subsection \ref{ssec:framework_dc} with a step size $h=1$ so that the $z$ variable is updated by one centimeter in each RK4's iteration, occasionally updating it by $2$ [cm] when the magnetic field at that point is small enough.
+Considering that for most particles the majority of the movement from regions $1$ to $2$, $2$ to $3$ and from $3$ back to $1$ the step size is kept at $1$ [cm], the option of changing RK4 for the Fourth order Adams-Bashforth-Moulton (ABM4) method is evaluated.
+
+% Quickly explain the method itself and reference the addendum where it's explained in more detail.
+ABM4 is a multi-step method used to solve initial value problems described in detail in \ref{add:abm4}.
+The method can solve the same kind of problems as RK4, but it has the advantage that it only requires to evaluate the $\mathbf{f}(z,\mathbf{x})$ function once per iteration, whereas RK4 does this four times.
+
+% Explain a little bit the implementation itself, how RK4 must be used 3 times at the beginning and one time by the end.
+The change does not come without disadvantage however, since it requires the use of four previous steps to compute the next one as can be seen in equations \eqref{eq:abm4_explicit} and \eqref{eq:abm4_implicit} from the referenced addendum.
+Due to this the step size must be kept constant through each step.
+A common and simple-to-execute solution for this is to run RK4 for three steps after the initial state vector, and thus this option is implemented.
+It's worth noting that due to the particular conditions of the problem, $z_{k+1}$ does not necessarily fulfill the condition that $z{k+1} = z_k + n h$ where $n$ is an arbitrary natural number, so it's usually impossible to reach the next measurement site from the last one using ABM4, but this is easily fixable by using RK4 at the last step of the process.
+
+% TODO: TALK WITH CT AND SEE IF HE AGREES THAT WE SHOULD SCRAP THIS FOR THE TIME BEING AND MAYBE EXPLORE THE OPTION IN THE FUTURE.
+
+% Explain why the algorithm couldn't be implemented; mention the error associated to the lack of magnetic field differentials.
+% After the initial analysis is done, ABM4 is integrated into the code instead of RK4 and tests are ran, but the results are not as good as are expected, as can be seen in figure \textbf{TODO}. % TODO: Add a figure showing the huge errors in the state vector.
+% This error is attributed to the issue with the implementation of the equations of motion that is expressed in subsection \ref{ssec:framework_tf}, where equations \eqref{eq:tf_dtx_dx}, \eqref{eq:tf_dtx_dy}, \eqref{eq:tf_dty_dx} and \eqref{eq:tf_dty_dy} cannot be implemented correctly because of the fact that the differentials of the magnetic field $\textbf{B}(x,y,z)$ are unknown, which introduces an instability to the method which causes it to converge to different results when compared to RK4. % TODO: If I'm gonna say that the method didn't work I'm gonna need a better explanation into why I think this is true.
+
+% Still, considering that the theory checks up ABM4 can potentially work in contexts such as this for other particle detectors, and it can be a good idea to try and implement the method if additional information about the system is known in the future.

@@ -1,0 +1,23 @@
+% !TEX root = ../main.tex
+\subsubsection{\texttt{hipo2root}}
+    CLAS12 reconstruction uses a custom data file named High-Performance Input Output (HIPO) format, developed by Gagik Gavalian \cite{chekanov2021}.
+    The CLAS collaboration provides a set of tools to work with this format, allowing to read, write, and draw plots from HIPO files.
+    Despite this, however, users at RG-E are much more familiar with the traditional ROOT files, and thus a conversion tool was developed.
+
+    \texttt{hipo2root} filters through a HIPO file's data, and creates a ROOT file with pre-selected sections of storage, called banks.
+    The selection of banks is based on data that is useful to RG-E analysis, and a user can easily add additional banks by editing the program's source files.
+    The output of the executable is a ROOT file containing the selected banks as trees, a standard ROOT array-like variable.
+
+    It's manual entry is:
+    \begin{lstlisting}
+Usage: hipo2root [-hfn:w:] infile
+ * -h         : show this message and exit.
+ * -f         : set this to true to process FMT::Tracks bank.
+ * -n nevents : number of events.
+ * -w workdir : location where output root files are to be stored. Default is root_io.
+ * infile     : input HIPO file. Expected file format is <text>run_no.hipo.
+
+Convert a file from hipo to root format. This program only conserves the banks that are useful for RG-E analysis, as specified in the `lib/bank_containers.h` file. It is important for the input hipo file to specify the run number at the end of the filename (`<text>run_no.hipo`), so that `hipo2root` can get the beam energy from the run number.
+
+Since simulation files don't have a run number, we use a convention for specifying the beam energy. For this files, the filename should be `<text>999XXX.hipo`, where `XXX` is the beam energy used in the simulation in [0.1*GeV]. Currently, there are only 3 possible run numbers for simulations: 999106, 999110, and 999120. It is a pending task to improve this standard.
+    \end{lstlisting}

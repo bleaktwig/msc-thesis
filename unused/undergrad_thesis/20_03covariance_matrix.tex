@@ -1,0 +1,24 @@
+\subsection{Covariance Matrix} \label{add:covariance_matrix}
+Given a random vector $\mathbf{x}$ of size $n$ defined as $\mathbf{x} = \{x_1, x_2, ..., x_n\}$, the covariance matrix $\Sigma$ of such vector is usually defined as:
+    \begin{equation*}
+        \Sigma = 
+        \begin{bmatrix}
+            \text{var}(x_1) & \text{cov}(x_1, x_2) & \dots & \text{cov}(x_1, x_n) \\
+            \text{cov}(x_2, x_1) & \text{var}(x_2) & \dots & \text{cov}(x_2, x_n) \\
+            \vdots & \vdots & \ddots & \vdots \\
+            \text{cov}(x_n, x_1) & \text{cov}(x_n, x_2) & \dots & \text{var}(x_n)
+        \end{bmatrix}\,,
+    \end{equation*}
+with $\text{var}(x_i)$ signifying the variance of the random variable $x_i$ and $\text{cov}(x_i, x_j)$ the covariance of variables $x_i$ and $x_j$.
+Variances and covariances are defined as:
+    \begin{align*}
+        \text{var}(x) &= \frac{1}{m}\,\sum\limits_{i=1}^m (x_i - \bar{x})^2\\
+        \text{cov}(x,y) &= \frac{1}{m-1}\,\sum\limits_{i=1}^m (x_i - \bar{x})(y_i - \bar{y})\,,
+    \end{align*}
+where $\bar{x}$ denotes the mean or average of $x$, and is defined as:
+    \begin{equation*}
+        \bar{x} = \frac{1}{m}\,\sum\limits_{i=1}^m x_i\,,
+    \end{equation*}
+where $m$ denotes the number of measurements.
+
+Due to the fact that by definition neither variances or covariances can be negative and that $\text{cov}(x_i, x_j) = \text{cov}(x_j, x_i)$, the covariance matrix $\Sigma$ of a vector is always symmetric and positive-definite.

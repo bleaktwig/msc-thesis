@@ -1,0 +1,26 @@
+\subsection{Multithreaded Cluster and Track Finding Algorithms} \label{ssec:prop_multithreaded_ctf}
+A multithreaded algorithm is an algorithm that takes advantage of the fact that most modern CPUs have more than one core, thus allowing them to concurrently run various execution threads on these multiple cores in order to take less time processing the same data. % Note: Maybe I should cite a book on this.
+This is especially useful in the context that the CLAS12 software is ran at JLab, where many data events are computed concurrently, in different machines.
+To understand why a multithreaded approach is useful, a bit of insight is needed on how the work in the CLAS12 execution hardware is distributed:
+
+First, a number of threads per engine $T$ is defined in the CLARA configuration file, allowing for $T$ instances of the same engine to process different data events in the different cores at the same time.
+Then, if the number of engines running in the production chain is $E$, at most a number of $T\cdot E$ threads will be running at the same time in the HPC cluster.
+Dubbing the number of cores at the cluster $C$, a well-tuned configuration file is set so that $T\cdot E \approx C$ so as to utilize the cluster's capacity as best as possible.
+
+Ideally, this setup would work in such a way that all the $C$ cores remain constantly running, but a problem arises due to the fact that the CLAS12 engines require to run in a sequential manner and, as seen in Figure \ref{fig:engines-times-sep2018} from Section \ref{ssec:prob_the_problem}, each engine takes a vastly different amount of time to run.
+Because of this, the cores running the faster engines will be left waiting for the slower ones that come previous to them to finish their execution.
+
+Based on this reasoning, a valid approach for accelerating the software is to distribute the work done in the slowest engines, DCHB and DCTB, onto more threads so that the computing time is improved and a better use of the available hardware is ensured.
+Two methods for taking advantage of this idea are proposed: A multithreaded algorithm to use in cluster finding and one to use in track finding.
+
+\textbf{Multithreaded Cluster Finding Algorithm}: Analyzing the cluster finding algorithm described in Section \ref{ssec:framework_cf}, it can be seen that there is no reason to do the \textbf{Clump Finding} step before the \textbf{Hit Prunning} one, considering that the second iterates through the hits on a layer-by-layer basis instead of based on the clumps found by the first.
+
+Then, the \textbf{Out-of-Timers Removal}, the \textbf{Cluster Fitting} and the \textbf{Cluster Splitting} steps can be ran in parallel by assigning a thread to each clump found.
+It is in theory possible to further parallelize the algorithm by assigning individual threads to each cluster found in the Cluster Splitting step and running the fitting done to them separately, but the estimated gain in computing time is very small due to the fact that only one fit is done on the split clusters, so the option was discarded.
+
+\textbf{Multithreaded Track Finding Algorithm}: The track finding done in the DC code described in Section \ref{ssec:framework_tf} requires a set of measurements to run, which are taken from the hits in six different clusters.
+Due to the geometry of the DC detector (which can be seen in Figure \ref{fig:dc_horizontal_cut} from Section \ref{ssec:prob_context}), finding pairs of clusters (dubbed crosses) in the two superlayers that conform a sector is trivial.
+
+Then, all the combinations of three crosses that could potentially make sense as being formed by a particle's trajectory are considered different, independent tracks.
+Via the Kalman filter, a fit is attempted for each of these tracks to find the ones that are most likely to be formed by an actual particle passing through the detector.
+Considering that each track is fit separately and that they are independent from each other, a multithreaded algorithm is implemented where all the tracks in a data event are fit concurrently in different threads.

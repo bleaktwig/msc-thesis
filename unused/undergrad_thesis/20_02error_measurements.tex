@@ -1,0 +1,7 @@
+\subsection{Error Measurements} \label{add:errors}
+The quadratic error, mean squared error (MSE) or $\chi^2$ error of a procedure estimating a random variable measures the average of the squares of the errors between each measured variable and their estimated value.
+With $\hat{y} = f(x)$ being a function of measured values $y$ and $n$ being the number of samples taken such that ${y_1, y_2, ..., y_n}$ are known and ${\hat{y}_1, \hat{y}_2, ..., \hat{y}_n}$ can be obtained from $\hat{y}_i = f(x_i)$, the quadratic error of the function can be defined as~\cite{taylor1997introduction}:
+    \begin{equation*}
+        \chi^2 = \frac{1}{n} \sum\limits_{i=1}^n \frac{(y_i - \hat{y}_i)^2}{\hat{y}_i}\,.
+    \end{equation*}
+In the case of the DC software, the quadratic error is used to describe how good a track fit is when compared to the measured data.

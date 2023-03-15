@@ -1,0 +1,24 @@
+% !TEX root = ../main.tex
+\subsection{FMT Reconstruction} \label{ssec::fmtreconstruction}
+% WHY IS IT NEEDED.
+    As work in FMT alignment progressed, some changes were needed in FMT reconstruction.
+    These changes mainly include the implementation of the shifts found in alignment to reconstruction.
+    However, they also concern some fixes of issues found as alignment work progressed.
+
+% WHAT WAS DONE.
+    First, the loading of shifts from the CCDB was included in the standard geometry class of the FMT reconstruction package.
+    Then, standard methods to include the shifts in any frame of reference change were included.
+    Finally, the code was studied in detail and the shits were added in all instance where they were required, since the package originally didn't consider their application.
+    
+    ``Crossmaking'' is the process of matching clusters in different layers to obtain an accurate 3D estimate of the position of a track \cite{ziegler2020}.
+    This was originally included in FMT reconstruction to facilitate reconstruction for the six FMT layers.
+    However, as was mentioned before, only three FMT layers were installed for the RG-F run, and future runs may also use three layers due to concerns with the Lorentz angle if six are used.
+    To simplify reconstruction and make better use of this number of layers, crossmaking was removed from reconstruction.
+    
+    Outside of FMT reconstruction, some minor changes were also required in the DC reconstruction package, since some of its components depends on the FMT layers' positions.
+    In addition, the swim package diagnostic was updated, since it failed to properly reconstruction the positions of tracks near the FMT layers.
+
+% LINK.
+    A detailed list of the updates applied can be found in the following pull request to the \texttt{clas12-offline-software} repository:
+    
+    \href{https://github.com/JeffersonLab/clas12-offline-software/pull/726}{\texttt{github.com/JeffersonLab/clas12-offline-software/pull/726}}.

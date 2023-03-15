@@ -1,0 +1,23 @@
+\subsection{On the Flops of Different Operations} \label{add:flops}
+Floating point operations per second or flops is a measure for computer performance usually considered more accurate than the instructions per second. % Note: This might need a citation.
+It is commonly stated that some operations require more flops than others, so different operations are considered separately when analyzing the computational complexity.
+For the study done in this document, different operations are counted together for simplicity and due to the fact that, as can be seen in Table \ref{tab:op_times}, their computation time is not too different in modern architectures, or at least in a personal computer's CPU.
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{@{}ll@{}}
+        \toprule
+        operation & time {[}ns{]} \\ \midrule
+        sum       & $1.7005$   \\
+        mul       & $1.4478$   \\
+        div       & $1.8587$   \\
+        sqrt      & $1.7818$   \\ \bottomrule
+        \end{tabular}
+        \caption{\label{tab:op_times} Operation times in [ns].}
+    \end{table}
+
+Due to a very high variance in the operation time during different iterations of the same code in Java and the language's lack of capacity to do high-precision tests, the tests to obtain these values were performed in C.
+
+The tests were ran by measuring the CPU time in the machine before and after each operation was done on pseudo-random double-precision floating point values using the \texttt{clock()} function from the \texttt{time.h} library.
+Each operation was performed $10.000.000$ times and the average computation time was used to minimize statistical error on an Intel(R) Core(TM) i$5$-$6600$K CPU with $4$ cores running at $3.50$GHz with $8$GB of DDR$4$ $2133$MHz RAM.
+The source code for this test can be seen in \texttt{https://gist.github.com/bleaktwig/} \texttt{211dab3a5f95b4e857f1f001d7b13654}.

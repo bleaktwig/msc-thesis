@@ -1,0 +1,12 @@
+\subsection{Jacobian Matrix} \label{add:jacobian_matrix}
+For an arbitrary vectorial function $\mathbf{f}(\mathbf{x})$, the jacobian matrix is a matrix that lists all its first-order partial derivatives.
+Assuming that the function $\mathbf{f}(\mathbf{x})$ can receive a generic input vector $\mathbf{x} = \{x_1, x_2, ..., x_n\} \in \mathbb{R}^n$ and produces an output $\mathbf{f}(\mathbf{x}) = \{f_1(\mathbf{x}), f_2(\mathbf{x}), ..., f_m(\mathbf{x})\} \in \mathbb{R}^m$, then the Jacobian matrix $J_f$ of $\mathbf{f}(\mathbf{x})$ is the $m\times n$ matrix defined in the following manner:
+    \begin{equation*}
+        J_f = 
+        \begin{bmatrix}
+            \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2} & \dots & \frac{\partial f_1}{\partial x_n} \\[6pt]
+            \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} & \dots & \frac{\partial f_2}{\partial x_n} \\[6pt]
+            \vdots & \vdots & \ddots & \vdots \\[6pt]
+            \frac{\partial f_m}{\partial x_1} & \frac{\partial f_m}{\partial x_2} & \dots & \frac{\partial f_m}{\partial x_n}
+        \end{bmatrix}\,.
+    \end{equation*}

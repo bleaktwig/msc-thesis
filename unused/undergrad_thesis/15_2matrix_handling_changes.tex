@@ -1,0 +1,274 @@
+\subsection{Matrices Handling Changes} \label{ssec:prop_matrices}
+% NOTE: Maybe this could use a plot?
+Based on the profiling analysis shown in Section \ref{ssec:val_refactoring_and_optimizations}, This section focuses on reducing the CPU time of both the \texttt{isNonSingular} and the \texttt{filter} methods, which are explained in the \textbf{Update} segment of Section \ref{ssec:framework_ekf}.
+For the calculation of the computational cost of mathematical operations, it is assumed that all ``basic'' operations: summation, subtraction, multiplication and division have a cost of $O(1)$.
+The reasoning behind this decision is described in Appendix \ref{add:flops}.
+
+It's worth noting that a very usual approach for accelerating matrix operations at the time of writing is leveraging the computation to GPUs, and it has been commonly used in particular to accelerate the KF itself~\cite{huang2011accelerating,blattner2011performance}.
+This approach is not considered useful for CLAS12 because the matrices that are being handled are very small (the covariance matrix is only $5\times5$) and it is easy to realize that the time used to leverage the matrices to a GPU would likely make the software slower than the current implementation due to the time consumed in the memory transfer overhead~\cite{moravanszky2003dense}.
+
+In the same spirit, neither the Strassen~\cite{strassen1969gaussian} or the Coppersmith-Winograd~\cite{coppersmith1990matrix} algorithms are considered to replace matrix multiplications or inversions since they're only useful for large matrices~\cite{ballard2012communication}.
+As an example, the actual amount of operations required for computing the Strassen algorithm is $n^2 + n^{2.807}$, which for the case of a $5\times5$ matrix is $\sim117$ contrasted with the $125$ required by the na\"ive implementation and adding additional numerical instability~\cite{ballard2012communication}.
+This reduction is small when compared with the specific optimizations that are described below, which eliminate matrix multiplication altogether for the methods brought into attention.
+
+\subsubsection{Matrix Inverse} \label{sssec:prop_matrix_inverse}
+
+To reduce the time spent by the update phase or filter method, the effort was mainly focused in the reduction of the time it takes to calculate the covariance matrix \textit{a posteriori} as seen in Equation \eqref{eq:ekf_Pk}.
+The specific implementation of the equation presented in that section for the DC software is the following:
+
+First, the determinant of the covariance matrix $P_{k|k-1}$ is computed and compared with $0$ to drop the track if the matrix is singular or near-singular.
+Then, using the measurement data described in Section \ref{ssec:framework_tf}, the vector $\mathbf{h}_k$ is defined as:
+    \begin{equation}
+        \mathbf{h}_k = \begin{pmatrix}1\\ -\text{tan}(6t) - \frac{4w}{l}(1 - \frac{2y}{l})\\ 0\\ 0\\ 0\end{pmatrix}\,, \label{eq:mhc_hvec}
+    \end{equation}
+which is simply defined to project the state vector and covariance matrix to the tilted coordinate system from which the measurement is obtained.
+From this, the matrix $P_{k|k}$ is computed as:
+    \begin{equation}
+        P_{k|k} = (P_{k|k-1}^{-1} + H_k)^{-1}\,, \label{eq:mhc_Pk}
+    \end{equation}
+where $H_k = \mathbf{h}_k^T\mathbf{h}_k$.
+Finally, the $P_{k|k}$'s determinant is compared with $0$, again to drop the track if the new covariance matrix is singular.
+
+To reduce the computation time of this calculation, the \textbf{Sherman-Morrison formula} (described in Appendix \ref{add:shermanmorrison_formula}) can be applied as long as $|P_{k|k-1}|\neq 0$~\cite{sherman1950adjustment}.
+Applying the formula to Equation \eqref{eq:mhc_Pk}:
+    \begin{equation}
+        P_{k|k} = P_{k|k-1} - \frac{P_{k|k-1} \mathbf{h}_k \mathbf{h}_k^T P_{k|k-1}}{1 + \mathbf{h}_k^T P_{k|k-1} \mathbf{h}_k}\,. \label{eq:mhc_sm_det}
+    \end{equation}
+This helps to heavily reduce the total computation time since, as can be seen in the equation, no matrix inversions are required, which are very heavy operations~\cite{fatahalian2004understanding}.
+It's worth noting that for this approach to be effective, the order in which the matrix-matrix, matrix-vector and vector-matrix multiplications in Equation \eqref{eq:mhc_sm_det} are applied is of utmost importance, so that no matrix-matrix multiplications are required.
+This is done by first multiplying $P_{k|k-1}\cdot \mathbf{h}_k$ and $\mathbf{h}_k^T\cdot P_{k|k-1}$ in the fraction's numerator.
+
+\subsubsection{Determinant Calculation} \label{sssec:prop_det}
+
+To reduce the time spent on checking if the covariance matrices $P_{k|k-1}$ and $P_{k|k}$ are singular, various paths were taken.
+First, two alternative ways for computing the matrix's determinant were proposed: The \textbf{Su-Chang formula}~\cite{su1996quick} and a method based on the Cholesky decomposition~\cite{geijn2011notes} of the matrix:
+
+    \begin{itemize}
+        \item \textbf{Su-Chang Formula}: The Su-Chang formula is a recursive algorithm that can be used to compute the determinant of a square matrix.
+        It is explained in detail in Appendix \ref{add:suchang_formula}.
+        As is described by Equation \eqref{eq:suchang_complexity} in the appendix, the number of operations required is $\frac{1}{3}(2n^3 - 3n^2 + 7n - 18)$, in contrast with the usual $n^3$ operations needed to directly compute the determinant using a LU decomposition~\cite{banachiewicz1937berechnung}.
+        In the particular case of the KF from CLAS12, considering the covariance matrix's size is of size $5\times5$, the total number of computations required by the Su-Chang formula is $64$, while the direct computation of a determinant using the LU decomposition is $125$.
+        
+        \item \textbf{Cholesky Decomposition}: Over the real number field, the Cholesky decomposition or factorization is the decomposition of a positive-definite matrix into the product of a lower triangular matrix with its transpose, described in detail in Appendix \ref{add:cholesky_decomp}.
+        A na\"ive algorithm implementing the Cholesky decomposition requires $\frac{1}{6}n(2n^2 + 3n + 1)$ operations, with $n-1$ additional operations to multiply the matrix's diagonal and $1$ to compute its square, which leaves the number of operations required at $\frac{1}{6}n(2n^2 + 3n + 7)$.
+        For the studied case with $n=5$, the total number of computations required to obtain the matrix's determinant is $60$.
+    \end{itemize}
+
+Besides the computation of these three methods separately, another option was evaluated: Hardcoding each alternative.
+Considering that the methods only work with a fixed size input matrix ($5\times5)$, it is possible to embed the direct calculation, Su-Chang formula, and Cholesky decomposition methods into the code and optimize the operations required as much as possible.
+This optimization was done via reading the expression in algebraic form and counting all the multiplications between $2$ or more variables, returning a list with each one of these combinations along with how many times they were repeated, thus allowing the programmer to add the precomputation of these operations to the code.
+
+It's worth noting that other efforts in this same field exist and are well-known~\cite{pelegri1988optimal,aho1989code} along with their implementations~\cite{fraser1991burg}.
+This is because the problem is an instance of the \textbf{C-Reachability problem}, an extension of the \textbf{Reachability} problem often used in compiler construction theory, defined as:
+
+\textit{Given a computational (potentially infinite state) system with a set of allowed rules or transformations with a given associated cost, find the set of rules with the smallest associated cost that reaches a certain state of the system from a given initial state}~\cite{pelegri1988optimal}.
+
+Despite the fact that designing an implementation of a solution to this problem might help to further optimize the determinant calculation, this was ultimately considered excessive considering the scope of the problem and in view of the results presented at the end of this section, where the over-optimization starts suffering from setbacks related to the \textbf{Java HotSpot Performance Engine}~\cite{meloan1999java}.
+
+Then, the fact that computing the determinants of both $P_{k|k-1}$ and $P_{k|k}$ is needed is disputed.
+There are four possible cases to be analyzed:
+    \begin{itemize}
+        \item [(I)] $|P_{k|k}|=0\bigr||P_{k|k-1}|=0$,
+        \item [(II)] $|P_{k|k}|=0\bigr||P_{k|k-1}|\neq0$,
+        \item [(III)] $|P_{k|k}|\neq0\bigr||P_{k|k-1}|=0$,
+        \item [(IV)] $|P_{k|k}|\neq0\bigr||P_{k|k-1}|\neq0$.
+    \end{itemize}
+If it's possible to prove that cases (II) and (III) are invalid, then it's clear that only one of the two determinants needs to be computed to assert that both matrices are non-singular and thus effectively half the computation time required to run these checks.
+
+% \newpage
+
+Based on Equation \eqref{eq:mhc_Pk}, the determinant of the covariance matrix $P_{k|k}$ can be defined as:
+    \begin{align}
+        |P_{k|k}| &= \Big|P_{k|k-1}^{-1} + \frac{H_k}{u}\Big|^{-1}\nonumber\\
+        &= \Big|P_{k|k-1}^{-1} \cdot (I + P_{k|k-1}\cdot \frac{H_k}{u})\Big|^{-1}\nonumber\\
+        &= |P_{k|k-1}| \cdot \Big|I + P_{k|k-1}\cdot \frac{H_k}{u}\Big|^{-1}\nonumber\,,\\
+\intertext{Then, considering that matrix $I$ is non-singular by definition and that $P_{k|k-1}\cdot\frac{H_k}{u}$ can be expressed as the product of two vectors $\mathbf{v}^T\mathbf{u}$, the matrix determinant lemma is used (described in Appendix \ref{add:mat_det_lemma}):}
+        &= |P_{k|k-1}| \cdot ((1 + \mathbf{v}^T\cdot  I^{-1}\cdot  \mathbf{u})|I|)^{-1}\nonumber\\
+        &= |P_{k|k-1}| \cdot ((1 + \mathbf{v}^T\cdot  I\cdot  \mathbf{u}))^{-1}\nonumber\\
+        &= |P_{k|k-1}| \cdot (1 + \mathbf{v}^T\cdot  \mathbf{u})^{-1}\,,\label{eq:mhc_nonsingular_dem}
+    \end{align}
+where, using $p_{ij}$ to denote the $j$'s column of the $i$'s row of matrix $P_{k|k-1}$ and $h_{k(2)}$ denotes $-\text{tan}(6t)-\frac{4w}{l}(1-\frac{2y}{l})$ (from Equation \eqref{eq:mhc_hvec}), $\mathbf{u}$ and $\mathbf{v}$ can be defined from:
+    \begin{align*}
+        P_{k|k-1}\cdot \frac{H}{u} &= 
+        \begin{bmatrix}
+            p_{11} & p_{12} & p_{13} & p_{14} & p_{15} \\
+            p_{12} & p_{22} & p_{23} & p_{24} & p_{25} \\
+            p_{13} & p_{23} & p_{33} & p_{34} & p_{35} \\
+            p_{14} & p_{24} & p_{34} & p_{44} & p_{45} \\
+            p_{15} & p_{25} & p_{35} & p_{45} & p_{55}
+        \end{bmatrix}
+        \times
+        \begin{bmatrix}
+            \frac{1}{u}        & \frac{h_{k(2)}}{u}   & 0 & 0 & 0 \\
+            \frac{h_{k(2)}}{u} & \frac{h_{k(2)}^2}{u} & 0 & 0 & 0 \\
+            0                  & 0                    & 0 & 0 & 0 \\
+            0                  & 0                    & 0 & 0 & 0 \\
+            0                  & 0                    & 0 & 0 & 0
+        \end{bmatrix}
+        \\
+        &=
+        \frac{\begin{bmatrix}
+            p_{11} + p_{12}h_{k(2)} & p_{11}h_{k(2)} + p_{12}h_{k(2)}^2 & 0 & 0 & 0 \\
+            p_{12} + p_{22}h_{k(2)} & p_{12}h_{k(2)} + p_{22}h_{k(2)}^2 & 0 & 0 & 0 \\
+            p_{13} + p_{23}h_{k(2)} & p_{13}h_{k(2)} + p_{23}h_{k(2)}^2 & 0 & 0 & 0 \\
+            p_{14} + p_{24}h_{k(2)} & p_{14}h_{k(2)} + p_{24}h_{k(2)}^2 & 0 & 0 & 0 \\
+            p_{15} + p_{25}h_{k(2)} & p_{15}h_{k(2)} + p_{25}h_{k(2)}^2 & 0 & 0 & 0
+        \end{bmatrix}}
+        {u}\\
+        &= \mathbf{u}\cdot \mathbf{v}^T\,,
+    \end{align*}
+where:
+    \begin{align*}
+        \mathbf{u}^T &= \left<p_{11} + p_{12}\,h_{k(2)}, p_{12} + p_{22}\,h_{k(2)}, p_{13} + p_{23}\,h_{k(2)}, p_{14} + p_{24}\,h_{k(2)}, p_{15} + p_{25}\,h_{k(2)} \right>\\
+        \mathbf{v}^T &= \left<\frac{1}{u}, \frac{h_{k(2)}}{u}, 0, 0, 0 \right>\,,
+    \end{align*}
+then, continuing from Equation \eqref{eq:mhc_nonsingular_dem}:
+    \begin{align*}
+        |P_{k|k}| &= |P_{k|k-1}| \cdot (1 + \mathbf{v}^T \cdot \mathbf{u})^{-1}\\
+        &= |P_{k|k-1}| \cdot \left(\frac{p_{22}h_{k(2)}^2 + 2p_{12}h_{k(2)} + p_{11}}{u} + 1\right)^{-1}\,,
+    \end{align*}
+and finally:
+    \begin{equation}
+        |P_{k|k}| = \frac{|P_{k|k-1}|\cdot u}{p_{22}h_{k(2)}^2 + 2p_{12}h_{k(2)} + p_{11} + u}\,. \label{eq:mhc_Pkk_definition}
+    \end{equation}
+
+From Equation \eqref{eq:mhc_Pkk_definition}, considering that $u$ is the uncertainty of the measurement and cannot be lesser than $\sim 300$ [ms] as is explained in Section \ref{ssec:framework_tf}, conditions (II) and (III) will be impossible if:
+    \begin{equation}
+        p_{22}h_{k(2)}^2 + 2p_{12}h_{k(2)} + p_{11} \geq 0\,. \label{eq:mhc_proof}
+    \end{equation}
+
+To prove this, the fact that square real numbers are always positive is used:
+    \begin{align}
+        \nonumber 0 &\leq \left(\sqrt{p_{22}} h_{k(2)} + \sqrt{p_{11}} \right)^2\\
+        \nonumber &= p_{22}\,h_{k(2)}^2 + 2h\sqrt{p_{11}\,p_{22}}h_{k(2)} + p_{11}\,,\\
+        \intertext{then, using the Cauchy-Schwarz inequality (explained in Appendix \ref{add:cauchy_schwarz}):}
+        &\leq p_{22}\, h_{k(2)}^2 + 2h_{k(2)}\,|p_{12}| + p_{11}\,. \label{eq:mhc_subproof1}
+    \end{align}
+
+On a similar vein, it can be proven that:
+    \begin{align}
+        \nonumber 0 &\leq \left(\sqrt{p_{22}} h_{k(2)} - \sqrt{p_{11}} \right)^2\\
+        \nonumber &= p_{22}\,h_{k(2)}^2 - 2h\sqrt{p_{11}\,p_{22}}h_{k(2)} + p_{11}\\
+        &\leq p_{22}\, h_{k(2)}^2 - 2h_{k(2)}\,|p_{12}| + p_{11}\,. \label{eq:mhc_subproof2}
+    \end{align}
+
+Taking Equations \eqref{eq:mhc_subproof1} and \eqref{eq:mhc_subproof2} into account, it can be seen that:
+    \begin{equation*}
+        0 \leq p_{22}\, h_{k(2)}^2 + 2h_{k(2)}\,p_{12} + p_{11}\,,
+    \end{equation*}
+thus proving Equation \eqref{eq:mhc_proof}.
+
+% From Equation \eqref{eq:mhc_Pkk_definition}, it's possible to analyze the conditions in which either (II) or (III) can happen:
+
+%     \begin{itemize}
+%         \item [(II)] $|P_{k|k}|=0\bigr||P_{k|k-1}|\neq0$: Since $|P_{k|k-1}|\neq0$, the only way in which $|P_{k|k}|=0$ can happen is if either one of three conditions is met:
+
+%         \begin{itemize}
+%             \item [(II.a)] $u=0$: this case is impossible, since the uncertainty of the measurement cannot go below $\sim300$ [ms], as is explained in Section \ref{ssec:framework_tf}.
+            
+%             \item [(II.b)] $p_{11}=\infty$ or $p_{22}=\infty$: this case is impossible since $p_{11}$ and $p_{22}$ are the variances of $x$ and $y$ respectively.
+%             These $x$ and $y$ are random variables in a finite range that denote the position of the tracked particle inside the confines of the DC detector and the variance of a variable with a finite mean cannot be infinite by definition.
+%             % Note: The detector's dimensions are roughly ((-400cm,400cm), (-400cm,400cm), (0cm, 850cm)). I could mention this but I feel like it isn't really necessary.
+            
+%             \item [(II.c)] $p_{12}=\infty$: if case (II.b) is indeed impossible, it follows that:
+%                 \begin{align*}
+%                     |p_{12}| &\leq \sqrt{p_{11}\cdot p_{22}}\\
+%                     |\text{cov}(x,y)| &\leq \sqrt{var(x)\cdot var(y)}
+%                 \end{align*}
+%             due to the Cauchy-Schwarz inequality, which is briefly described in Appendix \ref{add:cauchy_schwarz}.
+            
+%             \item [(II.d)] $h_{k(2)}=\infty$: using Equation \eqref{eq:mhc_hvec}, $h_{k(2)}$ is defined as:
+%                 \begin{equation*}
+%                     h_{k(2)} = -\text{tan}(t) - \frac{4w}{l}\cdot(1 - \frac{2y}{l})
+%                 \end{equation*}
+%             and thus can only approach $\infty$ if either (II.d.1) $-\text{tan}(t)\longrightarrow\infty$, (II.d.2) $w\longrightarrow\infty$, (II.d.3) $y\longrightarrow\infty$ or (II.d.4) $l\longrightarrow0$:
+            
+%             \begin{itemize}
+%                 \item [(II.d.1)] $-\text{tan}(t)\longrightarrow\infty$: impossible due to the fact that $t\in\{-30\degree,30\degree\}$ and both $\text{tan}(-30\degree)$ and $\text{tan}(30\degree)$ are finite.
+                
+%                 \item [(II.d.2)] $w\longrightarrow\infty$:  absurd since, as is described in Section \ref{ssec:framework_tf}, $w$ represents the wire's sag, and this variable cannot logically be infinite.
+            
+%                 \item [(II.d.3)] $y\longrightarrow\infty$: impossible for the same reasons stated in (II.a), since $y$ cannot be $\infty$ due to being limited to the confines of the DC detector.
+            
+%                 \item [(II.d.4)] $l\longrightarrow0$: impossible too considering that $l$ denotes the length of the wire from which the measurement is obtained (as defined in Section \ref{ssec:framework_tf}), and it is absurd to consider that a wire may have length $0$.
+%             \end{itemize}
+%         \end{itemize}
+    
+%         \item [(III)] $|P_{k|k}|\neq0\bigr||P_{k|k-1}|=0$: The only conditions in which this can be true are when $u\longrightarrow\infty$ or when the denominator in \eqref{eq:mhc_Pkk_definition} approaches $0$ faster than the numerator:
+    
+%             \begin{equation}
+%                 p_{22}h_{k(2)}^2 + 2p_{12}h_{k(2)} + p_{11} + u \longrightarrow 0 \label{eq:mhc_denominator_check}
+%             \end{equation}
+%         the only conditions in which \eqref{eq:mhc_denominator_check} can be true is when any of these four conditions are met:
+%             \begin{align}
+%                 p_{22} &\neq 0, h_{k(2)} = \frac{-p_{12} \pm\sqrt{p_{12} - p_{22}(p_{11} + u)}}{p_{22}} \label{eq:mhc_dencheck_sol1}\\
+%                 p_{22} &= 0, p_{12} \neq 0, h_{k(2)} = -\frac{p_{11} + u}{2p_{12}} \label{eq:mhc_dencheck_sol2}\\
+%                 p_{22} &= 0, p_{12} = 0, p_{11} = -u \label{eq:mhc_dencheck_sol3}\\
+%                 h_{k(2)} &= 0, p_{11} = -u \label{eq:mhc_dencheck_sol4}
+%             \end{align}
+    
+%         Going through each possible case:
+%         \begin{itemize}
+%             \item [(III.a)] $u\longrightarrow\infty$: this is absurd since $u$ is a measurement of the uncertainty in the moment the measurement is taken.
+    
+%             \item [(III.b)] Equation \eqref{eq:mhc_dencheck_sol1}: \textbf{TODO: I STILL NEED TO FIGURE THIS ONE OUT!!}
+    
+%             \item [(III.c)] Equation \eqref{eq:mhc_dencheck_sol2}: it can be seen that, due to the Cauchy-Schwarz inequality:
+%                 \begin{align*}
+%                     |\text{cov}(x,y)| &\leq \sqrt{\text{var}(x)\text{var}(y)}\\
+%                     |p_{12}| &\leq \sqrt{p_{11}p_{22}}\\
+%                     |p_{12}| &\leq 0\\
+%                 \intertext{which, considering that a covariance cannot be negative:}
+%                     |p_{12}| &= 0
+%                 \end{align*}
+%             which is a contradiction with the original assumption that $p_{12} \neq 0$.
+    
+%             \item [(III.d)] Equation \eqref{eq:mhc_dencheck_sol3}: would be a contradiction because both $p_{11}$ and $u$ must be positive and setting $p_{11} = -u$ would mean that one of the two variables would be negative.
+    
+%             \item [(III.e)] Equation \eqref{eq:mhc_dencheck_sol4}: absurd for the same reason as (III.d).
+%         \end{itemize}
+%     \end{itemize}
+
+Finally, it is noted that Equation \eqref{eq:mhc_Pkk_definition} can be used to compute the second determinant while running the \textbf{Update} part of the KF in a manner much faster than any of the other methods mentioned in this section, running only $9$ operations given that $|P_{k|k-1}|$ is already known ($5$ multiplications, $3$ additions and $1$ division).
+% It is defined generally:
+
+%     \begin{theorem}
+%         \label{theorem:second_det}
+%         For the case of an Extended Kalman Filter implemented for the reconstruction of data from Drift Chambers, let $P_{k|k-1}$ and $P_{k|k}$ be the covariance matrix of a state vector \textit{a priori} and \textit{a posteriori} respectively for step $k$, $(x,y)$ be the coordinates of the state vector at $k$, $u$ be the uncertainty of the measurement taken and $h_{k(2)}$ be the projector to the coordinate system of the measurement vector, then
+%         \begin{equation*}
+%             |P_{k|k}| = \frac{|P_{k|k-1}|\cdot u}{\mathrm{Var}(y)\,h_{k(2)}^2 + 2\,\mathrm{Cov}(x,y)\,h_{k(2)} + \mathrm{Var}(x) + u}\,.
+%         \end{equation*}
+%     \end{theorem}
+
+Table \ref{tab:det_method_times} presents the total CPU time used up by each method for computing the determinant presented in this section.
+In the first row the CPU time taken by computing both determinants is shown, as was done in the original formulation of the software, while the second row reflects the computation of only the first determinant, and the third the use of Equation \eqref{eq:mhc_Pkk_definition} to compute the second determinant.
+The columns in the table are separated into two categories, the na\"ive and the hardcoded implementation of the algorithms.
+Inside both categories the direct computation, the Su-Chang formula and the Cholesky decomposition-based methods are displayed for comparison.
+
+    \begin{table}[ht]
+        \begin{tabular}{@{}ll|lll@{}}
+                                                            &          & Both determinants & First determinant & Special Method \\ \midrule
+            \multicolumn{1}{l|}{\multirow{3}{*}{Na\"ive}}   & Direct   & $121.68$*         & $111.17$          & $117.27$       \\
+            \multicolumn{1}{l|}{}                           & Su-Chang & $151.59$          & $129.40$          & $144.07$       \\
+            \multicolumn{1}{l|}{}                           & Cholesky & $117.21$          & $102.73$          & $108.84$       \\ \midrule
+            \multicolumn{1}{l|}{\multirow{3}{*}{Hardcoded}} & Direct   & $104.86$          & $109.02$          & $106.19$       \\
+            \multicolumn{1}{l|}{}                           & Su-Chang & $103.45$          & $106.55$          & $104.34$       \\
+            \multicolumn{1}{l|}{}                           & Cholesky & $108.10$          & $104.94$          & $\mathbf{102.09}$
+        \end{tabular}
+        \caption{\label{tab:det_method_times} CPU time [s] comparison between different determinant calculation methods.} Source: own elaboration.
+    \end{table}
+
+The time the determinant calculation takes in the original software before any changes are applied is marked with an asterisk, and the best time found is marked in bold.
+The numbers presented are in seconds [s] and reflect the total time used by each method in the computation of the first $5,000$ events of the test file \texttt{clas\_004013.0.hipo} measured with the method and in the hardware described in Section \ref{sec:prof}.
+Various conclusions can be drawn from the table:
+
+First, the total time taken by various methods seem to be very inconsistent with the expected improvements.
+This is attributed to the fact that Java optimizes dynamically using the \textbf{Java HotSpot Performance Engine}, which by design optimizes the parts of the code that are running slowly in run-time.
+This comes with the counter-intuitive disadvantage that optimized code can actually end up running slower due to it being less of a priority to the engine, to which is added that the engine is better at accelerating simple code rather than code that is already hardcoded and optimized~\cite{meloan1999java}.
+This performance is contrasted with the results of the hardcoded determinant calculation algorithms in C, where times of $118.98$, $52.34$ and $39.56$ nanoseconds per $5\times5$ matrix are reported for the direct, Su-Chang and Cholesky implementations.
+
+Then, attention is drawn to the fact that the worst times are associated to the na\"ive Su-Chang method, but the hardcoded version presents much better results.
+This is attributed to the fact that the method requires the initialization of various Matrix objects ($3$ per step in the determinant calculation), operations that weren't considered expensive in the calculation of the method's operation count but that seem to be in the matrix package utilized in CLAS12, \textbf{JAMA}~\cite{hicklin2000jama}.
+
+Finally, the method selected is the one where the first determinant is computed via the hardcoded Cholesky decomposition-based determinant calculation, while the second is computed from Equation \eqref{eq:mhc_Pkk_definition}.
+% The results presented in Section \ref{ssec:val_matrices} were obtained using this method.

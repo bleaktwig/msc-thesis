@@ -1,0 +1,31 @@
+\subsection{Cholesky Matrix Decomposition} \label{add:cholesky_decomp}
+If $A\in\mathbb{R}^{n\times n}$ is a symmetric positive-definite matrix, there exists a lower diagonal matrix $L\in\mathbb{R}^{n\times n}$ such that:
+    \begin{equation*}
+        A = L\,L^T\,.
+    \end{equation*}
+
+Algorithmically, a na\"ive implementation for each component of $L$ is shown in algorithm \ref{alg:chol_decomp}.
+    \begin{algorithm}
+        \caption{Cholesky Decomposition}
+        \label{alg:chol_decomp}
+        \SetAlgoLined
+        \DontPrintSemicolon
+        \SetKwProg{Def}{def}{:}{}
+        \Def{\upshape cholesky\_decomposition($A$: matrix, $n$: int)}{
+            $l_{1,1} = \sqrt{a_{1,1}}$\;
+            \For{$j\gets2$ \KwTo $n$}{
+                $l_{j,1} = \frac{a_{j,1}}{l_{1,1}}$\;
+            }
+            \For{$i\gets2$ \KwTo $n$}{
+                $l_{i,i} = \sqrt{a_{i,i} - \sum\limits_{p=1}^{i-1} l_{i,p}^2}$\;
+                \uIf{$i \neq n$}{
+                    \For{$j\gets i+1$ \KwTo $n$}{
+                        $l_{j,i} = \frac{1}{l_{i,i}}\left(a_{j,i} - \sum\limits_{p=1}^{i-1} l_{i,p}\cdot l_{j,p}\right)$\;
+                    }
+                }
+            }
+        }
+    \end{algorithm}
+
+From the algorithm, it can be seen that the decomposition requires the calculation of $n$ square roots, $\frac{1}{2}n(n-1)$ divisions, $\frac{1}{6}n(n^2 - 1)$ multiplications, $\frac{1}{6}n(n^2 - 3n - 4)$ additions and $\frac{1}{2}n(n + 1)$ subtractions.
+Summed together, these add up to a total of $\frac{1}{6}n(2n^2 + 3n + 1)$ operations.

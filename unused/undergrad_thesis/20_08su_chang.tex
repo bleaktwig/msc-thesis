@@ -1,0 +1,66 @@
+\subsection{Su-Chang Formula} \label{add:suchang_formula}
+Originally proposed by Ching Tzong-Su and Feng Cheng Chang~\cite{su1996quick}, the Su-Chang formula proposed a method to compute the determinant of a square matrix $A$ by splitting it into a matrix $W\in\mathbb{R}^{(n-1)\times(n-1)}$, two column vectors $\mathbf{u}\in\mathbb{R}^{n-1}$ and $\mathbf{v}\in\mathbb{R}^{n-1}$ and a scalar $r\in\mathbb{R}$:
+    \begin{align*}
+        |A| &=
+        \begin{vmatrix}
+            W            & \mathbf{v} \\
+            \mathbf{u}^T & r
+        \end{vmatrix}\\
+        &= r\cdot\Big|W - \frac{\mathbf{v}\mathbf{u}^T}{r}\Big|\,,
+    \end{align*}
+given that $r\neq0$.
+
+A recursive algorithm can then be defined as:
+
+    \begin{algorithm}[H]
+        \caption{Su-Chang algorithm}
+        \label{alg:suchang}
+        \SetAlgoLined
+        \DontPrintSemicolon
+        \SetKwProg{Def}{def}{:}{}
+        \Def{\upshape suchang\_det($A$: matrix, $n$: int)}{
+            \uIf{\upshape $n$ == $1$}{
+                \Return $a_{00}$\;
+            }
+            $W = 
+            \begin{bmatrix}
+                a_{0,0}     & a_{0,1}     & \dots  & a_{0,(n-1)}\\
+                a_{1,0}     & a_{1,1}     & \dots  & a_{1,(n-1)}\\
+                \vdots      & \vdots      & \ddots & \vdots\\
+                a_{(n-1),0} & a_{(n-1),1} & \dots  & a_{(n-1),(n-1)}\\
+            \end{bmatrix}$\;
+            $\mathbf{v} = \left< a_{0,n}, a_{1,n}, \dots, a_{(n-1),n} \right>$\;
+            $\mathbf{u} = \left< a_{n,0}, a_{n,1}, \dots, a_{n,(n-1)} \right>$\;
+            $r = a_{n,n}$\;
+            \Return $r \cdot$ suchang\_det\big($W - \frac{\mathbf{v}\mathbf{u}^T}{r}$\big)\;
+        }
+    \end{algorithm}
+
+where $n$ is the square matrix $A$'s row and column dimension.
+
+% From this, the algorithm's complexity can be obtained:
+%
+%     \begin{align*}
+%         &\mathbf{v}\mathbf{u}^T &\rightarrow (n-i)\\
+%         &\frac{\mathbf{v}\mathbf{u}^T}{r} &\rightarrow (n-i) + 1\\
+%         &W - \frac{\mathbf{v}\mathbf{u}^T}{r} &\rightarrow (n-i)^2 + (n-i) + 1\\
+%         &\Big|W - \frac{\mathbf{v}\mathbf{u}^T}{r}\Big| &\rightarrow \sum_{i=1}^{n-2} (n-i)^2 + (n-i) + 1\\
+%         &r\cdot\Big|W - \frac{\mathbf{v}\mathbf{u}^T}{r}\Big| &\rightarrow \sum_{i=1}^{n-2} (n-i)^2 + (n-i) + 2
+%     \end{align*}
+
+If each step of the algorithm is denoted by $i$, it's easy to see that each step requires $(n-i)^2 + 1$ multiplications, $(n-i)^2$ subtractions and $1$ division.
+From this, the mathematical complexity can be calculated:
+
+    \begingroup
+    \allowdisplaybreaks
+    \begin{align}
+        \text{C}(\text{suchang\_det}(A)) &= \sum_{i=1}^{n-2} ((n-i)^2 + 1 + (n-i)^2 + 1)\nonumber\\
+        &= 2\sum_{i=1}^{n-2} ((n-i)^2 + 1)\nonumber\\
+        &= 2\sum_{i=2}^{n-1} (i^2 + 1)\nonumber\\
+        &= \frac{1}{3}(2n^3 - 3n^2 + 7n - 18)\,,\label{eq:suchang_complexity}
+    \end{align}
+    \endgroup
+    
+which is much less than the $n^3 + \mathcal{O}(n^2)$ usually required to compute a matrix's determinant through LU decomposition~\cite{banachiewicz1937berechnung}.
+
+It's worth noting that other publications extend this algorithm, but only address the problem that arises when a component of the $A$ matrix's diagonal is $0$, and don't improve further its efficiency~\cite{chang1998more,chang2014determinant}.

@@ -1,0 +1,39 @@
+\secnumbersection{STATE OF THE ART} \label{sec:state_of_the_art}
+A list of state-of-the-art methods aiming at similar objectives as the one described in this work follows:
+
+\textbf{GPGPU Tracking in the COMET Phase-I Cylindrical Drift Chamber}~\cite{yeo2019gpgpu}: The COMET Phase-I experiment is a project in Japan that is aiming at discovering neutrinoless coherent transition of a muon to an electron in the field of an aluminum nucleus.
+Just as in CLAS12, a Kalman filtering method is implemented to find the particle tracks, whose seeds are obtained by iterating through different combinations of hits using a fourth order Runge Kutta algorithm.
+A seed is initial state vector that is fed to the filter, as is described in Section \ref{ssec:framework_ekf}.
+
+This algorithm is implemented with the objective of finding the seeds with the minimum possible Distance Of Closest Approach (DOCA) to the wires in the detector, assigning only the seeds with a DOCA below a specific threshold to be investigated further with the Kalman Filter.
+Due to the fact that the algorithm iterates through many combinations of seeds and that the operations that need to be done on them are constant, it is implemented as a parallel algorithm for a General Purpose Graphical Processing Unit (GPGPU).
+
+This work is useful for the study of the event reconstruction software related to Drift Chambers (DC) because it shows that a commonly used algorithm for DC can be leveraged to a GPU, potentially reducing the computing times.
+
+\textbf{Discriminative Training of Kalman Filters}~\cite{abbeel2005discriminative}: While useful in a plethora of fields, it's undeniable that the Kalman Filter is an essential tool in robotics due to its fine precision for state-estimation problems. % Note: I could add a citation here but a good reference is literally the same one I used for the title.
+Considering this, scientists and engineers from the Department of Computer Science at the Stanford University brought up the idea of using machine learning algorithms to fine-tune the parameters in the filter and minimize the effect of perturbations or noise in the estimation of state vectors.
+
+In view of this objective, various training algorithms with different objective functions in mind were developed, such as maximizing the joint likelihood of all the data, maximizing the measurement likelihood or the prediction likelihood, among others.
+The way in which these algorithms help is in the fact that their output can help adjust the covariances of the EKF, in a way such that maximizes their predictive accuracy.
+
+\textbf{Accelerating the Kalman Filter on a GPU}~\cite{huang2011accelerating}: As is described in Section \ref{ssec:prob_the_problem}, the usual cause for high computing times for the EKF are related to the matrix operations performed by the filter.
+To counter this, the matrix computations can be leveraged to a GPU in order to accelerate the general computing time of the filter.
+
+\cite{huang2011accelerating} implemented this approach and proved that the Kalman filter time on CPU is approximately linear with the state dimension while on GPU it can be sublinear due to its ease for computing matrix inversions and multiplications.
+It's worth noting that while this publication is essential to most projects aiming to accelerate the KF, in the specific case of the CLAS12 software is not appropiate for because of the small size of the state vector being used~\cite{moravanszky2003dense}.
+
+\textbf{GPU Enhancement of the Trigger to Extend Physics Reach at the LHC}~\cite{halyo2013gpu}: The idea of using computer vision and pattern recognition on detector data is explored by scientists at CERN, and considering that problems in this field were the origin of the GPU technology~\cite{pharr2005gpu}, they propose the idea of using these methods on detector data.
+
+The main idea proposed in the publication is that of using the Hough Transform (described in Appendix \ref{add:hough_transform}) on a list of hits to find clusters following straight or curved lines.
+Although this publication makes good use of the Hough Transform, it does not provide a framework for using it, it rather is proposed as a complement to the conventional combinational track finder algorithms commonly used in High Energy Physics.
+
+\textbf{Kalman-Filter-Based Particle Tracking on Parallel Architectures at Hadron Colliders}~\cite{cerati2016kalman}: While not directly looking to reduce the total computing time of the particle tracking algorithm, this publication looks into parallelizing the algorithms used at the Large Hadron Collider (LHC) to make use of lower-power, multi-core processor units such as GPGPUs.
+
+These improvements begin with the implementation of a custom matrix library named \textbf{Matriplex} which is optimized for dealing with small matrices (no larger than $6\,\times\,6$), like the ones used for particle tracking at the LHC.
+To optimize the loading a small matrices into a GPU's memory, the library supports special vector registers for loading sets of matrices at once.
+\textbf{Matriplex} also includes a code generator for generation of optimized matrix operations supporting symmetric matrices and on-the-fly matrix transposition.
+
+To optimize memory management, \cite{cerati2016kalman} also try offloading the memory management work to a worker process or to another thread, thus grouping all memory operations together and removing redundant operations.
+
+Continuing on the work with memory management, the size of the data structures used on the algorithm are also optimized in size to fit into the fastest cache memory.
+This is done by replacing the hit data, the track data and the covariance matrices from object-oriented data structures to C-style arrays, along with the optimization of the contents of the data structures.

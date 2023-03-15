@@ -1,0 +1,12 @@
+\subsection{Architectural Technical Debt} \label{add:technical_debt}
+The term ``Technical Debt'' is attributed to a concept described as a debt that arises when ``shipping first time code''~\cite{cunningham1992wycash}.
+This is a debt in the sense that the code written works correctly but will eventually require the programmer to use time to re-write it with the added knowledge of how it will interact with the rest of the code.
+The term becomes significant when the programmer doesn't spend the time required to fix the code and continues working on the code base, causing the debt to accumulate ``interest'', so that when the issue is finally addressed it is much harder to do so due to all the code that works interconnected to this ``dirty'' code.
+
+Technical debt can be intentional or unintentional, and managed or unmanaged.
+An intentional debt refers to one incurred by a programmer who is aware of the future time it will take to fix the code, while an unintentional one to one incurred by accident due to either lack of knowledge about the ``engineering best practices'', not applying the correct abstractions, writing a simple but slow algorithm, among others.
+A managed debt refers to one where the programmer is aware of the debt and plans to fix it before creating new components dependant on the code where the debt is owed, while an unmanaged debt refers to the contrary~\cite{allman2012managing}.
+
+It is evident that an unintentional, unmanaged debt causes long term instability issues with a program, while an intentional and managed debt can be used as a tool by the programmer to provide quick fixes or releases, but taking the time later to repay the debt.
+The two other possible cases are more rare; an intentional, unmanaged debt either means that the programmer is in a hurry or he/she simply doesn't care.
+An unintentional managed debt is even more unlikely~\cite{allman2012managing} and may be simply described as a happy accident.

@@ -1,0 +1,29 @@
+% !TEX root = ../main.tex
+\subsubsection{\texttt{acc\_corr}}
+    \texttt{acc\_corr} is an executable used to count the number of thrown and simulated events from two different ROOT files.
+    Based on the program input, it separates data into appropriate 5-dimensional bins, counts entries for all available particles in the generated file, and exports them into a text file.
+    The results and plots shown in section \ref{ssec::acceptance_correction} were produced using the data from this program.
+
+    The manual entry of the program is:
+    \begin{lstlisting}
+Usage: acc_corr [-hq:n:z:p:f:g:s:d:FD]
+ * -h         : show this message and exit.
+ * -q ...     : Q2 bins.
+ * -n ...     : nu bins.
+ * -z ...     : z_h bins.
+ * -p ...     : Pt2 bins.
+ * -f ...     : phi_PQ bins.
+ * -g genfile : generated events ROOT file.
+ * -s simfile : simulated events ROOT file.
+ * -d datadir : location where sampling fraction files are located. Default is data.
+ * -F         : flag to tell program to use FMT data instead of DC data from the simulation file.
+ * -D         : flag to tell program that generated events are in degrees instead of radians.
+
+Get the 5-dimensional acceptance correction factors for Q2, nu, z_h, Pt2, and phi_PQ. For each optional argument, an array of doubles is expected. The first double will be the lower limit of the leftmost bin, the final double will be the upper limit of the rightmost bin, and all doubles between will be the separators between each bin.
+
+The output will be written to the `acc_corr.txt` file, which is formatted to make it easy to read by the `draw_plots` program:
+* First line contains five integers; the size of each of the five binnings.
+* The next five lines are each of the binning, in order Q2, nu, z_h, Pt2, and phi_PQ.
+* The following line contains one integer which is the size of the list of PIDs, followed by a line containing each of these PIDs.
+* Finally, a number of lines equal to the number of PIDs follows. Each line contains a list of the bins, ordered as `[Q2][nu][z_h][Pt2][phi_PQ]`.
+    \end{lstlisting}
