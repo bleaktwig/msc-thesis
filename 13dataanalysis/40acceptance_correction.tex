@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 \subsection{Acceptance Correction} \label{ssec::acceptance_correction}
-% What is acceptance
+% --+ What is acceptance +------------------------------------------------------
     When discussing radiation detection, it is common to describe two types of efficiency: absolute efficiency and intrinsic detection efficiency.
     The former is defined as the fraction of events emitted by the source which is actually registered by the detector, or
     \begin{equation*}
@@ -22,15 +22,15 @@
     This probability depends on the interaction cross sections of the incident radiation on the detector medium.
     The intrinsic efficiency is thus a function of the type of radiation, its energy and the detector material \cite{leo1987}.
 
-% Acceptance correction through generation + simulation.
+% --+ Acceptance correction through generation + simulation +-------------------
     Acceptance correction is the process of correcting for the total efficiency of the detector.
     To obtain an estimation of this detector efficiency, we can compare the total generated events $N_\text{thrown}$ with the accepted events in a simulation of the detector $N_\text{simul}$, such that
     \begin{equation*}
         \tilde\xi_\text{tot} = \frac{N_\text{simul}}{N_\text{thrown}}.
     \end{equation*}
     This quantity is naturally dependent on the quality of the event generator and simulation programs.
-    
-% Chosen bins.
+
+% --+ Chosen bins +-------------------------------------------------------------
     Acceptance varies along the phase space of the kinematical variables.
     Thus, to make the correction accurate, the ratio must be separated into five-dimensional bins.
     These correspond to the five studied variables, $Q^2$, $\nu$, $z_h$, $p_T^2$, and $\phi_{PQ}$.
@@ -69,12 +69,12 @@
     Finally, they were reconstructed using \texttt{coatjava}, the standard tool for CLAS12 event offline reconstruction \cite{ziegler2020}.
     A description of the last can be read in section \ref{sssec::offlinereconstruction}.
 
-% Acceptance correction results.
+% --+ Acceptance correction results +-------------------------------------------
     The plots to the right of figure \ref{fig::acc_corr} show the number of generated events in red and the number of simulated events that were successfully reconstructed out of that set in blue.
     Each one is presented in integrated kinematical region for the other variables.
     As described before, the acceptance correction factor comes from the quotient of the number of simulated events, $N_\text{simul}$ versus the number of thrown events, $N_\text{thrown}$.
-    
-% Plots.
+
+% --+ Plots +-------------------------------------------------------------------
     \begin{figure}[hbtp]
         % Q2.
         \begin{subfigure}{.5\textwidth}
@@ -90,7 +90,7 @@
             \label{fig::acc_corr_q2}
         \end{subfigure}
 
-        % nu.        
+        % nu.
         \begin{subfigure}{.5\textwidth}
             \centering
             \includegraphics[width=\linewidth]{13dataanalysis/img/40_accbins_nu.pdf}

@@ -1,12 +1,12 @@
 % !TEX root = ../main.tex
 \subsection{Deep Inelastic Scattering} \label{sec::dis}
-% Basic description
+% --+ Basic description +-------------------------------------------------------
     In its simplest description, Deep Inelastic Scattering (DIS) is the scattering of an electron off a quark inside a nucleon.
     Figure \ref{fig::dis_diagram} shows the Feynman diagram of DIS.
     The four-momentum of the nucleon is $P$, that of the quark is $p$, and the initial and final four-momenta of the electron are $k$ and $k'$, respectively.
     If $k'$ is measured, then the momentum transferred to the hadron system by the virtual photon is $q = k - k'$.
     $q$ is a spacelike vector, conventionally denoted as $q^2 = -Q^2$.
-    
+
     \begin{figure}[h!]
         \centering\frame{
         \includegraphics[width=0.6\textwidth]{10physicsmotivation/img/10dis_diagram.pdf}}
@@ -19,7 +19,7 @@
     This transforms the knocked-out quark into a jet of hadrons.
     This jet propagates in the direction of the electron's transferred momentum.
 
-% Approximating the cross section
+% --+ Approximating the cross section +-----------------------------------------
     To approximate the cross section of the electron-nucleon scattering, we'll work on the center of mass reference frame.
     Here, the electron and nucleon are propagating towards each other with enough energy to let us ignore the mass of the latter.
     Due to this, the nucleon has almost lightlike momentum along the collision axis.
@@ -32,7 +32,7 @@
 
     In leading order approximation, we can also ignore the gluon emission and exchange during the collision.
     Then, the cross section of the electron-nucleon scattering is equal to that of the electron-quark's for a given $\xi$, multiplied by the probability that the nucleon contains a quark with $\xi$ longitudinal momentum fraction, integrated over $\xi$.
-    
+
     This calculation has the problem that the probability that the nucleon contains a quark with a particular momentum can't be calculated in perturbative QCD.
     It depends on the soft processes that define the structure of the nucleon as a bound state of quarks and gluons.
     We must therefore consider this probability an unknown function to be measured in the experiment.
@@ -52,8 +52,8 @@
     where $X$ indicates the final hadronic state.
     One should remember that this equation is not an exact QCD prediction, but is the first-term expansion of $\alpha_s$.
     This approximation is the parton model \cite{halzen1991}.
-    
-% The parton model.
+
+% --+ The parton model +--------------------------------------------------------
     \begin{figure}[b!] % NOTE. Figure out source.
         \centering\frame{
         \includegraphics[width=0.8\textwidth]{10physicsmotivation/img/10q2_dependence_u.png}}
@@ -74,7 +74,7 @@
         x \equiv \frac{Q^2}{2P\cdot q}, \hspace{36pt} y \equiv \frac{2 P\cdot q}{s}.
     \end{equation*}
     In the nucleon's rest frame, $y = q^0/k^0$, and thus it is the energy transferred to the hadron by the incoming electron.
-    
+
     Due to gluon radiation, the PDFs in equation \eqref{eq::parton_model_cross_section} have a weak dependence on $Q^2$.
     This leads to Bjorken scaling violation \cite{halzen1991}.
     When the structure functions are known for certain values of $Q^2$, they can be evolved to other values using the Dokshitser-Gribox-Lipatov-Altarelli-Parisi (DGLAP) equations \cite{dokshitzer1991}.
@@ -86,14 +86,14 @@
     At low $Q^2$, the wavelength of the virtual photon is too large to probe the partons, thus probing the proton as a whole.
     The validity range for the QCD-extended parton model is not precisely known, but is assumed to be valid for $Q^2 > 1 \text{ GeV}^2$, corresponding to a spatial resolution of about $0.2$ fm.
 
-% Strong Coupling Constant
+% --+ Strong Coupling Constant +------------------------------------------------
     \subsubsection{Strong Coupling Constant $\alpha_s$}
         Measuring the experimental value of $\alpha_s$ is important for perturbative QCD calculations.
         To do this, one should determine the overall scale of renormalisation.
         This is usually selected to be the mass of the neutral Bose particle $Z^0$, which is $91.19$ GeV.
         Additionally, one should fix the scheme of renormalisation, which defines the coupling constant in a given scale.
         The experimental results for $\alpha_s$ can be seen on figure
-        
+
         \begin{figure}[b!] % NOTE. Figure out source.
             \centering\frame{
             \includegraphics[width=0.8\textwidth]{10physicsmotivation/img/11strong_coupling_constant_q.png}}

@@ -10,6 +10,7 @@
             DIS cuts, which limit the region of analysis to that of DIS.
     \end{itemize}
 
+% --+ General cuts +------------------------------------------------------------
     Only two cuts are considered ``general'' for this analysis.
     The first one simply filters out particles with PID $0$ or $45$.
     These PIDs are used in CLAS12 reconstruction to denote particles whose PID couldn't be successfully identified.
@@ -26,6 +27,7 @@
         \label{fig::q2vsnu}
     \end{figure}
 
+% --+ Geometry cuts +-----------------------------------------------------------
     The geometry cuts also include two cuts, both working to constrain the vertex of the reconstructed particle to the beamline.
     The first one secures us that the vertex comes from the beamline, and is given by
     \begin{equation*}
@@ -39,6 +41,7 @@
     where $v_z$ is the $z$ coordinate of the vertex position.
     This cut is defined from the shape of the RG-F target.
 
+% --+ DIS cuts +----------------------------------------------------------------
     Finally, the DIS cuts are cuts made on the scattered electron to limit the phase space to that of DIS.
     All particles in an event are ignored if the trigger electron doesn't pass these cuts.
 

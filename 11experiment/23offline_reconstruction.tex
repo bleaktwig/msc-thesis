@@ -41,7 +41,7 @@
     \end{figure}
 
 \paragraph{Tracking}
-    % INTRODUCTION.
+% --+ Introduction +------------------------------------------------------------
     Charged particle tracking is the key element of the CLAS12 event reconstruction.
     It is separated into the reconstruction of tracks in the central tracker system and the forward tracking system.
 
@@ -52,7 +52,7 @@
     In the central region, the $5 \text{T}$ solenoidal magnetic field bends charged tracks into helices.
     In it, the central tracking system is comprised of the Silicon Vertex Tracker (SVT) and the Barrel MicroMegas Tracker (BMT), which together form the Central Vertex Tracker (CVT).
 
-    % RECONSTRUCTION.
+% --+ Reconstruction +----------------------------------------------------------
     \begin{wrapfigure}{l}{0.50\textwidth}
         \centering\frame{
         \includegraphics[width=\linewidth]{11experiment/img/23cvt_pres.png}}
@@ -78,9 +78,9 @@
     Pattern recognition involves the identification of clusters of hits and the determination of the spatial coordinates and corresponding uncertainties for the hits and clusters.
     At the pattern recognition stage, hits that are consistent with belonging to a trajectory (such as a particle track) are identified.
     This set of hits is then fit to the expected trajectory with their uncertainties, incorporating the knowledge of the detector material and the detailed magnetic field map.
-    An illustration of a particle going through the DC can be seen in Figure \ref{fig::ced_event}. 
+    An illustration of a particle going through the DC can be seen in Figure \ref{fig::ced_event}.
 
-    % PERFORMANCE.
+% --+ Performance +-------------------------------------------------------------
     The momentum resolutions in the central and forward trackers as a function of momentum are shown in Figures \ref{fig::cvt_pres} and \ref{fig::dc_pres} respectively.
     The distributions are fit with a function of the form $\sqrt{a + bx^2 + c/(1 + d/x^2)}$.
     In both distributions, the worsening of the resolution at low momentum is due to multiple scattering effects.
@@ -104,7 +104,7 @@
     These resolutions are obtained from a Monte Carlo sample that does not include out-of-time backgrounds or misalignments of the tracking volumes \cite{ziegler2020}.
 
 \paragraph{Particle Identification}
-    % INTRODUCTION.
+% --+ Introduction +------------------------------------------------------------
     The Particle Identification (PID) numbering scheme presented here was introduced by the Particle Data Group (PDG) in 1988 \cite{yost1988}.
     It is intended to aid in interfacing between the various generators, simulators, and analysis packages used in particle physics.
     The system was then revised and adapted in 1998 to allow the systematic inclusion of undiscovered and hypothetical particles \cite{particle1998}.
@@ -115,13 +115,13 @@
     The service is run twice with identical algorithms, once using hit-based tracks, and later with time-based tracks.
     As mentioned before, the results of the hit-based EB are used to initialise time-based tracking.
 
-    % FORMING PARTICLES.
+% --+ Forming particles +-------------------------------------------------------
     In defining a reconstructed charged particle in CLAS12, the EB assumes that an assignment will be made for each reconstructed track in both the FD and the CD.
     The associated calorimeter, scintillator, and Cherenkov detector responses are then assigned to that particle based on geometric coincidences between the detector responses and the track, with matching criteria corresponding to the resolution of a given detector.
     The geometric matching is based on the DOCA between the track and the response.
     A similar procedure is followed for creating neutral particles, except the seeding is presently with unassociated ECAL for the FD and CND for the CD responses instead of tracks.
 
-    % EVENT START TIME.
+% --+ Event start time +--------------------------------------------------------
     A start time is assigned to the entire event and serves as the most precise reference time on which all time-based particle identification relies.
     This is based on the optimal charged particle candidate in the FD with an associated FTOF timing response.
     The EB assigns the start time based on the highest energy electron in the ECAL.
@@ -154,13 +154,13 @@
         t' = t_v - \Delta t^\prime_{RF}.
     \end{equation*}
 
-    % PARTICLE IDENTIFICATION.
+% --+ Particle identification +-------------------------------------------------
     The next stage is a basic particle identification scheme.
     This is intended to be loose to accommodate a variety of physics analyses, while persisting the necessary information to easily tighten and improve the criteria later.
     For charged particles, first calorimetry and Cherenkov information is used to positively identify $e-/e+$ candidates in the FD.
     If the measured energy deposition is consistent with the expected sampling fraction of the ECAL, and the photoelectron response from the HTCC is consistent with $\beta \sim 1$, the particle is assigned as an $e-$ or $e+$ depending on sign of the curvature of the track from forward tracking with the DCs through the torus magnetic field.
 
-    The remaining charged particles are then assumed to be hadrons and assigned an identity based solely on timing information, where the $p,K,\pi$ candidate giving the smallest time residual is assigned. 
+    The remaining charged particles are then assumed to be hadrons and assigned an identity based solely on timing information, where the $p,K,\pi$ candidate giving the smallest time residual is assigned.
     This time residual is computed from the difference between the measured particle flight time and that computed for a given mass hypothesis.
 
     \begin{wrapfigure}{r}{0.49\textwidth}
@@ -188,7 +188,7 @@
         \label{fig::n_gamma}
     \end{wrapfigure}
 
-    % PARTICLE IDENTIFICATION PERFORMANCE.
+% --+ Particle identification performance +-------------------------------------
     A particle identification quality factor in the form of a signed-$\chi^2$, or pull, is assigned based on the individual contributing detector subsystem responses and their resolutions.
     For $e-/e+$ identification the resolution-normalised distance from the expected ECAL sampling fraction is used, while for charged hadrons the resolution normalised time-difference is used.
     The resulting information is organised into standardised output bank structures for physics analysis.

@@ -1,18 +1,18 @@
 % !TEX root = ../main.tex
 \subsubsection{Slow Control System} \label{sssec::slowcontrolsystem}
-    % What is slow controls
+% --+ What is slow control +----------------------------------------------------
     A modern experimental physics experiment usually involves many of moving parts and complex components that need constant monitoring and calibration.
     This is in addition to the constant data taking necessary.
     The process of automating this task is made via slow controls systems.
     These systems usually integrate a whole detector and experiment into one complex interface, allowing for easy access and maintenance.
 
-    % What is EPICS
+% --+ What is EPICS +-----------------------------------------------------------
     The standard framework to do this in the context of HEP is the Experimental Physics and Industrial Control System (EPICS).
     EPICS was developed in the Los Alamos National laboratory (ANL) to provide data acquisition and control to this type of experiments.
     The framework provides a distributed process control that includes software communication, functional subsystems for data acquisition, supervisory control, closed loop control, channel archiving, and alarm management \cite{dalesio1991}.
     Like many HEP experiments, CLAS12's slow control system is based on EPICS \cite{boyarinov2020}.
 
-    % EPICS installation on raspi
+% --+ EPICS installation on raspi +---------------------------------------------
     To allow the integration of the RG-E target on the CLAS12 slow controls system, an EPICS support module and Input / Output Controller (IOC) was developed by the author.
     This module wasn't made from scratch, as the motor developers made a generic support module for Galil motors \cite{farnswort2009}.
     This system proved to support all that was necessary for the movement of the RG-E target system, only requiring the removal of unnecessary features and the addition of database variables relevant to the experiment.
@@ -65,7 +65,7 @@
     \paragraph{Analog Output (\texttt{ao})}
         The normal use for this record type is to output values to digital-analog converters.
         The desired output can be controlled by either an operator or a state program, or it can be fetched from another record \cite{stanley1998}.
-    
+
         \subparagraph{\texttt{DMC01:A\_go\_home}.}
             Command to move the band to the home position, as defined in \texttt{DMC01:A\_home}.
 
@@ -87,12 +87,12 @@
             Calculation that checks if the band position is equal to the home position in \texttt{DMC01:A\_home}, within the tolerance margin defined by the tolerance.
             If it is, it returns 8.
             Otherwise, it returns 0.
- 
+
         \subparagraph{\texttt{DMC01:A\_moving}.}
             Calculation that checks if the target is moving by checking the motor PV \texttt{DMC01:A.MOVN}.
             If it is, it returns 9.
             Otherwise, it returns 0.
-        
+
         \subparagraph{\texttt{DMC01:A\_at\_lowlimit}.}
             Calculation that checks if the band position is lesser than the low limit \texttt{DMC01:A\_lowlimit}.
             If it is, it returns 10.
@@ -117,7 +117,7 @@
         The normal use for the multi-bit binary input record is to read multiple bit inputs from hardware.
         The binary value represents a state from a range of up to 16 states.
         The multi-bit input record interfaces with devices that use more than one bit \cite{stanley1998}.
-    
+
         \subparagraph{\texttt{DMC01:A\_tgttype}.}
             This \texttt{mbbi} encodes the output of \texttt{DMC01:A\_sel\_tgttype} to a string and alarm level.
             The encoding is specified in table \ref{tab::tgttypespv}.
@@ -149,7 +149,7 @@
     \end{table}
 
     The RG-E IOC, along with the complete set of EPICS support modules necessary to run it, can be found at
-    
+
     \begin{center}
         \hyperlink{https://github.com/bleaktwig/rge-epics-support}{\texttt{https://github.com/bleaktwig/rge-epics-support}}.
     \end{center}
@@ -190,7 +190,7 @@
         These screens are part of the motor EPICS support module, and are left in case any debugging is necessary.
         These screens include a screen that allows for manual motor movement, a motor setup screen, a direct Command Line Interface (CLI) with the motor, and an amplifier configuration screen.
         All of these screens were developed by the Galil EPICS team \cite{farnswort2009}.
-        
+
         For the user's comfort, the GUI was coloured using the Gruvbox colour palette.
         This palette is designed to keep colours easily distinguishable, contrast enough, while being pleasing for the eyes.
         Gruvbox can be found on GitHub at
@@ -205,7 +205,7 @@
         For each experiment with a non-trivial target done in Hall B, the target system requires its own list of alarms.
 
         For the RG-E target, the set of alarms implemented and their related PVs are listed in table \ref{tab::alarmspv}.
-        
+
         \begin{table}[b!]
             \caption{Alarm names, triggers, and severities for the RG-E target slow control system.}
 

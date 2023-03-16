@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 \subsection{Forwards MicroMegas Tracker} \label{ssec::forwardsmicromegastracker}
-% MicroMegas Detectors.
+% --+ Micromegas +--------------------------------------------------------------
     \begin{figure}[b!]
         \centering\frame{
         \includegraphics[width=\textwidth]{12fmtalign/img/10mm_principle.pdf}}
@@ -22,11 +22,11 @@
     As the electron crosses the mesh (3), it enters an intense electric field ($\text{E}_2$), causing an avalanche effect (4).
     This creates a significant signal at the readout strip (5), which can be then stored for reconstruction \cite{giomataris1996}.
 
-% MicroMegas Detector in CLAS12.
+% --+ Micromegas in CLAS12 +----------------------------------------------------
     Inside the CLAS12 detector, a wide array of tracking detectors are used to figure out the positions and momenta of a particle at various points in its trajectory.
     The closer these detectors are to the source of a particle, the more precision is obtained about the position and momentum at the vertex of the interaction, i.e. the point where the particle was produced.
     In an attempt to maximise this precision, the MicroMegas Vertex Tracker (MVT) in CLAS12 is placed as close to the target as possible, as can be seen in figure \ref{fig::mvt}.
-    
+
     \begin{figure}[b!]
         \centering\frame{
         \includegraphics[scale=0.5]{12fmtalign/img/10mvt.png}}
@@ -38,15 +38,15 @@
     The Barrel MicroMegas Tracker (BMT), a barrel tracker made of 18 cylindrical detectors arranged in 6 layers.
     This detector, in combination with the Silicon Vertex Tracker (SVT), covers the region from $35$ to $125\degree$ and greatly improves the polar angle resolution \cite{acker2020mvt}.
 
-% Forwards MicroMegas Tracker.
+% --+ FMT +---------------------------------------------------------------------
     Then, the Forwards MicroMegas Tracker (FMT), which is made of six circular, flat detectors covering angles from $6$ to $29\degree$.
     In theory, it should improve the vertex resolution by a factor of $3$ to $10$ when compared to the Drift Chambers (DC) \cite{aune2009}.
     While the original design of the FMT included six layers, the current implemented detector has only three layers installed.
     This is due to technical difficulties and concerns regarding its Lorentz angle \cite{konczykowski2010}.
-    
+
     Each of the three FMT layers has $1024$ readout strips, which follow a peculiar distribution, as can be seen in the image to the right of figure \ref{fig::fmt_geometry}.
     In addition, each layer's orientation differs by $60\degree$ to provide an accurate measurement in the xy-plane, as is shown in the image at the centre of the same figure \cite{acker2020mvt}.
-    
+
     \begin{figure}[t]
         \centering\frame{
         \includegraphics[width=\textwidth]{12fmtalign/img/10fmt_geometry.pdf}}
