@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 
-% --- PACKAGES --------------------------------------------- %
+% --+ Packages +----------------------------------------------------------------
 \usepackage[a4paper,top=2.5cm,bottom=3cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 % \usepackage[document]{ragged2e} % Ragged left text.
 \usepackage[english]{babel}
@@ -19,7 +19,7 @@
 \usepackage{wrapfig}    % Wrap text around figure.
 \usepackage[font=small,labelfont=bf]{caption}
 
-% --- SETUP 1 ---------------------------------------------- %
+% --+ Setup 1 +-----------------------------------------------------------------
 % \hypersetup{colorlinks = false}
 
 \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -28,13 +28,13 @@
 
 % TODO. Add sources *for all figures*, even if they correspond to me.
 
-% --- DOCUMENT --------------------------------------------- %
+% --+ Document +----------------------------------------------------------------
 \begin{document}
-    % --- SETUP 2 ------------------------------------------ %
+    % --+ Setup 2 +-------------------------------------------------------------
     \pagenumbering{roman}
     \bibliographystyle{apalike}
 
-    % --- DOCUMENT ----------------------------------------- %
+    % --+ Document +------------------------------------------------------------
     \input{00firstpages/00index}
 
     \pagenumbering{arabic}
@@ -47,6 +47,6 @@
 
     % \newpage~\newpage
 
-    % --- BIBLIOGRAPHY ------------------------------------- %
+    % --+ Bibliography +--------------------------------------------------------
     \bibliography{30references}{}
 \end{document}
