@@ -136,20 +136,29 @@
     The particle in the FT is assumed to be an electron, whereas all hadron mass hypotheses are considered for the FD tracks.
     The combination with the best time coincidence is chosen.
     The timing of the resulting FT electron is then used to assign the start time.
-    A correction to the start time is then performed using the RF signal from the accelerator, combined with the reconstructed event vertex position.
+    A correction to the start time is then performed using the Radio Frequency (RF) signal from the accelerator, combined with the reconstructed event vertex position.
     This effectively aligns the event start time to the best measure of the beam-bunch arrival time at the target.
     The uncorrected, measured vertex time of a particle, $t_v$, can be written as
     \begin{equation*}
         t_v = t - \frac{P_L}{\beta c},
     \end{equation*}
     where $t$ is the measured time response (e.g. in a scintillator), $P_L$ is the path length between the primary interaction vertex and that response, and $\beta c$ is the speed of the particle.
-    We can then construct a correction to align this time with the closest beam bunch time at the target, using
-    \begin{align*}
-        \Delta t_{RF} &= t_v + \frac{z_0 - z_v}{c} - t_{RF} - \frac{N}{2f_{FR}}, \\
-        \Delta t^\prime_{RF} &= \text{mod}(\Delta t_{RF}, 1/f_{RF}) - \frac{1}{2f_{RF}},
-    \end{align*} % TODO. Not all variables are explained? Try to see what they are from reconstruction.
-    where $f_{RF}$ is the frequency of the accelerator, either $249.5 \text{MHz}$ or $499 \text{MHz}$, corresponding to $2.004 \text{ns}$ or $4.008 \text{ns}$ bunch spacings, $t_{RF}$ is the measured, calibrated RF time for the event, and $z_0$ is the target center and enters due to its use as a position calibration reference.
-    The resulting RF- and vertex-corrected start time for the event is then given as
+
+    Then, we find the time difference $\Delta t_{RF}$ between this $t_v$ and the closest beam bunch using
+    \begin{equation*}
+        \Delta t_{RF} = t_v + \frac{z_0 - z_v}{c} - t_{RF} - \frac{N}{2f_{RF}},
+    \end{equation*}
+    $z_v$ is the event vertex position's $z$-coordinate, while $z_0$ is the target center, which is used as a position calibration reference, and $c$ is the speed of light in vacuum.
+    $t_{RF}$ and $f_{RF}$ are the measured and calibrated RF time and frequency of the accelerator.
+    They can be either $2.004 \text{ns}$ and $249.5 \text{MHz}$, or $4.008 \text{ns}$ and $499 \text{MHz}$, respectively.
+    When doing reconstruction, they are read from the Run Conditions Database (RCDB).
+
+    This time can then be corrected to the closest beam bunch
+    \begin{equation*}
+        \Delta t^\prime_{RF} = \text{mod}\left(\Delta t_{RF}, \frac{1}{f_{RF}}\right) - \frac{1}{2f_{RF}},
+    \end{equation*}
+    which allows us to do RF-correction to $t_v$.
+    We now have a final RF- and vertex-corrected start time for the event, defined as
     \begin{equation*}
         t' = t_v - \Delta t^\prime_{RF}.
     \end{equation*}
@@ -176,7 +185,7 @@
     Identification of neutral particles assumes only neutrons and photons, differentiated only by timing and topological information.
     For the FD this is based on the ECAL, while for the CD it is based on the CND, and their reconstructed cluster positions are used to compute the particle travel path from the event vertex, assuming a straight-line trajectory.
     If the resulting measured $\beta$ is close to $1$, the particle is assigned as a photon, otherwise it is assigned as a neutron.
-    For photons in the FD, the momentum is determined from its deposited energy and ECAL sampling fraction \cite{asryan2020}. % TODO. READ UP ON THIS FOR ANALYSIS WORK.
+    For photons in the FD, the momentum is determined from its deposited energy and ECAL sampling fraction \cite{asryan2020}.
     For neutrons, the momentum is assigned based on the measured $\beta$, assuming the neutron mass.
     Figure \ref{fig::n_gamma} shows an example of $\beta$ reconstructed for neutrals in the FD showing separation of photons and neutrons.
 
