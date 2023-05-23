@@ -31,13 +31,13 @@
 % --+ Geometry issue +----------------------------------------------------------
     To measure the improvement in vertex resolution, we'll compare the vertex position of tracks that passed only through DC reconstruction and tracks that passed through both DC and FMT reconstruction.
     For simplicity, we'll refer to the former as DC tracks and the latter as FMT tracks.
-    Remembering that the $z$ axis is concentric with the beamline, figure \ref{fig::dc_vs_fmt_vz} shows the vertex $z$ position of DC tracks versus that of FMT tracks.
+    Remembering that the $z$ axis is concentric with the beamline, figure \ref{fig::dc_vs_fmt_vz_011983} shows the vertex $z$ position of DC tracks versus that of FMT tracks.
 
     \begin{figure}[h!]
         \centering\frame{
         \includegraphics[width=\textwidth]{12fmtalign/img/40dc_vs_fmt.png}}
         \caption[DC vs FMT $z$ without geometric correction]{DC vs FMT vertex $z$ for electrons without any geometric correction. DC tracks are shown in green while FMT tracks are shown in blue. Note that the dark cyan colour comes from the overlap.}
-        \label{fig::dc_vs_fmt_vz}
+        \label{fig::dc_vs_fmt_vz_011983}
     \end{figure}
 
     To understand the plot in the figure, it's worthwhile to take a minute to look at the RG-F target.
@@ -47,7 +47,7 @@
     All windows are made of aluminium and have a thickness of $15$ micrometers. % NOTE. I should add a citation here.
     A detailed drawing of the target can be seen in addendum 1.
 
-    From figure \ref{fig::dc_vs_fmt_vz}, it is immediately obvious that the FMT detector only recognises the upstream windows, completely missing the downstream one.
+    From figure \ref{fig::dc_vs_fmt_vz_011983}, it is immediately obvious that the FMT detector only recognises the upstream windows, completely missing the downstream one.
     This is purely a geometric issue:
     the downstream window is outside of the FMT active detection area.
     The effect is easy to see in figure \ref{fig::vz_vs_theta}, where the vertex $z$ coordinate is plotted against the $\theta$ angle.
@@ -78,10 +78,10 @@
         \centering\frame{
         \includegraphics[scale=0.24]{12fmtalign/img/40dc_vs_fmt_sector1.png}}
         \caption[DC vs FMT $z$ with geometry correction]{DC vs FMT vertex $z$ for electrons with a geometric correction. DC tracks are shown in green while FMT tracks are shown in blue. Data from only one CLAS12 sector was used to obtain this plot.}
-        \label{fig::dc_vs_fmt_vz_corrected}
+        \label{fig::dc_vs_fmt_vz_011983_corrected}
     \end{figure}
 
-    The resolution plot contrasting DC and FMT tracks using all the cuts referred up to this point can be seen in figure \ref{fig::dc_vs_fmt_vz_corrected}.
+    The resolution plot contrasting DC and FMT tracks using all the cuts referred up to this point can be seen in figure \ref{fig::dc_vs_fmt_vz_011983_corrected}.
     To measure both DC and FMT resolution, we'll use two Gaussian curves compounded with a quadratic curve to account for the background.
     The fit is defined as
     \begin{equation*}
