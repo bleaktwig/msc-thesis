@@ -24,7 +24,7 @@
         % Cause of the problem.
         By simple visual inspection, two peaks can be clearly seen between $z = -36$ cm and $z = -30$ cm in figure \ref{fig::dc_vs_fmt_vz_011983}.
         These peaks are merged in figure \ref{fig::vz_012933}.
-        As discussed in section \ref{sec::fmtalignmentandreconstruction}, this issue comes from a lack of correction for FMT misalignemnts.
+        As discussed in section \ref{sec::fmtalignmentandreconstruction}, this issue comes from a lack of correction for FMT misalignments.
 
         % Solution.
         The simplest solution is to use Spring data.
@@ -41,6 +41,7 @@
 
 % --+ Geometry Effect +---------------------------------------------------------
     \subsubsection{Geometry Effect}
+        % The effect has already been presented and discussed before, so we're brief.
         This problem is already discussed in detail in section \ref{ssec::validationandresults}.
         As a quick reminder, FMT sits at $z \approx 26$ cm, and it naturally performs poorly for targets to close to it.
         We can measure the strength of this effect by applying the geometry cut given by equation \eqref{eq::fmt_geometry_cut} to both DC and FMT tracks.
@@ -56,7 +57,13 @@
 
 % --+ Reconstruction Effect +---------------------------------------------------
     \subsubsection{Reconstruction Effect}
-        % TODO.
+        Even after correcting for both the alignment and geometry issues, FMT still has a lower efficiency when compared to that found during alignment (compare figures \ref{fig::vz_012016_geomcut} with \ref{fig::dc_vs_fmt_vz_011983_corrected}).
+        After some study, the effect was found not to be correlated to run number, beam energy, or beam luminosity.
+        Based on this, we can discard it being caused by hardware issues or run conditions.
+
+        Based on this, the logical conclusion is that the effect comes from a general issue in FMT offline reconstruction.
+        Finding and fixing this would be a larger project than what's contemplated in the scope of this thesis, so it's left as future work.
+        For the purposes of this analysis, we'll contempt ourselves with using a large number of events, minimising statistic deficiencies.
 
 % --+ Efficiency Study. +-------------------------------------------------------
     \subsubsection{Efficiency Study}
