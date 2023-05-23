@@ -6,27 +6,29 @@
 
     The manual entry of the program is:
     \begin{lstlisting}
-Usage: extract_sf [-hfn:w:d:] infile
+Usage: extract_sf [-hn:w:d:] infile
  * -h         : show this message and exit.
  * -n nevents : number of events
- * -w workdir : location where output root files are to be stored. Default is root_io.
- * -d datadir : location where sampling fraction files are located. Default is data.
+ * -w workdir : location where output root files are to be stored. Default
+                is root_io.
+ * -d datadir : location where sampling fraction files are stored. Default
+                is data.
  * infile     : input ROOT file. Expected file format: <text>run_no.root.
 
-Obtain the EC sampling fraction from an input file. An alternative to using this program is filling the output file (by default stored in the `data` directory) with the data obtained from [CCDB](https://clasweb.jlab.org/cgi-bin/ccdb/versions?table=/calibration/eb/electron_sf). The function used to fit the data is
+Obtain the EC sampling fraction from an input file. An alternative to using this program is to fill the output file corresponding to the studied run (by default stored in the `data` directory) with the data obtained from [CCDB](https://clasweb.jlab.org/cgi-bin/ccdb/versions?table=/calibration/eb/electron_sf). The function used to fit the data is
 
 [0]*Gaus(x,[1],[2]) + [3]*x*x + [4]*x + [5]
 
-where [0] is the amplitude of the Gaussian, [1] and [2] its mean and sigma, and [3], [4], and [5] the p0, p1, and p2 used to fit the background.
+where *[0]* is the amplitude of the Gaussian, *[1]* and *[2]* its mean and sigma, and *[3]*, *[4]*, and *[5]* the *p0*, *p1*, and *p2* used to fit the background.
 
 The output of the program is the `sf_params_<run_no>.txt`, which contains a table with the sampling fractions and their errors. The table is formatted like the one at CCDB, as in
 
-         | sf0    sf1    sf2    sf3    sfs1   sfs2   sfs3   sfs4
----------+--------------------------------------------------------
-sector 1 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
-sector 2 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
-sector 3 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
-sector 4 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
-sector 5 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
-sector 6 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
+         | sf0     sf1     sf2     sf3     sfs1    sfs2    sfs3    sfs4
+---------+-----------------------------------------------------------------
+sector 1 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
+sector 2 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
+sector 3 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
+sector 4 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
+sector 5 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
+sector 6 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
     \end{lstlisting}

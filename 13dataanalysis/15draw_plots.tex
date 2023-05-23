@@ -7,12 +7,19 @@
 
     The executable's manual entry is:
     \begin{lstlisting}
-Usage: draw_plots [-hn:a:w:] infile
+Usage: draw_plots [-hp:cn:o:a:w:] infile
  * -h          : show this message and exit.
+ * -p pid      : skip particle selection and draw plots for pid.
+ * -c          : apply all cuts (general, geometry, and DIS) instead of
+                 asking which ones to apply while running.
  * -n nentries : number of entries to process.
- * -a accfile  : apply acceptance correction using acc_file.
- * -w workdir  : location where output root files are to be stored. Default is root_io.
- * infile      : input file produced by make_ntuples.
+ * -o outfile  : output file name. Default is plots_<run_no>.root.
+ * -a accfile  : apply acceptance correction using acc_filename.
+ * -A          : get acceptance correction plots without applying acceptance
+                 correction. Requires -a to be set.
+ * -w workdir  : location where output root files are to be stored. Default
+                 is root_io.
+ * infile      : input file produced by make_ntuples.\n
 
-Draw plots from a ROOT file built from `make_ntuples`. File should be named <text>run_no.root. This tool is built for those who don't enjoy using root too much, and should be able to perform most basic tasks needed in SIDIS analysis.
+Draw plots from a ROOT file built from `make_ntuples`. File should be named `<text>run_no.root`. This tool is built for those who don't enjoy using root too much, and should be able to get most basic plots needed in SIDIS analysis.
     \end{lstlisting}
