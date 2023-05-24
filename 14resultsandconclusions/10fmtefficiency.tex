@@ -48,6 +48,8 @@
         Figure \ref{fig::vz_012016_geomcut} the effect of the cut when applied on figure \ref{fig::vz_012016}.
         Its effect on a $v_z$ vs $\theta$ plot can be seen on figure \ref{fig::vz_vs_theta}.
 
+        Based on this cut and the FMT $z$ position, subsequent plots will be constrained to the range $-30 \text{[cm]} < v_z < 20 \text{[cm]}$.
+
         \begin{figure}[h!]
             \centering\frame{
             \includegraphics[width=\textwidth]{14resultsandconclusions/img/10vz_012016_geomcut.pdf}}
@@ -67,6 +69,7 @@
 
 % --+ Efficiency Study. +-------------------------------------------------------
     \subsubsection{Efficiency Study}
+    % --+ Integrated. +---------------------------------------------------------
         With all these effects accounted for, we can proceed to study the efficiency in detail.
         First, if we define FMT efficiency as the percentage of DC tracks that get accepted by FMT, we get table \ref{tab::fmt_efficiency_study} for runs 12933 (Summer 2020) and 12016 (Spring 2020).
 
@@ -87,6 +90,14 @@
         By switching from Summer to Spring data, we see a $\sim32\%$ increase in trigger electrons detected, and a $\sim36\%$ in all particles.
         Then, by applying the geometry cut in $v_z$ and $\theta$, $\sim64\%$ more trigger electrons are detected (for a $\sim184\%$ total increase), and $\sim126\%$ more particles in general are detected (for a $\sim207\%$ total increase).
 
-        Now, we'll study the effect of these corrections on the FMT efficiency in terms of vertex position $v_z$, the angles $\theta$ and $\phi$, and the momentum $p$.
-        Due to the geometry cut, we expect a strong dependency on $v_z$ and $\theta$, and at most a weka one on $\phi$ and $p$.
-        % TODO. Add FMT efficiency study w/ and w/out geometry cut.
+    % --+ Separated. +----------------------------------------------------------
+        We can then check how the efficiency changes as result of the corrections.
+        Due to the geometric cut, we expect a strong dependency on $v_z$ and $\theta$, and at most a weak one on $\phi$ and $p$.
+        This is what we see in data, as is shown in figure \ref{fig::fmt_efficiencies}.
+
+        \begin{figure}[t!]
+            \centering\frame{
+            \includegraphics[width=\textwidth]{14resultsandconclusions/img/10efficiencies.pdf}}
+            \caption[$v_z$, $\theta$, $\phi$, and $p$ efficiencies for FMT tracks, run 12016]{$v_z$, $\theta$, $\phi$, and $p$ efficiencies for FMT tracks. FMT Efficiency is defined as the percentage of DC tracks that get accepted by FMT.}
+            \label{fig::fmt_efficiencies}
+        \end{figure}
