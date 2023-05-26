@@ -31,20 +31,23 @@
 % --+ Document +----------------------------------------------------------------
 \begin{document}
     % --+ Setup 2 +-------------------------------------------------------------
-    \pagenumbering{roman}
     \bibliographystyle{apalike}
+    \pagenumbering{roman}
 
-    % --+ Document +------------------------------------------------------------
-    \input{00firstpages/00index}
+    % --+ First Pages +---------------------------------------------------------
+    \graphicspath{{00first_pages/img}}
+    \input{00first_pages/00index}
 
     \pagenumbering{arabic}
-
     % --+ Physics Motivation +--------------------------------------------------
     \graphicspath{{10physics_motivation/img}}
     \input{10physics_motivation/00index}
     \pagebreak
 
-    % \input{11experiment/00index}            \pagebreak
+    % --+ Experiment +----------------------------------------------------------
+    \input{11experiment/00index}
+    \pagebreak
+
     % \input{12fmtalign/00index}              \pagebreak
     % \input{13dataanalysis/00index}          \pagebreak
     % \input{14resultsandconclusions/00index} \pagebreak
