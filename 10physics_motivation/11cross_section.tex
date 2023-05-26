@@ -1,34 +1,35 @@
 % !TEX root = ../main.tex
-% --+ Approximating the cross section +-----------------------------------------
-To approximate the cross section of electron-nucleon scattering, we will work in the center of mass reference frame.
-In this frame, the electron and nucleon are moving towards each other with sufficient energy, allowing us to neglect the nucleon's mass.
-As a result, the nucleon possesses nearly lightlike momentum along the collision axis.
-Consequently, the constituent quarks of the nucleon also have nearly lightlike momenta that are nearly collinear to the nucleon's momentum.
-Hence, as a first-order approximation, we can express the quark's momentum as
-\begin{equation*}
-    p = \xi P,
-\end{equation*}
-where $\xi$ represents the longitudinal fraction of the quark's momentum, and thus $0 < \xi < 1$.
+\subsubsection{DIS Cross Section}
+\label{sssec::dis_cross_section}
+    To approximate the cross section of electron-nucleon scattering, we will work in the center of mass reference frame.
+    In this frame, the electron and nucleon are moving towards each other with sufficient energy, allowing us to neglect the nucleon's mass.
+    As a result, the nucleon possesses nearly lightlike momentum along the collision axis.
+    Consequently, the constituent quarks of the nucleon also have nearly lightlike momenta that are nearly collinear to the nucleon's momentum.
+    Hence, as a first-order approximation, we can express the quark's momentum as
+    \begin{equation*}
+        p = \xi P,
+    \end{equation*}
+    where $\xi$ represents the longitudinal fraction of the quark's momentum, and thus $0 < \xi < 1$.
 
-In the leading-order approximation, we can also disregard gluon emission and exchange during the collision.
-Therefore, the cross section of electron-nucleon scattering is equal to that of electron-quark scattering for a given $\xi$, multiplied by the probability that the nucleon contains a quark with a longitudinal momentum fraction of $\xi$, integrated over $\xi$.
+    In the leading-order approximation, we can also disregard gluon emission and exchange during the collision.
+    Therefore, the cross section of electron-nucleon scattering is equal to that of electron-quark scattering for a given $\xi$, multiplied by the probability that the nucleon contains a quark with a longitudinal momentum fraction of $\xi$, integrated over $\xi$.
 
-This calculation encounters the issue that the probability of a nucleon containing a quark with a specific momentum cannot be computed within perturbative QCD.
-It relies on the soft processes that determine the nucleon's structure as a composite system of quarks and gluons.
-Consequently, we must consider this probability as an unknown function that needs to be measured in experiments.
+    This calculation encounters the issue that the probability of a nucleon containing a quark with a specific momentum cannot be computed within perturbative QCD.
+    It relies on the soft processes that determine the nucleon's structure as a composite system of quarks and gluons.
+    Consequently, we must consider this probability as an unknown function that needs to be measured in experiments.
 
-Such probability functions are known as Parton Distribution Functions (PDFs).
-A PDF can be assigned to various types of quarks, antiquarks, and gluons, and is incorporated into the nucleon's wave function.
-For each parton $f$, its PDF is defined as
-\begin{equation*}
-    P_f = f_f(\xi)d\xi.
-\end{equation*}
-Therefore, the cross section for the inelastic scattering of an electron off a nucleon, within the leading-order approximation, can be expressed as
-\begin{equation*}
-    \sigma\left( e^-(k) p(P) \rightarrow e^-(k') X \right) =
-            \int_0^1d\xi \sum_f f_f(\xi) \cdot
-            \sigma\left( e^-(k) q_f(\xi P) \rightarrow e^-(k') + q_f(p') \right),
-\end{equation*}
-where $X$ denotes the final hadronic state.
-It is important to remember that this equation does not provide an exact QCD prediction but represents the first-term expansion of $\alpha_s$.
-This approximation is known as the parton model \cite{halzen1991}.
+    Such probability functions are known as Parton Distribution Functions (PDFs).
+    A PDF can be assigned to various types of quarks, antiquarks, and gluons, and is incorporated into the nucleon's wave function.
+    For each parton $f$, its PDF is defined as
+    \begin{equation*}
+        P_f = f_f(\xi)d\xi.
+    \end{equation*}
+    Therefore, the cross section for the inelastic scattering of an electron off a nucleon, within the leading-order approximation, can be expressed as
+    \begin{equation*}
+        \sigma\left( e^-(k) p(P) \rightarrow e^-(k') X \right) =
+                \int_0^1d\xi \sum_f f_f(\xi) \cdot
+                \sigma\left( e^-(k) q_f(\xi P) \rightarrow e^-(k') + q_f(p') \right),
+    \end{equation*}
+    where $X$ denotes the final hadronic state.
+    It is important to remember that this equation does not provide an exact QCD prediction but represents the first-term expansion of $\alpha_s$.
+    This approximation is known as the parton model \cite{halzen1991}.
