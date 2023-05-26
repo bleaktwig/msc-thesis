@@ -1,11 +1,12 @@
 % !TEX root = ../main.tex
 \subsection{Deep Inelastic Scattering} \label{sec::dis}
 % --+ Basic description +-------------------------------------------------------
-    In its simplest description, Deep Inelastic Scattering (DIS) is the scattering of an electron off a quark inside a nucleon.
-    Figure \ref{fig::dis_diagram} shows the Feynman diagram of DIS.
-    The four-momentum of the nucleon is $P$, that of the quark is $p$, and the initial and final four-momenta of the electron are $k$ and $k'$, respectively.
-    If $k'$ is measured, then the momentum transferred to the hadron system by the virtual photon is $q = k - k'$.
-    $q$ is a spacelike vector, conventionally denoted as $q^2 = -Q^2$.
+    In its simplest description, DIS refers to the scattering of an electron off a quark inside a nucleon.
+    Figure \ref{fig::dis_diagram} displays the Feynman diagram illustrating DIS.
+    The four-momentum of the nucleon is denoted by $P$, while that of the quark is represented by $p$.
+    The initial and final four-momenta of the electron are given by $k$ and $k'$, respectively.
+    When $k'$ is measured, the momentum transferred to the hadron system by the virtual photon is defined as $q = k - k'$.
+    $q$ is a spacelike vector conventionally denoted as $q^2 = -Q^2$.
 
     \begin{figure}[h!]
         \centering\frame{
@@ -14,24 +15,24 @@
         \label{fig::dis_diagram}
     \end{figure}
 
-    If $Q^2$ is high enough, the quark is knocked out of the nucleon.
-    Soft processes like gluon emission and quark-antiquark pair production then occur to neutralise the colour.
-    This transforms the knocked-out quark into a jet of hadrons.
-    This jet propagates in the direction of the electron's transferred momentum.
+    If $Q^2$ is sufficiently high, the quark is ejected from the nucleon.
+    Soft processes, such as gluon emission and quark-antiquark pair production, then take place to neutralise the colour charge.
+    This results in the transformation of the ejected quark into a jet of hadrons.
+    The jet propagates in the direction of the transferred momentum from the electron.
 
 % --+ Approximating the cross section +-----------------------------------------
-    To approximate the cross section of the electron-nucleon scattering, we'll work on the center of mass reference frame.
-    Here, the electron and nucleon are propagating towards each other with enough energy to let us ignore the mass of the latter.
-    Due to this, the nucleon has almost lightlike momentum along the collision axis.
-    Its constituent quarks must therefore also have lightlike momenta, almost collinear to the nucleon's.
-    Hence, to first order approximation, we can say of the quark's momentum is
+    To approximate the cross section of electron-nucleon scattering, we will work in the center of mass reference frame.
+    In this frame, the electron and nucleon are moving towards each other with sufficient energy, allowing us to neglect the nucleon's mass.
+    As a result, the nucleon possesses nearly lightlike momentum along the collision axis.
+    Consequently, the constituent quarks of the nucleon also have nearly lightlike momenta that are nearly collinear to the nucleon's momentum.
+    Hence, as a first-order approximation, we can express the quark's momentum as
     \begin{equation*}
         p = \xi P,
     \end{equation*}
-    where $\xi$ is the longitudinal fraction of the quark's momentum, and as such $0 < \xi < 1$.
+    where $\xi$ represents the longitudinal fraction of the quark's momentum, and thus $0 < \xi < 1$.
 
-    In leading order approximation, we can also ignore the gluon emission and exchange during the collision.
-    Then, the cross section of the electron-nucleon scattering is equal to that of the electron-quark's for a given $\xi$, multiplied by the probability that the nucleon contains a quark with $\xi$ longitudinal momentum fraction, integrated over $\xi$.
+    In the leading-order approximation, we can also disregard gluon emission and exchange during the collision.
+    Therefore, the cross section of electron-nucleon scattering is equal to that of electron-quark scattering for a given $\xi$, multiplied by the probability that the nucleon contains a quark with a longitudinal momentum fraction of $\xi$, integrated over $\xi$.
 
     This calculation has the problem that the probability that the nucleon contains a quark with a particular momentum can't be calculated in perturbative QCD.
     It depends on the soft processes that define the structure of the nucleon as a bound state of quarks and gluons.
