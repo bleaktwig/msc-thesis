@@ -1,6 +1,4 @@
 [
   {
-    "files": "**/*.tex",
-    "command": "pdflatex -output-directory=out main.tex"
   }
 ]
