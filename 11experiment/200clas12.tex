@@ -1,0 +1,34 @@
+% !TEX root = ../main.tex
+\subsection{CLAS12}
+\label{ssec::clas12}
+    \begin{figure}[b!]
+        \centering\frame{
+        \includegraphics[width=\textwidth]{200clas12_diagram.png}}
+        \caption[CLAS12.]{The CLAS12 detector in the Hall B beamline.
+        The electron beam enters from the right and impinges on the target located in the center of the solenoid magnet shown at the right (upstream) end of CLAS12.
+        The FD consists of the High Threshold Cherenkov Counter (HTCC) (yellow), the torus magnet (grey), the DC tracking system (light blue), and another set of Cherenkov counters (hidden), time-of-flight scintillation counters (brown), and Electromagnetic Calorimeters (ECs) (red).
+        Between the HTCC and the torus, the Forward Tagger (FT) is installed.
+        The CD consists of the Silicon Vertex Tracker (SVT) (hidden), which is surrounded by a Barrel Micromesh Tracker (BMT) (hidden), the Central Time-of-Flight (FTOF) system, and the Central Neutron Detector (CND) (blue).
+        At the upstream end, a Back Angle Neutron Detector (BAND) (red) is installed.
+        Source: \hyperlink{https://www.jlab.org/physics/hall-b/clas12}{CLAS12 wiki}.}
+        \label{fig::clas12_diagram}
+    \end{figure}
+
+    The main detector in Hall B is CLAS12, used to study electro-induced nuclear and hadronic reactions \cite{burkert2020}.
+    The spectrometer provides efficient detection of charged and neutral particles over a large fraction of the full solid angle.
+
+    CLAS12 is based on two superconducting magnets: a solenoid magnet and a 5 T torus magnet.
+    The detector is divided into two parts: the Forward Detector (FD) and the Central Detector (CD).
+    The FD, aided by the torus magnet, covers the forward polar range from $5\degree$ up to $35\degree$, while the CD, aided by the solenoid magnet, covers the polar angles from $35\degree$ to $125\degree$.
+    Both detectors have full azimuthal coverage.
+
+    Trajectory reconstruction is performed using Drift Chambers (DC) in the forward direction, achieving a momentum resolution of less than $1\%$.
+    In the central detector, trajectory reconstruction is done using a vertex tracker, resulting in a momentum resolution of less than $3\%$.
+    Particle identification relies on Cherenkov counters, time-of-flight scintillators, and electromagnetic calorimeters \cite{burkert2020}.
+    Fast triggering and high data-acquisition rates enable operation at a luminosity of $10^{35} \text{ cm}^{-2}\text{ s}^{-1}$ \cite{burkert2020}.
+
+    A diagram of CLAS12 showing the position of each detector component is provided in Figure \ref{fig::clas12_diagram}.
+
+    \input{11experiment/21forward_detector}
+    % \input{11experiment/22central_detector}
+    % \input{11experiment/23offline_reconstruction}
