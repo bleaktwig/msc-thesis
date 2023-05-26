@@ -1,24 +1,21 @@
 % !TEX root = ../main.tex
 \subsubsection{SIDIS Cross Section}
 \label{sssec::sidis_cross_section}
-    In SIDIS, it's common to assume that the timescale for the virtual photon absorption is much shorter than that of the quark to fragment into a hadron.
-    Since it involves long-distance processes, this fragmentation process corresponds to very low $Q^2$, and is not calculable in perturbative QCD (pQCD).
-    The fragmentation process in SIDIS is parametrised by fragmentation functions $D_f^h(Q^2, z)$.
-    This measures the probability that an $f$-flavoured quark fragments into an $h$-type hadron with a fraction $z$ of the virtual photon energy ($Eh=z\nu$).
-    In the quark-parton model, the cross section for $eN \rightarrow ehX$ is assumed to be the differential cross section from \eqref{eq::parton_model_cross_section} times the fragmentation probability just described.
+    In SIDIS, the fragmentation process corresponds to very low $Q^2$ and is not calculable in perturbative QCD (pQCD).
+    It is parametrized by fragmentation functions $D_f^h(Q^2, z)$, which measure the probability that an $f$-flavored quark fragments into an $h$-type hadron with a fraction $z$ of the virtual photon energy ($E_h = z\nu$).
 
+    In the quark-parton model, the cross section for $eN \rightarrow ehX$ is assumed to be the differential cross section from Equation \eqref{eq::parton_model_cross_section} multiplied by the fragmentation probability
     \begin{equation}
         \label{eq::fragmentation_probability}
         \frac{d^3\sigma(eN \rightarrow ehX)}{dxdQ^2dz} =
-                \frac{d^2\sigma(eN \rightarrow eX)}{dxdQ^2} \cdot
-                \frac{\sum_fe^2_f q_f(x,Q^2) D^h_f(Q^2,z)}{\sum_f e^2_f q_f(x,Q^2)}.
+            \frac{d^2\sigma(eN \rightarrow eX)}{dxdQ^2} \cdot
+            \frac{\sum_f e^2_f q_f(x,Q^2) D^h_f(Q^2,z)}{\sum_f e^2_f q_f(x,Q^2)}.
     \end{equation}
 
-    We assume that the quasi-free scattering process and the fragmentary process are independent in the cross section.
-    From \eqref{eq::fragmentation_probability}, the hadron multiplicity per DIS event is
+    It is assumed that the quasi-free scattering process and the fragmentary process are independent in the cross section.
+
+    The hadron multiplicity per DIS event, denoted as $M_h(Q^2, z)$, is given by:
     \begin{equation*}
-        M_h(Q^2,z)
-                \equiv \frac{1}{\sigma} \frac{d^3\sigma(eN \rightarrow ehX)}{dQ^2dz}
-                = \frac{\int dx \sum_f e^2_f q_f(x,Q^2) D^h_f(Q^2,z)}{\int dx \sum_f e^2_f q_f(x,Q^2)},
+        M_h(Q^2,z) \equiv \frac{1}{\sigma} \frac{d^3\sigma(eN \rightarrow ehX)}{dQ^2dz} = \frac{\int dx \sum_f e^2_f q_f(x,Q^2) D^h_f(Q^2,z)}{\int dx \sum_f e^2_f q_f(x,Q^2)},
     \end{equation*}
     where $\sigma$ is the differential inclusive DIS cross section $\frac{d^2\sigma(eN \rightarrow eX)}{dxdQ^2}$.
