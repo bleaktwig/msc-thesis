@@ -1,0 +1,34 @@
+% !TEX root = ../main.tex
+% --+ Approximating the cross section +-----------------------------------------
+To approximate the cross section of electron-nucleon scattering, we will work in the center of mass reference frame.
+In this frame, the electron and nucleon are moving towards each other with sufficient energy, allowing us to neglect the nucleon's mass.
+As a result, the nucleon possesses nearly lightlike momentum along the collision axis.
+Consequently, the constituent quarks of the nucleon also have nearly lightlike momenta that are nearly collinear to the nucleon's momentum.
+Hence, as a first-order approximation, we can express the quark's momentum as
+\begin{equation*}
+    p = \xi P,
+\end{equation*}
+where $\xi$ represents the longitudinal fraction of the quark's momentum, and thus $0 < \xi < 1$.
+
+In the leading-order approximation, we can also disregard gluon emission and exchange during the collision.
+Therefore, the cross section of electron-nucleon scattering is equal to that of electron-quark scattering for a given $\xi$, multiplied by the probability that the nucleon contains a quark with a longitudinal momentum fraction of $\xi$, integrated over $\xi$.
+
+This calculation has the problem that the probability that the nucleon contains a quark with a particular momentum can't be calculated in perturbative QCD.
+It depends on the soft processes that define the structure of the nucleon as a bound state of quarks and gluons.
+We must therefore consider this probability an unknown function to be measured in the experiment.
+
+This kind of probability functions are called Parton Distribution Functions (PDF).
+A PDF can be used for all kinds of quarks, antiquarks, and gluons, and are incorporated inside the nucleon's wave function.
+For each parton $f$, its PDF is defined as
+\begin{equation*}
+    P_f = f_f(\xi)d\xi.
+\end{equation*}
+Therefore, the cross section of the inelastic scattering of the electron off the nucleon in leading order approximation is
+\begin{equation*}
+    \sigma\left( e^-(k) p(P) \rightarrow e^-(k') X \right) =
+            \int_0^1d\xi \sum_f f_f(\xi) \cdot
+            \sigma\left( e^-(k) q_f(\xi P) \rightarrow e^-(k') + q_f(p') \right)
+\end{equation*}
+where $X$ indicates the final hadronic state.
+One should remember that this equation is not an exact QCD prediction, but is the first-term expansion of $\alpha_s$.
+This approximation is the parton model \cite{halzen1991}.
