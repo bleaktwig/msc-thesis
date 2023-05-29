@@ -1,33 +1,58 @@
 % !TEX root = ../main.tex
-\subsection{RG-E Experiment} \label{ssec::rgeexperiment}
-    The Run Group E (RG-E) experiment aims to measure the hadronic multiplicity ratio between different nuclei and deuterium.
-    To do this, a double-target system is being built to be used in Hall B.
-    The system will allow a precise comparison of a deuterium target and heavy solid targets, like carbon, aluminium, copper, tin, lead, etc.
-    The experiment aims to further the understanding of hadronisation in the nuclear medium, colour transparency, and nuclear short-range correlations.
+\subsection{RG-E Experiment}
+\label{ssec::rgeexperiment}
+    The RG-E experiment, to be conducted in Hall B, focuses on measuring the hadronic multiplicity ratio between various nuclei and deuterium.
+    To achieve this, a double-target system is being constructed.
+    This system will enable a precise comparison between a deuterium target and heavy solid targets such as carbon, aluminum, copper, tin, lead, and others.
+    The primary objective of the experiment is to enhance our understanding of hadronization in the nuclear medium, color transparency, and nuclear short-range correlations.
 
-    During data acquisition, the cryo-target (deuterium) and a solid target will be exposed to the electron beam simultaneously.
-    To minimise acceptance correction difference between targets, we aim to keep the distance between them as low as possible -- as long as we can differentiate between the targets in reconstruction.
-    Part of this thesis' work involves improving offline reconstruction before the experiment to reduce this distance, which can be read in chapter \ref{sec::fmtalignmentandreconstruction}.
+    During the data acquisition process, both the cryo-target (deuterium) and a solid target will be exposed to the electron beam simultaneously.
+    To minimize differences in acceptance corrections between the targets, efforts are made to maintain a minimal distance between them.
+    However, it is crucial to ensure that the targets can still be differentiated during the reconstruction process.
+    The work behind this thesis contributes to the experiment by improving the offline reconstruction methods prior to the actual experiment, with the aim of reducing the distance between the targets.
+    Further details on this topic can be found in Section \ref{sec::fmtalignmentandreconstruction}.
 
-    Positioning both targets in the beam simultaneously allows us to cancel time-dependent systematic effects o increase the precision of final results.
-    These include effects such as drifting gains and inefficient detector channels in the measurement of ratio-like observables.
-    Then, since the target system will be in a vacuum, the switching between solid targets will need to be performed remotely.
-    Additionally, it needs to be done as quickly as possible, to maximise the beam time of the experiment.
+    Simultaneously positioning both targets in the beam allows for the cancellation of time-dependent systematic effects, thereby increasing the precision of the final results.
+    These effects can include drifting gains and inefficient detector channels when measuring ratio-like observables.
+    Since the target system will be placed in a vacuum, the switching between solid targets needs to be done remotely.
+    It is essential to perform the switching quickly to maximize the beam time available for the experiment.
 
-    The double target system will be able to switch between up to five different solid targets.
-    The previous EG2 experiment performed on the former CLAS showed that the design of the double target system has significant advantages to reduce the systematic uncertainties \cite{hakobyan2008}.
-    The principle of the target system is to have the solid targets installed on a carbon fibre band which slides on torlon rails.
-    The band is moved by a piezo-motor, which -- like all other chosen materials -- is insensitive to magnetic fields.
-    The design proposed can be seen in figure \ref{fig::double_target}.
+    The double target system is designed to enable switching between up to five different solid targets.
+    Previous experiments, such as EG2 conducted on the former CLAS, have demonstrated that the design of the double target system offers significant advantages in reducing systematic uncertainties \cite{hakobyan2008}.
+    The principle of the target system involves installing the solid targets on a carbon fiber band that slides on torlon rails.
+    The movement of the band is accomplished using a piezo-motor, chosen for its insensitivity to magnetic fields.
+    Figure \ref{fig::double_target} illustrates the proposed design of the double target system.
 
     \begin{figure}[b!]
         \centering\frame{
-        \includegraphics[width=\textwidth]{11experiment/img/30double_target.png}}
+        \includegraphics[width=\textwidth]{300double_target.png}}
         \caption[Double-target system.]{Double-target system CAD render.}
         \label{fig::double_target}
     \end{figure}
 
-    To ensure the adequate operation of the target, several tests were performed.
-    These include movement under vacuum and high magnetic field, radiation hardness of the selected materials, and heat removal tests which secure that target remain far below melting point.
+    To ensure the proper functioning of the target, a series of tests have been conducted.
+    These tests cover various aspects of the target's operation and performance.
+    They include:
 
-    \input{11experiment/31slow_control}
+    \begin{itemize}
+        \item
+            \textbf{Movement under vacuum and high magnetic field.}
+            The target system has been tested to ensure that it can operate smoothly and reliably under vacuum conditions and in the presence of high magnetic fields.
+            This is important to verify that the target's movement and positioning are not affected by these conditions.
+
+        \item
+            \textbf{Radiation hardness of selected materials.}
+            The materials used in the target system have been tested for their resistance to radiation.
+            This is crucial because the target may be exposed to radiation during the experiment.
+            By assessing the radiation hardness of the materials, it can be ensured that they will maintain their structural integrity and functionality throughout the experiment.
+
+        \item
+            \textbf{Heat removal tests.}
+            The target system has undergone heat removal tests to ensure that it can effectively dissipate heat generated during operation.
+            It is essential to keep the target temperature well below its melting point to prevent any damage or degradation.
+            By conducting heat removal tests, the target's cooling capabilities have been evaluated to ensure optimal performance and longevity.
+    \end{itemize}
+
+    These tests collectively aim to validate the target's operational robustness and reliability under the specific conditions of the experiment, thereby ensuring accurate and consistent data collection.
+
+    \input{11experiment/310slow_control}

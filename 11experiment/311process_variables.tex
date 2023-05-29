@@ -1,0 +1,129 @@
+% !TEX root = ../main.tex
+% --+ ai +----------------------------------------------------------------------
+\paragraph{Analog Input (\texttt{ai})}
+    The normal use for this record type is to obtain an analog value from hardware and then convert it to engineering units \cite{stanley1998}.
+    The record can also be used to write constants to be read from the database, such that they can be changed in runtime.
+
+    \subparagraph{\texttt{DMC01:A\_curr\_pos}.}
+        Current position of the band.
+        Displayed at the GUI and used for internal calculations.
+
+    \subparagraph{\texttt{DMC01:A\_home}.}
+        Position of the home.
+        Displayed at the GUI and used for calculations.
+
+    \subparagraph{\texttt{DMC01:A\_pos\#}.}
+        \# is a number from 1 to 7.
+        Positions of each of the seven targets.
+        Displayed at the GUI and used for calculations.
+
+    \subparagraph{\texttt{DMC01:A\_lowlimit}.}
+        Position of the low limit.
+        If \texttt{DMC01:A\_curr\_pos} is lesser than this value, a major alarm is fired.
+
+    \subparagraph{\texttt{DMC01:A\_highlimit}.}
+        Position of the high limit.
+        If \texttt{DMC01:A\_curr\_pos} is greater than this value, a major alarm is fired.
+
+    \subparagraph{\texttt{DMC01:A\_tolerance}.}
+        Equivalence tolerance for the position of each target and the position of the band.
+        It defines a valid range around the target position.
+
+    \subparagraph{\texttt{DMC01:COMMERR\_STATUS}.}
+        Variable that is true when there's a communication error with the controller and false otherwise.
+        Used for triggering a communication alarm.
+
+    \subparagraph{\texttt{IOC01:SR\_i\_am\_alive}.}
+        Variable that is true when the IOC is up and running, false otherwise.
+        Used for triggering a communication alarm.
+
+% --+ ao +----------------------------------------------------------------------
+\paragraph{Analog Output (\texttt{ao})}
+    The normal use for this record type is to output values to digital-analog converters.
+    The desired output can be controlled by either an operator or a state program, or it can be fetched from another record \cite{stanley1998}.
+
+    \subparagraph{\texttt{DMC01:A\_go\_home}.}
+        Command to move the band to the home position, as defined in \texttt{DMC01:A\_home}.
+
+    \subparagraph{\texttt{DMC01:A\_go\_pos\#}.}
+        Command to move the band to the position of target \#, as defined in \texttt{DMC01:A\_pos\#}.
+
+% --+ calc +--------------------------------------------------------------------
+\paragraph{Calculation (\texttt{calc})}
+    The calculation or ``Calc'' record is used to perform algebraic, relational, and logical operations on values retrieved from other records.
+    The result of its operations can then be accessed by another record so that it can be used \cite{stanley1998}.
+    In the context of the RG-E target, each calculation returns a number from 0 to 11.
+    This number represent the state the target is in, and is later used by a Select PV.
+
+    \subparagraph{\texttt{DMC01:A\_at\_pos\#}.}
+        Calculation that checks if the band position is equal to that of target \# in \texttt{DMC01:A\_pos\#}, within the tolerance margin \texttt{DMC01:A\_tolerance}.
+        If it is, it returns \#.
+        Otherwise, it returns 0.
+
+    \subparagraph{\texttt{DMC01:A\_at\_home}.}
+        Calculation that checks if the band position is equal to the home position in \texttt{DMC01:A\_home}, within the tolerance margin defined by the tolerance.
+        If it is, it returns 8.
+        Otherwise, it returns 0.
+
+    \subparagraph{\texttt{DMC01:A\_moving}.}
+        Calculation that checks if the target is moving by checking the motor PV \texttt{DMC01:A.MOVN}.
+        If it is, it returns 9.
+        Otherwise, it returns 0.
+
+    \subparagraph{\texttt{DMC01:A\_at\_lowlimit}.}
+        Calculation that checks if the band position is lesser than the low limit \texttt{DMC01:A\_lowlimit}.
+        If it is, it returns 10.
+        Otherwise, it returns 0.
+
+    \subparagraph{\texttt{DMC01:A\_at\_highlimit}.}
+        Calculation that checks if the band position is greater than the high limit \texttt{DMC01:A\_highlimit}.
+        If it is, it returns 11.
+        Otherwise, it returns 0.
+
+% --+ sel +---------------------------------------------------------------------
+\paragraph{Select (\texttt{sel})}
+    The select record computes a value based on input obtained from up to 12 locations.
+    By default, it is equal to the highest value among its input PVs \cite{stanley1998}.
+
+    \subparagraph{\texttt{DMC01:A\_sel\_tgttype}.}
+        This record returns the highest value between the previously defined calculations.
+        Thus, it associates the values returned to a state of the target.
+        By convention, this PV assumes that \emph{no more than one \texttt{calc} is greater than 0}.
+        This assumptions holds as long as \texttt{DMC01:A\_tolerance} is not set higher than half the distance between targets and between the targets and the lower and higher limits.
+
+% --+ mbbi +--------------------------------------------------------------------
+\paragraph{Multi-Bit Binary Input (\texttt{mbbi})}
+    The normal use for the multi-bit binary input record is to read multiple bit inputs from hardware.
+    The binary value represents a state from a range of up to 16 states.
+    The multi-bit input record interfaces with devices that use more than one bit \cite{stanley1998}.
+
+    \subparagraph{\texttt{DMC01:A\_tgttype}.}
+        This \texttt{mbbi} encodes the output of \texttt{DMC01:A\_sel\_tgttype} to a string and alarm level.
+        The encoding is specified in table \ref{tab::tgttypespv}.
+
+% --+ Everything table +--------------------------------------------------------
+\begin{table}[b!]
+    \caption{Names and alarm levels for the different values of the PV \texttt{DMC01:A\_tgttype}.}
+
+    \begin{center}
+        \begin{tabularx}{220pt}{lll}
+            \hline
+            \textbf{Value} & \textbf{Name} & \textbf{Alarm Severity} \\
+            \hline
+             0             & Not Moving    & Major                   \\
+             1             & Target 1      & No alarm                \\
+             2             & Target 2      & No alarm                \\
+             3             & Target 3      & No alarm                \\
+             4             & Target 4      & No alarm                \\
+             5             & Target 5      & No alarm                \\
+             6             & Target 6      & No alarm                \\
+             7             & Target 7      & No alarm                \\
+             8             & Home          & No alarm                \\
+             9             & Moving        & Minor                   \\
+            10             & Low Limit     & Major                   \\
+            11             & High Limit    & Major                   \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \label{tab::tgttypespv}
+\end{table}

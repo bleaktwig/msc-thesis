@@ -1,0 +1,27 @@
+% !TEX root = ../main.tex
+\paragraph{Alarm System}
+    To ensure the reliable operation of the CLAS12 detector, all EPICS-controlled subsystems within it are equipped with PVs that define alarm conditions.
+    These alarms, along with their severity, associated subsystems, and pre-defined instructions on how to respond to them, are displayed in a centralized alarm system.
+
+    For each experiment conducted in Hall B involving a non-trivial target system, a specific set of alarms is required.
+    In the case of the RG-E target, the list of implemented alarms and their corresponding PVs is provided in Table \ref{tab::alarmspv}.
+
+    \begin{table}[b!]
+        \caption{Alarm names, triggers, and severities for the RG-E target slow control system.}
+
+        \begin{center}
+            \begin{tabularx}{360pt}{llX}
+                \hline
+                \textbf{Name}          & \textbf{Trigger}                     & \textbf{Severity} \\
+                \hline
+                Band is not moving     & \texttt{DMC01:A\_tgttype}       =  0 & Major             \\
+                Band is moving         & \texttt{DMC01:A\_tgttype}       =  9 & Minor             \\
+                Band beyond low limit  & \texttt{DMC01:A\_tgttype}       = 10 & Major             \\
+                Band beyond high limit & \texttt{DMC01:A\_tgttype}       = 11 & Major             \\
+                Controller comm. error & \texttt{DMC01:COMMERR\_STATUS}  =  1 & Major             \\
+                IOC comm. error        & \texttt{IOC01:SR\_i\_am\_alive} =  0 & Major             \\
+                \hline
+            \end{tabularx}
+            \label{tab::alarmspv}
+        \end{center}
+    \end{table}
