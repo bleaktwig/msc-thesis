@@ -7,13 +7,13 @@
 
     In this framework, each service plays a specific role.
     It receives input data, processes it according to its functionality, and produces output data.
-    The input and output data are organized in tabular structures known as ``banks'', which are configured by the service developer to match the specific requirements of the service.
+    The input and output data are organised in tabular structures known as ``banks'', which are configured by the service developer to match the specific requirements of the service.
 
     The services within CLARA form a data-flow path, where the output of one service becomes the input for the next service in the sequence.
     This design enables a flexible and versatile data processing application, as each service can be individually improved or replaced without necessitating structural changes to the framework.
 
     To ensure consistency and modularity, the CLAS12 services are extensions of an abstract reconstruction engine.
-    This engine provides common components such as initialization and event processing methods, reducing the development complexity of individual micro-services and enforcing a uniform structure throughout the framework.
+    This engine provides common components such as initialisation and event processing methods, reducing the development complexity of individual micro-services and enforcing a uniform structure throughout the framework.
 
     By leveraging the CLARA framework, the CLAS12 experiment benefits from a modular and adaptable data processing pipeline, allowing for efficient reconstruction and analysis of the collected data.
     The service-oriented architecture and data-stream processing approach contribute to the flexibility, scalability, and maintainability of the CLAS12 software framework.
@@ -30,7 +30,7 @@
 
 % --+ CLAS12 reconstruction +---------------------------------------------------
     The CLAS12 data reconstruction process involves data reader services that access decoded detector data stored in banks.
-    Each entry in the bank represents a decoded detector hit and contains information such as sector, layer, component, order, and digitized data like signal charge, amplitude, time, or pedestal.
+    Each entry in the bank represents a decoded detector hit and contains information such as sector, layer, component, order, and digitised data like signal charge, amplitude, time, or pedestal.
 
     During the decoding stage, similar bank structures are created for various quantities required for event reconstruction, including hits, clusters, and tracks.
     Reconstruction algorithms specific to each CLAS12 subsystem fill these banks.

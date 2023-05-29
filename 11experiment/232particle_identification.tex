@@ -4,7 +4,7 @@
     The Particle Identification (PID) numbering scheme described here was initially introduced by the Particle Data Group (PDG) in 1988 \cite{yost1988}.
     Its purpose is to facilitate communication and data exchange between different generators, simulators, and analysis packages employed in particle physics.
     The system underwent subsequent revisions and adaptations in 1998 to allow for the systematic inclusion of undiscovered and hypothetical particles \cite{particle1998}.
-    The PID convention utilized in this thesis is based on the most up-to-date version available at the time of writing, as referenced from the 2020 Review of Particle Physics by the PDG \cite{particle2020review}.
+    The PID convention utilised in this thesis is based on the most up-to-date version available at the time of writing, as referenced from the 2020 Review of Particle Physics by the PDG \cite{particle2020review}.
 
 % --+ The Event Builder +-------------------------------------------------------
     The Event Builder (EB) is a crucial component within the reconstruction chain, serving multiple functions:
@@ -16,11 +16,11 @@
         \item
             It implements a general particle identification scheme.
         \item
-            It organizes the resulting information into a standardized and persistent data bank structure.
+            It organises the resulting information into a standardised and persistent data bank structure.
     \end{itemize}
 
     The EB service is executed twice using identical algorithms, first employing hit-based tracks and subsequently using time-based tracks.
-    As mentioned previously, the results obtained from the hit-based EB are utilized to initialize time-based tracking.
+    As mentioned previously, the results obtained from the hit-based EB are utilised to initialise time-based tracking.
 
 % --+ Forming particles +-------------------------------------------------------
     In the definition of a reconstructed charged particle within CLAS12, the EB assumes that each reconstructed track in both the FD and the CD will be assigned an identification.
@@ -86,7 +86,7 @@
         \label{fig::pos_pid}
     \end{wrapfigure}
 
-    For charged particles, the identification process begins by utilizing calorimetry and Cherenkov information to positively identify $e^-/e^+$ candidates in the FD.
+    For charged particles, the identification process begins by utilising calorimetry and Cherenkov information to positively identify $e^-/e^+$ candidates in the FD.
     If the measured energy deposition aligns with the expected sampling fraction of the ECAL and the photoelectron response from the HTCC aligns with $\beta \sim 1$, the particle is assigned as an $e^-$ or $e^+$ based on the sign of curvature determined from forward tracking with the DC in the presence of the torus magnetic field.
 
     The remaining charged particles are then assumed to be hadrons and are assigned an identity solely based on timing information.
@@ -118,8 +118,8 @@
 
 % --+ Particle identification performance +-------------------------------------
     A particle identification quality factor, represented as a signed-$\chi^2$ or pull, is assigned based on the contributions from individual detector subsystem responses and their resolutions.
-    For $e^-/e^+$ identification, the resolution-normalized distance from the expected ECAL sampling fraction is utilized, while for charged hadrons, the resolution-normalized time difference is employed.
-    The resulting information is organized into standardized output bank structures for physics analysis.
+    For $e^-/e^+$ identification, the resolution-normalised distance from the expected ECAL sampling fraction is utilised, while for charged hadrons, the resolution-normalised time difference is employed.
+    The resulting information is organised into standardised output bank structures for physics analysis.
     This includes the particle four-vectors, associated detector responses, and global event information such as beam RF and helicity details.
 
     The accuracy of the currently implemented particle identification algorithm can be estimated by comparing the assigned particle identification with the true identification in Monte Carlo simulations.
