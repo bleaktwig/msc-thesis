@@ -1,6 +1,7 @@
 % !TEX root = ../main.tex
 % --+ ai +----------------------------------------------------------------------
 \paragraph{Analog Input (\texttt{ai})}
+\label{par::analog_input}
     The normal use for this record type is to obtain an analog value from hardware and then convert it to engineering units \cite{stanley1998}.
     The record can also be used to write constants to be read from the database, such that they can be changed in runtime.
 
@@ -39,6 +40,7 @@
 
 % --+ ao +----------------------------------------------------------------------
 \paragraph{Analog Output (\texttt{ao})}
+\label{par::analog_output}
     The normal use for this record type is to output values to digital-analog converters.
     The desired output can be controlled by either an operator or a state program, or it can be fetched from another record \cite{stanley1998}.
 
@@ -50,6 +52,7 @@
 
 % --+ calc +--------------------------------------------------------------------
 \paragraph{Calculation (\texttt{calc})}
+\label{par::calculation}
     The calculation or ``Calc'' record is used to perform algebraic, relational, and logical operations on values retrieved from other records.
     The result of its operations can then be accessed by another record so that it can be used \cite{stanley1998}.
     In the context of the RG-E target, each calculation returns a number from 0 to 11.
@@ -82,6 +85,7 @@
 
 % --+ sel +---------------------------------------------------------------------
 \paragraph{Select (\texttt{sel})}
+\label{par::select}
     The select record computes a value based on input obtained from up to 12 locations.
     By default, it is equal to the highest value among its input PVs \cite{stanley1998}.
 
@@ -93,13 +97,14 @@
 
 % --+ mbbi +--------------------------------------------------------------------
 \paragraph{Multi-Bit Binary Input (\texttt{mbbi})}
+\label{par::multibit_binary_input}
     The normal use for the multi-bit binary input record is to read multiple bit inputs from hardware.
     The binary value represents a state from a range of up to 16 states.
     The multi-bit input record interfaces with devices that use more than one bit \cite{stanley1998}.
 
     \subparagraph{\texttt{DMC01:A\_tgttype}.}
         This \texttt{mbbi} encodes the output of \texttt{DMC01:A\_sel\_tgttype} to a string and alarm level.
-        The encoding is specified in table \ref{tab::tgttypespv}.
+        The encoding is specified in table \ref{tab::target_types_pv}.
 
 % --+ Everything table +--------------------------------------------------------
 \begin{table}[b!]
@@ -125,5 +130,5 @@
             \hline
         \end{tabularx}
     \end{center}
-    \label{tab::tgttypespv}
+    \label{tab::target_types_pv}
 \end{table}
