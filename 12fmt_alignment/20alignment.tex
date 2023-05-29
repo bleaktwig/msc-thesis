@@ -1,5 +1,6 @@
 % !TEX root = ../main.tex
-\subsection{FMT Alignment} \label{ssec::fmtalignment}
+\subsection{FMT Alignment}
+\label{ssec::fmt_alignment}
 % --+ Why is it needed +--------------------------------------------------------
     While in a perfect world the target and each detector would be installed precisely where they are needed, in the real world there is an unavoidable misalignment in their positions.
     This misalignment needs to be addressed and included into reconstruction:
@@ -25,8 +26,9 @@
 % --+ How was it done +---------------------------------------------------------
     \begin{figure}[b!]
         \centering\frame{
-        \includegraphics[width=\textwidth]{12fmtalign/img/20res_example.png}}
-        \caption{Example residuals plot.}
+        \includegraphics[width=\textwidth]{20res_example.png}}
+        \caption[Example FMT residuals plot]{Example FMT residuals plot.
+        Source: \hyperlink{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
         \label{fig::res_example}
     \end{figure}
 
@@ -40,8 +42,9 @@
 
     \begin{figure}[t!]
         \centering\frame{
-        \includegraphics[width=\textwidth]{12fmtalign/img/20resfit_example.png}}
-        \caption{Examples of residuals goodness of fit plots.}
+        \includegraphics[width=\textwidth]{20resfit_example.png}}
+        \caption[Examples of residuals goodness of fit plots]{Examples of residuals goodness of fit plots.
+        Source: \hyperlink{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
         \label{fig::resfit_example}
     \end{figure}
 
@@ -92,8 +95,9 @@
 
     \begin{figure}[t!]
         \centering\frame{
-        \includegraphics[width=\textwidth]{12fmtalign/img/20res_comparison.png}}
-        \caption[Residuals distribution improvement.]{Residuals distribution before (upper image) and after (lower image) alignment.}
+        \includegraphics[width=\textwidth]{20res_comparison.png}}
+        \caption[Residuals distribution improvement.]{Residuals distribution before (upper image) and after (lower image) alignment.
+        Source: \hyperlink{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
         \label{fig::res_comparison}
     \end{figure}
 
