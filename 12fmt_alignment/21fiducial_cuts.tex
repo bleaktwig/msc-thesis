@@ -1,0 +1,40 @@
+% !TEX root = ../main.tex
+\subsubsection{Fiducial Cuts}
+\label{sssec::fiducial_cuts}
+    To reduce background, fiducial cuts are applied to the DC tracks and FMT clusters.
+    This process is useful to increase data quality in order to obtain meaningful alignment results.
+
+    For DC tracks, the cuts applied are:
+    \begin{itemize}
+        \item $\text{track}.z < \text{layer}.z$:
+        Remove tracks with a vertex $z$ further downstream than the FMT layer before swimming.
+        This is caused by reconstruction errors where the particle origin is outside of the target.
+        % $9.84\%$ of tracks fail to meet this criterion in the sample data.
+        \item $\mid\text{track}.z - \text{layer}.z\mid < 0.05 \text{cm}$:
+        Remove tracks too far from the FMT layer after swimming.
+        This was caused by bugs in the swimmer which will be mentioned in the next section.
+        % $18.67\%$ tracks failed to meet this criterion.
+        \item $5 \text{cm} < \sqrt{x^2 + y^2} < 25 \text{cm}$:
+        Remove tracks outside of the layer's active region.
+        % $35.22\%$ of the tracks were lost to this criterion.
+        \item $\theta < ~66.42^{\circ}$:
+        Remove tracks with a $\theta$ angle too high.
+        When this happens, the same particle is affecting many strips, which causes the detector's data to not be as reliable as we want for alignment.
+        % $7.22\%$ of tracks were lost to this criterion.
+    \end{itemize}
+    % From all these criteria, $70.95\%$ of the DC tracks were lost.
+    % It is worth noting that after some reconstruction errors were fixed (as will be detailed in the following section), this percentage was reduced to $52.28\%$.
+
+    For FMT clusters, the cuts applied are:
+    \begin{itemize}
+        \item $50 \text{ns} < \text{T}_{\text{min}} < 500 \text{ns}$:
+        Cut clusters with an illogical $\text{T}_{\text{min}}$, which is the time of the first hit in the cluster.
+        % $21.12\%$ of clusters fail to meet this criterion.
+        \item $\text{size} > 1$ $\&\&$ $\text{E} > 100$:
+        Cut small clusters with high energy, which are generally considered bad.
+        % Only $7.36\%$ clusters are lost to this criterion.
+        \item $\text{size} < 5$:
+        Cut large clusters, which are not considered very useful.
+        % Only $7.77\%$ are lost to this criterion.
+    \end{itemize}
+    % From all these criteria, $36.25\%$ of the FMT clusters were lost.
