@@ -2,26 +2,27 @@
 \subsection{FMT Alignment}
 \label{ssec::fmt_alignment}
 % --+ Why is it needed +--------------------------------------------------------
-    While in a perfect world the target and each detector would be installed precisely where they are needed, in the real world there is an unavoidable misalignment in their positions.
-    This misalignment needs to be addressed and included into reconstruction:
-    the software needs to be aware of where a detector is positioned in relation to the target to provide meaningful results.
+    In an ideal scenario, the target and each detector would be installed precisely in their required positions.
+    However, in the real world, there are inevitable misalignments in their placements.
+    These misalignments must be accounted for and incorporated into the reconstruction process to ensure meaningful results.
 
-    In the CLAS collaboration, the Calibration and Commissioning group (CalCom) is in charge of the alignment and calibration of each detector.
-    Shifts and rotations that need to be applied for alignment are included in the Calibration and Conditions Database (CCDB), which is then read in reconstruction. % NOTE. A citation would be cool.
+    Within the CLAS collaboration, the Calibration and Commissioning group (CalCom) is responsible for the alignment and calibration of each detector.
+    The shifts and rotations necessary for alignment are included in the Calibration and Conditions Database (CCDB), which is then utilized during reconstruction.
 
-    The main goals of alignment work were three:
-    First, to provide FMT alignment tables to Run Group F (RG-F) so that they may be used in reconstruction.
-    Second, to check if the resolution improvement from FMT is good enough to justify the extra material added to the CLAS12 detector.
-    Finally, to provide detailed information about these improvements so that Run Group E (RG-E) and other run groups can choose if they will include the detector to their runs.
+    The alignment work aimed to achieve three primary goals.
+    Firstly, to provide FMT alignment tables to Run Group F (RG-F) for use in reconstruction.
+    Secondly, to assess whether the resolution improvement obtained from the FMT justifies the additional material introduced into the CLAS12 detector.
+    Lastly, to offer detailed information about these improvements, enabling Run Group E (RG-E) and other run groups to make informed decisions on whether to include the detector in their runs.
 
 % --+ Definitions +-------------------------------------------------------------
-    Alignment shifts can be made in any of the three global axes:
-    $z$, which is concentric to the beamline, $x$, which is parallel to the ground, and $y$, which points up from the ground.
-    Then, alignment rotations can be done in any of these axes, and for the purposes of this work will be referred to as $\phi$ rotation (roll), when they're done around the $z$ axis, and pitch and yaw when they're done around the $x$ and $y$ axes respectively.
+    Alignment shifts can be performed in any of the three global axes: $z$, which is aligned with the beamline; $x$, which runs parallel to the ground; and $y$, which points upwards from the ground.
+    Additionally, alignment rotations can be carried out around these axes.
+    Specifically, for the purposes of this work, rotations around the $z$ axis are referred to as $\phi$ rotation (roll), while rotations around the $x$ and $y$ axes are termed pitch and yaw, respectively.
 
-    To measure misalignment, we define a the Distance Of Closest Approach (DOCA) between a reconstructed DC track and an FMT cluster as a \textbf{Residual}.
-    Due to each layer's geometry (refer to figure \ref{fig::fmt_geometry}), only the residuals in a layer's local $y$ axis (perpendicular to the strips) can be measured.
-    This means that global $z$ and $\phi$ alignment can be done for each layer independently, but global $x$, global $y$, pitch, and yaw alignment has to be done for the entire detector at once.
+    To quantify misalignment, the DOCA between a reconstructed DC track and an FMT cluster is defined as a \textbf{Residual}.
+    Due to the geometry of each layer (as depicted in figure \ref{fig::fmt_geometry}), only the residuals in the local $y$ axis of a layer (perpendicular to the strips) can be measured.
+    This implies that global $z$ and $\phi$ alignment can be performed independently for each layer.
+    However, global $x$, global $y$, pitch, and yaw alignment must be carried out simultaneously for the entire detector.
 
 % --+ How was it done +---------------------------------------------------------
     \begin{figure}[b!]
@@ -32,13 +33,15 @@
         \label{fig::res_example}
     \end{figure}
 
-    To minimise residuals, they are plotted for a particular shift or rotation in any of the relevant axes.
-    An example of such a plot is shown in figure \ref{fig::res_example}.
-    Since a Gaussian distribution is to be expected for the residuals, a Gaussian fit is applied to them.
-    For $z$ and $\phi$ alignment, the goodness of a fit is evaluated heuristically by comparing their $\sigma$ and choosing the shift with the minimum $\sigma$.
-    Then, for $x$, $y$, pitch, and yaw alignment, the goodness of a fit is evaluated heuristically by choosing the fit with the mean closest to $0$.
-    The minimums are of course chosen within a healthy error margin.
-    Examples of $z$ and $xy$ goodness of fit distributions can be seen in figure \ref{fig::resfit_example}.
+    To minimise residuals, they are plotted for a specific shift or rotation in the relevant axes.
+    An example of such a plot is illustrated in figure \ref{fig::res_example}.
+    Since the residuals are expected to follow a Gaussian distribution, a Gaussian fit is applied to them.
+
+    For $z$ and $\phi$ alignment, the goodness of fit is heuristically evaluated by comparing the standard deviation ($\sigma$) of the Gaussian fits and selecting the shift with the smallest $\sigma$.
+    For $x$, $y$, pitch, and yaw alignment, the goodness of fit is heuristically evaluated by choosing the fit with the mean closest to zero.
+    It is important to consider a reasonable error margin when selecting the minima.
+
+    Examples of the distributions of goodness of fit for $z$ and $xy$ alignment can be observed in figure \ref{fig::resfit_example}.
 
     \begin{figure}[t!]
         \centering\frame{

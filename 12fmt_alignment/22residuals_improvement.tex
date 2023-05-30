@@ -1,8 +1,9 @@
 % !TEX root = ../main.tex
 \subsubsection{Residuals Improvements}
 \label{sssec::residuals_improvements}
-    To validate the alignment algorithm proposed, it was tested on RG-F data (run $\mathbf{11983}$).
-    The improvement in residuals is immediately obvious, as can be seen in figure \ref{fig::res_comparison}, noting the difference in scale between the top and bottom plots.
+    To validate the proposed alignment algorithm, it was applied to the data from Run Group F (RG-F), specifically Run 11983.
+    The improvement in residuals is readily apparent when comparing the before and after alignment results, as depicted in figure \ref{fig::res_comparison}.
+    It is important to note the difference in scale between the top and bottom plots, which further highlights the significant improvement achieved through the alignment process.
 
     \begin{figure}[t!]
         \centering\frame{
@@ -12,14 +13,12 @@
         \label{fig::res_comparison}
     \end{figure}
 
-    As can be seen in the figure, the $z$ and $\phi$ alignment heavily reduces the background, increasing the number of residuals near the mean of the distribution.
-    In addition, the $x$ and $y$ alignment pushes this mean to zero, whereas it was slightly off before.
-    Finally, no meaningful results were obtained for pitch and yaw alignment.
-    This is attributed to how small the rotations around the $x$ and $y$ axes are, compounded with the fact that three layers do not provide enough data to perform alignment precise enough.
+    As depicted in the figure, the $z$ and $\phi$ alignment significantly reduces the background, resulting in a higher concentration of residuals around the mean of the distribution.
+    Moreover, the $x$ and $y$ alignment effectively aligns the mean of the distribution closer to zero, improving the overall alignment.
+    However, for the pitch and yaw alignment, meaningful results could not be obtained.
+    This can be attributed to the limited data available from the three layers, combined with the small rotations around the $x$ and $y$ axes, making it challenging to achieve precise alignment.
 
-    To measure the mean and $\sigma$ of the distribution, a Gaussian fit was used.
-    Its parameters are
-
+    To determine the mean and standard deviation ($\sigma$) of the distribution, a Gaussian fit was applied. The parameters of the Gaussian fit are
      \begin{align*}
         \Big( \text{amp} \cdot \text{gaus}(\mu, \sigma) \Big) &+ \Big( p_0 + p_1\cdot x + p_2\cdot x^2 \Big) \\
         \text{gaussian} \hspace{0.8cm} &+ \hspace{1cm} \text{background}
@@ -29,5 +28,7 @@
 
     \small\href{clasweb.jlab.org/cgi-bin/ccdb/versions?table=/geometry/fmt/alignment}{\texttt{clasweb.jlab.org/cgi-bin/ccdb/versions?table=/geometry/fmt/alignment}}
 
-    Alignment was also later performed for Run Group M (RG-M) data successfully, proving that the alignment procedure is agnostic to a particular run.
-    How this alignment procedure affects the resolution of the entire CLAS12 detector will be explored at the end of the chapter.
+    Alignment was successfully performed for the data from Run Group M (RG-M), demonstrating that the alignment procedure is not specific to a particular run.
+    This indicates the general applicability and effectiveness of the alignment procedure across different runs in the CLAS12 detector.
+
+    The impact of this alignment procedure on the resolution of the entire CLAS12 detector will be further investigated and discussed in the concluding subsection of the section.
