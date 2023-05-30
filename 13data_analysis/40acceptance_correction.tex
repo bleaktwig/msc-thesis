@@ -1,5 +1,6 @@
 % !TEX root = ../main.tex
-\subsection{Acceptance Correction} \label{ssec::acceptance_correction}
+\subsection{Acceptance Correction}
+\label{ssec::acceptance_correction}
 % --+ What is acceptance +------------------------------------------------------
     When discussing radiation detection, it is common to describe two types of efficiency: absolute efficiency and intrinsic detection efficiency.
     The former is defined as the fraction of events emitted by the source which is actually registered by the detector, or
@@ -35,7 +36,6 @@
     Thus, to make the correction accurate, the ratio must be separated into five-dimensional bins.
     These correspond to the five studied variables, $Q^2$, $\nu$, $z_h$, $p_T^2$, and $\phi_{PQ}$.
     For simplicity in analysis, all bins for a variable are of the same size, such that the results are easy to interpret.
-    % The bins are designed such that there is a similar number of entries in each, with the additional requirement that the histogram curve is as linear as possible.
     \begin{itemize}
         \item
             $Q^2 = 4E_bE'\sin^2(\theta_C/2)$ is the 4-momentum transferred by the lepton probe in the lab frame, where $E_b$ is the beam energy, $E'$ is the scattered electron's energy, and $\theta_C$ is the polar angle of the scattered electron.
@@ -56,7 +56,6 @@
 
     Plots for each of the variables described with vertical lines showing the bins can be seen in the plots to the left of figure \ref{fig::acc_corr}.
     The data used to obtain these plots is from RG-F run number $\mathbf{012933}$, which contains a total of $23,844,549$ reconstructed events to work with.
-    % TODO. What to do about this? Just use less bins?
 
     To compute the acceptance, 10 million events were generated in deep inelastic kinematics using LEPTO, a Monte Carlo generator for deep inelastic lepton-nucleon scattering \cite{ingelman1997}.
     Then, the events were simulated in the RG-F experiments conditions in CLAS12 by using \texttt{gemc}, with a torus field polarity of $-1$ and solenoid field polarity of $-0.745033$.
