@@ -6,7 +6,7 @@
         \centering\frame{
         \includegraphics[width=\textwidth]{10mm_principle.pdf}}
         \caption[MM working principle.]{MicroMegas working principle.
-        Source: Re-render of original illustration by \cite{\cite{giomataris1996}}.}
+        Source: Re-render of original illustration by \cite{giomataris1996}.}
         \label{fig::mm_principle}
     \end{figure}
 
@@ -52,6 +52,15 @@
     Each of the three FMT layers has $1024$ readout strips, which follow a peculiar distribution, as can be seen in the image to the right of figure \ref{fig::fmt_geometry}.
     In addition, each layer's orientation differs by $60\degree$ to provide an accurate measurement in the xy-plane, as is shown in the image at the centre of the same figure \cite{acker2020mvt}.
 
+    \begin{wrapfigure}{r}{0.50\textwidth}
+        \centering\frame{
+        \includegraphics[width=\linewidth]{10fmt_recon.pdf}}
+        \caption[FMT reconstruction summary]{FMT reconstruction summary.
+        Data taking is coloured blue, data in black, and processes in red.
+        Source: Own elaboration using \hyperlink{inkscape.org/}{Inkscape}.}
+        \label{fig::fmt_recon}
+    \end{wrapfigure}
+
     The FMT is composed of six circular, flat detectors that cover angles ranging from $6$ to $29$ degrees.
     In its conception, it was anticipated that the FMT would improve the vertex resolution by a factor of 3 to 10 compared to the DC \cite{aune2009}.
     However, the currently implemented FMT deviates from the original design, with only three layers installed.
@@ -68,4 +77,4 @@
         \label{fig::fmt_geometry}
     \end{figure}
 
-    \input{12fmt_alignment/11fmt_reconstruction}
+    \input{12fmt_alignment/11fmt_track_reconstruction}

@@ -1,0 +1,46 @@
+% !TEX root = ../main.tex
+\subsubsection{Geometry Effect}
+\label{sssec::geometry_effect}
+    To evaluate the enhancement in vertex resolution, we will compare the vertex positions of tracks that underwent only DC reconstruction with those that underwent both DC and FMT reconstruction.
+    For convenience, we will refer to the former as DC tracks and the latter as FMT tracks.
+    Considering that the $z$ axis is aligned with the beamline, Figure \ref{fig::dc_vs_fmt_vz_011983} illustrates the $z$ positions of the vertex for DC tracks versus FMT tracks.
+
+    To comprehend the plot in Figure \ref{fig::dc_vs_fmt_vz_011983}, it is valuable to examine the RG-F target.
+    The target consists of a large gas-filled chamber with a varying composition across different runs.
+    The distance between the chamber windows measures $553.32$ millimetres.
+    Furthermore, it was observed that the upstream window of the target is positioned approximately $24$ millimetres away from the beam window.
+    All windows are constructed from aluminium and have a thickness of $15$ micrometers.
+    A detailed depiction of the target can be found in Addendum 1.
+
+    Based on Figure \ref{fig::dc_vs_fmt_vz_011983}, it is evident that the FMT detector solely detects the upstream windows, completely overlooking the downstream one.
+    This issue stems from a geometric constraint: the downstream window falls outside the active detection area of the FMT.
+    This effect is clearly illustrated in Figure \ref{fig::vz_vs_theta}, where the $\theta$ angle is plotted against the vertex $z$ coordinate.
+    The two red lines in the plots represent the FMT's active area, and it is apparent that the downstream window lies outside this region, thereby explaining its absence.
+
+    \begin{figure}[t!]
+        \centering\frame{
+        \includegraphics[scale=0.24]{40theta_dc_vs_fmt.png}}
+        \caption[$z$ vs $\theta$ for DC and FMT.]{$z$ vs $\theta$ for DC and FMT for electrons without any geometry correction. FMT's active area are shown in red lines.
+        Source: \texttt{fmtVertex.groovy} script in \hyperlink{github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
+        \label{fig::vz_vs_theta}
+    \end{figure}
+
+    To account for this geometric effect, we apply an additional cut based on the plotted curves.
+    The curves are given by
+    \begin{equation} \label{eq::fmt_geometry_cut}
+        c_1 = 57.29 \cdot \arctan\left(\frac{r_\text{inner}}{z_0 - z}\right), \hspace{0.5cm}
+        c_2 = 57.29 \cdot \arctan\left(\frac{r_\text{outer}}{z_0 - z}\right),
+    \end{equation}
+    where $r_\text{inner}$ is the radius of the hole at the center of FMT, $r_\text{outer}$ is the radius of the outer circumference of FMT, and $z_0$ is the $z$ position of the first FMT layer plus the drift distance.
+    All these parameters are read from the CCDB.
+
+    To compensate for this geometric effect, we introduce an additional cut based on the plotted curves.
+    The curves can be described by the following equations
+    \begin{equation} \label{eq::fmt_geometry_cut}
+        c_1(z) = 57.29 \cdot \arctan\left(\frac{r_\text{inner}}{z_0 - z}\right),
+        \hspace{0.5cm}
+        c_2(z) = 57.29 \cdot \arctan\left(\frac{r_\text{outer}}{z_0 - z}\right).
+    \end{equation}
+
+    Here, $r_\text{inner}$ represents the radius of the hole at the center of the FMT, $r_\text{outer}$ denotes the radius of the outer circumference of the FMT, and $z_0$ corresponds to the $z$ position of the first FMT layer plus the drift distance.
+    All these parameters are obtained from the CCDB.

@@ -1,0 +1,26 @@
+% !TEX root = ../main.tex
+\subsection{FMT Reconstruction Work}
+\label{ssec::fmt_reconstruction_work}
+% --+ Why is it needed +--------------------------------------------------------
+    As the work on FMT alignment progressed, certain modifications were required in FMT reconstruction.
+    These modifications primarily involved incorporating the alignment shifts determined during the alignment process into the reconstruction.
+    Additionally, some fixes were made to address issues that were identified during the alignment work.
+    These changes ensure that the reconstruction process takes into account the alignment information and addresses any related issues that were encountered.
+
+% --+ What was done +-----------------------------------------------------------
+    First, the loading of shifts from the CCDB was included in the standard geometry class of the FMT reconstruction package.
+    Then, standard methods to include the shifts in any frame of reference change were implemented.
+    Finally, the code was studied in detail, and the shifts were added in all instances where they were required since the package originally didn't consider their application.
+
+    ``Crossmaking'' is the process of matching clusters in different layers to obtain an accurate 3D estimate of the position of a track \cite{ziegler2020}.
+    This process was initially included in FMT reconstruction to facilitate the reconstruction for the six FMT layers.
+    However, as mentioned before, only three FMT layers were installed for the RG-F run, and future runs may also use three layers due to concerns with the Lorentz angle when using six layers.
+    To simplify the reconstruction process and make better use of the available number of layers, crossmaking was removed from the reconstruction.
+
+    Outside of FMT reconstruction, some minor changes were also required in the DC reconstruction package since some of its components depend on the FMT layers' positions.
+    Additionally, the swim package diagnostic was updated as it failed to properly reconstruct the positions of tracks near the FMT layers.
+
+% --+ Juicy link +--------------------------------------------------------------
+    A detailed list of the updates applied can be found in the following pull request to the \texttt{clas12-offline-software} repository:
+
+    \href{github.com/JeffersonLab/clas12-offline-software/pull/726}{\texttt{github.com/JeffersonLab/clas12-offline-software/pull/726}}.
