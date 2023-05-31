@@ -1,7 +1,7 @@
 % !TEX root = ../main.tex
 \subsubsection{\texttt{hipo2root}}
 \label{sssec::hipo2root}
-    The CLAS12 reconstruction process utilizes a custom data file format called High-Performance Input Output (HIPO) format, which was developed by Gagik Gavalian \cite{chekanov2021}.
+    The CLAS12 reconstruction process utilises a custom data file format called High-Performance Input Output (HIPO) format, which was developed by Gagik Gavalian \cite{chekanov2021}.
     The CLAS collaboration provides a set of tools that enable working with HIPO files, allowing users to read, write, and generate plots from these files.
     However, users at RG-E are generally more familiar with traditional ROOT files. Therefore, a conversion tool was developed.
 
@@ -9,7 +9,7 @@
     The selection of banks is based on data that is relevant to RG-E analysis, and users can easily add additional banks by modifying the program's source files.
     The output of the \texttt{hipo2root} executable is a ROOT file that contains the selected banks represented as trees, which are standard ROOT array-like variables.
 
-    It's manual entry is:
+    Its manual entry is:
     \begin{lstlisting}
 Usage: hipo2root [-hfn:w:] infile
  * -h         : show this message and exit.
