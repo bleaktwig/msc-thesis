@@ -5,6 +5,28 @@
     Furthermore, based on the specific requirements of this thesis' analysis, the executable generates two sets of \texttt{ntuples}.
     Both sets have the same \texttt{ntuple} format, but the former utilises only DC tracking data while the latter incorporates both DC and FMT tracking data.
 
+    \begin{table}
+        \caption{Particle identification matrix for the FD.
+        The rows show the PID assigned by reconstruction while the columns the one assigned by the \texttt{make\_ntuples} program.
+        The diagonal elements are correctly identified, while the off-diagonal elements are misidentified.}
+
+        \begin{center}
+            \begin{tabularx}{240pt}{X|llllll}
+                \cline{2-7}
+                         & $e$      & $\pi$ & $K$  & $p$  & $n$  & $\gamma$ \\
+                \hline
+                $e$      & 1.00     &       &      &      &      &          \\
+                $\pi$    &          & 1.00  & 0.09 & 0.02 &      &          \\
+                $K$      &          &       & 0.91 &      &      &          \\
+                $p$      &          &       &      & 0.98 &      &          \\
+                $n$      &          &       &      &      & 1.00 &          \\
+                $\gamma$ &          &       &      &      &      & 1.00     \\
+                \hline
+            \end{tabularx}
+        \end{center}
+        \label{tab::mpid}
+    \end{table}
+
     For each event, the program executes the following algorithm:
 
     \begin{enumerate}
@@ -38,32 +60,12 @@
             As shown in the table, some kaons and protons are misidentified as pions, but the degree of misidentification is not significant.
             Apart from that, all identifications are accurate.
 
-            \begin{table}
-                \caption{Particle identification matrix for the FD.
-                The rows show the PID assigned by reconstruction while the columns the one assigned by the \texttt{make\_ntuples} program.
-                The diagonal elements are correctly identified, while the off-diagonal elements are misidentified.}
-
-                \begin{center}
-                    \begin{tabularx}{240pt}{X|llllll}
-                        \cline{2-7}
-                                 & $e$      & $\pi$ & $K$  & $p$  & $n$  & $\gamma$ \\
-                        \hline
-                        $e$      & 1.00     &       &      &      &      &          \\
-                        $\pi$    &          & 1.00  & 0.09 & 0.02 &      &          \\
-                        $K$      &          &       & 0.91 &      &      &          \\
-                        $p$      &          &       &      & 0.98 &      &          \\
-                        $n$      &          &       &      &      & 1.00 &          \\
-                        $\gamma$ &          &       &      &      &      & 1.00     \\
-                        \hline
-                    \end{tabularx}
-                \end{center}
-                \label{tab::mpid}
-            \end{table}
-
         \item
             Finally, two \texttt{ntuples} objects are created: one for the particle generated from the DC tracking data and another for the particle generated from both the DC and FMT data.
             These \texttt{ntuple} objects are then saved in an output file, which can be used directly for analysis or processed by the \texttt{draw\_plots} program discussed in the next section.
     \end{enumerate}
+
+    \pagebreak
 
     The manual entry of the program is:
     \begin{lstlisting}
@@ -72,14 +74,17 @@ Usage: make_ntuples [-hDf:cn:w:d:] infile
  * -D         : activate debug mode.
  * -f fmtlyrs : define how many FMT layers should the track have hit.
                 Options are 0 (tracked only by DC), 2, and 3. If set to
-                something other than 0 and there is no FMT::Tracks bank in
-                the input file, the program will crash. Default is 0.
+                something other than 0 and there is no FMT::Tracks bank
+                in the input file, the program will crash. Default is
+                0.
  * -c         : apply FMT geometry cut on data.
  * -n nevents : number of events.
- * -w workdir : location where output root files are to be stored. Default
-                is root_io.
- * -d datadir : location where sampling fraction files are. Default is data.
- * infile     : input ROOT file. Expected file format: <text>run_no.root`.
-```
+ * -w workdir : location where output root files are to be stored.
+                Default is root_io.
+ * -d datadir : location where sampling fraction files are. Default is
+                data.
+ * infile     : input ROOT file. Expected file format:
+                <text>run_no.root`.
+
 Generate ntuples relevant to SIDIS analysis based on the reconstructed variables from CLAS12 data. The output of the program is the `ntuples_<run_no>.root` file, which contains all relevant ntuples for RG-E analysis. This file can be studied directly in root or through the `draw_plots` program.
     \end{lstlisting}

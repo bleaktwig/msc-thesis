@@ -10,11 +10,12 @@
 Usage: extract_sf [-hn:w:d:] infile
  * -h         : show this message and exit.
  * -n nevents : number of events
- * -w workdir : location where output root files are to be stored. Default
-                is root_io.
- * -d datadir : location where sampling fraction files are stored. Default
-                is data.
- * infile     : input ROOT file. Expected file format: <text>run_no.root.
+ * -w workdir : location where output root files are to be stored.
+                Default is root_io.
+ * -d datadir : location where sampling fraction files are stored.
+                Default is data.
+ * infile     : input ROOT file. Expected file format:
+                <text>run_no.root.
 
 Obtain the EC sampling fraction from an input file. An alternative to using this program is to fill the output file corresponding to the studied run (by default stored in the `data` directory) with the data obtained from [CCDB](https://clasweb.jlab.org/cgi-bin/ccdb/versions?table=/calibration/eb/electron_sf). The function used to fit the data is
 
@@ -24,12 +25,12 @@ where *[0]* is the amplitude of the Gaussian, *[1]* and *[2]* its mean and sigma
 
 The output of the program is the `sf_params_<run_no>.txt`, which contains a table with the sampling fractions and their errors. The table is formatted like the one at CCDB, as in
 
-         | sf0     sf1     sf2     sf3     sfs1    sfs2    sfs3    sfs4
----------+-----------------------------------------------------------------
-sector 1 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
-sector 2 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
-sector 3 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
-sector 4 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
-sector 5 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
-sector 6 | %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f %011.8f
+         | sf0    sf1    sf2    sf3    sfs1   sfs2   sfs3   sfs4
+---------+---------------------------------------------------------
+sector 1 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
+sector 2 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
+sector 3 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
+sector 4 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
+sector 5 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
+sector 6 | %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f %11.8f
     \end{lstlisting}

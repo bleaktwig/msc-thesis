@@ -21,6 +21,14 @@
     where $M$ represents the mass of the nucleon and $\nu$ is the energy fraction of the virtual photon.
     This cut is applied to exclude nucleon resonances.
 
+    \begin{figure}[b!]
+        \centering\frame{
+        \includegraphics[width=\textwidth]{23q2_vs_nu.pdf}}
+        \caption[$Q^2$ vs $\nu$ comparison]{$e^-$ $Q^2$ vs $\nu$ before and after applying the $Q^2 > 1 \text{ GeV}^2$, $W^2 > 4 \text{ GeV}^2$, and $Y_b < 0.85$ cuts, run 12016.
+        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::q2vsnu}
+    \end{figure}
+
     Lastly, an additional cut is imposed on the Bjorken-Y ($Y_b$) of the scattered electron, given by:
     \begin{equation*}
         Y_b < 0.85.
@@ -33,11 +41,3 @@
     This cut effectively mitigates the influence of extreme radiative effects, which occur when a substantial portion of the incident electron's energy is transferred to the scattered electron.
 
     The impact of these cuts on the $Q^2$ and $\nu$ of the scattered electron can be observed in plot \ref{fig::q2vsnu}.
-
-    \begin{figure}[b!]
-        \centering\frame{
-        \includegraphics[width=\textwidth]{23q2_vs_nu.pdf}}
-        \caption[$Q^2$ vs $\nu$ comparison]{$e^-$ $Q^2$ vs $\nu$ before and after applying the $Q^2 > 1 \text{ GeV}^2$, $W^2 > 4 \text{ GeV}^2$, and $Y_b < 0.85$ cuts, run 12016.
-        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
-        \label{fig::q2vsnu}
-    \end{figure}
