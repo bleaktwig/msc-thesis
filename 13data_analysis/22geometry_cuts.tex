@@ -1,0 +1,21 @@
+% !TEX root = ../main.tex
+\subsubsection{Geometry Cuts}
+\label{sssec::geometry_cuts}
+    Three geometry cuts are derived to constrain the reconstructed particle's vertex position.
+    The first two cuts ensure that the vertex is located along the beamline, while the third cut restricts it to the acceptance region of the FMT.
+
+    The first cut guarantees that the vertex is close to the beamline and is defined as:
+    \begin{equation*}
+        \sqrt{v_x^2 + v_y^2} < 4 \text{ cm},
+    \end{equation*}
+    where $v_x$ and $v_y$ represent the $x$ and $y$ coordinates of the vertex position, respectively.
+
+    The second cut ensures that the vertex originates from the target and is given by:
+    \begin{equation*}
+        -40 \text{ cm} < v_z < z_0 \text{ cm},
+    \end{equation*}
+    where $v_z$ corresponds to the $z$ coordinate of the vertex position, and $z_0$ represents the $z$ position of the first FMT layer.
+    For the RG-F Spring 2020 run, $z_0 = 25.97$ cm.
+
+    The third and final cut ensures that the vertex falls within the FMT acceptance region, as defined in Section \ref{sssec::geometry_effect}.
+    It removes all particles whose $v_z$ and $\theta$ values lie outside the region bounded by the two lines defined by Equation \eqref{eq::fmt_geometry_cut}.
