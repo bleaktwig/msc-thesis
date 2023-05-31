@@ -25,15 +25,6 @@
         \label{fig::vz_vs_theta}
     \end{figure}
 
-    To account for this geometric effect, we apply an additional cut based on the plotted curves.
-    The curves are given by
-    \begin{equation} \label{eq::fmt_geometry_cut}
-        c_1 = 57.29 \cdot \arctan\left(\frac{r_\text{inner}}{z_0 - z}\right), \hspace{0.5cm}
-        c_2 = 57.29 \cdot \arctan\left(\frac{r_\text{outer}}{z_0 - z}\right),
-    \end{equation}
-    where $r_\text{inner}$ is the radius of the hole at the center of FMT, $r_\text{outer}$ is the radius of the outer circumference of FMT, and $z_0$ is the $z$ position of the first FMT layer plus the drift distance.
-    All these parameters are read from the CCDB.
-
     To compensate for this geometric effect, we introduce an additional cut based on the plotted curves.
     The curves can be described by the following equations
     \begin{equation} \label{eq::fmt_geometry_cut}
