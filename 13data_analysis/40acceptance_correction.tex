@@ -2,44 +2,50 @@
 \subsection{Acceptance Correction}
 \label{ssec::acceptance_correction}
 % --+ What is acceptance +------------------------------------------------------
-    When discussing radiation detection, it is common to describe two types of efficiency: absolute efficiency and intrinsic detection efficiency.
-    The former is defined as the fraction of events emitted by the source which is actually registered by the detector, or
+    When discussing radiation detection, it is customary to distinguish between two types of efficiency: absolute efficiency and intrinsic detection efficiency.
+    The former is defined as the fraction of events emitted by the source that are actually detected by the detector, expressed as
     \begin{equation*}
         \xi_\text{tot} = \frac{\text{events registered}}{\text{events emitted by source}}.
     \end{equation*}
-    This is a function of the detector geometry and the probability of an interaction in the detector.
-    Total efficiency is also known as detector acceptance.
 
-    Then, this total efficiency can be factored into two parts: the intrinsic efficiency, $\xi_{\text{int}}$, and the geometric efficiency, $\xi_{\text{geom}}$.
+    This efficiency is influenced by the detector's geometry and the probability of an interaction occurring within the detector.
+    The total efficiency is also referred to as the detector acceptance.
+
+    The total efficiency can be further decomposed into two components: the intrinsic efficiency, $\xi_{\text{int}}$, and the geometric efficiency, $\xi_{\text{geom}}$.
     The total efficiency is then given by
     \begin{equation*}
         \xi_\text{tot} = \xi_\text{int} \cdot \xi_\text{geom}.
     \end{equation*}
 
-    The intrinsic efficiency is that fraction of events actually hitting the detector which is registered
+    The intrinsic efficiency represents the fraction of events that actually reach and are detected by the detector
     \begin{equation*}
         \xi_\text{int} = \frac{\text{events registered}}{\text{events impinging on detector}}.
     \end{equation*}
-    This probability depends on the interaction cross sections of the incident radiation on the detector medium.
-    The intrinsic efficiency is thus a function of the type of radiation, its energy and the detector material \cite{leo1987}.
+
+    This probability is dependent on the interaction cross-sections of the incident radiation with the detector medium.
+    The intrinsic efficiency thus varies with the type of radiation, its energy, and the detector material \cite{leo1987}.
 
 % --+ Acceptance correction through generation + simulation +-------------------
-    Acceptance correction is the process of correcting for the total efficiency of the detector.
-    To obtain an estimation of this detector efficiency, we can compare the total generated events $N_\text{thrown}$ with the accepted events in a simulation of the detector $N_\text{simul}$, such that
+    Acceptance correction involves compensating for the total efficiency of the detector.
+    To estimate this detector efficiency, a comparison is made between the total number of generated events, denoted as $N_\text{thrown}$, and the number of accepted events in a simulation of the detector, denoted as $N_\text{simul}$.
+    This allows us to calculate an estimation of the detector efficiency, represented by $\tilde\xi_\text{tot}$, using
     \begin{equation*}
         \tilde\xi_\text{tot} = \frac{N_\text{simul}}{N_\text{thrown}}.
     \end{equation*}
-    This quantity is naturally dependent on the quality of the event generator and simulation programs.
+
+    Naturally, the value of $\tilde\xi_\text{tot}$ is influenced by the accuracy and reliability of the event generator and simulation programs employed in the study.
 
 % --+ Chosen bins +-------------------------------------------------------------
-    Acceptance varies along the phase space of the kinematical variables.
-    Thus, to make the correction accurate, the ratio must be separated into five-dimensional bins.
-    These correspond to the five studied variables, $Q^2$, $\nu$, $z_h$, $p_T^2$, and $\phi_{PQ}$.
-    For simplicity in analysis, all bins for a variable are of the same size, such that the results are easy to interpret.
+    The acceptance of the detector exhibits variations across the phase space of the kinematic variables.
+    Therefore, in order to achieve accurate acceptance correction, the ratio $\tilde\xi_\text{tot}$ needs to be divided into bins in a five-dimensional space.
+    These bins correspond to the five variables under investigation: $Q^2$, $\nu$, $z_h$, $p_T^2$, and $\phi_{PQ}$.
+    To simplify the analysis process and facilitate interpretation of the results, it is advantageous to have bins of the same size for each variable.
+
+    % TODO. I may need to update this list if I change these ranges in the future.
     \begin{itemize}
         \item
             $Q^2 = 4E_bE'\sin^2(\theta_C/2)$ is the 4-momentum transferred by the lepton probe in the lab frame, where $E_b$ is the beam energy, $E'$ is the scattered electron's energy, and $\theta_C$ is the polar angle of the scattered electron.
-            The chosen bin edges are $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$, $11.0$ $\text{GeV}^2$.
+            The chosen bin edges are $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$, $11$ $\text{GeV}^2$.
         \item
             $\nu = E_v - E'$ is the energy transferred by the lepton probe in the lab frame.
             The chosen bin edges are $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, and $10$ $\text{GeV}$.
@@ -54,12 +60,10 @@
             The chosen bin edges are $-180$, $-140$, $-100$, $-60$, $-20$, $20$, $60$, $100$, $140$, and $180$ degrees.
     \end{itemize}
 
-    Plots for each of the variables described with vertical lines showing the bins can be seen in the plots to the left of figure \ref{fig::acc_corr}.
-    The data used to obtain these plots is from RG-F run number $\mathbf{012933}$, which contains a total of $23,844,549$ reconstructed events to work with.
+    To calculate the acceptance, 10 million events were initially generated in deep inelastic kinematics using LEPTO, a Monte Carlo generator specifically designed for deep inelastic lepton-nucleon scattering \cite{ingelman1997}.
+    Subsequently, these events were simulated under the experimental conditions of the RG-F experiment in CLAS12 using \texttt{gemc}, which is the standard tool for CLAS12 event simulation \cite{ungaro2020gemc}.
+    The simulation took into account a torus field polarity of $-1$ and a solenoid field polarity of $-0.745033$.
 
-    To compute the acceptance, 10 million events were generated in deep inelastic kinematics using LEPTO, a Monte Carlo generator for deep inelastic lepton-nucleon scattering \cite{ingelman1997}.
-    Then, the events were simulated in the RG-F experiments conditions in CLAS12 by using \texttt{gemc}, with a torus field polarity of $-1$ and solenoid field polarity of $-0.745033$.
-    \texttt{gemc} is the standard tool used for simulating CLAS12 events \cite{ungaro2020gemc}.
-    Finally, they were reconstructed using \texttt{coatjava}, the standard tool for CLAS12 event offline reconstruction \cite{ziegler2020}.
-    A description of the last can be read in section \ref{sssec::offline_reconstruction}.
-    The results of the acceptance correction process are discussed in section \ref{ssec::acceptancecorrectionresults}.
+    Finally, the simulated events were reconstructed using \texttt{coatjava}, which is the standard tool for CLAS12 event offline reconstruction \cite{ziegler2020}.
+    Further details regarding the offline reconstruction process can be found in Section \ref{sssec::offline_reconstruction}.
+    The outcomes of the acceptance correction procedure are discussed in Section \ref{ssec::acceptance_correction_results}.
