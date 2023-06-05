@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 \subsection{FMT Alignment}
-\label{ssec::fmt_alignment}
+\label{12.20::fmt_alignment}
 % --+ Why is it needed +--------------------------------------------------------
     In an ideal scenario, the target and each detector would be installed precisely in their required positions.
     However, in the real world, there are inevitable misalignments in their placements.
@@ -19,8 +19,8 @@
     Additionally, alignment rotations can be carried out around these axes.
     Specifically, for the purposes of this work, rotations around the $z$ axis are referred to as $\phi$ rotation (roll), while rotations around the $x$ and $y$ axes are termed pitch and yaw, respectively.
 
-    To quantify misalignment, the DOCA between a reconstructed DC track and an FMT cluster is defined as a \textbf{Residual}.
-    Due to the geometry of each layer (as depicted in figure \ref{fig::fmt_geometry}), only the residuals in the local $y$ axis of a layer (perpendicular to the strips) can be measured.
+    To quantify misalignment, the DOCA between a reconstructed DC track and an FMT cluster is defined as a Residual.
+    Due to the geometry of each layer (as depicted in figure \ref{fig::12.10::fmt_geometry}), only the residuals in the local $y$ axis of a layer (perpendicular to the strips) can be measured.
     This implies that global $z$ and $\phi$ alignment can be performed independently for each layer.
     However, global $x$, global $y$, pitch, and yaw alignment must be carried out simultaneously for the entire detector.
 
@@ -30,25 +30,25 @@
         \includegraphics[width=\textwidth]{20res_example.png}}
         \caption[Example FMT residuals plot]{Example FMT residuals plot.
         Source: \hyperlink{github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
-        \label{fig::res_example}
+        \label{fig::12.20::fmt_residuals_example}
     \end{figure}
 
     To minimise residuals, they are plotted for a specific shift or rotation in the relevant axes.
-    An example of such a plot is illustrated in figure \ref{fig::res_example}.
+    An example of such a plot is illustrated in figure \ref{fig::12.20::fmt_residuals_example}.
     Since the residuals are expected to follow a Gaussian distribution, a Gaussian fit is applied to them.
 
     For $z$ and $\phi$ alignment, the goodness of fit is heuristically evaluated by comparing the standard deviation ($\sigma$) of the Gaussian fits and selecting the shift with the smallest $\sigma$.
     For $x$, $y$, pitch, and yaw alignment, the goodness of fit is heuristically evaluated by choosing the fit with the mean closest to zero.
     It is important to consider a reasonable error margin when selecting the minima.
 
-    Examples of the distributions of goodness of fit for $z$ and $xy$ alignment can be observed in figure \ref{fig::resfit_example}.
+    Examples of the distributions of goodness of fit for $z$ and $xy$ alignment can be observed in figure \ref{fig::12.20::fmt_residuals_fit_example}.
 
     \begin{figure}[t!]
         \centering\frame{
         \includegraphics[width=\textwidth]{20resfit_example.png}}
         \caption[Examples of residuals goodness of fit plots]{Examples of residuals goodness of fit plots.
         Source: \hyperlink{github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
-        \label{fig::resfit_example}
+        \label{fig::12.20::fmt_residuals_fit_example}
     \end{figure}
 
     \input{12fmt_alignment/21fiducial_cuts}

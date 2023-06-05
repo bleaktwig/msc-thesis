@@ -1,20 +1,20 @@
 % !TEX root = ../main.tex
 \subsubsection{Geometry Effect}
-\label{sssec::geometry_effect}
+\label{12.42::geometry_effect}
     To evaluate the enhancement in vertex resolution, we will compare the vertex positions of tracks that underwent only DC reconstruction with those that underwent both DC and FMT reconstruction.
     For convenience, we will refer to the former as DC tracks and the latter as FMT tracks.
-    Considering that the $z$ axis is aligned with the beamline, Figure \ref{fig::dc_vs_fmt_vz_011983} illustrates the $z$ positions of the vertex for DC tracks versus FMT tracks.
+    Considering that the $z$ axis is aligned with the beamline, Figure \ref{fig::12.41::dc_vs_fmt_vz_11983} illustrates the $z$ positions of the vertex for DC tracks versus FMT tracks.
 
-    To comprehend the plot in Figure \ref{fig::dc_vs_fmt_vz_011983}, it is valuable to examine the RG-F target.
+    To comprehend the plot in Figure \ref{fig::12.41::dc_vs_fmt_vz_11983}, it is valuable to examine the RG-F target.
     The target consists of a large gas-filled chamber with a varying composition across different runs.
     The distance between the chamber windows measures $553.32$ millimetres.
     Furthermore, it was observed that the upstream window of the target is positioned approximately $24$ millimetres away from the beam window.
     All windows are constructed from aluminium and have a thickness of $15$ micrometers.
     A detailed depiction of the target can be found in Addendum 1.
 
-    Based on Figure \ref{fig::dc_vs_fmt_vz_011983}, it is evident that the FMT detector solely detects the upstream windows, completely overlooking the downstream one.
+    Based on Figure \ref{fig::12.41::dc_vs_fmt_vz_11983}, it is evident that the FMT detector solely detects the upstream windows, completely overlooking the downstream one.
     This issue stems from a geometric constraint: the downstream window falls outside the active detection area of the FMT.
-    This effect is clearly illustrated in Figure \ref{fig::vz_vs_theta}, where the $\theta$ angle is plotted against the vertex $z$ coordinate.
+    This effect is clearly illustrated in Figure \ref{eq::12.42::vz_vs_theta}, where the $\theta$ angle is plotted against the vertex $z$ coordinate.
     The two red lines in the plots represent the FMT's active area, and it is apparent that the downstream window lies outside this region, thereby explaining its absence.
 
     \begin{figure}[t!]
@@ -22,12 +22,12 @@
         \includegraphics[scale=0.24]{42theta_dc_vs_fmt.png}}
         \caption[$z$ vs $\theta$ for DC and FMT.]{$z$ vs $\theta$ for DC and FMT for electrons without any geometry correction. FMT's active area are shown in red lines.
         Source: \texttt{fmtVertex.groovy} script in \hyperlink{github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
-        \label{fig::vz_vs_theta}
+        \label{eq::12.42::vz_vs_theta}
     \end{figure}
 
     To compensate for this geometric effect, we introduce an additional cut based on the plotted curves.
     The curves can be described by the following equations
-    \begin{equation} \label{eq::fmt_geometry_cut}
+    \begin{equation} \label{eq::12.42::fmt_geometry_cut}
         c_1(z) = 57.29 \cdot \arctan\left(\frac{r_\text{inner}}{z_0 - z}\right),
         \hspace{0.5cm}
         c_2(z) = 57.29 \cdot \arctan\left(\frac{r_\text{outer}}{z_0 - z}\right).

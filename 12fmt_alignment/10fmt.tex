@@ -1,13 +1,13 @@
 % !TEX root = ../main.tex
 \subsection{Forwards MicroMegas Tracker}
-\label{ssec::forwards_micromegas_tracker}
+\label{12.10::forwards_micromegas_tracker}
 % --+ Micromegas +--------------------------------------------------------------
     \begin{figure}[b!]
         \centering\frame{
         \includegraphics[width=\textwidth]{10mm_principle.pdf}}
         \caption[MM working principle.]{MicroMegas working principle.
         Source: Re-render of original illustration by \cite{giomataris1996}.}
-        \label{fig::mm_principle}
+        \label{fig::12.10::micromegas_principle}
     \end{figure}
 
     A Micro-Mesh Gaseous Detector or MicroMegas (MM) is a gaseous particle detector that is derived from wire chambers.
@@ -17,7 +17,7 @@
     The detector operates by amplifying the charges created by ionisation in the gas volume.
     Its volume is divided into two parts by a metallic micro-mesh placed less than 150 micrometers away from the readout electrode or strip.
 
-    To illustrate this process, refer to figure \ref{fig::mm_principle}.
+    To illustrate this process, refer to figure \ref{fig::12.10::micromegas_principle}.
 
     When a particle passes through the detector, it ionises the gas atoms by stripping an electron, resulting in an electron-ion pair (1).
     An electric field, denoted as $\text{E}_1$, is applied to the gas, causing the electron to drift towards the amplification electrode (2) while the ion moves towards the cathode.
@@ -27,7 +27,7 @@
 % --+ Micromegas in CLAS12 +----------------------------------------------------
     Inside the CLAS12 detector, a diverse set of tracking detectors is utilised to determine the positions and momenta of particles at different points along their trajectories.
     The proximity of these detectors to the particle source directly correlates to the precision achieved in determining the position and momentum at the interaction vertex, which refers to the point where the particle was generated.
-    To optimise this precision, the MicroMegas Vertex Tracker (MVT) in CLAS12 is positioned as close as feasible to the target, as depicted in figure \ref{fig::mvt}.
+    To optimise this precision, the MicroMegas Vertex Tracker (MVT) in CLAS12 is positioned as close as feasible to the target, as depicted in figure \ref{fig::12.10::micromegas_vertex_tracker}.
 
     \begin{figure}[b!]
         \centering\frame{
@@ -35,7 +35,7 @@
         \caption[MVT detector.]{MVT detector.
         The red dot denotes the $z=0$ point in the beamline, the red line denotes an arbitrary track coming from that point, and the circumference in the Forward MicroMegas Tracker (FMT) denotes where that track produces a signal in an FMT layer.
         Source: \hyperlink{jlab.org/physics/hall-b/clas12}{CLAS12 wiki}.}
-        \label{fig::mvt}
+        \label{fig::12.10::micromegas_vertex_tracker}
     \end{figure}
 
     Similar to the division of CLAS12 into a central detector and a forward detector, the MVT is also divided into two parts to maximise the angular coverage.
@@ -49,7 +49,7 @@
     While the original design of the FMT included six layers, the current implemented detector has only three layers installed.
     This is due to technical difficulties and concerns regarding its Lorentz angle \cite{konczykowski2010}.
 
-    Each of the three FMT layers has $1024$ readout strips, which follow a peculiar distribution, as can be seen in the image to the right of figure \ref{fig::fmt_geometry}.
+    Each of the three FMT layers has $1024$ readout strips, which follow a peculiar distribution, as can be seen in the image to the right of figure \ref{fig::12.10::fmt_geometry}.
     In addition, each layer's orientation differs by $60\degree$ to provide an accurate measurement in the xy-plane, as is shown in the image at the centre of the same figure \cite{acker2020mvt}.
 
     \begin{wrapfigure}{r}{0.50\textwidth}
@@ -58,7 +58,7 @@
         \caption[FMT reconstruction summary]{FMT reconstruction summary.
         Data taking is coloured blue, data in black, and processes in red.
         Source: Own elaboration using \hyperlink{inkscape.org/}{Inkscape}.}
-        \label{fig::fmt_recon}
+        \label{fig::12.11::fmt_reconstruction}
     \end{wrapfigure}
 
     The FMT is composed of six circular, flat detectors that cover angles ranging from $6$ to $29$ degrees.
@@ -66,7 +66,7 @@
     However, the currently implemented FMT deviates from the original design, with only three layers installed.
     This modification was necessitated by technical difficulties and concerns related to its Lorentz angle \cite{konczykowski2010}.
 
-    Each of the three FMT layers is equipped with 1024 readout strips that exhibit a distinctive distribution, as depicted in the image on the right-hand side of figure \ref{fig::fmt_geometry}.
+    Each of the three FMT layers is equipped with 1024 readout strips that exhibit a distinctive distribution, as depicted in the image on the right-hand side of figure \ref{fig::12.10::fmt_geometry}.
     Additionally, the orientation of each layer differs by 60 degrees to ensure accurate measurements in the xy-plane, as illustrated in the image at the center of the same figure \cite{acker2020mvt}.
 
     \begin{figure}[t]
@@ -74,7 +74,7 @@
         \includegraphics[width=\textwidth]{10fmt_geometry.pdf}}
         \caption[FMT detector geometry.]{FMT detector geometry. The first picture shows the distribution of the BMT and FMT layers, the second the different angle of each FMT layer, and the third the readout strip distribution of each FMT layer.
         Source: Own elaboration, using \hyperlink{inkscape.org/}{Inkscape}.}
-        \label{fig::fmt_geometry}
+        \label{fig::12.10::fmt_geometry}
     \end{figure}
 
     \input{12fmt_alignment/11fmt_track_reconstruction}
