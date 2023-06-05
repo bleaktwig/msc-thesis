@@ -6,11 +6,11 @@
         The particles' momentum is obtained from tracking and the event builder.
         As can be seen in the northwest and the southeast plots, the corner bins -- $1.00$ to $1.40$ and $8.60$ to $9.00$ GeV respectively -- are not very reliable.
         Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
-        \label{fig::sf_1d}
+        \label{fig::13.30::sampling_fraction_fit_1d}
     \end{figure}
 
 \subsection{Sampling Fraction}
-\label{ssec::sampling_fraction}
+\label{13.30::sampling_fraction}
     The energy deposited by electrons in the active area of the calorimeters is a fraction of their total energy, $E_\text{tot}$.
     This value is proportional to their momentum, $P$, for energies above a few hundred MeV.
     Heavier particles, due to their reduced penetration capabilities, tend to lose an amount of energy independent of their momentum.
@@ -32,19 +32,19 @@
 
     where $\mu$ and $\sigma$ represent the mean and standard deviation of the distribution, respectively. The fit is limited to the range between $0.15$ and $0.30$ for the expected $E/p$ values for electrons based on theory.
 
-    Examples of these plots are shown in Figure \ref{fig::sf_1d}.
+    Examples of these plots are shown in Figure \ref{fig::13.30::sampling_fraction_fit_1d}.
     From the figure, it can be observed that there are not enough electrons in the extreme momentum ranges, such as from $1$ to $1.4$ GeV or from $8.6$ to $9$ GeV.
-    Consequently, the sampling fraction fit, described in equation \eqref{eq::sampfracfit}, only considers data within the range of $1.4$ to $8.6$ GeV.
+    Consequently, the sampling fraction fit, described in equation \eqref{eq::13.30::sampling_fraction_fit_2d}, only considers data within the range of $1.4$ to $8.6$ GeV.
 
     The mean of each of these fits is then extracted to serve as data points for a sampling fraction fit.
     A polynomial fit is employed since it effectively captures the shape of these points and aligns with the reconstruction software.
     The fit is described as
 
-    \begin{equation} \label{eq::sampfracfit}
+    \begin{equation} \label{eq::13.30::sampling_fraction_fit_2d}
         f(x) = p_0 \cdot \left(p_1 + \frac{p_2}{x} + \frac{p_3}{x^2}\right).
     \end{equation}
 
-    The $E/p$ distribution vs $p$ is depicted in Figure \ref{fig::sf_2d}, together with this fit.
+    The $E/p$ distribution vs $p$ is depicted in Figure \ref{fig::13.30::sampling_fraction_fit_2d}, together with this fit.
 
     \begin{figure}[t!]
         \centering\frame{
@@ -54,7 +54,7 @@
         Its momentum is obtained from tracking and the event builder.
         The fit follows the deposited energy of electrons to find their sampling fraction.
         Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
-        \label{fig::sf_2d}
+        \label{fig::13.30::sampling_fraction_fit_2d}
     \end{figure}
 
     Finally, the parameters of the fit are saved in plain text files, following the convention used in the CCDB.
