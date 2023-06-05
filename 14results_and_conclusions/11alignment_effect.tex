@@ -2,20 +2,21 @@
 \subsubsection{Alignment Effect}
 \label{14.11::alignment_effect}
     % Introduction: The problem.
-    The RG-F experiment's data is divided based on the season over which runs take place, thus there is Spring 2020 and Summer 2020 data.
-    Based on the run group's guidelines, it is recommended to use Summer data, as it has seen more calibration than the Spring data.
-    However, this calibration work hasn't included the FMT detector, and a strong misalignment effect is observed.
+    The data from the RG-F experiment is divided based on the season in which the runs take place, namely Spring 2020 and Summer 2020.
+    According to the run group's guidelines, it is recommended to use Summer data as it has undergone more calibration compared to the Spring data.
+    However, the calibration work conducted so far does not include the FMT detector, resulting in a significant misalignment effect.
 
     % Cause of the problem.
-    By simple visual inspection, two peaks can be clearly seen between $z = -36$ cm and $z = -30$ cm in figure \ref{fig::12.41::dc_vs_fmt_vz_11983}.
-    These peaks are merged in figure \ref{fig::14.10::vz_012933}.
-    As discussed in section \ref{12::fmt_alignment_and_reconstruction}, this issue comes from a lack of correction for FMT misalignments.
+    Through simple visual inspection, two distinct peaks can be clearly observed between $z = -36$ cm and $z = -30$ cm in figure \ref{fig::12.41::dc_vs_fmt_vz_11983}.
+    The leftmost peak corresponds to the scattering chamber window, while the second peak corresponds to the RG-F target window.
+    These peaks appear merged in figure \ref{fig::14.10::vz_012933}.
+    As discussed in section \ref{12::fmt_alignment_and_reconstruction}, this issue arises due to the lack of correction for FMT misalignments.
 
     % Solution.
-    The simplest solution is to use Spring data.
-    While more work has been put on Summer data, it mainly pertains to the central detector; unrelated to this analysis.
-    Figure \ref{fig::14.11::vz_012016} shows the same $v_z$ plot from Spring 2020 run 12016.
-    Both peaks are clearly visible in this plot, suggesting that misalignments are properly accounted for in the run.
+    The simplest solution is to utilize Spring data.
+    Although more calibration work has been performed on the Summer data, it mainly pertains to the CD, which is not used in this analysis.
+    Figure \ref{fig::14.11::vz_012016} depicts the same $v_z$ plot from Spring 2020 run 12016, where both peaks are clearly visible.
+    This indicates that the misalignment issue has been appropriately addressed in that particular run.
 
     \begin{figure}[t!]
         \centering\frame{
