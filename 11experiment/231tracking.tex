@@ -21,11 +21,6 @@
     These tracking systems in both the forward and central regions use sophisticated detectors to measure the position of charged particle hits, allowing for the reconstruction of particle trajectories.
     By combining information from these detectors and utilising the magnetic field information, the tracking algorithms reconstruct the paths of charged particles, enabling precise determination of their momenta and vertices.
 
-% --+ Reconstruction +----------------------------------------------------------
-    In both the forward and central tracking systems, track reconstruction involves two main steps: pattern recognition and track fitting.
-    The first step is to identify hits, which are the recorded signals corresponding to a particle passing through a specific detector component.
-    These hits are transformed from electronic signals into the position of the track within the geometry of the detector subsystem.
-
     \begin{wrapfigure}{r}{0.50\textwidth}
         \centering\frame{
         \includegraphics[width=\linewidth]{231dc_pres.png}}
@@ -33,6 +28,11 @@
         Source: \cite{ziegler2020}.}
         \label{fig::11.231::dc_p_resolution}
     \end{wrapfigure}
+
+% --+ Reconstruction +----------------------------------------------------------
+    In both the forward and central tracking systems, track reconstruction involves two main steps: pattern recognition and track fitting.
+    The first step is to identify hits, which are the recorded signals corresponding to a particle passing through a specific detector component.
+    These hits are transformed from electronic signals into the position of the track within the geometry of the detector subsystem.
 
     A hit is defined as a geometric object that represents a detector element.
     For example, in the central tracker, a hit can be represented by a line corresponding to a strip in the detector.
