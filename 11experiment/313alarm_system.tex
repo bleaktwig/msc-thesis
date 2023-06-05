@@ -11,16 +11,16 @@
 
         \begin{center}
             \begin{tabularx}{360pt}{llX}
-                \hline
+                \toprule
                 \textbf{Name}          & \textbf{Trigger}                     & \textbf{Severity} \\
-                \hline
+                \midrule \midrule
                 Band is not moving     & \texttt{DMC01:A\_tgttype}       =  0 & Major             \\
                 Band is moving         & \texttt{DMC01:A\_tgttype}       =  9 & Minor             \\
                 Band beyond low limit  & \texttt{DMC01:A\_tgttype}       = 10 & Major             \\
                 Band beyond high limit & \texttt{DMC01:A\_tgttype}       = 11 & Major             \\
                 Controller comm. error & \texttt{DMC01:COMMERR\_STATUS}  =  1 & Major             \\
                 IOC comm. error        & \texttt{IOC01:SR\_i\_am\_alive} =  0 & Major             \\
-                \hline
+                \bottomrule
             \end{tabularx}
             \label{tab::11.313::alarms_pv}
         \end{center}

@@ -136,19 +136,19 @@
         The diagonal elements are correctly identified, while the off-diagonal elements are misidentified.
         Detector inefficiencies are included.}
 
-        \begin{tabularx}{\textwidth}{XXXXXXX|XXXXX}
-            \hline
-                     & \multicolumn{6}{l}{\textit{FD Truth}} & \multicolumn{5}{l}{\textit{CD Truth}}  \\
-            \cline{2-12}
-                     & $e$      & $\pi$ & $K$  & $p$  & $n$  & $\gamma$ &       & $\pi$    & $K$  & $p$  & $n$  \\
-            \hline
-            $e$      & 0.98     &       &      &      &      &          &       &          &      &      &      \\
-            $\pi$    &          & 0.93  & 0.10 & 0.00 &      &          & $\pi$ & 0.84     & 0.14 & 0.00 &      \\
-            $K$      &          & 0.03  & 0.80 & 0.00 &      &          & $K$   & 0.11     & 0.80 & 0.01 &      \\
-            $p$      &          & 0.03  & 0.02 & 0.98 &      &          & $p$   & 0.03     & 0.04 & 0.95 &      \\
-            $n$      &          &       &      &      & 0.66 & 0.01     & $n$   &          &      &      & 0.11 \\
-            $\gamma$ &          &       &      &      & 0.14 & 0.95     &       &          &      &      &      \\
-            \hline
+        \begin{tabularx}{\textwidth}{XXXXXXXXXXXXX}
+            \multicolumn{7}{c}{\textit{Forward Detector Truth}} & & \multicolumn{5}{c}{\textit{Central Detector Truth}}  \\
+            \cmidrule{1-7} \cmidrule{9-13}
+                     & $e$      & $\pi$ & $K$  & $p$  & $n$  & $\gamma$ & &       & $\pi$    & $K$  & $p$  & $n$  \\
+            \cmidrule{1-7} \cmidrule{9-13}
+            $e$      & 0.98     &       &      &      &      &          & & $\pi$ & 0.84     & 0.14 & 0.00 &      \\
+            $\pi$    &          & 0.93  & 0.10 & 0.00 &      &          & & $K$   & 0.11     & 0.80 & 0.01 &      \\
+            $K$      &          & 0.03  & 0.80 & 0.00 &      &          & & $p$   & 0.03     & 0.04 & 0.95 &      \\
+            $p$      &          & 0.03  & 0.02 & 0.98 &      &          & & $n$   &          &      &      & 0.11 \\
+            \cmidrule{9-13}
+            $n$      &          &       &      &      & 0.66 & 0.01     & &       &          &      &      &      \\
+            $\gamma$ &          &       &      &      & 0.14 & 0.95     & &       &          &      &      &      \\
+            \cmidrule{1-7}
         \end{tabularx}
         \label{tab::11.232::reconstruction_pid}
     \end{table}
