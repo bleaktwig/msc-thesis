@@ -4,7 +4,7 @@
     The Particle Identification (PID) numbering scheme described here was initially introduced by the Particle Data Group (PDG) in 1988 \cite{yost1988}.
     Its purpose is to facilitate communication and data exchange between different generators, simulators, and analysis packages employed in particle physics.
     The system underwent subsequent revisions and adaptations in 1998 to allow for the systematic inclusion of undiscovered and hypothetical particles \cite{particle1998}.
-    The PID convention utilised in this thesis is based on the most up-to-date version available at the time of writing, as referenced from the 2020 Review of Particle Physics by the PDG \cite{particle2020review}.
+    The PID convention utilised in this thesis is based on the most up-to-date version available at the time of writing, as referenced from the 2020 Review of Particle Physics by the PDG \cite{particle2020}.
 
 % --+ The Event Builder +-------------------------------------------------------
     The Event Builder (EB) is a crucial component within the reconstruction chain, serving multiple functions:
@@ -84,7 +84,7 @@
         \includegraphics[width=\linewidth]{232pos_pid.png}}
         \caption[Particle $\beta$ vs. momentum for positively charged tracks.]{Particle $\beta$ vs. momentum from simulation data for positively charged tracks with their start time from an electron in the FD (top plot) or in the FT (bottom plot).
         Source: \cite{ziegler2020}.}
-        \label{fig::pos_pid}
+        \label{fig::11.232::positive_pid}
     \end{wrapfigure}
 
     For charged particles, the identification process begins by utilising calorimetry and Cherenkov information to positively identify $e^-/e^+$ candidates in the FD.
@@ -94,7 +94,7 @@
     The $p, K, \pi$ candidate with the smallest time residual is selected.
     This time residual is calculated as the difference between the measured flight time of the particle and the flight time computed for a specific mass hypothesis.
 
-    Figure \ref{fig::pos_pid} presents the $\beta$ vs. momentum distributions for forward-going positively charged hadrons reconstructed using data from the FTOF and DC subsystems.
+    Figure \ref{fig::11.232::positive_pid} presents the $\beta$ vs. momentum distributions for forward-going positively charged hadrons reconstructed using data from the FTOF and DC subsystems.
     The electron is reconstructed either in the FD (top) or in the FT (bottom).
     The computed curves for different mass hypotheses are superimposed on the distributions.
 
@@ -104,7 +104,7 @@
         \caption[$\beta$ distribution of neutrals.]{$\beta$ distribution for neutral particles as measured by the ECAL from simulation data, showing a sharp peak at $\beta = 1$ from photons and a broader, slower distribution from neutrons.
         Source: \cite{ziegler2020}.
         }
-        \label{fig::n_gamma}
+        \label{fig::11.232::neutrons_and_gamma}
     \end{wrapfigure}
 
 % --+ Neutral particle identification +-----------------------------------------
@@ -116,7 +116,7 @@
     For photons in the FD, the momentum is determined from the deposited energy and the ECAL sampling fraction \cite{asryan2020}.
     For neutrons, the momentum is assigned based on the measured $\beta$, assuming the mass of a neutron.
 
-    Figure \ref{fig::n_gamma} illustrates an example of the reconstructed $\beta$ values for neutral particles in the FD, demonstrating the separation between photons and neutrons.
+    Figure \ref{fig::11.232::neutrons_and_gamma} illustrates an example of the reconstructed $\beta$ values for neutral particles in the FD, demonstrating the separation between photons and neutrons.
 
 % --+ Particle identification performance +-------------------------------------
     A particle identification quality factor, represented as a signed-$\chi^2$ or pull, is assigned based on the contributions from individual detector subsystem responses and their resolutions.
@@ -125,7 +125,7 @@
     This includes the particle four-vectors, associated detector responses, and global event information such as beam RF and helicity details.
 
     The accuracy of the currently implemented particle identification algorithm can be estimated by comparing the assigned particle identification with the true identification in Monte Carlo simulations.
-    Table \ref{tab::rpid} presents the particle identification matrix for the FD (left) and CD (right).
+    Table \ref{tab::11.232::reconstruction_pid} presents the particle identification matrix for the FD (left) and CD (right).
     The values are derived from simulations involving electron-hadron or electron-photon pairs with hadron and photon momenta ranging from $1$ to $2.5 \text{ GeV}$ and electron momenta ranging from $1$ to $9 \text{ GeV}$.
     The diagonal elements represent cases where the particle is correctly identified, while the off-diagonal elements represent cases of misidentification \cite{ziegler2020}.
 
@@ -150,5 +150,5 @@
             $\gamma$ &          &       &      &      & 0.14 & 0.95     &       &          &      &      &      \\
             \hline
         \end{tabularx}
-        \label{tab::rpid}
+        \label{tab::11.232::reconstruction_pid}
     \end{table}
