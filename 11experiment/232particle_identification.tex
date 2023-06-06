@@ -7,7 +7,7 @@
     The PID convention utilised in this thesis is based on the most up-to-date version available at the time of writing, as referenced from the 2020 Review of Particle Physics by the PDG \cite{particle2020}.
 
 % --+ The Event Builder +-------------------------------------------------------
-    The Event Builder (EB) is a crucial component within the reconstruction chain, serving multiple functions:
+    The EB is a crucial component within the reconstruction chain, serving multiple functions:
     \begin{itemize}
         \item
             It gathers information from upstream services.
@@ -46,7 +46,7 @@
     The particle in the FT is assumed to be an electron, while all possible hadron mass hypotheses are considered for the FD tracks.
     The combination that exhibits the best time coincidence is selected, and the timing of the resulting FT electron is used to assign the start time.
 
-    A correction to the start time is subsequently applied using the Radio Frequency (RF) signal from the accelerator, in conjunction with the reconstructed event vertex position.
+    A correction to the start time is subsequently applied using the RF signal from the accelerator, in conjunction with the reconstructed event vertex position.
     This correction effectively aligns the event start time with the most accurate measurement of the beam-bunch arrival time at the target.
 
     The uncorrected measured vertex time of a particle, denoted as $t_v$, can be expressed as follows
@@ -64,7 +64,7 @@
     In this equation, $z_v$ represents the $z$-coordinate of the event vertex position, $z_0$ is the reference position calibration at the center of the target, and $c$ denotes the speed of light in vacuum.
     $t_{RF}$ and $f_{RF}$ correspond to the measured and calibrated RF time and frequency of the accelerator.
     These values can either be $2.004 \text{ ns}$ and $249.5 \text{ MHz}$, or $4.008 \text{ ns}$ and $499 \text{ MHz}$, respectively.
-    During the reconstruction process, these values are obtained from the Run Conditions Database (RCDB).
+    During the reconstruction process, these values are obtained from the Run Conditions Database.
 
     Subsequently, the time can be further corrected to the nearest beam bunch using the equation
     \begin{equation*}

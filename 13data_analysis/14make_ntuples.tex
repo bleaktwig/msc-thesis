@@ -33,7 +33,7 @@
         \item
             First, the program identifies the TOF of the trigger electron.
             The hits of the trigger electron in the FD scintillators and FD calorimeters are listed in order of priority based on the precision of each detector's TOF measurement.
-            The detectors are prioritised as follows: FTOF panel-1b (FTOF1B), FTOF panel-1a (FTOF1A), FTOF panel-2 (FTOF2), Pre-shower Calorimeter (PCAL), ECIN, and ECOU, as described in Section \ref{11.210::forward_detector}.
+            The detectors are prioritised as follows: FTOF panel-1b, FTOF panel-1a, FTOF panel-2, PCAL, ECIN, and ECOU, as described in Section \ref{11.210::forward_detector}.
             Next, the program iterates over the list of hits, extracting the TOF value from the earliest hit in the most precise available layer.
 
         \item
@@ -51,7 +51,7 @@
             Furthermore, the particle's TOF is computed using the same procedure as the one employed for the trigger electron's TOF, considering the hits in the detectors prioritised by their precision.
 
         \item
-            The program assigns the Particle Identification (PID) to the particle.
+            The program assigns the Particle Identification PID to the particle.
             The process is very similar to the PID assignment in reconstruction, as described in Section \ref{11.230::offline_reconstruction}.
             However, the assigned PID is not directly used in order to allow users to modify parameters and define new criteria for the PID assignment.
 
