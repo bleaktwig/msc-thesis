@@ -17,7 +17,6 @@ Please focus on not changing your behavior as prompts go on. Thanks!
 * Ensure that all sections have labels, and all labels are well-formatted.
 * Check that all figures have a source.
 * By the end, check that all acronyms are in the glossary, and that the full name of each acronym are only used the first time.
-* Search (matching case) for all instances of `figure`, `equation`, `table`, `section`, `subsection`, and `subsubsection` and capitalize first letter.
 ---------------------------------------------------------------------+ TODOs +--
 
                            | Proofread | Spell check | Labels | Figsource |
