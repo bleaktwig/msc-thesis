@@ -1,9 +1,9 @@
 % !TEX root = ../main.tex
 \subsubsection{Efficiency Study}
 \label{14.14::efficiency_study}
-% --+ Integrated. +---------------------------------------------------------
+% --+ Integrated. +-------------------------------------------------------------
     With all these effects accounted for, we can proceed to study the efficiency in detail.
-    First, if we define FMT efficiency as the percentage of DC tracks that get accepted by FMT, we get table \ref{tab::14.14::fmt_efficiency_study} for runs 12933 (Summer 2020) and 12016 (Spring 2020).
+    First, if we define FMT efficiency as the percentage of DC tracks that get accepted by FMT, we get the results in Table \ref{tab::14.14::fmt_efficiency_study} for runs 12933 (Summer 2020) and 12016 (Spring 2020).
 
     \begin{center}
         \begin{tabularx}{0.60\textwidth}{llllcll}
@@ -24,20 +24,86 @@
         \label{tab::14.14::fmt_efficiency_study}
     \end{center}
 
-    % TODO. Change percentages based on new table.
-    By switching from Summer to Spring data, we see a $\sim32\%$ increase in trigger electrons detected, and a $\sim36\%$ in all particles.
-    Then, by applying the geometry cut in $v_z$ and $\theta$, $\sim64\%$ more trigger electrons are detected (for a $\sim184\%$ total increase), and $\sim126\%$ more particles in general are detected (for a $\sim207\%$ total increase).
+    Integrating all variables, it becomes evident that even with the corrections, the pion efficiency for 3-layer tracks does not exceed $3\%$.
+    Consequently, it is not practical to work exclusively with FMT tracks that traverse all three FMT layers.
+    For the remainder of the document, tracks detected by 2 or 3 layers will be collectively referred to as FMT tracks.
 
-% --+ Separated. +----------------------------------------------------------
-    We can then check how the efficiency changes as result of the corrections.
-    Due to the geometric cut, we expect a strong dependency on $v_z$ and $\theta$, and at most a weak one on $\phi$ and $p$.
-    This is what we see in data, as is shown in figure \ref{fig::14.14::fmt_efficiencies}.
+    The table illustrates the positive impact of switching to Spring 2020 data and applying the geometry cut.
+    The switch results in a $30.1\%$ increase in detected trigger electrons, as well as a $70.8\%$ increase for positive pions and a $58.9\%$ increase for negative pions.
+    Furthermore, by applying the geometry cut based on $v_z$ and $\theta$, an additional $64.2\%$ increase in trigger electrons is achieved, resulting in a total increase of $113.9\%$.
+    The pion yield experiences a substantial enhancement, with positive pions increasing by $150.2\%$ and negative pions increasing by $231.5\%$, resulting in a total increase of $330.8\%$ and $426.8\%$, respectively.
 
-    % TODO. Explain the loss of dips in $\phi$ efficiency.
+% --+ Separated. +--------------------------------------------------------------
+    Next, we need to ensure that we are not introducing a systematic error by applying these corrections.
+    To achieve this, we must investigate the effect of the geometry cut on different detected variables for electrons ($e^-$), positive pions ($\pi^+$), and negative pions ($\pi^-$).
+    Based on the definition of the cut, we anticipate a strong correlation between efficiency and $v_z$ and $\theta$, and at most a weak correlation with $\phi$ and $p$.
+
+    Our prediction is validated by Figures \ref{fig::14.14::fmt_efficiency_vz} and \ref{fig::14.14::fmt_efficiency_theta}.
+    The efficiency displays a pronounced dependence on both $v_z$ and $\theta$ for all three particles under study.
+    It is worth noting that the dependence is more pronounced for electrons compared to pions.
+    This outcome aligns with expectations, as the only accepted pions are those detected in events where an electron is also detected.
+    Thus, the ``final'' pion efficiency incorporates the combined detector efficiencies for electrons and pions.
 
     \begin{figure}[t!]
         \centering\frame{
-        \includegraphics[width=\textwidth]{14efficiencies.pdf}}
-        \caption[$v_z$, $\theta$, $\phi$, and $p$ efficiencies for FMT tracks, run 12016]{$v_z$, $\theta$, $\phi$, and $p$ efficiencies for FMT tracks. FMT Efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers. Run 12016.}
-        \label{fig::14.14::fmt_efficiencies}
+        \includegraphics[width=\textwidth]{14vz_efficiency.pdf}}
+        \caption[$v_z$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        Run 12016]{$v_z$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        FMT Efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers.
+        Run 12016.
+        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.14::fmt_efficiency_vz}
+    \end{figure}
+
+    \begin{figure}[t!]
+        \centering\frame{
+        \includegraphics[width=\textwidth]{14theta_efficiency.pdf}}
+        \caption[$\theta$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        Run 12016]{$\theta$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        FMT Efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers.
+        Run 12016.
+        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.14::fmt_efficiency_theta}
+    \end{figure}
+
+    Next, we examine the $\phi$ efficiency, as depicted in Figure \ref{fig::14.14::fmt_efficiency_phi}.
+    Our prediction holds true for both positive and negative pions, as the efficiency demonstrates no dependence on the value of $\phi$.
+    However, in the case of electrons, upon initial inspection, the sharp valleys appear less prominent after applying the geometry cut.
+
+    Nevertheless, this is merely a visual effect.
+    When we tally the number of electrons detected by the DC and FMT, the valleys become more pronounced in the DC, while they remain the same in the FMT.
+    Consequently, the increase in FMT efficiency becomes more pronounced in these valleys, as demonstrated in Figure \ref{fig::14.14::phi_geomcut}.
+
+    \begin{figure}[t!]
+        \centering\frame{
+        \includegraphics[width=\textwidth]{14phi_efficiency.pdf}}
+        \caption[$\phi$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        Run 12016]{$\phi$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        FMT Efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers.
+        Run 12016.
+        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.14::fmt_efficiency_phi}
+    \end{figure}
+
+    \begin{figure}[t!]
+        \centering\frame{
+        \includegraphics[width=\textwidth]{14phi_geomcut.pdf}}
+        \caption[Number of electrons detected in terms of $\phi$ for DC and FMT efficiencies for $e^-$.
+        Run 12016]{Number of electrons detected in terms of $\phi$ for DC and FMT.
+        Run 12016.
+        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.14::phi_geomcut}
+    \end{figure}
+
+    Finally, Figure \ref{fig::14.14::fmt_efficiency_p} confirms our expectation that there is no strong correlation between efficiency and momentum.
+
+    \begin{figure}[b!]
+        \centering\frame{
+        \includegraphics[width=\textwidth]{14p_efficiency.pdf}}
+        \caption[$p$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        Run 12016]{$p$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+        FMT Efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers.
+        Run 12016.
+        Source: Own elaboration, using the \hyperlink{github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.14::fmt_efficiency_p}
     \end{figure}
