@@ -130,12 +130,6 @@
     The diagonal elements represent cases where the particle is correctly identified, while the off-diagonal elements represent cases of misidentification \cite{ziegler2020}.
 
     \begin{table}
-        \caption{Particle identification matrix for the FD (left matrix) and CD (right matrix).
-        The FD matrix is based on simulated hadrons and photons with momentum between $1$ and $2.5 \text{ GeV}$, and electrons up to $9 \text{ GeV}$.
-        The CD matrix is based on simulated hadrons with momentum between $0.3$ and $1.1 \text{ GeV}$.
-        The diagonal elements are correctly identified, while the off-diagonal elements are misidentified.
-        Detector inefficiencies are included.}
-
         \begin{tabularx}{\textwidth}{XXXXXXXXXXXXX}
             \multicolumn{7}{c}{\textit{Forward Detector Truth}} & & \multicolumn{5}{c}{\textit{Central Detector Truth}}  \\
             \cmidrule{1-7} \cmidrule{9-13}
@@ -150,6 +144,12 @@
             $\gamma$ &          &       &      &      & 0.14 & 0.95     & &       &          &      &      &      \\
             \cmidrule{1-7}
         \end{tabularx}
+
+        \caption{Particle identification matrix for the FD (left matrix) and CD (right matrix).
+        The FD matrix is based on simulated hadrons and photons with momentum between $1$ and $2.5 \text{ GeV}$, and electrons up to $9 \text{ GeV}$.
+        The CD matrix is based on simulated hadrons with momentum between $0.3$ and $1.1 \text{ GeV}$.
+        The diagonal elements are correctly identified, while the off-diagonal elements are misidentified.
+        Detector inefficiencies are included.}
         \label{tab::11.232::reconstruction_pid}
     \end{table}
 
