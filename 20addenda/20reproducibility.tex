@@ -2,21 +2,34 @@
 \subsection*{Addendum 2: Reproducibility}
 \addcontentsline{toc}{subsection}{Reproducibility}
 \label{20.02::reproducibility}
-    TODO.
+    In order to ensure the reproducibility of the research presented in this thesis, we provide access to all datasets and code used in the development of our study.
+    We believe that transparency and accessibility are crucial for scientific integrity and to facilitate further investigations by the research community.
+
+    We encourage interested readers and fellow researchers to access and utilize these resources for the purpose of reproducibility and advancing scientific knowledge.
+    Should there be any inquiries or issues regarding the datasets or code, please do not hesitate to contact the author at \href{mailto:bruno.benkel@gmail.com}{\texttt{bruno.benkel@gmail.com}} for further assistance.
+
+    We believe that open access to data and code fosters collaboration, accelerates scientific progress, and ensures the robustness of research findings.
+    By making these resources available, we aim to contribute to the collective effort of reproducible and transparent scientific research.
 
     % --+ Datasets +------------------------------------------------------------
-    % Run 12933 (summer)
-    % Run 12016 (spring)
-    % Generated
-    % Simulated
+    \paragraph{Datasets}
+    Regrettably, there is no website or location to openly share datasets in the Universidad Técnica Federico Santa María (UTFSM) or the Centro Científico Tecnológico de Valparaíso (CCTVal).
+    For readers with access to the JLab farm, all used datasets are available at:
+
+    \begin{center}
+        \texttt{/work/clas12/users/benkel/thesis-datasets}
+    \end{center}
+
+    For individuals who do not have access to the JLab farm, please feel free to contact the author, and we will explore alternative methods to share the relevant datasets.
 
     % --+ Code +----------------------------------------------------------------
     \paragraph{Code}
-    All software mentioned and used in the development of this thesis is presented in table \ref{tab::20.02::code_locations}.
+    The sources for the code used for data processing, analysis, and generating figures are shared on Table \ref{tab::20.02::code_locations}.
+    By providing the code, we aim to enable researchers to replicate our findings, perform additional analyses, or build upon our work.
 
-    \begin{table}
+    \begin{table}[b!]
         \begin{center}
-            \begin{tabularx}{\textwidth}{ll}
+            \begin{tabularx}{0.90\textwidth}{ll}
                 \toprule
                 \textbf{Software}  & \textbf{Link} \\
                 \midrule \midrule
@@ -28,12 +41,15 @@
                     \href{https://github.com/JeffersonLab/clas12alignment}
                     {\texttt{github.com/JeffersonLab/clas12alignment}} \\
                 \midrule
+                thesis-simul       &
+                    \href{https://github.com/bleaktwig/thesis-simul}
+                    {\texttt{github.com/bleaktwig/thesis-simul}} \\
+                thesis-data        &
+                    \href{https://github.com/bleaktwig/thesis-data}
+                    {\texttt{github.com/bleaktwig/thesis-data}} \\
                 RG-E Analysis      &
                     \href{https://github.com/bleaktwig/clas12-rge-analysis}
                     {\texttt{github.com/bleaktwig/clas12-rge-analysis}} \\
-                LEPTO              &
-                    \href{https://inis.iaea.org/search/search.aspx?orig_q=RN:27060704}
-                    {\texttt{inis.iaea.org/search/search.aspx?orig\_q=RN:27060704}} \\
                 GEMC               &
                     \href{https://github.com/gemc/source}
                     {\texttt{github.com/gemc/source}} \\
@@ -44,8 +60,7 @@
             \end{tabularx}
         \end{center}
 
-        \caption{Table with code locations.}
+        \caption{Table with code locations.
+        During the development of this thesis, \texttt{clas12-offline-software} was rebranded as Coatjava.}
         \label{tab::20.02::code_locations}
     \end{table}
-
-    *During the development of this thesis, \texttt{clas12-offline-software} was rebranded as Coatjava.
