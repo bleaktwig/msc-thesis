@@ -4,21 +4,32 @@
     Three DIS cuts are applied to the scattered electron to restrict the phase space to that of DIS.
     If the trigger electron fails to pass these cuts, all particles in the event are disregarded.
 
-    The first cut is based on the invariant mass of the virtual photon, $Q^2$, and is defined as:
+    The first cut is based on the invariant mass of the virtual photon, $Q^2$, and is defined as
     \begin{equation*}
-        Q^2 > 1 \text{ GeV}^2.
+        Q^2 > 1 \text{ GeV}^2,
     \end{equation*}
-    This ensures that the process falls within the DIS domain.
+    where $Q^2$ is given by
+    \begin{equation}
+        Q^2 = 4E_bE'\sin^2(\theta_C/2).
+        \label{eq::13.23::q2}
+    \end{equation}
+    Here, $E_b$ represents the beam energy, $E'$ is the energy of the scattered electron, and $\theta_C$ is the polar angle of the scattered electron.
+    This cut ensures that the process falls within the DIS domain, as explained in Sections \ref{10.10::deep_inelastic_scattering} and \ref{10.12::parton_model}.
 
-    The second cut is imposed on the squared mass of the hadronic final state, $W^2$, given by:
+    The second cut is imposed on the squared mass of the hadronic final state, $W^2$, given by
     \begin{equation*}
         W^2 > 4 \text{ GeV}^2.
     \end{equation*}
-    Here, $W^2$ is defined as:
+    Here, $W^2$ is defined as
     \begin{equation*}
-        W^2 = M^2 + 2M\nu - Q^2,
+    W^2 = M^2 + 2M\nu - Q^2,
     \end{equation*}
-    where $M$ represents the mass of the nucleon and $\nu$ is the energy fraction of the virtual photon.
+    where $M$ represents the mass of the nucleon, and $\nu$ is the energy transferred by the lepton probe.
+    The details of the virtual photon energy $\nu$ and its effects on this analysis are explained in Section \ref{10::physics_motivation}, and it is given by
+    \begin{equation}
+        \nu = E_b - E'.
+        \label{eq::13.23::nu}
+    \end{equation}
     This cut is applied to exclude nucleon resonances.
 
     \begin{figure}[b!]
@@ -29,15 +40,15 @@
         \label{fig::13.23::q2_vs_nu}
     \end{figure}
 
-    Lastly, an additional cut is imposed on the Bjorken-Y ($Y_b$) of the scattered electron, given by:
+    Lastly, an additional cut is imposed on the Bjorken-Y ($Y_b$) of the scattered electron, given by
     \begin{equation*}
         Y_b < 0.85.
     \end{equation*}
-    The Bjorken-Y ranges from 0 to 1 and is defined as:
+    The Bjorken-Y ranges from 0 to 1 and is defined as
     \begin{equation*}
-        Y_b = \frac{\nu}{E_\text{beam}},
+        Y_b = \frac{\nu}{E_b}.
     \end{equation*}
-    where $E_\text{beam}$ represents the energy of the incident electron beam.
     This cut effectively mitigates the influence of extreme radiative effects, which occur when a substantial portion of the incident electron's energy is transferred to the scattered electron.
+
 
     The impact of these cuts on the $Q^2$ and $\nu$ of the scattered electron can be observed in plot \ref{fig::13.23::q2_vs_nu}.
