@@ -19,13 +19,13 @@
     The service-oriented architecture and data-stream processing approach contribute to the flexibility, scalability, and maintainability of the CLAS12 software framework.
 
     \begin{figure}[b!]
-        \centering\frame{
-        \includegraphics[width=\textwidth]{230recon_chain.pdf}}
-        \caption[CLAS12 Reconstruction Chain.]{Graphical representation of the CLAS12 interdependencies between services and banks.
+        \frame{\includegraphics[width=\textwidth]{230recon_chain.pdf}}
+        \caption[CLAS12 Reconstruction Chain.]
+        {Graphical representation of the CLAS12 interdependencies between services and banks.
         The I/O service reads events from the input file and distributes them to the reconstruction services chain for processing.
         Each service reads the relevant banks, applies the reconstruction algorithm, and provides output banks that are passed to the next service in the chain.
-        The Event Builder (EB) service is executed as last in the chain; it collects the relevant banks from all CLAS12 subsystems services and produces event, particle, and detector response banks that are written to the output file.
-        Source: Own elaboration, using \href{https://inkscape.org/}{Inkscape}.}
+        The Event Builder (EB) service is executed as last in the chain; it collects the relevant banks from all CLAS12 subsystems services and produces event, particle, and detector response banks that are written to the output file.}
+        \floatfoot{Source: Own elaboration, using \href{https://inkscape.org/}{Inkscape}.}
         \label{fig::11.230::recon_chain}
     \end{figure}
 

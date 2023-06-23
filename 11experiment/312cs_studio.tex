@@ -1,5 +1,14 @@
 % !TEX root = ../main.tex
 \paragraph{CS-Studio}
+    \begin{figure}[b!]
+        \frame{\includegraphics[]{312motorx_rge.png}}
+        \caption[RG-E CS-Studio main screen]
+        {RG-E CS-Studio main screen.
+        The HOME and A, B, C, etc buttons move the target strip to the corresponding location, the STOP button is an emergency, instant stop of the target system, and the Motor Screens button allows the user to open additional motor screens.}
+        \floatfoot{Source: Own Elaboration, using \href{https://controlsystemstudio.org/}{CS-Studio}.}
+        \label{fig::11.312::rge_motorx}
+    \end{figure}
+
     The GUI of CLAS12 EPICS is built on the Control System Studio (CS-Studio) toolkit.
     CS-Studio is specifically designed for monitoring and operating large-scale control systems and is based on the eclipse Rich Client Platform framework \cite{kasemir2007}.
     To integrate the RG-E target system into CLAS12 EPICS, a CS-Studio screen was developed.
@@ -19,14 +28,6 @@
         \item
             Alarm handling for the IOC and communication problems.
     \end{itemize}
-
-    \begin{figure}[b!]
-        \centering\frame{
-        \includegraphics[]{312motorx_rge.png}}
-        \caption[RG-E CS-Studio main screen]{RG-E CS-Studio main screen. The HOME and A, B, C, etc buttons move the target strip to the corresponding location, the STOP button is an emergency, instant stop of the target system, and the Motor Screens button allows the user to open additional motor screens.
-        Source: Own Elaboration, using \href{https://controlsystemstudio.org/}{CS-Studio}.}
-        \label{fig::11.312::rge_motorx}
-    \end{figure}
 
     The implemented screen, shown in Figure \ref{fig::11.312::rge_motorx}, incorporates these requirements.
     Along with the buttons, text displays indicate the position of each target within the band.

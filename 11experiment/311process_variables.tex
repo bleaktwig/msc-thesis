@@ -102,28 +102,23 @@
         The encoding is specified in Table \ref{tab::11.311::target_type_pv}.
 
 % --+ Everything table +--------------------------------------------------------
-\begin{table}[b!]
+\begin{table}[t!]
     \begin{center}
         \begin{tabularx}{220pt}{lll}
             \toprule
             \textbf{Value} & \textbf{Name} & \textbf{Alarm Severity} \\
             \midrule \midrule
-             0             & Not Moving    & Major          \\
-             1             & Target 1      & No alarm       \\
-             2             & Target 2      & No alarm       \\
-             3             & Target 3      & No alarm       \\
-             4             & Target 4      & No alarm       \\
-             5             & Target 5      & No alarm       \\
-             6             & Target 6      & No alarm       \\
-             7             & Target 7      & No alarm       \\
-             8             & Home          & No alarm       \\
-             9             & Moving        & Minor          \\
-            10             & Low Limit     & Major          \\
-            11             & High Limit    & Major          \\
+             0             & Not Moving    & Major                   \\
+             1-7           & Target 1-7    & No alarm                \\
+             8             & Home          & No alarm                \\
+             9             & Moving        & Minor                   \\
+            10             & Low Limit     & Major                   \\
+            11             & High Limit    & Major                   \\
             \bottomrule
         \end{tabularx}
     \end{center}
 
-    \caption{Names and alarm levels for the different values of the PV \texttt{DMC01:A\_tgttype}.}
+    \caption[RG-E slow controls system Process Variables]
+    {Names and alarm levels for the different values of the PV \texttt{DMC01:A\_tgttype}.}
     \label{tab::11.311::target_type_pv}
 \end{table}

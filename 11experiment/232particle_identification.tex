@@ -66,6 +66,14 @@
     These values can either be $2.004 \text{ ns}$ and $249.5 \text{ MHz}$, or $4.008 \text{ ns}$ and $499 \text{ MHz}$, respectively.
     During the reconstruction process, these values are obtained from the Run Conditions Database.
 
+    \begin{wrapfigure}{r}{0.49\textwidth}
+        \frame{\includegraphics[width=\linewidth]{232pos_pid.png}}
+        \caption[Particle $\beta$ vs. momentum for positively charged tracks.]
+        {Particle $\beta$ vs. momentum from simulation data for positively charged tracks with their start time from an electron in the FD (top plot) or in the FT (bottom plot).}
+        \floatfoot{Source: \cite{ziegler2020}.}
+        \label{fig::11.232::positive_pid}
+    \end{wrapfigure}
+
     Subsequently, the time can be further corrected to the nearest beam bunch using the equation
     \begin{equation*}
         \Delta t^\prime_{RF} = \text{mod}\left(\Delta t_{RF}, \frac{1}{f_{RF}}\right) - \frac{1}{2f_{RF}},
@@ -75,14 +83,6 @@
     \begin{equation*}
         t' = t_v - \Delta t^\prime_{RF}.
     \end{equation*}
-
-    \begin{wrapfigure}{r}{0.49\textwidth}
-        \centering\frame{
-        \includegraphics[width=\linewidth]{232pos_pid.png}}
-        \caption[Particle $\beta$ vs. momentum for positively charged tracks.]{Particle $\beta$ vs. momentum from simulation data for positively charged tracks with their start time from an electron in the FD (top plot) or in the FT (bottom plot).
-        Source: \cite{ziegler2020}.}
-        \label{fig::11.232::positive_pid}
-    \end{wrapfigure}
 
 % --+ Charged particle identification +-----------------------------------------
     The subsequent step involves a basic particle identification scheme designed to be flexible enough to accommodate various physics analyses while retaining essential information for future refinement of the criteria.
@@ -99,11 +99,10 @@
     The computed curves for different mass hypotheses are superimposed on the distributions.
 
     \begin{wrapfigure}{r}{0.50\textwidth}
-        \centering\frame{
-        \includegraphics[width=\linewidth]{232n_gamma.png}}
-        \caption[$\beta$ distribution of neutrals.]{$\beta$ distribution for neutral particles as measured by the ECAL from simulation data, showing a sharp peak at $\beta = 1$ from photons and a broader, slower distribution from neutrons.
-        Source: \cite{ziegler2020}.
-        }
+        \frame{\includegraphics[width=\linewidth]{232n_gamma.png}}
+        \caption[$\beta$ distribution of neutrals.]
+        {$\beta$ distribution for neutral particles as measured by the ECAL from simulation data, showing a sharp peak at $\beta = 1$ from photons and a broader, slower distribution from neutrons.}
+        \floatfoot{Source: \cite{ziegler2020}.}
         \label{fig::11.232::neutrons_and_gamma}
     \end{wrapfigure}
 
@@ -145,12 +144,11 @@
             \cmidrule{1-7}
         \end{tabularx}
 
-        \caption{Particle identification matrix for the FD (left matrix) and CD (right matrix).
+        \caption[Particle identification matrix.]
+        {Particle identification matrix for the FD (left matrix) and CD (right matrix).
         The FD matrix is based on simulated hadrons and photons with momentum between $1$ and $2.5 \text{ GeV}$, and electrons up to $9 \text{ GeV}$.
         The CD matrix is based on simulated hadrons with momentum between $0.3$ and $1.1 \text{ GeV}$.
         The diagonal elements are correctly identified, while the off-diagonal elements are misidentified.
         Detector inefficiencies are included.}
         \label{tab::11.232::reconstruction_pid}
     \end{table}
-
-    \pagebreak
