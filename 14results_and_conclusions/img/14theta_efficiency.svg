@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1557"
-   height="660"
+   width="1492.8591"
+   height="650"
    version="1.1"
    id="svg424"
    sodipodi:docname="14theta_efficiency.svg"
@@ -25,824 +25,582 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.35757576"
-     inkscape:cx="777.45763"
-     inkscape:cy="330"
+     inkscape:zoom="0.5"
+     inkscape:cx="540"
+     inkscape:cy="380"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg424" />
-  <rect
-     style="fill:#ffffff"
-     id="rect709"
-     width="2507.2188"
-     height="1203.4921"
-     x="-488.30112"
-     y="-252.68202" />
-  <path
-     style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-     d="M0,0H1557V660H0Z"
-     id="path2" />
+     inkscape:current-layer="g422" />
   <g
-     id="g422">
-    <svg
-       viewBox="0 0 488 647"
-       preserveAspectRatio="none"
-       x="16"
-       y="6"
-       width="488"
-       height="647"
-       version="1.1"
-       id="svg132">
+     id="g422"
+     transform="translate(-7.7426754,-3)">
+    <g
+       transform="translate(40,6)"
+       id="g104">
       <title
-         id="title4">subpad theta_1</title>
+         id="title8" />
       <path
-         d="M0,0H488V647H0Z"
-         style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-         id="path6" />
-      <g
-         id="g130">
+         d="M 0,0 H 462 V 595 H 0 Z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1"
+         id="path10" />
+      <svg
+         x="0"
+         y="0"
+         overflow="hidden"
+         width="462"
+         height="595"
+         viewBox="0 0 462 595"
+         version="1.1"
+         id="svg20">
         <g
-           transform="translate(24,0)"
-           id="g104">
-          <title
-             id="title8" />
+           id="g14">
           <path
-             d="M0,0H462V595H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path10" />
-          <svg
+             d="M 0,595 H 33 V 383 h 11 v 15 h 11 v 2 h 11 v -4 h 11 v -7 h 11 v -10 h 11 v -17 h 11 v -21 h 11 v -17 h 11 v 15 h 11 v 5 h 11 v 9 h 11 v 16 h 11 v -6 h 11 v -9 h 11 v 7 h 11 v -2 h 11 v -13 h 11 v -9 h 11 v -3 h 11 v -4 h 11 v 5 h 11 v -6 h 11 v 4 h 11 v 10 h 11 v 6 h 11 v 59 h 11 v 126 h 11 v 61 h 22 v -31 h 11 v 31 h 22 V 482 h 11 v 113 h 55 v 3 H 0 Z"
+             style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linejoin:miter"
+             id="path12" />
+        </g>
+        <g
+           id="g18">
+          <path
+             d="M 0,595 H 33 V 342 h 11 v -21 h 11 v -18 h 11 v -12 h 11 v -16 h 11 v -13 h 11 v -13 h 11 v -17 h 11 v -16 h 22 v -9 h 11 v -12 h 11 v -8 h 11 v -5 h 11 v -2 h 11 v -2 h 11 v -6 h 22 v -10 h 11 v -7 h 11 v -4 h 33 v -14 h 11 v 15 h 11 v -2 h 11 v 14 h 11 v 136 h 11 v 295 h 22 V 406 h 11 v 189 h 22 V 28 h 11 v 567 h 55 v 3 H 0 Z"
+             style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linejoin:miter"
+             id="path16" />
+        </g>
+      </svg>
+      <g
+         id="g84">
+        <g
+           transform="translate(0,595)"
+           id="g52">
+          <path
+             d="M 0,0 H 462 M 5,-11 V 0 M 16,-11 V 0 M 27,-22 V 0 M 38,-11 V 0 M 49,-11 V 0 M 60,-11 V 0 M 71,-11 V 0 M 82,-22 V 0 M 92,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 11,-22 V 0"
+             style="stroke:#000000;stroke-width:1"
+             id="path22" />
+          <g
+             font-family="Arial"
+             font-size="20px"
+             xml:space="preserve"
+             fill="#000000"
+             text-anchor="middle"
+             id="g42"
+             transform="translate(0,1.4648438)"><text
+               dy="0.80000001em"
+               transform="translate(27,5)"
+               id="text24">0.1</text><text
+               dy="0.80000001em"
+               transform="translate(82,5)"
+               id="text26">0.2</text><text
+               dy="0.80000001em"
+               transform="translate(136,5)"
+               id="text28">0.3</text><text
+               dy="0.80000001em"
+               transform="translate(190,5)"
+               id="text30">0.4</text><text
+               dy="0.80000001em"
+               transform="translate(245,5)"
+               id="text32">0.5</text><text
+               dy="0.80000001em"
+               transform="translate(299,5)"
+               id="text34">0.6</text><text
+               dy="0.80000001em"
+               transform="translate(353,5)"
+               id="text36">0.7</text><text
+               dy="0.80000001em"
+               transform="translate(408,5)"
+               id="text38">0.8</text></g>
+          <rect
              x="0"
              y="0"
-             overflow="hidden"
              width="462"
-             height="595"
-             viewBox="0 0 462 595"
-             style="pointer-events: visiblefill;"
-             version="1.1"
-             id="svg20">
-            <g
-               id="g14">
-              <path
-                 d="M0,595h33v-212h11v15h11v2h11v-4h11v-7h11v-10h11v-17h11v-21h11v-17h11v15h11v5h11v9h11v16h11v-6h11v-9h11v7h11v-2h11v-13h11v-9h11v-3h11v-4h11v5h11v-6h11v4h11v10h11v6h11v59h11v126h11v61h22v-31h11v31h22v-113h11v113h55L462,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(255, 0, 0); stroke-width: 1; fill: none;"
-                 id="path12" />
-            </g>
-            <g
-               id="g18">
-              <path
-                 d="M0,595h33v-253h11v-21h11v-18h11v-12h11v-16h11v-13h11v-13h11v-17h11v-16h22v-9h11v-12h11v-8h11v-5h11v-2h11v-2h11v-6h22v-10h11v-7h11v-4h33v-14h11v15h11v-2h11v14h11v136h11v295h22v-189h11v189h22v-567h11v567h55L462,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(0, 0, 255); stroke-width: 1; fill: none;"
-                 id="path16" />
-            </g>
-          </svg>
+             height="23"
+             style="opacity:0"
+             id="rect44" />
           <g
-             id="g84">
-            <g
-               transform="translate(0,595)"
-               id="g52">
-              <path
-                 d="M0,0h462M5,-11V0M16,-11V0M27,-22V0M38,-11V0M49,-11V0M60,-11V0M71,-11V0M82,-22V0M92,-11V0M103,-11V0M114,-11V0M125,-11V0M136,-22V0M147,-11V0M158,-11V0M168,-11V0M179,-11V0M190,-22V0M201,-11V0M212,-11V0M223,-11V0M234,-11V0M245,-22V0M255,-11V0M266,-11V0M277,-11V0M288,-11V0M299,-22V0M310,-11V0M321,-11V0M332,-11V0M342,-11V0M353,-22V0M364,-11V0M375,-11V0M386,-11V0M397,-11V0M408,-22V0M419,-11V0M429,-11V0M440,-11V0M451,-11V0M462,-22V0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path22" />
-              <g
-                 font-family="Arial"
-                 font-size="20"
-                 xml:space="preserve"
+             font-family="Arial"
+             font-size="20px"
+             xml:space="preserve"
+             transform="translate(462,36)"
+             id="g50"><g
+               transform="translate(-60,7)"
+               id="g48"><text
                  fill="#000000"
-                 text-anchor="middle"
-                 id="g42"><text
-                   dy=".8em"
-                   transform="translate(27,5)"
-                   id="text24">0.1</text><text
-                   dy=".8em"
-                   transform="translate(82,5)"
-                   id="text26">0.2</text><text
-                   dy=".8em"
-                   transform="translate(136,5)"
-                   id="text28">0.3</text><text
-                   dy=".8em"
-                   transform="translate(190,5)"
-                   id="text30">0.4</text><text
-                   dy=".8em"
-                   transform="translate(245,5)"
-                   id="text32">0.5</text><text
-                   dy=".8em"
-                   transform="translate(299,5)"
-                   id="text34">0.6</text><text
-                   dy=".8em"
-                   transform="translate(353,5)"
-                   id="text36">0.7</text><text
-                   dy=".8em"
-                   transform="translate(408,5)"
-                   id="text38">0.8</text><text
-                   dy=".8em"
-                   transform="translate(462,5)"
-                   id="text40">0.9</text></g>
-              <rect
-                 x="0"
-                 y="0"
-                 width="462"
-                 height="23"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect44" />
-              <g
-                 font-family="Arial"
-                 font-size="20"
-                 xml:space="preserve"
-                 style="cursor: move;"
-                 transform="translate(462,36)"
-                 id="g50"><g
-                   transform="translate(-60,7)"
-                   id="g48"><text
-                     fill="#000000"
-                     font-size="20"
-                     id="text46">θ (rad)</text></g></g>
-            </g>
-            <g
-               id="g82">
-              <path
-                 d="M0,0v595M17,595H0M9,584H0M9,572H0M9,561H0M9,550H0M17,538H0M9,527H0M9,516H0M9,504H0M9,493H0M17,482H0M9,470H0M9,459H0M9,448H0M9,436H0M17,425H0M9,414H0M9,402H0M9,391H0M9,380H0M17,368H0M9,357H0M9,346H0M9,334H0M9,323H0M17,312H0M9,300H0M9,289H0M9,278H0M9,266H0M17,255H0M9,244H0M9,232H0M9,221H0M9,210H0M17,198H0M9,187H0M9,176H0M9,164H0M9,153H0M17,142H0M9,130H0M9,119H0M9,108H0M9,96H0M17,85H0M9,74H0M9,62H0M9,51H0M9,40H0M17,28H0M9,17H0M9,6H0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path54" />
-              <g
-                 font-family="Arial"
-                 font-size="15"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="end"
-                 id="g78"><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,595)"
-                   id="text56">0</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,538)"
-                   id="text58">0.1</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,482)"
-                   id="text60">0.2</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,425)"
-                   id="text62">0.3</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,368)"
-                   id="text64">0.4</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,312)"
-                   id="text66">0.5</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,255)"
-                   id="text68">0.6</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,198)"
-                   id="text70">0.7</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,142)"
-                   id="text72">0.8</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,85)"
-                   id="text74">0.9</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,28)"
-                   id="text76">1</text></g>
-              <rect
-                 x="-31"
-                 y="0"
-                 width="31"
-                 height="595"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect80" />
-            </g>
-          </g>
+                 font-size="20px"
+                 id="text46">θ (rad)</text></g></g>
+        </g>
+        <g
+           id="g82">
           <path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path86" />
-          <path
-             d="M460,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path88" />
-          <path
-             d="M2,593h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path90" />
-          <path
-             d="M460,593h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path92" />
-          <path
-             d="M-3,18h5v559h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path94" />
-          <path
-             d="M465,18h-5v559h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path96" />
-          <path
-             d="M18,-3v5h426v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path98" />
-          <path
-             d="M18,598v-5h426v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path100" />
-          <style
-             id="style102">
+             d="m 0,0 v 595 m 17,0 H 0 M 9,584 H 0 M 9,572 H 0 M 9,561 H 0 M 9,550 H 0 M 17,538 H 0 M 9,527 H 0 M 9,516 H 0 M 9,504 H 0 M 9,493 H 0 M 17,482 H 0 M 9,470 H 0 M 9,459 H 0 M 9,448 H 0 M 9,436 H 0 M 17,425 H 0 M 9,414 H 0 M 9,402 H 0 M 9,391 H 0 M 9,380 H 0 M 17,368 H 0 M 9,357 H 0 M 9,346 H 0 M 9,334 H 0 M 9,323 H 0 M 17,312 H 0 M 9,300 H 0 M 9,289 H 0 M 9,278 H 0 M 9,266 H 0 M 17,255 H 0 M 9,244 H 0 M 9,232 H 0 M 9,221 H 0 M 9,210 H 0 M 17,198 H 0 M 9,187 H 0 M 9,176 H 0 M 9,164 H 0 M 9,153 H 0 M 17,142 H 0 M 9,130 H 0 M 9,119 H 0 M 9,108 H 0 M 9,96 H 0 M 17,85 H 0 M 9,74 H 0 M 9,62 H 0 M 9,51 H 0 M 9,40 H 0 M 17,28 H 0 M 9,17 H 0 M 9,6 H 0"
+             style="stroke:#000000;stroke-width:1"
+             id="path54" />
+          <rect
+             x="-31"
+             y="0"
+             width="31"
+             height="595"
+             style="opacity:0"
+             id="rect80" />
+        </g>
+      </g>
+      <path
+         d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+         style="opacity:0"
+         id="path86" />
+      <path
+         d="m 460,2 h -15 v -5 h 20 v 20 h -5 z"
+         style="opacity:0"
+         id="path88" />
+      <path
+         d="m 2,593 h 15 v 5 H -3 v -20 h 5 z"
+         style="opacity:0"
+         id="path90" />
+      <path
+         d="m 460,593 h -15 v 5 h 20 v -20 h -5 z"
+         style="opacity:0"
+         id="path92" />
+      <path
+         d="M -3,18 H 2 V 577 H -3 Z"
+         style="opacity:0"
+         id="path94" />
+      <path
+         d="m 465,18 h -5 v 559 h 5 z"
+         style="opacity:0"
+         id="path96" />
+      <path
+         d="M 18,-3 V 2 H 444 V -3 Z"
+         style="opacity:0"
+         id="path98" />
+      <path
+         d="m 18,598 v -5 h 426 v 5 z"
+         style="opacity:0"
+         id="path100" />
+      <style
+         id="style102">
 .jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
 .jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot svg:not(:root) { overflow: hidden; }</style>
+    </g>
+    <g
+       transform="matrix(0.816,0,0,0.816,137.79437,35)"
+       id="g110"
+       style="font-size:24px;font-family:Arial">
+      <text
+         fill="#000000"
+         font-size="30px"
+         id="text108">θ FMT efficiency (pid 11)</text>
+    </g>
+    <path
+       d="m 535,6 h 488 V 653 H 535 Z"
+       style="fill:#ffffff"
+       id="path136" />
+    <g
+       transform="translate(508,6)"
+       id="g234">
+      <title
+         id="title138" />
+      <path
+         d="M 0,0 H 486 V 595 H 0 Z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1"
+         id="path140" />
+      <svg
+         x="0"
+         y="0"
+         overflow="hidden"
+         width="486"
+         height="595"
+         viewBox="0 0 486 595"
+         version="1.1"
+         id="svg150">
+        <g
+           id="g144">
+          <path
+             d="m 0,595 h 12 v -61 h 11 v 16 h 12 v -5 h 11 v -11 h 12 v -11 h 11 v -9 h 12 v -10 h 12 v -8 h 11 v -6 h 12 v -8 h 11 v -7 h 12 v 2 h 11 v 7 h 12 v 3 h 12 v 7 h 11 v 5 h 12 v 6 h 11 v 9 h 12 v 3 h 11 v 9 h 12 v 5 h 12 v 4 h 11 v 5 h 12 v 2 h 23 v 7 h 11 v 1 h 12 v 7 h 23 v 3 h 12 v 4 h 11 v 5 h 12 v 7 h 11 v -1 h 12 v 2 h 12 v 18 h 69 v 3 H 0 Z"
+             style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linejoin:miter"
+             id="path142" />
         </g>
         <g
-           transform="translate(73,3)"
-           font-family="Arial"
-           font-size="24"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g128"><path
-             d="M0,0H342V36H0Z"
-             style="fill: none; pointer-events: visiblefill;"
-             id="path106" /><g
-             transform="translate(8,26) scale(0.816)"
-             id="g110"><text
-               fill="#000000"
-               font-size="30"
-               id="text108">θ (rad) FMT efficiency (pid 11)</text></g><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path112" /><path
-             d="M340,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path114" /><path
-             d="M2,34h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path116" /><path
-             d="M340,34h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path118" /><path
-             d="M-3,18h5v0h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path120" /><path
-             d="M345,18h-5v0h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path122" /><path
-             d="M18,-3v5h306v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path124" /><path
-             d="M18,39v-5h306v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path126" /></g>
-      </g>
-    </svg>
-    <svg
-       viewBox="0 0 488 647"
-       preserveAspectRatio="none"
-       x="535"
-       y="6"
-       width="488"
-       height="647"
-       version="1.1"
-       id="svg262">
-      <title
-         id="title134">subpad theta_2</title>
-      <path
-         d="M0,0H488V647H0Z"
-         style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-         id="path136" />
-      <g
-         id="g260">
-        <g
-           transform="translate(1,0)"
-           id="g234">
-          <title
-             id="title138" />
+           id="g148">
           <path
-             d="M0,0H486V595H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path140" />
-          <svg
+             d="m 0,595 h 12 v -96 h 11 v -5 h 12 v -14 h 11 v -9 h 12 v -10 h 11 v -8 h 12 v -13 h 12 v -9 h 11 v -6 h 12 v -9 h 11 v -11 h 12 v -7 h 11 v -5 h 12 v -8 h 12 v -3 h 11 v -6 h 12 v -3 h 11 v 5 h 12 v -6 h 11 v 3 h 12 v 6 h 12 v -11 h 11 v 5 h 12 v -5 h 11 v -12 h 12 v 10 h 11 v -9 h 12 v 18 h 12 v 4 h 11 v 6 h 12 v -21 h 11 v 21 h 12 v 29 h 11 v -79 h 12 V 217 h 12 v 378 h 69 v 3 H 0 Z"
+             style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linejoin:miter"
+             id="path146" />
+        </g>
+      </svg>
+      <g
+         id="g214">
+        <g
+           transform="translate(0,595)"
+           id="g182">
+          <path
+             d="M 0,0 H 486 M 6,-11 V 0 M 17,-11 V 0 M 29,-22 V 0 M 40,-11 V 0 M 51,-11 V 0 M 63,-11 V 0 M 74,-11 V 0 M 86,-22 V 0 M 97,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0 m 12,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-22 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 12,-22 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0"
+             style="stroke:#000000;stroke-width:1"
+             id="path152" />
+          <g
+             font-family="Arial"
+             font-size="21px"
+             xml:space="preserve"
+             fill="#000000"
+             text-anchor="middle"
+             id="g172"
+             transform="translate(0,1.3630848)"><text
+               dy="0.80000001em"
+               transform="translate(29,5)"
+               id="text154">0.1</text><text
+               dy="0.80000001em"
+               transform="translate(86,5)"
+               id="text156">0.2</text><text
+               dy="0.80000001em"
+               transform="translate(143,5)"
+               id="text158">0.3</text><text
+               dy="0.80000001em"
+               transform="translate(200,5)"
+               id="text160">0.4</text><text
+               dy="0.80000001em"
+               transform="translate(257,5)"
+               id="text162">0.5</text><text
+               dy="0.80000001em"
+               transform="translate(314,5)"
+               id="text164">0.6</text><text
+               dy="0.80000001em"
+               transform="translate(372,5)"
+               id="text166">0.7</text><text
+               dy="0.80000001em"
+               transform="translate(429,5)"
+               id="text168">0.8</text></g>
+          <rect
              x="0"
              y="0"
-             overflow="hidden"
              width="486"
-             height="595"
-             viewBox="0 0 486 595"
-             style="pointer-events: visiblefill;"
-             version="1.1"
-             id="svg150">
-            <g
-               id="g144">
-              <path
-                 d="M0,595h12v-61h11v16h12v-5h11v-11h12v-11h11v-9h12v-10h12v-8h11v-6h12v-8h11v-7h12v2h11v7h12v3h12v7h11v5h12v6h11v9h12v3h11v9h12v5h12v4h11v5h12v2h23v7h11v1h12v7h23v3h12v4h11v5h12v7h11v-1h12v2h12v18h69L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(255, 0, 0); stroke-width: 1; fill: none;"
-                 id="path142" />
-            </g>
-            <g
-               id="g148">
-              <path
-                 d="M0,595h12v-96h11v-5h12v-14h11v-9h12v-10h11v-8h12v-13h12v-9h11v-6h12v-9h11v-11h12v-7h11v-5h12v-8h12v-3h11v-6h12v-3h11v5h12v-6h11v3h12v6h12v-11h11v5h12v-5h11v-12h12v10h11v-9h12v18h12v4h11v6h12v-21h11v21h12v29h11v-79h12v-120h12v378h69L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(0, 0, 255); stroke-width: 1; fill: none;"
-                 id="path146" />
-            </g>
-          </svg>
+             height="24"
+             style="opacity:0"
+             id="rect174" />
           <g
-             id="g214">
-            <g
-               transform="translate(0,595)"
-               id="g182">
-              <path
-                 d="M0,0h486M6,-11V0M17,-11V0M29,-22V0M40,-11V0M51,-11V0M63,-11V0M74,-11V0M86,-22V0M97,-11V0M109,-11V0M120,-11V0M132,-11V0M143,-22V0M154,-11V0M166,-11V0M177,-11V0M189,-11V0M200,-22V0M212,-11V0M223,-11V0M234,-11V0M246,-11V0M257,-22V0M269,-11V0M280,-11V0M292,-11V0M303,-11V0M314,-22V0M326,-11V0M337,-11V0M349,-11V0M360,-11V0M372,-22V0M383,-11V0M395,-11V0M406,-11V0M417,-11V0M429,-22V0M440,-11V0M452,-11V0M463,-11V0M475,-11V0M486,-22V0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path152" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
+             font-family="Arial"
+             font-size="21px"
+             xml:space="preserve"
+             transform="translate(486,36)"
+             id="g180"><g
+               transform="translate(-63,7)"
+               id="g178"><text
                  fill="#000000"
-                 text-anchor="middle"
-                 id="g172"><text
-                   dy=".8em"
-                   transform="translate(29,5)"
-                   id="text154">0.1</text><text
-                   dy=".8em"
-                   transform="translate(86,5)"
-                   id="text156">0.2</text><text
-                   dy=".8em"
-                   transform="translate(143,5)"
-                   id="text158">0.3</text><text
-                   dy=".8em"
-                   transform="translate(200,5)"
-                   id="text160">0.4</text><text
-                   dy=".8em"
-                   transform="translate(257,5)"
-                   id="text162">0.5</text><text
-                   dy=".8em"
-                   transform="translate(314,5)"
-                   id="text164">0.6</text><text
-                   dy=".8em"
-                   transform="translate(372,5)"
-                   id="text166">0.7</text><text
-                   dy=".8em"
-                   transform="translate(429,5)"
-                   id="text168">0.8</text><text
-                   dy=".8em"
-                   transform="translate(486,5)"
-                   id="text170">0.9</text></g>
-              <rect
-                 x="0"
-                 y="0"
-                 width="486"
-                 height="24"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect174" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 style="cursor: move;"
-                 transform="translate(486,36)"
-                 id="g180"><g
-                   transform="translate(-63,7)"
-                   id="g178"><text
-                     fill="#000000"
-                     font-size="21"
-                     id="text176">θ (rad)</text></g></g>
-            </g>
-            <g
-               id="g212">
-              <path
-                 d="M0,0v595M18,595H0M9,584H0M9,572H0M9,561H0M9,550H0M18,538H0M9,527H0M9,516H0M9,504H0M9,493H0M18,482H0M9,470H0M9,459H0M9,448H0M9,436H0M18,425H0M9,414H0M9,402H0M9,391H0M9,380H0M18,368H0M9,357H0M9,346H0M9,334H0M9,323H0M18,312H0M9,300H0M9,289H0M9,278H0M9,266H0M18,255H0M9,244H0M9,232H0M9,221H0M9,210H0M18,198H0M9,187H0M9,176H0M9,164H0M9,153H0M18,142H0M9,130H0M9,119H0M9,108H0M9,96H0M18,85H0M9,74H0M9,62H0M9,51H0M9,40H0M18,28H0M9,17H0M9,6H0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path184" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="end"
-                 id="g208"><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,595)"
-                   id="text186">0</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,538)"
-                   id="text188">0.1</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,482)"
-                   id="text190">0.2</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,425)"
-                   id="text192">0.3</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,368)"
-                   id="text194">0.4</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,312)"
-                   id="text196">0.5</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,255)"
-                   id="text198">0.6</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,198)"
-                   id="text200">0.7</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,142)"
-                   id="text202">0.8</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,85)"
-                   id="text204">0.9</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,28)"
-                   id="text206">1</text></g>
-              <rect
-                 x="-33"
-                 y="0"
-                 width="33"
-                 height="595"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect210" />
-            </g>
-          </g>
+                 font-size="21px"
+                 id="text176">θ (rad)</text></g></g>
+        </g>
+        <g
+           id="g212">
           <path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path216" />
-          <path
-             d="M484,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path218" />
-          <path
-             d="M2,593h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path220" />
-          <path
-             d="M484,593h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path222" />
-          <path
-             d="M-3,18h5v559h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path224" />
-          <path
-             d="M489,18h-5v559h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path226" />
-          <path
-             d="M18,-3v5h450v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path228" />
-          <path
-             d="M18,598v-5h450v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path230" />
-          <style
-             id="style232">
+             d="m 0,0 v 595 m 18,0 H 0 M 9,584 H 0 M 9,572 H 0 M 9,561 H 0 M 9,550 H 0 M 18,538 H 0 M 9,527 H 0 M 9,516 H 0 M 9,504 H 0 M 9,493 H 0 M 18,482 H 0 M 9,470 H 0 M 9,459 H 0 M 9,448 H 0 M 9,436 H 0 M 18,425 H 0 M 9,414 H 0 M 9,402 H 0 M 9,391 H 0 M 9,380 H 0 M 18,368 H 0 M 9,357 H 0 M 9,346 H 0 M 9,334 H 0 M 9,323 H 0 M 18,312 H 0 M 9,300 H 0 M 9,289 H 0 M 9,278 H 0 M 9,266 H 0 M 18,255 H 0 M 9,244 H 0 M 9,232 H 0 M 9,221 H 0 M 9,210 H 0 M 18,198 H 0 M 9,187 H 0 M 9,176 H 0 M 9,164 H 0 M 9,153 H 0 M 18,142 H 0 M 9,130 H 0 M 9,119 H 0 M 9,108 H 0 M 9,96 H 0 M 18,85 H 0 M 9,74 H 0 M 9,62 H 0 M 9,51 H 0 M 9,40 H 0 M 18,28 H 0 M 9,17 H 0 M 9,6 H 0"
+             style="stroke:#000000;stroke-width:1"
+             id="path184" />
+          <rect
+             x="-33"
+             y="0"
+             width="33"
+             height="595"
+             style="opacity:0"
+             id="rect210" />
+        </g>
+      </g>
+      <path
+         d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+         style="opacity:0"
+         id="path216" />
+      <path
+         d="m 484,2 h -15 v -5 h 20 v 20 h -5 z"
+         style="opacity:0"
+         id="path218" />
+      <path
+         d="m 2,593 h 15 v 5 H -3 v -20 h 5 z"
+         style="opacity:0"
+         id="path220" />
+      <path
+         d="m 484,593 h -15 v 5 h 20 v -20 h -5 z"
+         style="opacity:0"
+         id="path222" />
+      <path
+         d="M -3,18 H 2 V 577 H -3 Z"
+         style="opacity:0"
+         id="path224" />
+      <path
+         d="m 489,18 h -5 v 559 h 5 z"
+         style="opacity:0"
+         id="path226" />
+      <path
+         d="M 18,-3 V 2 H 468 V -3 Z"
+         style="opacity:0"
+         id="path228" />
+      <path
+         d="m 18,598 v -5 h 450 v 5 z"
+         style="opacity:0"
+         id="path230" />
+      <style
+         id="style232">
 .jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
 .jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot svg:not(:root) { overflow: hidden; }</style>
+    </g>
+    <g
+       transform="matrix(0.783,0,0,0.783,616.64936,35)"
+       id="g240"
+       style="font-size:23px;font-family:Arial">
+      <text
+         fill="#000000"
+         font-size="30px"
+         id="text238">θ FMT efficiency (pid 211)</text>
+    </g>
+    <g
+       transform="translate(1001,6)"
+       id="g364">
+      <title
+         id="title268" />
+      <path
+         d="M 0,0 H 486 V 595 H 0 Z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1"
+         id="path270" />
+      <svg
+         x="0"
+         y="0"
+         overflow="hidden"
+         width="486"
+         height="595"
+         viewBox="0 0 486 595"
+         version="1.1"
+         id="svg280">
+        <g
+           id="g274">
+          <path
+             d="m 0,595 h 35 v -57 h 11 v -16 h 12 v 7 h 11 v -19 h 12 v -15 h 12 v -17 h 11 v 1 h 12 v -11 h 11 v -1 h 12 v 8 h 11 v 4 h 12 v 4 h 12 v 8 h 11 v 9 h 12 v 5 h 11 v 1 h 12 v 10 h 11 v 4 h 12 v 3 h 12 v 4 h 11 v 10 h 23 v 3 h 12 v 5 h 11 v 6 h 12 v 1 h 12 v 4 h 11 v 2 h 12 v 3 h 11 v 7 h 12 v 3 h 11 v 6 h 12 v 4 h 12 v 3 h 11 v 4 h 12 v -1 h 11 v 5 h 12 v 3 h 23 v 3 H 0 Z"
+             style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linejoin:miter"
+             id="path272" />
         </g>
         <g
-           transform="translate(73,3)"
-           font-family="Arial"
-           font-size="23"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g258"><path
-             d="M0,0H342V36H0Z"
-             style="fill: none; pointer-events: visiblefill;"
-             id="path236" /><g
-             transform="translate(8,26) scale(0.783)"
-             id="g240"><text
-               fill="#000000"
-               font-size="30"
-               id="text238">θ (rad) FMT efficiency (pid 211)</text></g><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path242" /><path
-             d="M340,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path244" /><path
-             d="M2,34h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path246" /><path
-             d="M340,34h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path248" /><path
-             d="M-3,18h5v0h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path250" /><path
-             d="M345,18h-5v0h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path252" /><path
-             d="M18,-3v5h306v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path254" /><path
-             d="M18,39v-5h306v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path256" /></g>
-      </g>
-    </svg>
-    <svg
-       viewBox="0 0 488 647"
-       preserveAspectRatio="none"
-       x="1054"
-       y="6"
-       width="488"
-       height="647"
-       version="1.1"
-       id="svg420">
-      <title
-         id="title264">subpad theta_3</title>
-      <path
-         d="M0,0H488V647H0Z"
-         style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-         id="path266" />
-      <g
-         id="g418">
-        <g
-           transform="translate(1,0)"
-           id="g364">
-          <title
-             id="title268" />
+           id="g278">
           <path
-             d="M0,0H486V595H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path270" />
-          <svg
+             d="M 0,595 H 35 V 446 h 11 v -14 h 12 v 34 h 11 v -14 h 12 v -17 h 12 v -24 h 11 v -2 h 12 v -11 h 11 v -5 h 12 v 6 h 11 v -12 h 12 v -9 h 23 v -3 h 12 v -4 h 11 v -5 h 12 v 4 h 23 v -14 h 12 v 5 h 11 v 10 h 12 v -4 h 11 v -10 h 12 v 8 h 11 v 6 h 12 v -15 h 12 v 12 h 11 v 5 h 12 v -17 h 11 v 40 h 12 v -14 h 11 v 35 h 12 v 61 h 12 v -25 h 11 v 43 h 12 v 26 h 11 v 16 h 12 v 57 h 23 v 3 H 0 Z"
+             style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linejoin:miter"
+             id="path276" />
+        </g>
+      </svg>
+      <g
+         id="g344">
+        <g
+           transform="translate(0,595)"
+           id="g312">
+          <path
+             d="M 0,0 H 486 M 6,-11 V 0 M 17,-11 V 0 M 29,-22 V 0 M 40,-11 V 0 M 51,-11 V 0 M 63,-11 V 0 M 74,-11 V 0 M 86,-22 V 0 M 97,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0 m 12,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-22 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 11,-11 V 0 m 12,-22 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-11 V 0 m 12,-11 V 0 m 11,-22 V 0"
+             style="stroke:#000000;stroke-width:1"
+             id="path282" />
+          <g
+             font-family="Arial"
+             font-size="21px"
+             xml:space="preserve"
+             fill="#000000"
+             text-anchor="middle"
+             id="g302"
+             transform="translate(0,1.3630848)"><text
+               dy="0.80000001em"
+               transform="translate(29,5)"
+               id="text284">0.1</text><text
+               dy="0.80000001em"
+               transform="translate(86,5)"
+               id="text286">0.2</text><text
+               dy="0.80000001em"
+               transform="translate(143,5)"
+               id="text288">0.3</text><text
+               dy="0.80000001em"
+               transform="translate(200,5)"
+               id="text290">0.4</text><text
+               dy="0.80000001em"
+               transform="translate(257,5)"
+               id="text292">0.5</text><text
+               dy="0.80000001em"
+               transform="translate(314,5)"
+               id="text294">0.6</text><text
+               dy="0.80000001em"
+               transform="translate(372,5)"
+               id="text296">0.7</text><text
+               dy="0.80000001em"
+               transform="translate(429,5)"
+               id="text298">0.8</text><text
+               dy="0.80000001em"
+               transform="translate(486,5)"
+               id="text300">0.9</text></g>
+          <rect
              x="0"
              y="0"
-             overflow="hidden"
              width="486"
-             height="595"
-             viewBox="0 0 486 595"
-             style="pointer-events: visiblefill;"
-             version="1.1"
-             id="svg280">
-            <g
-               id="g274">
-              <path
-                 d="M0,595h35v-57h11v-16h12v7h11v-19h12v-15h12v-17h11v1h12v-11h11v-1h12v8h11v4h12v4h12v8h11v9h12v5h11v1h12v10h11v4h12v3h12v4h11v10h23v3h12v5h11v6h12v1h12v4h11v2h12v3h11v7h12v3h11v6h12v4h12v3h11v4h12v-1h11v5h12v3h23L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(255, 0, 0); stroke-width: 1; fill: none;"
-                 id="path272" />
-            </g>
-            <g
-               id="g278">
-              <path
-                 d="M0,595h35v-149h11v-14h12v34h11v-14h12v-17h12v-24h11v-2h12v-11h11v-5h12v6h11v-12h12v-9h23v-3h12v-4h11v-5h12v4h23v-14h12v5h11v10h12v-4h11v-10h12v8h11v6h12v-15h12v12h11v5h12v-17h11v40h12v-14h11v35h12v61h12v-25h11v43h12v26h11v16h12v57h23L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(0, 0, 255); stroke-width: 1; fill: none;"
-                 id="path276" />
-            </g>
-          </svg>
+             height="24"
+             style="opacity:0"
+             id="rect304" />
           <g
-             id="g344">
-            <g
-               transform="translate(0,595)"
-               id="g312">
-              <path
-                 d="M0,0h486M6,-11V0M17,-11V0M29,-22V0M40,-11V0M51,-11V0M63,-11V0M74,-11V0M86,-22V0M97,-11V0M109,-11V0M120,-11V0M132,-11V0M143,-22V0M154,-11V0M166,-11V0M177,-11V0M189,-11V0M200,-22V0M212,-11V0M223,-11V0M234,-11V0M246,-11V0M257,-22V0M269,-11V0M280,-11V0M292,-11V0M303,-11V0M314,-22V0M326,-11V0M337,-11V0M349,-11V0M360,-11V0M372,-22V0M383,-11V0M395,-11V0M406,-11V0M417,-11V0M429,-22V0M440,-11V0M452,-11V0M463,-11V0M475,-11V0M486,-22V0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path282" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
+             font-family="Arial"
+             font-size="21px"
+             xml:space="preserve"
+             transform="translate(486,36)"
+             id="g310"><g
+               transform="translate(-63,7)"
+               id="g308"><text
                  fill="#000000"
-                 text-anchor="middle"
-                 id="g302"><text
-                   dy=".8em"
-                   transform="translate(29,5)"
-                   id="text284">0.1</text><text
-                   dy=".8em"
-                   transform="translate(86,5)"
-                   id="text286">0.2</text><text
-                   dy=".8em"
-                   transform="translate(143,5)"
-                   id="text288">0.3</text><text
-                   dy=".8em"
-                   transform="translate(200,5)"
-                   id="text290">0.4</text><text
-                   dy=".8em"
-                   transform="translate(257,5)"
-                   id="text292">0.5</text><text
-                   dy=".8em"
-                   transform="translate(314,5)"
-                   id="text294">0.6</text><text
-                   dy=".8em"
-                   transform="translate(372,5)"
-                   id="text296">0.7</text><text
-                   dy=".8em"
-                   transform="translate(429,5)"
-                   id="text298">0.8</text><text
-                   dy=".8em"
-                   transform="translate(486,5)"
-                   id="text300">0.9</text></g>
-              <rect
-                 x="0"
-                 y="0"
-                 width="486"
-                 height="24"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect304" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 transform="translate(486,36)"
-                 style="cursor: move;"
-                 id="g310"><g
-                   transform="translate(-63,7)"
-                   id="g308"><text
-                     fill="#000000"
-                     font-size="21"
-                     id="text306">θ (rad)</text></g></g>
-            </g>
-            <g
-               id="g342">
-              <path
-                 d="M0,0v595M18,595H0M9,584H0M9,572H0M9,561H0M9,550H0M18,538H0M9,527H0M9,516H0M9,504H0M9,493H0M18,482H0M9,470H0M9,459H0M9,448H0M9,436H0M18,425H0M9,414H0M9,402H0M9,391H0M9,380H0M18,368H0M9,357H0M9,346H0M9,334H0M9,323H0M18,312H0M9,300H0M9,289H0M9,278H0M9,266H0M18,255H0M9,244H0M9,232H0M9,221H0M9,210H0M18,198H0M9,187H0M9,176H0M9,164H0M9,153H0M18,142H0M9,130H0M9,119H0M9,108H0M9,96H0M18,85H0M9,74H0M9,62H0M9,51H0M9,40H0M18,28H0M9,17H0M9,6H0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path314" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="end"
-                 id="g338"><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,595)"
-                   id="text316">0</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,538)"
-                   id="text318">0.1</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,482)"
-                   id="text320">0.2</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,425)"
-                   id="text322">0.3</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,368)"
-                   id="text324">0.4</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,312)"
-                   id="text326">0.5</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,255)"
-                   id="text328">0.6</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,198)"
-                   id="text330">0.7</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,142)"
-                   id="text332">0.8</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,85)"
-                   id="text334">0.9</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,28)"
-                   id="text336">1</text></g>
-              <rect
-                 x="-33"
-                 y="0"
-                 width="33"
-                 height="595"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect340" />
-            </g>
-          </g>
+                 font-size="21px"
+                 id="text306">θ (rad)</text></g></g>
+        </g>
+        <g
+           id="g342">
           <path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path346" />
-          <path
-             d="M484,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path348" />
-          <path
-             d="M2,593h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path350" />
-          <path
-             d="M484,593h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path352" />
-          <path
-             d="M-3,18h5v559h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path354" />
-          <path
-             d="M489,18h-5v559h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path356" />
-          <path
-             d="M18,-3v5h450v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path358" />
-          <path
-             d="M18,598v-5h450v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path360" />
-          <style
-             id="style362">
+             d="m 0,0 v 595 m 18,0 H 0 M 9,584 H 0 M 9,572 H 0 M 9,561 H 0 M 9,550 H 0 M 18,538 H 0 M 9,527 H 0 M 9,516 H 0 M 9,504 H 0 M 9,493 H 0 M 18,482 H 0 M 9,470 H 0 M 9,459 H 0 M 9,448 H 0 M 9,436 H 0 M 18,425 H 0 M 9,414 H 0 M 9,402 H 0 M 9,391 H 0 M 9,380 H 0 M 18,368 H 0 M 9,357 H 0 M 9,346 H 0 M 9,334 H 0 M 9,323 H 0 M 18,312 H 0 M 9,300 H 0 M 9,289 H 0 M 9,278 H 0 M 9,266 H 0 M 18,255 H 0 M 9,244 H 0 M 9,232 H 0 M 9,221 H 0 M 9,210 H 0 M 18,198 H 0 M 9,187 H 0 M 9,176 H 0 M 9,164 H 0 M 9,153 H 0 M 18,142 H 0 M 9,130 H 0 M 9,119 H 0 M 9,108 H 0 M 9,96 H 0 M 18,85 H 0 M 9,74 H 0 M 9,62 H 0 M 9,51 H 0 M 9,40 H 0 M 18,28 H 0 M 9,17 H 0 M 9,6 H 0"
+             style="stroke:#000000;stroke-width:1"
+             id="path314" />
+          <rect
+             x="-33"
+             y="0"
+             width="33"
+             height="595"
+             style="opacity:0"
+             id="rect340" />
+        </g>
+      </g>
+      <path
+         d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+         style="opacity:0"
+         id="path346" />
+      <path
+         d="m 484,2 h -15 v -5 h 20 v 20 h -5 z"
+         style="opacity:0"
+         id="path348" />
+      <path
+         d="m 2,593 h 15 v 5 H -3 v -20 h 5 z"
+         style="opacity:0"
+         id="path350" />
+      <path
+         d="m 484,593 h -15 v 5 h 20 v -20 h -5 z"
+         style="opacity:0"
+         id="path352" />
+      <path
+         d="M -3,18 H 2 V 577 H -3 Z"
+         style="opacity:0"
+         id="path354" />
+      <path
+         d="m 489,18 h -5 v 559 h 5 z"
+         style="opacity:0"
+         id="path356" />
+      <path
+         d="M 18,-3 V 2 H 468 V -3 Z"
+         style="opacity:0"
+         id="path358" />
+      <path
+         d="m 18,598 v -5 h 450 v 5 z"
+         style="opacity:0"
+         id="path360" />
+      <style
+         id="style362">
 .jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
 .jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot svg:not(:root) { overflow: hidden; }</style>
-        </g>
-        <g
-           transform="translate(151,78)"
-           font-family="Arial"
-           font-size="21"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g392"><path
-             d="M0,0H282V82H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path366" /><path
-             d="M8,22H63"
-             style="stroke: rgb(255, 0, 0); stroke-width: 1;"
-             id="path368" /><text
-             fill="#000000"
-             text-anchor="start"
-             dominant-baseline="middle"
-             transform="translate(71,22)"
-             id="text370">Raw</text><path
-             d="M8,61H63"
-             style="stroke: rgb(0, 0, 255); stroke-width: 1;"
-             id="path372" /><text
-             fill="#000000"
-             text-anchor="start"
-             dominant-baseline="middle"
-             transform="translate(71,61)"
-             id="text374">Geometry-corrected</text><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path376" /><path
-             d="M280,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path378" /><path
-             d="M2,80h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path380" /><path
-             d="M280,80h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path382" /><path
-             d="M-3,18h5v46h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path384" /><path
-             d="M285,18h-5v46h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path386" /><path
-             d="M18,-3v5h246v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path388" /><path
-             d="M18,85v-5h246v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path390" /></g>
-        <g
-           transform="translate(73,3)"
-           font-family="Arial"
-           font-size="22"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g416"><path
-             d="M0,0H342V36H0Z"
-             style="fill: none; pointer-events: visiblefill;"
-             id="path394" /><g
-             transform="translate(8,26) scale(0.765)"
-             id="g398"><text
-               fill="#000000"
-               font-size="30"
-               id="text396">θ (rad) FMT efficiency (pid -211)</text></g><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path400" /><path
-             d="M340,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path402" /><path
-             d="M2,34h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path404" /><path
-             d="M340,34h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path406" /><path
-             d="M-3,18h5v0h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path408" /><path
-             d="M345,18h-5v0h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path410" /><path
-             d="M18,-3v5h306v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path412" /><path
-             d="M18,39v-5h306v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path414" /></g>
-      </g>
-    </svg>
+    </g>
+    <g
+       transform="translate(1182.5,147.99041)"
+       font-family="Arial"
+       font-size="21px"
+       xml:space="preserve"
+       id="g392"><path
+         d="M 0,0 H 282 V 82 H 0 Z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1"
+         id="path366" /><path
+         d="M 8,22 H 63"
+         style="stroke:#ff0000;stroke-width:1"
+         id="path368" /><text
+         fill="#000000"
+         text-anchor="start"
+         dominant-baseline="middle"
+         transform="translate(71,22)"
+         id="text370">Raw</text><path
+         d="M 8,61 H 63"
+         style="stroke:#0000ff;stroke-width:1"
+         id="path372" /><text
+         fill="#000000"
+         text-anchor="start"
+         dominant-baseline="middle"
+         transform="translate(71,61)"
+         id="text374">Geometry-corrected</text><path
+         d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+         style="opacity:0"
+         id="path376" /><path
+         d="m 280,2 h -15 v -5 h 20 v 20 h -5 z"
+         style="opacity:0"
+         id="path378" /><path
+         d="m 2,80 h 15 v 5 H -3 V 65 h 5 z"
+         style="opacity:0"
+         id="path380" /><path
+         d="m 280,80 h -15 v 5 h 20 V 65 h -5 z"
+         style="opacity:0"
+         id="path382" /><path
+         d="M -3,18 H 2 V 64 H -3 Z"
+         style="opacity:0"
+         id="path384" /><path
+         d="m 285,18 h -5 v 46 h 5 z"
+         style="opacity:0"
+         id="path386" /><path
+         d="M 18,-3 V 2 H 264 V -3 Z"
+         style="opacity:0"
+         id="path388" /><path
+         d="m 18,85 v -5 h 246 v 5 z"
+         style="opacity:0"
+         id="path390" /></g>
+    <g
+       transform="matrix(0.765,0,0,0.765,1108.9166,35)"
+       id="g398"
+       style="font-size:22px;font-family:Arial">
+      <text
+         fill="#000000"
+         font-size="30px"
+         id="text396">θ FMT efficiency (pid -211)</text>
+    </g>
+    <g
+       font-family="Arial"
+       font-size="21px"
+       xml:space="preserve"
+       fill="#000000"
+       text-anchor="end"
+       id="g208"
+       transform="translate(39.115234,6)"><text
+         dominant-baseline="middle"
+         transform="translate(-3,595)"
+         id="text186">0</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,538)"
+         id="text188">0.1</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,482)"
+         id="text190">0.2</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,425)"
+         id="text192">0.3</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,368)"
+         id="text194">0.4</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,312)"
+         id="text196">0.5</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,255)"
+         id="text198">0.6</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,198)"
+         id="text200">0.7</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,142)"
+         id="text202">0.8</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,85)"
+         id="text204">0.9</text><text
+         dominant-baseline="middle"
+         transform="translate(-3,28)"
+         id="text206">1</text></g>
   </g>
 </svg>

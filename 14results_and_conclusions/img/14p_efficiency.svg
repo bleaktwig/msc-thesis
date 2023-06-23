@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1557"
-   height="660"
+   width="1482.1023"
+   height="643.90527"
    version="1.1"
    id="svg418"
    sodipodi:docname="14p_efficiency.svg"
@@ -25,823 +25,571 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.35757576"
-     inkscape:cx="777.45763"
-     inkscape:cy="330"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="763.67532"
+     inkscape:cy="268.70058"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg418" />
-  <path
-     style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-     d="M0,0H1557V660H0Z"
-     id="path2" />
   <g
-     id="g416">
+     transform="translate(32.257325,3)"
+     id="g104">
+    <title
+       id="title8" />
+    <path
+       d="M 0,0 H 462 V 595 H 0 Z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1"
+       id="path10" />
     <svg
-       viewBox="0 0 488 647"
-       preserveAspectRatio="none"
-       x="16"
-       y="6"
-       width="488"
-       height="647"
+       x="0"
+       y="0"
+       overflow="hidden"
+       width="462"
+       height="595"
+       viewBox="0 0 462 595"
        version="1.1"
-       id="svg130">
-      <title
-         id="title4">subpad p_1</title>
-      <path
-         d="M0,0H488V647H0Z"
-         style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-         id="path6" />
+       id="svg20">
       <g
-         id="g128">
+         id="g14">
+        <path
+           d="m 0,595 h 21 v -42 h 10 v -23 h 10 v -29 h 10 v -2 h 11 v -2 H 72 V 355 h 10 v -11 h 10 v -8 h 11 v -1 h 10 v -2 h 10 v -1 h 10 v 6 h 11 v 3 h 10 v 1 h 10 v 4 h 11 v 7 h 10 v 1 h 10 v 6 h 10 v 4 h 11 v 5 h 10 v 3 h 10 v 3 h 10 v 3 h 11 v 1 h 10 v 6 h 10 v 5 h 10 v 5 h 11 v 2 h 20 v 5 h 11 v 4 h 10 v 3 h 10 v -2 h 10 v 4 h 11 v 3 h 10 v 1 h 10 v -3 h 10 v -3 h 11 v -14 h 10 v 200 h 41 v 3 H 0 Z"
+           style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linejoin:miter"
+           id="path12" />
+      </g>
+      <g
+         id="g18">
+        <path
+           d="M 0,595 H 21 V 411 h 10 v 8 h 10 v -67 h 10 v 13 h 11 v 15 H 72 V 210 h 10 v -5 h 10 v -1 h 11 v 5 h 10 v 2 h 10 v 1 h 10 v 8 h 11 v 3 h 10 v 3 h 10 v 5 h 11 v 8 h 20 v 6 h 10 v 5 h 11 v 6 h 10 v 3 h 10 v 3 h 10 v 2 h 11 v 3 h 10 v 5 h 10 v 8 h 10 v 2 h 11 v 2 h 10 v 1 h 10 v 5 h 11 v 6 h 10 v 3 h 10 v -2 h 10 v 8 h 11 v 5 h 10 v 5 h 10 v 4 h 10 v 16 h 11 v 21 h 10 v 239 h 41 v 3 H 0 Z"
+           style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linejoin:miter"
+           id="path16" />
+      </g>
+    </svg>
+    <g
+       id="g84">
+      <g
+         transform="translate(0,595)"
+         id="g52">
+        <path
+           d="M 0,0 H 462 M 0,-22 V 0 M 10,-11 V 0 M 21,-11 V 0 M 31,-11 V 0 M 41,-11 V 0 M 51,-22 V 0 M 62,-11 V 0 M 72,-11 V 0 M 82,-11 V 0 M 92,-11 V 0 m 11,-22 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 10,-22 V 0 m 10,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-22 V 0 m 11,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 11,-22 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 10,-22 V 0 m 10,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-22 V 0 m 11,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 11,-22 V 0 m 10,-11 V 0 m 10,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 10,-22 V 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path22" />
         <g
-           transform="translate(24,0)"
-           id="g104">
-          <title
-             id="title8" />
-          <path
-             d="M0,0H462V595H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path10" />
-          <svg
-             x="0"
-             y="0"
-             overflow="hidden"
-             width="462"
-             height="595"
-             viewBox="0 0 462 595"
-             style="pointer-events: visiblefill;"
-             version="1.1"
-             id="svg20">
-            <g
-               id="g14">
-              <path
-                 d="M0,595h21v-42h10v-23h10v-29h10v-2h11v-2h10v-142h10v-11h10v-8h11v-1h10v-2h10v-1h10v6h11v3h10v1h10v4h11v7h10v1h10v6h10v4h11v5h10v3h10v3h10v3h11v1h10v6h10v5h10v5h11v2h20v5h11v4h10v3h10v-2h10v4h11v3h10v1h10v-3h10v-3h11v-14h10v200h41L462,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(255, 0, 0); stroke-width: 1; fill: none;"
-                 id="path12" />
-            </g>
-            <g
-               id="g18">
-              <path
-                 d="M0,595h21v-184h10v8h10v-67h10v13h11v15h10v-170h10v-5h10v-1h11v5h10v2h10v1h10v8h11v3h10v3h10v5h11v8h20v6h10v5h11v6h10v3h10v3h10v2h11v3h10v5h10v8h10v2h11v2h10v1h10v5h11v6h10v3h10v-2h10v8h11v5h10v5h10v4h10v16h11v21h10v239h41L462,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(0, 0, 255); stroke-width: 1; fill: none;"
-                 id="path16" />
-            </g>
-          </svg>
-          <g
-             id="g84">
-            <g
-               transform="translate(0,595)"
-               id="g52">
-              <path
-                 d="M0,0h462M0,-22V0M10,-11V0M21,-11V0M31,-11V0M41,-11V0M51,-22V0M62,-11V0M72,-11V0M82,-11V0M92,-11V0M103,-22V0M113,-11V0M123,-11V0M133,-11V0M144,-11V0M154,-22V0M164,-11V0M175,-11V0M185,-11V0M195,-11V0M205,-22V0M216,-11V0M226,-11V0M236,-11V0M246,-11V0M257,-22V0M267,-11V0M277,-11V0M287,-11V0M298,-11V0M308,-22V0M318,-11V0M329,-11V0M339,-11V0M349,-11V0M359,-22V0M370,-11V0M380,-11V0M390,-11V0M400,-11V0M411,-22V0M421,-11V0M431,-11V0M441,-11V0M452,-11V0M462,-22V0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path22" />
-              <g
-                 font-family="Arial"
-                 font-size="20"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="middle"
-                 id="g44"><text
-                   dy=".8em"
-                   transform="translate(0,5)"
-                   id="text24">0</text><text
-                   dy=".8em"
-                   transform="translate(51,5)"
-                   id="text26">1</text><text
-                   dy=".8em"
-                   transform="translate(103,5)"
-                   id="text28">2</text><text
-                   dy=".8em"
-                   transform="translate(154,5)"
-                   id="text30">3</text><text
-                   dy=".8em"
-                   transform="translate(205,5)"
-                   id="text32">4</text><text
-                   dy=".8em"
-                   transform="translate(257,5)"
-                   id="text34">5</text><text
-                   dy=".8em"
-                   transform="translate(308,5)"
-                   id="text36">6</text><text
-                   dy=".8em"
-                   transform="translate(359,5)"
-                   id="text38">7</text><text
-                   dy=".8em"
-                   transform="translate(411,5)"
-                   id="text40">8</text><text
-                   dy=".8em"
-                   transform="translate(462,5)"
-                   id="text42">9</text></g>
-              <rect
-                 x="0"
-                 y="0"
-                 width="462"
-                 height="23"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect46" />
-              <g
-                 font-family="Arial"
-                 font-size="20"
-                 xml:space="preserve"
-                 style="cursor: move;"
-                 transform="translate(462,36)"
-                 id="g50"><text
-                   fill="#000000"
-                   text-anchor="end"
-                   dominant-baseline="middle"
-                   id="text48">p (GeV)</text></g>
-            </g>
-            <g
-               id="g82">
-              <path
-                 d="M0,0v595M17,595H0M9,584H0M9,572H0M9,561H0M9,550H0M17,538H0M9,527H0M9,516H0M9,504H0M9,493H0M17,482H0M9,470H0M9,459H0M9,448H0M9,436H0M17,425H0M9,414H0M9,402H0M9,391H0M9,380H0M17,368H0M9,357H0M9,346H0M9,334H0M9,323H0M17,312H0M9,300H0M9,289H0M9,278H0M9,266H0M17,255H0M9,244H0M9,232H0M9,221H0M9,210H0M17,198H0M9,187H0M9,176H0M9,164H0M9,153H0M17,142H0M9,130H0M9,119H0M9,108H0M9,96H0M17,85H0M9,74H0M9,62H0M9,51H0M9,40H0M17,28H0M9,17H0M9,6H0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path54" />
-              <g
-                 font-family="Arial"
-                 font-size="15"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="end"
-                 id="g78"><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,595)"
-                   id="text56">0</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,538)"
-                   id="text58">0.1</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,482)"
-                   id="text60">0.2</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,425)"
-                   id="text62">0.3</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,368)"
-                   id="text64">0.4</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,312)"
-                   id="text66">0.5</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,255)"
-                   id="text68">0.6</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,198)"
-                   id="text70">0.7</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,142)"
-                   id="text72">0.8</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,85)"
-                   id="text74">0.9</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,28)"
-                   id="text76">1</text></g>
-              <rect
-                 x="-31"
-                 y="0"
-                 width="31"
-                 height="595"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect80" />
-            </g>
-          </g>
-          <path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path86" />
-          <path
-             d="M460,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path88" />
-          <path
-             d="M2,593h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path90" />
-          <path
-             d="M460,593h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path92" />
-          <path
-             d="M-3,18h5v559h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path94" />
-          <path
-             d="M465,18h-5v559h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path96" />
-          <path
-             d="M18,-3v5h426v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path98" />
-          <path
-             d="M18,598v-5h426v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path100" />
-          <style
-             id="style102">
+           font-family="Arial"
+           font-size="20px"
+           xml:space="preserve"
+           fill="#000000"
+           text-anchor="middle"
+           id="g44"
+           transform="translate(0,1.4648438)"><text
+             dy="0.80000001em"
+             transform="translate(0,5)"
+             id="text24">0</text><text
+             dy="0.80000001em"
+             transform="translate(51,5)"
+             id="text26">1</text><text
+             dy="0.80000001em"
+             transform="translate(103,5)"
+             id="text28">2</text><text
+             dy="0.80000001em"
+             transform="translate(154,5)"
+             id="text30">3</text><text
+             dy="0.80000001em"
+             transform="translate(205,5)"
+             id="text32">4</text><text
+             dy="0.80000001em"
+             transform="translate(257,5)"
+             id="text34">5</text><text
+             dy="0.80000001em"
+             transform="translate(308,5)"
+             id="text36">6</text><text
+             dy="0.80000001em"
+             transform="translate(359,5)"
+             id="text38">7</text><text
+             dy="0.80000001em"
+             transform="translate(411,5)"
+             id="text40">8</text></g>
+        <rect
+           x="0"
+           y="0"
+           width="462"
+           height="23"
+           style="opacity:0"
+           id="rect46" />
+        <g
+           font-family="Arial"
+           font-size="20px"
+           xml:space="preserve"
+           transform="translate(462,36)"
+           id="g50"><text
+             fill="#000000"
+             text-anchor="end"
+             dominant-baseline="middle"
+             id="text48">p (GeV)</text></g>
+      </g>
+      <g
+         id="g82">
+        <path
+           d="m 0,0 v 595 m 17,0 H 0 M 9,584 H 0 M 9,572 H 0 M 9,561 H 0 M 9,550 H 0 M 17,538 H 0 M 9,527 H 0 M 9,516 H 0 M 9,504 H 0 M 9,493 H 0 M 17,482 H 0 M 9,470 H 0 M 9,459 H 0 M 9,448 H 0 M 9,436 H 0 M 17,425 H 0 M 9,414 H 0 M 9,402 H 0 M 9,391 H 0 M 9,380 H 0 M 17,368 H 0 M 9,357 H 0 M 9,346 H 0 M 9,334 H 0 M 9,323 H 0 M 17,312 H 0 M 9,300 H 0 M 9,289 H 0 M 9,278 H 0 M 9,266 H 0 M 17,255 H 0 M 9,244 H 0 M 9,232 H 0 M 9,221 H 0 M 9,210 H 0 M 17,198 H 0 M 9,187 H 0 M 9,176 H 0 M 9,164 H 0 M 9,153 H 0 M 17,142 H 0 M 9,130 H 0 M 9,119 H 0 M 9,108 H 0 M 9,96 H 0 M 17,85 H 0 M 9,74 H 0 M 9,62 H 0 M 9,51 H 0 M 9,40 H 0 M 17,28 H 0 M 9,17 H 0 M 9,6 H 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path54" />
+        <rect
+           x="-31"
+           y="0"
+           width="31"
+           height="595"
+           style="opacity:0"
+           id="rect80" />
+      </g>
+    </g>
+    <path
+       d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+       style="opacity:0"
+       id="path86" />
+    <path
+       d="m 460,2 h -15 v -5 h 20 v 20 h -5 z"
+       style="opacity:0"
+       id="path88" />
+    <path
+       d="m 2,593 h 15 v 5 H -3 v -20 h 5 z"
+       style="opacity:0"
+       id="path90" />
+    <path
+       d="m 460,593 h -15 v 5 h 20 v -20 h -5 z"
+       style="opacity:0"
+       id="path92" />
+    <path
+       d="M -3,18 H 2 V 577 H -3 Z"
+       style="opacity:0"
+       id="path94" />
+    <path
+       d="m 465,18 h -5 v 559 h 5 z"
+       style="opacity:0"
+       id="path96" />
+    <path
+       d="M 18,-3 V 2 H 444 V -3 Z"
+       style="opacity:0"
+       id="path98" />
+    <path
+       d="m 18,598 v -5 h 426 v 5 z"
+       style="opacity:0"
+       id="path100" />
+    <style
+       id="style102">
 .jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
 .jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
 .jsroot svg:not(:root) { overflow: hidden; }</style>
-        </g>
-        <g
-           transform="translate(73,3)"
-           font-family="Arial"
-           font-size="23"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g126"><path
-             d="M0,0H342V36H0Z"
-             style="fill: none; pointer-events: visiblefill;"
-             id="path106" /><text
-             fill="#000000"
-             text-anchor="middle"
-             dominant-baseline="middle"
-             transform="translate(171,18)"
-             id="text108">p (GeV) FMT efficiency (pid 11)</text><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path110" /><path
-             d="M340,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path112" /><path
-             d="M2,34h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path114" /><path
-             d="M340,34h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path116" /><path
-             d="M-3,18h5v0h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path118" /><path
-             d="M345,18h-5v0h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path120" /><path
-             d="M18,-3v5h306v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path122" /><path
-             d="M18,39v-5h306v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path124" /></g>
-      </g>
-    </svg>
-    <svg
-       viewBox="0 0 488 647"
-       preserveAspectRatio="none"
-       x="535"
-       y="6"
-       width="488"
-       height="647"
-       version="1.1"
-       id="svg258">
-      <title
-         id="title132">subpad p_2</title>
-      <path
-         d="M0,0H488V647H0Z"
-         style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-         id="path134" />
-      <g
-         id="g256">
-        <g
-           transform="translate(1,0)"
-           id="g232">
-          <title
-             id="title136" />
-          <path
-             d="M0,0H486V595H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path138" />
-          <svg
-             x="0"
-             y="0"
-             overflow="hidden"
-             width="486"
-             height="595"
-             viewBox="0 0 486 595"
-             style="pointer-events: visiblefill;"
-             version="1.1"
-             id="svg148">
-            <g
-               id="g142">
-              <path
-                 d="M0,595h11v-32h11v-37h10v-10h11v-6h11v-2h11v-1h11v-1h32v-1h11v-1h11v2h10v-1h11v-2h11v-3h11v2h11v-4h10v3h22v1h11v-7h11v8h10v7h11v3h11v-6h11v3h11v7h10v3h11v-7h11v17h11v-2h11v-7h10v18h11v-24h11v15h11v23h11v-6h10v21h11v-11h11v14h11v-11h11v35h10v-189h11v-378h11L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(255, 0, 0); stroke-width: 1; fill: none;"
-                 id="path140" />
-            </g>
-            <g
-               id="g146">
-              <path
-                 d="M0,595h11v-189h11v-4h10v4h11v-1h11v3h11v1h11v2h10v3h11v1h11v1h22v2h10v2h11v-4h22v6h11v-4h10v5h11v1h11v3h11v-11h11v8h10v9h11v9h11v-8h11v-5h11v15h10v-1h11v-12h11v23h11v-3h11v-24h10v36h11v-58h11v22h11v78h11v-58h10v57h11v-51h11v48h11v-48h11v142h10v-189h11v189h11L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(0, 0, 255); stroke-width: 1; fill: none;"
-                 id="path144" />
-            </g>
-          </svg>
-          <g
-             id="g212">
-            <g
-               transform="translate(0,595)"
-               id="g180">
-              <path
-                 d="M0,0h486M0,-22V0M11,-11V0M22,-11V0M32,-11V0M43,-11V0M54,-22V0M65,-11V0M76,-11V0M86,-11V0M97,-11V0M108,-22V0M119,-11V0M130,-11V0M140,-11V0M151,-11V0M162,-22V0M173,-11V0M184,-11V0M194,-11V0M205,-11V0M216,-22V0M227,-11V0M238,-11V0M248,-11V0M259,-11V0M270,-22V0M281,-11V0M292,-11V0M302,-11V0M313,-11V0M324,-22V0M335,-11V0M346,-11V0M356,-11V0M367,-11V0M378,-22V0M389,-11V0M400,-11V0M410,-11V0M421,-11V0M432,-22V0M443,-11V0M454,-11V0M464,-11V0M475,-11V0M486,-22V0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path150" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="middle"
-                 id="g172"><text
-                   dy=".8em"
-                   transform="translate(0,5)"
-                   id="text152">0</text><text
-                   dy=".8em"
-                   transform="translate(54,5)"
-                   id="text154">1</text><text
-                   dy=".8em"
-                   transform="translate(108,5)"
-                   id="text156">2</text><text
-                   dy=".8em"
-                   transform="translate(162,5)"
-                   id="text158">3</text><text
-                   dy=".8em"
-                   transform="translate(216,5)"
-                   id="text160">4</text><text
-                   dy=".8em"
-                   transform="translate(270,5)"
-                   id="text162">5</text><text
-                   dy=".8em"
-                   transform="translate(324,5)"
-                   id="text164">6</text><text
-                   dy=".8em"
-                   transform="translate(378,5)"
-                   id="text166">7</text><text
-                   dy=".8em"
-                   transform="translate(432,5)"
-                   id="text168">8</text><text
-                   dy=".8em"
-                   transform="translate(486,5)"
-                   id="text170">9</text></g>
-              <rect
-                 x="0"
-                 y="0"
-                 width="486"
-                 height="24"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect174" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 style="cursor: move;"
-                 transform="translate(486,36)"
-                 id="g178"><text
-                   fill="#000000"
-                   text-anchor="end"
-                   dominant-baseline="middle"
-                   id="text176">p (GeV)</text></g>
-            </g>
-            <g
-               id="g210">
-              <path
-                 d="M0,0v595M18,595H0M9,584H0M9,572H0M9,561H0M9,550H0M18,538H0M9,527H0M9,516H0M9,504H0M9,493H0M18,482H0M9,470H0M9,459H0M9,448H0M9,436H0M18,425H0M9,414H0M9,402H0M9,391H0M9,380H0M18,368H0M9,357H0M9,346H0M9,334H0M9,323H0M18,312H0M9,300H0M9,289H0M9,278H0M9,266H0M18,255H0M9,244H0M9,232H0M9,221H0M9,210H0M18,198H0M9,187H0M9,176H0M9,164H0M9,153H0M18,142H0M9,130H0M9,119H0M9,108H0M9,96H0M18,85H0M9,74H0M9,62H0M9,51H0M9,40H0M18,28H0M9,17H0M9,6H0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path182" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="end"
-                 id="g206"><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,595)"
-                   id="text184">0</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,538)"
-                   id="text186">0.1</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,482)"
-                   id="text188">0.2</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,425)"
-                   id="text190">0.3</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,368)"
-                   id="text192">0.4</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,312)"
-                   id="text194">0.5</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,255)"
-                   id="text196">0.6</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,198)"
-                   id="text198">0.7</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,142)"
-                   id="text200">0.8</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,85)"
-                   id="text202">0.9</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,28)"
-                   id="text204">1</text></g>
-              <rect
-                 x="-33"
-                 y="0"
-                 width="33"
-                 height="595"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect208" />
-            </g>
-          </g>
-          <path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path214" />
-          <path
-             d="M484,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path216" />
-          <path
-             d="M2,593h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path218" />
-          <path
-             d="M484,593h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path220" />
-          <path
-             d="M-3,18h5v559h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path222" />
-          <path
-             d="M489,18h-5v559h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path224" />
-          <path
-             d="M18,-3v5h450v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path226" />
-          <path
-             d="M18,598v-5h450v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path228" />
-          <style
-             id="style230">
-.jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
-.jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
-.jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
-.jsroot svg:not(:root) { overflow: hidden; }</style>
-        </g>
-        <g
-           transform="translate(73,3)"
-           font-family="Arial"
-           font-size="22"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g254"><path
-             d="M0,0H342V36H0Z"
-             style="fill: none; pointer-events: visiblefill;"
-             id="path234" /><text
-             fill="#000000"
-             text-anchor="middle"
-             dominant-baseline="middle"
-             transform="translate(171,18)"
-             id="text236">p (GeV) FMT efficiency (pid 211)</text><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path238" /><path
-             d="M340,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path240" /><path
-             d="M2,34h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path242" /><path
-             d="M340,34h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path244" /><path
-             d="M-3,18h5v0h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path246" /><path
-             d="M345,18h-5v0h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path248" /><path
-             d="M18,-3v5h306v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path250" /><path
-             d="M18,39v-5h306v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path252" /></g>
-      </g>
-    </svg>
-    <svg
-       viewBox="0 0 488 647"
-       preserveAspectRatio="none"
-       x="1054"
-       y="6"
-       width="488"
-       height="647"
-       version="1.1"
-       id="svg414">
-      <title
-         id="title260">subpad p_3</title>
-      <path
-         d="M0,0H488V647H0Z"
-         style="pointer-events: visiblefill; fill: rgb(255, 255, 255);"
-         id="path262" />
-      <g
-         id="g412">
-        <g
-           transform="translate(1,0)"
-           id="g360">
-          <title
-             id="title264" />
-          <path
-             d="M0,0H486V595H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path266" />
-          <svg
-             x="0"
-             y="0"
-             overflow="hidden"
-             width="486"
-             height="595"
-             viewBox="0 0 486 595"
-             style="pointer-events: visiblefill;"
-             version="1.1"
-             id="svg276">
-            <g
-               id="g270">
-              <path
-                 d="M0,595h11v-7h11v-23h10v-20h11v-16h11v-11h11v-4h11v-9h10v-7h11v-5h11v1h11v-3h11v1h10v-7h11v3h11v-4h11v-2h11v1h10v-3h11v8h11v-9h11v10h11v-4h10v1h11v4h11v-4h11v34h11v-8h10v-1h11v-6h11v-4h11v24h21v22h11v10h11v-2h11v40h21v-27h11v27h11v-142h11v142h43L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(255, 0, 0); stroke-width: 1; fill: none;"
-                 id="path268" />
-            </g>
-            <g
-               id="g274">
-              <path
-                 d="M0,595h11v-62h11v-129h10v-23h11v-13h11v-1h11v16h11v-4h10v-4h22v7h11v3h11v9h10v-6h11v10h11v-5h11v1h11v10h10v-8h11v7h11v-5h11v14h11v-10h10v6h11v8h11v-17h11v59h11v-18h10v-32h11v29h11v-24h11v24h11v5h10v25h11v-7h11v-20h11v155h21v-113h11v113h11v-283h11v283h43L486,598H0Z"
-                 style="stroke-linejoin: miter; stroke: rgb(0, 0, 255); stroke-width: 1; fill: none;"
-                 id="path272" />
-            </g>
-          </svg>
-          <g
-             id="g340">
-            <g
-               transform="translate(0,595)"
-               id="g308">
-              <path
-                 d="M0,0h486M0,-22V0M11,-11V0M22,-11V0M32,-11V0M43,-11V0M54,-22V0M65,-11V0M76,-11V0M86,-11V0M97,-11V0M108,-22V0M119,-11V0M130,-11V0M140,-11V0M151,-11V0M162,-22V0M173,-11V0M184,-11V0M194,-11V0M205,-11V0M216,-22V0M227,-11V0M238,-11V0M248,-11V0M259,-11V0M270,-22V0M281,-11V0M292,-11V0M302,-11V0M313,-11V0M324,-22V0M335,-11V0M346,-11V0M356,-11V0M367,-11V0M378,-22V0M389,-11V0M400,-11V0M410,-11V0M421,-11V0M432,-22V0M443,-11V0M454,-11V0M464,-11V0M475,-11V0M486,-22V0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path278" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="middle"
-                 id="g300"><text
-                   dy=".8em"
-                   transform="translate(0,5)"
-                   id="text280">0</text><text
-                   dy=".8em"
-                   transform="translate(54,5)"
-                   id="text282">1</text><text
-                   dy=".8em"
-                   transform="translate(108,5)"
-                   id="text284">2</text><text
-                   dy=".8em"
-                   transform="translate(162,5)"
-                   id="text286">3</text><text
-                   dy=".8em"
-                   transform="translate(216,5)"
-                   id="text288">4</text><text
-                   dy=".8em"
-                   transform="translate(270,5)"
-                   id="text290">5</text><text
-                   dy=".8em"
-                   transform="translate(324,5)"
-                   id="text292">6</text><text
-                   dy=".8em"
-                   transform="translate(378,5)"
-                   id="text294">7</text><text
-                   dy=".8em"
-                   transform="translate(432,5)"
-                   id="text296">8</text><text
-                   dy=".8em"
-                   transform="translate(486,5)"
-                   id="text298">9</text></g>
-              <rect
-                 x="0"
-                 y="0"
-                 width="486"
-                 height="24"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect302" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 transform="translate(486,36)"
-                 style="cursor: move;"
-                 id="g306"><text
-                   fill="#000000"
-                   text-anchor="end"
-                   dominant-baseline="middle"
-                   id="text304">p (GeV)</text></g>
-            </g>
-            <g
-               id="g338">
-              <path
-                 d="M0,0v595M18,595H0M9,584H0M9,572H0M9,561H0M9,550H0M18,538H0M9,527H0M9,516H0M9,504H0M9,493H0M18,482H0M9,470H0M9,459H0M9,448H0M9,436H0M18,425H0M9,414H0M9,402H0M9,391H0M9,380H0M18,368H0M9,357H0M9,346H0M9,334H0M9,323H0M18,312H0M9,300H0M9,289H0M9,278H0M9,266H0M18,255H0M9,244H0M9,232H0M9,221H0M9,210H0M18,198H0M9,187H0M9,176H0M9,164H0M9,153H0M18,142H0M9,130H0M9,119H0M9,108H0M9,96H0M18,85H0M9,74H0M9,62H0M9,51H0M9,40H0M18,28H0M9,17H0M9,6H0"
-                 style="stroke: rgb(0, 0, 0); stroke-width: 1;"
-                 id="path310" />
-              <g
-                 font-family="Arial"
-                 font-size="21"
-                 xml:space="preserve"
-                 fill="#000000"
-                 text-anchor="end"
-                 id="g334"><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,595)"
-                   id="text312">0</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,538)"
-                   id="text314">0.1</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,482)"
-                   id="text316">0.2</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,425)"
-                   id="text318">0.3</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,368)"
-                   id="text320">0.4</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,312)"
-                   id="text322">0.5</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,255)"
-                   id="text324">0.6</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,198)"
-                   id="text326">0.7</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,142)"
-                   id="text328">0.8</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,85)"
-                   id="text330">0.9</text><text
-                   dominant-baseline="middle"
-                   transform="translate(-3,28)"
-                   id="text332">1</text></g>
-              <rect
-                 x="-33"
-                 y="0"
-                 width="33"
-                 height="595"
-                 style="opacity: 0; cursor: crosshair;"
-                 id="rect336" />
-            </g>
-          </g>
-          <path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path342" />
-          <path
-             d="M484,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path344" />
-          <path
-             d="M2,593h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path346" />
-          <path
-             d="M484,593h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path348" />
-          <path
-             d="M-3,18h5v559h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path350" />
-          <path
-             d="M489,18h-5v559h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path352" />
-          <path
-             d="M18,-3v5h450v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path354" />
-          <path
-             d="M18,598v-5h450v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path356" />
-          <style
-             id="style358">
-.jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
-.jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
-.jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
-.jsroot svg:not(:root) { overflow: hidden; }</style>
-        </g>
-        <g
-           transform="translate(160,79)"
-           font-family="Arial"
-           font-size="21"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g388"><path
-             d="M0,0H273V84H0Z"
-             style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 1; pointer-events: visiblefill;"
-             id="path362" /><path
-             d="M8,23H60"
-             style="stroke: rgb(255, 0, 0); stroke-width: 1;"
-             id="path364" /><text
-             fill="#000000"
-             text-anchor="start"
-             dominant-baseline="middle"
-             transform="translate(68,23)"
-             id="text366">Raw</text><path
-             d="M8,62H60"
-             style="stroke: rgb(0, 0, 255); stroke-width: 1;"
-             id="path368" /><text
-             fill="#000000"
-             text-anchor="start"
-             dominant-baseline="middle"
-             transform="translate(68,62)"
-             id="text370">Geometry-corrected</text><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path372" /><path
-             d="M271,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path374" /><path
-             d="M2,82h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path376" /><path
-             d="M271,82h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path378" /><path
-             d="M-3,18h5v48h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path380" /><path
-             d="M276,18h-5v48h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path382" /><path
-             d="M18,-3v5h237v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path384" /><path
-             d="M18,87v-5h237v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path386" /></g>
-        <g
-           transform="translate(73,3)"
-           font-family="Arial"
-           font-size="22"
-           xml:space="preserve"
-           style="cursor: move;"
-           id="g410"><path
-             d="M0,0H342V36H0Z"
-             style="fill: none; pointer-events: visiblefill;"
-             id="path390" /><text
-             fill="#000000"
-             text-anchor="middle"
-             dominant-baseline="middle"
-             transform="translate(171,18)"
-             id="text392">p (GeV) FMT efficiency (pid -211)</text><path
-             d="M2,2h15v-5h-20v20h5Z"
-             style="opacity: 0; cursor: nw-resize;"
-             id="path394" /><path
-             d="M340,2h-15v-5h20v20h-5 Z"
-             style="opacity: 0; cursor: ne-resize;"
-             id="path396" /><path
-             d="M2,34h15v5h-20v-20h5Z"
-             style="opacity: 0; cursor: sw-resize;"
-             id="path398" /><path
-             d="M340,34h-15v5h20v-20h-5Z"
-             style="opacity: 0; cursor: se-resize;"
-             id="path400" /><path
-             d="M-3,18h5v0h-5Z"
-             style="opacity: 0; cursor: w-resize;"
-             id="path402" /><path
-             d="M345,18h-5v0h5Z"
-             style="opacity: 0; cursor: e-resize;"
-             id="path404" /><path
-             d="M18,-3v5h306v-5Z"
-             style="opacity: 0; cursor: n-resize;"
-             id="path406" /><path
-             d="M18,39v-5h306v5Z"
-             style="opacity: 0; cursor: s-resize;"
-             id="path408" /></g>
-      </g>
-    </svg>
   </g>
+  <text
+     fill="#000000"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     id="text108"
+     style="font-size:23px;font-family:Arial"
+     x="263.22925"
+     y="24">p FMT efficiency (pid 11)</text>
+  <g
+     transform="translate(500.25732,3)"
+     id="g232">
+    <title
+       id="title136" />
+    <path
+       d="M 0,0 H 486 V 595 H 0 Z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1"
+       id="path138" />
+    <svg
+       x="0"
+       y="0"
+       overflow="hidden"
+       width="486"
+       height="595"
+       viewBox="0 0 486 595"
+       version="1.1"
+       id="svg148">
+      <g
+         id="g142">
+        <path
+           d="m 0,595 h 11 v -32 h 11 v -37 h 10 v -10 h 11 v -6 h 11 v -2 h 11 v -1 h 11 v -1 h 32 v -1 h 11 v -1 h 11 v 2 h 10 v -1 h 11 v -2 h 11 v -3 h 11 v 2 h 11 v -4 h 10 v 3 h 22 v 1 h 11 v -7 h 11 v 8 h 10 v 7 h 11 v 3 h 11 v -6 h 11 v 3 h 11 v 7 h 10 v 3 h 11 v -7 h 11 v 17 h 11 v -2 h 11 v -7 h 10 v 18 h 11 v -24 h 11 v 15 h 11 v 23 h 11 v -6 h 10 v 21 h 11 v -11 h 11 v 14 h 11 v -11 h 11 v 35 h 10 V 406 h 11 V 28 h 11 V 598 H 0 Z"
+           style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linejoin:miter"
+           id="path140" />
+      </g>
+      <g
+         id="g146">
+        <path
+           d="M 0,595 H 11 V 406 h 11 v -4 h 10 v 4 h 11 v -1 h 11 v 3 h 11 v 1 h 11 v 2 h 10 v 3 h 11 v 1 h 11 v 1 h 22 v 2 h 10 v 2 h 11 v -4 h 22 v 6 h 11 v -4 h 10 v 5 h 11 v 1 h 11 v 3 h 11 v -11 h 11 v 8 h 10 v 9 h 11 v 9 h 11 v -8 h 11 v -5 h 11 v 15 h 10 v -1 h 11 v -12 h 11 v 23 h 11 v -3 h 11 v -24 h 10 v 36 h 11 v -58 h 11 v 22 h 11 v 78 h 11 v -58 h 10 v 57 h 11 v -51 h 11 v 48 h 11 v -48 h 11 v 142 h 10 V 406 h 11 v 189 h 11 v 3 H 0 Z"
+           style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linejoin:miter"
+           id="path144" />
+      </g>
+    </svg>
+    <g
+       id="g212">
+      <g
+         transform="translate(0,595)"
+         id="g180">
+        <path
+           d="M 0,0 H 486 M 0,-22 V 0 M 11,-11 V 0 M 22,-11 V 0 M 32,-11 V 0 M 43,-11 V 0 M 54,-22 V 0 M 65,-11 V 0 M 76,-11 V 0 M 86,-11 V 0 M 97,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path150" />
+        <g
+           font-family="Arial"
+           font-size="21px"
+           xml:space="preserve"
+           fill="#000000"
+           text-anchor="middle"
+           id="g172"
+           transform="translate(0,1.3630848)"><text
+             dy="0.80000001em"
+             transform="translate(54,5)"
+             id="text154">1</text><text
+             dy="0.80000001em"
+             transform="translate(108,5)"
+             id="text156">2</text><text
+             dy="0.80000001em"
+             transform="translate(162,5)"
+             id="text158">3</text><text
+             dy="0.80000001em"
+             transform="translate(216,5)"
+             id="text160">4</text><text
+             dy="0.80000001em"
+             transform="translate(270,5)"
+             id="text162">5</text><text
+             dy="0.80000001em"
+             transform="translate(324,5)"
+             id="text164">6</text><text
+             dy="0.80000001em"
+             transform="translate(378,5)"
+             id="text166">7</text><text
+             dy="0.80000001em"
+             transform="translate(432,5)"
+             id="text168">8</text></g>
+        <rect
+           x="0"
+           y="0"
+           width="486"
+           height="24"
+           style="opacity:0"
+           id="rect174" />
+        <g
+           font-family="Arial"
+           font-size="21px"
+           xml:space="preserve"
+           transform="translate(486,36)"
+           id="g178"><text
+             fill="#000000"
+             text-anchor="end"
+             dominant-baseline="middle"
+             id="text176">p (GeV)</text></g>
+      </g>
+      <g
+         id="g210">
+        <path
+           d="m 0,0 v 595 m 18,0 H 0 M 9,584 H 0 M 9,572 H 0 M 9,561 H 0 M 9,550 H 0 M 18,538 H 0 M 9,527 H 0 M 9,516 H 0 M 9,504 H 0 M 9,493 H 0 M 18,482 H 0 M 9,470 H 0 M 9,459 H 0 M 9,448 H 0 M 9,436 H 0 M 18,425 H 0 M 9,414 H 0 M 9,402 H 0 M 9,391 H 0 M 9,380 H 0 M 18,368 H 0 M 9,357 H 0 M 9,346 H 0 M 9,334 H 0 M 9,323 H 0 M 18,312 H 0 M 9,300 H 0 M 9,289 H 0 M 9,278 H 0 M 9,266 H 0 M 18,255 H 0 M 9,244 H 0 M 9,232 H 0 M 9,221 H 0 M 9,210 H 0 M 18,198 H 0 M 9,187 H 0 M 9,176 H 0 M 9,164 H 0 M 9,153 H 0 M 18,142 H 0 M 9,130 H 0 M 9,119 H 0 M 9,108 H 0 M 9,96 H 0 M 18,85 H 0 M 9,74 H 0 M 9,62 H 0 M 9,51 H 0 M 9,40 H 0 M 18,28 H 0 M 9,17 H 0 M 9,6 H 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path182" />
+        <rect
+           x="-33"
+           y="0"
+           width="33"
+           height="595"
+           style="opacity:0"
+           id="rect208" />
+      </g>
+    </g>
+    <path
+       d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+       style="opacity:0"
+       id="path214" />
+    <path
+       d="m 484,2 h -15 v -5 h 20 v 20 h -5 z"
+       style="opacity:0"
+       id="path216" />
+    <path
+       d="m 2,593 h 15 v 5 H -3 v -20 h 5 z"
+       style="opacity:0"
+       id="path218" />
+    <path
+       d="m 484,593 h -15 v 5 h 20 v -20 h -5 z"
+       style="opacity:0"
+       id="path220" />
+    <path
+       d="M -3,18 H 2 V 577 H -3 Z"
+       style="opacity:0"
+       id="path222" />
+    <path
+       d="m 489,18 h -5 v 559 h 5 z"
+       style="opacity:0"
+       id="path224" />
+    <path
+       d="M 18,-3 V 2 H 468 V -3 Z"
+       style="opacity:0"
+       id="path226" />
+    <path
+       d="m 18,598 v -5 h 450 v 5 z"
+       style="opacity:0"
+       id="path228" />
+    <style
+       id="style230">
+.jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
+.jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
+.jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
+.jsroot svg:not(:root) { overflow: hidden; }</style>
+  </g>
+  <text
+     fill="#000000"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     id="text236"
+     style="font-size:22px;font-family:Arial"
+     x="743.23047"
+     y="24">p FMT efficiency (pid 211)</text>
+  <g
+     transform="translate(991.25732,3)"
+     id="g360">
+    <title
+       id="title264" />
+    <path
+       d="M 0,0 H 486 V 595 H 0 Z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1"
+       id="path266" />
+    <svg
+       x="0"
+       y="0"
+       overflow="hidden"
+       width="486"
+       height="595"
+       viewBox="0 0 486 595"
+       version="1.1"
+       id="svg276">
+      <g
+         id="g270">
+        <path
+           d="m 0,595 h 11 v -7 h 11 v -23 h 10 v -20 h 11 v -16 h 11 v -11 h 11 v -4 h 11 v -9 h 10 v -7 h 11 v -5 h 11 v 1 h 11 v -3 h 11 v 1 h 10 v -7 h 11 v 3 h 11 v -4 h 11 v -2 h 11 v 1 h 10 v -3 h 11 v 8 h 11 v -9 h 11 v 10 h 11 v -4 h 10 v 1 h 11 v 4 h 11 v -4 h 11 v 34 h 11 v -8 h 10 v -1 h 11 v -6 h 11 v -4 h 11 v 24 h 21 v 22 h 11 v 10 h 11 v -2 h 11 v 40 h 21 v -27 h 11 v 27 h 11 V 453 h 11 v 142 h 43 v 3 H 0 Z"
+           style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linejoin:miter"
+           id="path268" />
+      </g>
+      <g
+         id="g274">
+        <path
+           d="M 0,595 H 11 V 533 H 22 V 404 h 10 v -23 h 11 v -13 h 11 v -1 h 11 v 16 h 11 v -4 h 10 v -4 h 22 v 7 h 11 v 3 h 11 v 9 h 10 v -6 h 11 v 10 h 11 v -5 h 11 v 1 h 11 v 10 h 10 v -8 h 11 v 7 h 11 v -5 h 11 v 14 h 11 v -10 h 10 v 6 h 11 v 8 h 11 v -17 h 11 v 59 h 11 v -18 h 10 v -32 h 11 v 29 h 11 v -24 h 11 v 24 h 11 v 5 h 10 v 25 h 11 v -7 h 11 v -20 h 11 v 155 h 21 V 482 h 11 v 113 h 11 V 312 h 11 v 283 h 43 v 3 H 0 Z"
+           style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linejoin:miter"
+           id="path272" />
+      </g>
+    </svg>
+    <g
+       id="g340">
+      <g
+         transform="translate(0,595)"
+         id="g308">
+        <path
+           d="M 0,0 H 486 M 0,-22 V 0 M 11,-11 V 0 M 22,-11 V 0 M 32,-11 V 0 M 43,-11 V 0 M 54,-22 V 0 M 65,-11 V 0 M 76,-11 V 0 M 86,-11 V 0 M 97,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0 m 11,-11 V 0 m 11,-11 V 0 m 10,-11 V 0 m 11,-11 V 0 m 11,-22 V 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path278" />
+        <g
+           font-family="Arial"
+           font-size="21px"
+           xml:space="preserve"
+           fill="#000000"
+           text-anchor="middle"
+           id="g300"
+           transform="translate(0,1.3630848)"><text
+             dy="0.80000001em"
+             transform="translate(54,5)"
+             id="text282">1</text><text
+             dy="0.80000001em"
+             transform="translate(108,5)"
+             id="text284">2</text><text
+             dy="0.80000001em"
+             transform="translate(162,5)"
+             id="text286">3</text><text
+             dy="0.80000001em"
+             transform="translate(216,5)"
+             id="text288">4</text><text
+             dy="0.80000001em"
+             transform="translate(270,5)"
+             id="text290">5</text><text
+             dy="0.80000001em"
+             transform="translate(324,5)"
+             id="text292">6</text><text
+             dy="0.80000001em"
+             transform="translate(378,5)"
+             id="text294">7</text><text
+             dy="0.80000001em"
+             transform="translate(432,5)"
+             id="text296">8</text><text
+             dy="0.80000001em"
+             transform="translate(486,5)"
+             id="text298">9</text></g>
+        <rect
+           x="0"
+           y="0"
+           width="486"
+           height="24"
+           style="opacity:0"
+           id="rect302" />
+        <g
+           font-family="Arial"
+           font-size="21px"
+           xml:space="preserve"
+           transform="translate(486,36)"
+           id="g306"><text
+             fill="#000000"
+             text-anchor="end"
+             dominant-baseline="middle"
+             id="text304">p (GeV)</text></g>
+      </g>
+      <g
+         id="g338">
+        <path
+           d="m 0,0 v 595 m 18,0 H 0 M 9,584 H 0 M 9,572 H 0 M 9,561 H 0 M 9,550 H 0 M 18,538 H 0 M 9,527 H 0 M 9,516 H 0 M 9,504 H 0 M 9,493 H 0 M 18,482 H 0 M 9,470 H 0 M 9,459 H 0 M 9,448 H 0 M 9,436 H 0 M 18,425 H 0 M 9,414 H 0 M 9,402 H 0 M 9,391 H 0 M 9,380 H 0 M 18,368 H 0 M 9,357 H 0 M 9,346 H 0 M 9,334 H 0 M 9,323 H 0 M 18,312 H 0 M 9,300 H 0 M 9,289 H 0 M 9,278 H 0 M 9,266 H 0 M 18,255 H 0 M 9,244 H 0 M 9,232 H 0 M 9,221 H 0 M 9,210 H 0 M 18,198 H 0 M 9,187 H 0 M 9,176 H 0 M 9,164 H 0 M 9,153 H 0 M 18,142 H 0 M 9,130 H 0 M 9,119 H 0 M 9,108 H 0 M 9,96 H 0 M 18,85 H 0 M 9,74 H 0 M 9,62 H 0 M 9,51 H 0 M 9,40 H 0 M 18,28 H 0 M 9,17 H 0 M 9,6 H 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path310" />
+        <rect
+           x="-33"
+           y="0"
+           width="33"
+           height="595"
+           style="opacity:0"
+           id="rect336" />
+      </g>
+    </g>
+    <path
+       d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+       style="opacity:0"
+       id="path342" />
+    <path
+       d="m 484,2 h -15 v -5 h 20 v 20 h -5 z"
+       style="opacity:0"
+       id="path344" />
+    <path
+       d="m 2,593 h 15 v 5 H -3 v -20 h 5 z"
+       style="opacity:0"
+       id="path346" />
+    <path
+       d="m 484,593 h -15 v 5 h 20 v -20 h -5 z"
+       style="opacity:0"
+       id="path348" />
+    <path
+       d="M -3,18 H 2 V 577 H -3 Z"
+       style="opacity:0"
+       id="path350" />
+    <path
+       d="m 489,18 h -5 v 559 h 5 z"
+       style="opacity:0"
+       id="path352" />
+    <path
+       d="M 18,-3 V 2 H 468 V -3 Z"
+       style="opacity:0"
+       id="path354" />
+    <path
+       d="m 18,598 v -5 h 450 v 5 z"
+       style="opacity:0"
+       id="path356" />
+    <style
+       id="style358">
+.jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
+.jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
+.jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
+.jsroot svg:not(:root) { overflow: hidden; }</style>
+  </g>
+  <g
+     transform="translate(1181.7573,145.00042)"
+     font-family="Arial"
+     font-size="21px"
+     xml:space="preserve"
+     id="g388"><path
+       d="M 0,0 H 273 V 84 H 0 Z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1"
+       id="path362" /><path
+       d="M 8,23 H 60"
+       style="stroke:#ff0000;stroke-width:1"
+       id="path364" /><text
+       fill="#000000"
+       text-anchor="start"
+       dominant-baseline="middle"
+       transform="translate(68,23)"
+       id="text366">Raw</text><path
+       d="M 8,62 H 60"
+       style="stroke:#0000ff;stroke-width:1"
+       id="path368" /><text
+       fill="#000000"
+       text-anchor="start"
+       dominant-baseline="middle"
+       transform="translate(68,62)"
+       id="text370">Geometry-corrected</text><path
+       d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+       style="opacity:0"
+       id="path372" /><path
+       d="m 271,2 h -15 v -5 h 20 v 20 h -5 z"
+       style="opacity:0"
+       id="path374" /><path
+       d="m 2,82 h 15 v 5 H -3 V 67 h 5 z"
+       style="opacity:0"
+       id="path376" /><path
+       d="m 271,82 h -15 v 5 h 20 V 67 h -5 z"
+       style="opacity:0"
+       id="path378" /><path
+       d="M -3,18 H 2 V 66 H -3 Z"
+       style="opacity:0"
+       id="path380" /><path
+       d="m 276,18 h -5 v 48 h 5 z"
+       style="opacity:0"
+       id="path382" /><path
+       d="M 18,-3 V 2 H 255 V -3 Z"
+       style="opacity:0"
+       id="path384" /><path
+       d="m 18,87 v -5 h 237 v 5 z"
+       style="opacity:0"
+       id="path386" /></g>
+  <text
+     fill="#000000"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     id="text392"
+     style="font-size:22px;font-family:Arial"
+     x="1234.2305"
+     y="24">p FMT efficiency (pid -211)</text>
+  <g
+     font-family="Arial"
+     font-size="21px"
+     xml:space="preserve"
+     fill="#000000"
+     text-anchor="end"
+     id="g206"
+     transform="translate(31.372559,3)"><text
+       dominant-baseline="middle"
+       transform="translate(-3,595)"
+       id="text184">0</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,538)"
+       id="text186">0.1</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,482)"
+       id="text188">0.2</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,425)"
+       id="text190">0.3</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,368)"
+       id="text192">0.4</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,312)"
+       id="text194">0.5</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,255)"
+       id="text196">0.6</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,198)"
+       id="text198">0.7</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,142)"
+       id="text200">0.8</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,85)"
+       id="text202">0.9</text><text
+       dominant-baseline="middle"
+       transform="translate(-3,28)"
+       id="text204">1</text></g>
 </svg>

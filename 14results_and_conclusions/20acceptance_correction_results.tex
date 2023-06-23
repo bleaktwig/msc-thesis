@@ -3,7 +3,37 @@
 \label{14.20::acceptance_correction_results}
     DC and FMT acceptances were obtained by following the procedure described in Section \ref{13.13::acc_corr}.
     In this section, we'll study the acceptance percentage for each electron and hadronic variable.
-    These numbers are defined as the percentage of thrown particles that were accepted by DC, 2 FMT layers, and 3 FMT layers in the \texttt{gemc} simulation.
+    These numbers represent the percentage of thrown particles that were detected by the DC, 2 FMT layers, and 3 FMT layers in the \texttt{gemc} simulation.
+
+    Since they represent the acceptance percentage, all plots display a calculated division as follows
+    \begin{equation*}
+        y_\text{acc} = \frac{y_d}{y_t},
+    \end{equation*}
+    where $y_\text{acc}$ is the percentage of accepted particles, $y_d$ is the number of detected particles by the studied detector, and $y_t$ is the number of particles thrown by LEPTO.
+    To propagate the error of $y_d$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), the following procedure is followed
+    \begin{align}
+        \nonumber e_\text{acc}^2 &=
+            \left(\frac{dy_\text{acc}}{dy_d}\right)^2 \cdot e_d^2 +
+            \left(\frac{dy_\text{acc}}{dy_t}\right)^2 \cdot e_t^2
+            \\
+        \nonumber e_\text{acc}^2 &=
+            \left(\frac{1}{y_t}\right)^2 \cdot e_d^2 +
+            \left(-\frac{y_d}{y_t^2}\right) \cdot e_t^2
+            \\
+        \nonumber e_\text{acc}^2 &=
+            \frac{e_d^2}{y_t^2} + \frac{y_d^2 e_t^2}{y_t^4}
+            \\
+        \nonumber e_\text{acc}^2 &=
+            \frac{y_d^2}{y_t^2} \cdot \left[
+                \frac{e_d^2}{y_d^2} + \frac{e_t^2}{y_t^2}
+            \right]
+            \\
+        e_\text{acc} &=
+            \frac{y_d}{y_t} \cdot \sqrt{
+                \left(\frac{e_d}{y_d}\right)^2 + \left(\frac{e_t}{y_t}\right)^2
+            }
+        \label{eq::14.20::acc_error}
+    \end{align}
 
     \input{14results_and_conclusions/21electron_variables}
     \input{14results_and_conclusions/22hadronic_variables}
