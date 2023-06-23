@@ -1,17 +1,20 @@
 % !TEX root = ../main.tex
 \subsubsection{Vertex Resolution Improvement}
 \label{12.43::vertex_resolution_improvement}
+
+    \begin{figure}[b!]
+        \frame{\includegraphics[scale=0.24]{40dc_vs_fmt_sector1.png}}
+        \caption[DC vs FMT $z$ with geometry correction]
+        {DC vs FMT vertex $z$ for electrons with a geometric correction.
+        DC tracks are shown in green while FMT tracks are shown in blue.
+        Data from only one CLAS12 sector was used to obtain this plot.}
+        \floatfoot{Source: Own elaboration, using the \texttt{fmtVertex.groovy} script in \href{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
+        \label{fig::12.43::dc_vs_fmt_vz_11983_corrected}
+    \end{figure}
+
     Furthermore, an additional cut has been introduced.
     As of the FMT alignment work, beam alignment for RG-F data had not been carried out, resulting in a decrease in vertex resolution.
     To mitigate the impact of this alignment issue on reconstruction accuracy, we have implemented a cut to utilise only one sector of the detector.
-
-    \begin{figure}[b!]
-        \centering\frame{
-        \includegraphics[scale=0.24]{40dc_vs_fmt_sector1.png}}
-        \caption[DC vs FMT $z$ with geometry correction]{DC vs FMT vertex $z$ for electrons with a geometric correction. DC tracks are shown in green while FMT tracks are shown in blue. Data from only one CLAS12 sector was used to obtain this plot.
-        Source: \texttt{fmtVertex.groovy} script in \href{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
-        \label{fig::12.43::dc_vs_fmt_vz_11983_corrected}
-    \end{figure}
 
     The resolution plot, comparing DC and FMT tracks after applying all the previously mentioned cuts, is depicted in Figure \ref{fig::12.43::dc_vs_fmt_vz_11983_corrected}.
     To evaluate the resolution for both DC and FMT tracks, we utilise a fit consisting of two Gaussian curves combined with a quadratic curve to account for the background.

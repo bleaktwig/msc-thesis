@@ -1,6 +1,15 @@
 % !TEX root = ../main.tex
 \subsubsection{Conclusions}
 \label{12.44::conclusions}
+
+    \begin{figure}[b]
+        \frame{\includegraphics[width=\textwidth]{44fmt_efficiency.png}}
+        \caption[FMT layers efficiency]
+        {Efficiency of each FMT layer.}
+        \floatfoot{Source: Own elaboration, using the \texttt{fmtVertex.groovy} script in \href{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
+        \label{fig::12.44::fmt_azimuthal_efficiency}
+    \end{figure}
+
     Although the improvement in resolution is not as significant as initially anticipated for the detector, it remains an encouraging result.
     The enhanced resolution enables more precise measurements of the target position.
     As a practical implication, it allows for double targets to be positioned closer to each other, thereby benefiting the derived physics from experiments like the RG-E run.
@@ -19,11 +28,3 @@
     For the three-layer configuration, the efficiency is approximately $88.96\%$.
     Figure \ref{fig::12.44::fmt_azimuthal_efficiency} illustrates the layer-by-layer efficiency, showing no anomalous geometric effects.
     The observed gaps in efficiency are solely a result of the CLAS12 detector's geometry, which is divided into six sectors.
-
-    \begin{figure}[b]
-        \centering\frame{
-        \includegraphics[width=\textwidth]{44fmt_efficiency.png}}
-        \caption[FMT layers efficiency]{Efficiency of each FMT layer.
-        Source: \texttt{fmtVertex.groovy} script in \href{https://github.com/JeffersonLab/clas12alignment}{CLAS12 alignment software}.}
-        \label{fig::12.44::fmt_azimuthal_efficiency}
-    \end{figure}
