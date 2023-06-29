@@ -11,29 +11,35 @@
     \end{equation*}
     where $y_\text{acc}$ is the percentage of accepted particles, $y_d$ is the number of detected particles by the studied detector, and $y_t$ is the number of particles thrown by LEPTO.
     To propagate the error of $y_d$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), the following procedure is followed
-    \begin{align}
-        \nonumber e_\text{acc}^2 &=
-            \left(\frac{dy_\text{acc}}{dy_d}\right)^2 \cdot e_d^2 +
-            \left(\frac{dy_\text{acc}}{dy_t}\right)^2 \cdot e_t^2
-            \\
-        \nonumber e_\text{acc}^2 &=
-            \left(\frac{1}{y_t}\right)^2 \cdot e_d^2 +
-            \left(-\frac{y_d}{y_t^2}\right) \cdot e_t^2
-            \\
-        \nonumber e_\text{acc}^2 &=
-            \frac{e_d^2}{y_t^2} + \frac{y_d^2 e_t^2}{y_t^4}
-            \\
-        \nonumber e_\text{acc}^2 &=
-            \frac{y_d^2}{y_t^2} \cdot \left[
-                \frac{e_d^2}{y_d^2} + \frac{e_t^2}{y_t^2}
-            \right]
-            \\
-        e_\text{acc} &=
-            \frac{y_d}{y_t} \cdot \sqrt{
-                \left(\frac{e_d}{y_d}\right)^2 + \left(\frac{e_t}{y_t}\right)^2
-            }
+    \begin{equation}
+        e_\text{acc} = \frac{y_d}{y_t} \cdot \sqrt{
+            \left(\frac{e_t - e_d}{e_t\cdot e_d}\right)
+        }
         \label{eq::14.20::acc_error}
-    \end{align}
+    \end{equation}
+    % \begin{align}
+    %     \nonumber e_\text{acc}^2 &=
+    %         \left(\frac{dy_\text{acc}}{dy_d}\right)^2 \cdot e_d^2 +
+    %         \left(\frac{dy_\text{acc}}{dy_t}\right)^2 \cdot e_t^2
+    %         \\
+    %     \nonumber e_\text{acc}^2 &=
+    %         \left(\frac{1}{y_t}\right)^2 \cdot e_d^2 +
+    %         \left(-\frac{y_d}{y_t^2}\right) \cdot e_t^2
+    %         \\
+    %     \nonumber e_\text{acc}^2 &=
+    %         \frac{e_d^2}{y_t^2} + \frac{y_d^2 e_t^2}{y_t^4}
+    %         \\
+    %     \nonumber e_\text{acc}^2 &=
+    %         \frac{y_d^2}{y_t^2} \cdot \left[
+    %             \frac{e_d^2}{y_d^2} + \frac{e_t^2}{y_t^2}
+    %         \right]
+    %         \\
+    %     e_\text{acc} &=
+    %         \frac{y_d}{y_t} \cdot \sqrt{
+    %             \left(\frac{e_d}{y_d}\right)^2 + \left(\frac{e_t}{y_t}\right)^2
+    %         }
+    %     \label{eq::14.20::acc_error}
+    % \end{align}
 
     \input{14results_and_conclusions/21electron_variables}
     \input{14results_and_conclusions/22hadronic_variables}
