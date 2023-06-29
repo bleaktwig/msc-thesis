@@ -7,19 +7,19 @@
 
     \begin{table}[b]
         \begin{center}
-            \begin{tabularx}{0.895\textwidth}{llcllcllcll}
+            \begin{tabularx}{0.92\textwidth}{Xlcllcllcll}
                 \toprule
                 & & & \multicolumn{2}{c}{\textbf{Run 12933}} & & \multicolumn{2}{c}{\textbf{Run 12016}} & & \multicolumn{2}{c}{\textbf{Simulation}} \\
-                                 &          & & raw  & w/ cut   & & raw  & w/ cut   & & raw    & w/ cut \\
+                                    &          & & raw  & w/ cut   & & raw  & w/ cut   & & raw    & w/ cut \\
                 \midrule \midrule
-                \textbf{$e^-$}   & 2 layers & & 25.1\% & 37.5\% & & 32.7\% & 53.7\% & & 71.7\% & 92.1\% \\
-                                 & 3 layers & &  5.6\% &  8.5\% & &  9.9\% & 16.4\% & & 59.8\% & 78.7\% \\
+                \textbf{$e^-$}      & 2 layers & & 25.1\% & 37.5\% & & 32.7\% & 53.7\% & & 71.7\% & 92.1\% \\
+                                    & 3 layers & &  5.6\% &  8.5\% & &  9.9\% & 16.4\% & & 59.8\% & 78.7\% \\
                 \midrule
-                \textbf{$\pi^+$} & 2 layers & &  6.5\% & 13.7\% & & 11.1\% & 28.0\% & & 39.1\% & 73.2\% \\
-                                 & 3 layers & &  0.3\% &  0.7\% & &  1.0\% &  2.7\% & & 24.3\% & 47.5\% \\
+                \textbf{$e^-\pi^+$} & 2 layers & &  6.5\% & 13.7\% & & 11.1\% & 28.0\% & & 39.1\% & 73.2\% \\
+                                    & 3 layers & &  0.3\% &  0.7\% & &  1.0\% &  2.7\% & & 24.3\% & 47.5\% \\
                 \midrule
-                \textbf{$\pi^-$} & 2 layers & &  5.6\% & 14.2\% & &  8.9\% & 29.5\% & & 26.7\% & 57.1\% \\
-                                 & 3 layers & &  0.3\% &  0.7\% & &  0.9\% &  2.9\% & & 13.2\% & 29.5\% \\
+                \textbf{$e^-\pi^-$} & 2 layers & &  5.6\% & 14.2\% & &  8.9\% & 29.5\% & & 26.7\% & 57.1\% \\
+                                    & 3 layers & &  0.3\% &  0.7\% & &  0.9\% &  2.9\% & & 13.2\% & 29.5\% \\
                 \bottomrule
             \end{tabularx}
         \end{center}
@@ -39,7 +39,7 @@
 
 % --+ Separated. +--------------------------------------------------------------
     Next, we need to ensure that we are not introducing a systematic error by applying these corrections.
-    To achieve this, we must investigate the effect of the geometry cut on different detected variables for electrons ($e^-$), positive pions ($\pi^+$), and negative pions ($\pi^-$).
+    To achieve this, we must investigate the effect of the geometry cut on different detected variables for electrons ($e^-$), positive pions ($e^-\pi^+$), and negative pions ($e^-\pi^-$).
     Based on the definition of the cut, we anticipate a strong correlation between efficiency and $v_z$ and $\theta$, and at most a weak correlation with $\phi$ and $p$.
 
     \begin{figure}
@@ -62,8 +62,8 @@
             \label{fig::14.14::fmt_efficiency_p}
         \end{subfigure}
 
-        \caption[$v_z$, $\theta$, and $p$ FMT efficiencies for $e^-$, $\pi^+$, and $\pi^-$ in run 12016]
-        {$v_z$, $\theta$, and $p$ FMT efficiencies for $e^-$, $\pi^+$, and $\pi^-$.
+        \caption[$v_z$, $\theta$, and $p$ FMT efficiencies for $e^-$, $e^-\pi^+$, and $e^-\pi^-$ in run 12016]
+        {$v_z$, $\theta$, and $p$ FMT efficiencies for $e^-$, $e^-\pi^+$, and $e^-\pi^-$.
         FMT efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers.
         Run 12016.}
         \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
@@ -74,7 +74,7 @@
         % phi efficiency.
         \begin{subfigure}[b]{\textwidth}
             \includegraphics[width=\textwidth]{14phi_efficiency.pdf}
-            \caption{$\phi$ FMT efficiency for $e^-$, $\pi^+$, and $\pi^-$.
+            \caption{$\phi$ FMT efficiency for $e^-$, $e^-\pi^+$, and $e^-\pi^-$.
             FMT efficiency is defined as the percentage of DC tracks that are detected by 2 FMT layers.}
             \label{fig::14.14::fmt_efficiency_phi}
         \end{subfigure}
@@ -107,3 +107,5 @@
     Nevertheless, this is merely a visual effect.
     When we tally the number of electrons detected by the DC and FMT, the valleys become more pronounced in the DC, while they remain the same in the FMT.
     Consequently, the increase in FMT efficiency becomes more pronounced in these valleys, as demonstrated in Figure \ref{fig::14.14::phi_geomcut}.
+
+    Based on the very low efficiency for 3-layer FMT tracks perceived in Figures \ref{fig::14.14::fmt_efficiencies} and \ref{fig::14.14::phi_study}, subsequent parts of this study will only consider DC and 2-layer FMT tracks.
