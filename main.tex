@@ -5,6 +5,7 @@
 % \usepackage[document]{ragged2e} % Ragged left text.
 \usepackage[english]{babel}
 \usepackage{amsmath}    % Add \text to equations.
+\usepackage{amssymb}    % \lesssim and \gtrsim.
 \usepackage{booktabs}   % Beautiful tabular.
 \usepackage{graphicx}   % Figures.
 \usepackage{hyperref}   % Hyperlinks.
@@ -23,11 +24,23 @@
 \usepackage[font=small,labelfont=bf]{caption}
 
 % --+ Setup 1 +-----------------------------------------------------------------
-% \hypersetup{colorlinks = false}
-\setcounter{tocdepth}{2} % Show only sections and subsections on TOC.
+% Show only sections and subsections on TOC.
+\setcounter{tocdepth}{2}
+
+% Title formats.
 \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titleformat*{\subparagraph}{\normalfont\normalsize\bfseries}
+
+% Code blocks setup (for pseudocode).
 \lstset{basicstyle=\footnotesize,breaklines=true}
+
+% gsim > gtrsim and lsim > lesssim.
+\newcommand{\lsim}{\lesssim}
+\newcommand{\gsim}{\gtrsim}
+
+% Setup hyperlink color for PDF readers without link highlighting.
+\hypersetup{colorlinks = true}
+% \hypersetup{colorlinks = false} % TODO. Remove color on hyperlinks for printing.
 
 % --+ Document +----------------------------------------------------------------
 \begin{document}
