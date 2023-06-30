@@ -25,9 +25,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.50568848"
-     inkscape:cx="573.47559"
-     inkscape:cy="172.04268"
+     inkscape:zoom="0.50568849"
+     inkscape:cx="583.36309"
+     inkscape:cy="264.98527"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="0"
@@ -50,7 +50,7 @@
          style="stroke:#000000;stroke-width:1;stroke-dasharray:1, 2"
          id="path8" />
       <path
-         d="M 0,528 H 1246 M 0,452 H 1246 M 0,376 H 1246 M 0,300 H 1246 M 0,224 H 1246 M 0,148 H 1246 M 0,71 h 1246"
+         d="M 0,528 H 1246 M 0,450 H 1246 M 0,372 H 1246 M 0,294 H 1246 M 0,217 H 1246 M 0,139 H 1246 M 0,61 h 1246"
          style="stroke:#000000;stroke-width:1;stroke-dasharray:1, 2"
          id="path10" />
     </g>
@@ -66,237 +66,237 @@
       <g
          id="g76">
         <g
-           transform="translate(149,434)"
+           transform="translate(149,432)"
            id="g18">
           <path
-             d="M -45,3 H 58 V -3 H -45 Z"
+             d="M -45,0 H 58 v 0 z"
              style="fill:none"
              id="path14" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 3 M 3,3 H -3 M 0,0 v -3 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 m 3,0 h -6 m 3,0 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path16" />
         </g>
         <g
-           transform="translate(253,186)"
+           transform="translate(253,178)"
            id="g24">
           <path
-             d="M -45,7 H 58 V -7 H -45 Z"
+             d="M -45,0 H 58 v 0 z"
              style="fill:none"
              id="path20" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 7 M 3,7 H -3 M 0,0 v -7 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 m 3,0 h -6 m 3,0 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path22" />
         </g>
         <g
-           transform="translate(357,86)"
+           transform="translate(357,76)"
            id="g30">
           <path
-             d="M -45,9 H 58 V -9 H -45 Z"
+             d="M -45,1 H 58 V -1 H -45 Z"
              style="fill:none"
              id="path26" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 9 M 3,9 H -3 M 0,0 v -9 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 1 M 3,1 H -3 M 0,0 v -1 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path28" />
         </g>
         <g
-           transform="translate(461,60)"
+           transform="translate(461,49)"
            id="g36">
           <path
-             d="M -45,12 H 58 V -12 H -45 Z"
+             d="M -45,1 H 58 V -1 H -45 Z"
              style="fill:none"
              id="path32" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 12 m 3,0 H -3 M 0,0 v -12 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 1 M 3,1 H -3 M 0,0 v -1 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path34" />
         </g>
         <g
-           transform="translate(565,82)"
+           transform="translate(565,72)"
            id="g42">
           <path
-             d="M -45,14 H 58 V -14 H -45 Z"
+             d="M -45,1 H 58 V -1 H -45 Z"
              style="fill:none"
              id="path38" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 14 m 3,0 H -3 M 0,0 v -14 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 1 M 3,1 H -3 M 0,0 v -1 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path40" />
         </g>
         <g
-           transform="translate(668,128)"
+           transform="translate(668,119)"
            id="g48">
           <path
-             d="M -45,18 H 58 V -18 H -45 Z"
+             d="M -45,2 H 58 V -2 H -45 Z"
              style="fill:none"
              id="path44" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 18 m 3,0 H -3 M 0,0 v -18 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 2 M 3,2 H -3 M 0,0 v -2 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path46" />
         </g>
         <g
-           transform="translate(772,180)"
+           transform="translate(772,172)"
            id="g54">
           <path
-             d="M -45,21 H 58 V -21 H -45 Z"
+             d="M -45,3 H 58 V -3 H -45 Z"
              style="fill:none"
              id="path50" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 21 m 3,0 H -3 M 0,0 v -21 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 3 M 3,3 H -3 M 0,0 v -3 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path52" />
         </g>
         <g
-           transform="translate(876,282)"
+           transform="translate(876,276)"
            id="g60">
           <path
-             d="M -45,23 H 58 V -23 H -45 Z"
+             d="M -45,4 H 58 V -4 H -45 Z"
              style="fill:none"
              id="path56" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 23 m 3,0 H -3 M 0,0 v -23 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 4 M 3,4 H -3 M 0,0 v -4 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path58" />
         </g>
         <g
-           transform="translate(980,342)"
+           transform="translate(980,338)"
            id="g66">
           <path
-             d="M -45,25 H 58 V -25 H -45 Z"
+             d="M -45,6 H 58 V -6 H -45 Z"
              style="fill:none"
              id="path62" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 25 m 3,0 H -3 M 0,0 v -25 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 6 M 3,6 H -3 M 0,0 v -6 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path64" />
         </g>
         <g
-           transform="translate(1084,425)"
+           transform="translate(1084,423)"
            id="g72">
           <path
-             d="M -45,25 H 58 V -25 H -45 Z"
+             d="M -45,9 H 58 V -9 H -45 Z"
              style="fill:none"
              id="path68" />
           <path
-             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 v 25 m 3,0 H -3 M 0,0 v -25 m 3,0 h -6"
+             d="m 0,0 h -45 m 0,3 V -3 M 0,0 h 58 m 0,3 V -3 M 0,0 V 9 M 3,9 H -3 M 0,0 v -9 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path70" />
         </g>
         <path
-           d="m 145,430 v 8 h 8 v -8 z M 249,182 v 8 h 8 v -8 z M 353,82 v 8 h 8 V 82 Z M 457,56 v 8 h 8 v -8 z m 104,22 v 8 h 8 v -8 z m 103,46 v 8 h 8 v -8 z m 104,52 v 8 h 8 v -8 z m 104,102 v 8 h 8 v -8 z m 104,60 v 8 h 8 v -8 z m 104,83 v 8 h 8 v -8 z"
+           d="m 145,428 v 8 h 8 v -8 z M 249,174 v 8 h 8 v -8 z M 353,72 v 8 h 8 V 72 Z M 457,45 v 8 h 8 v -8 z m 104,23 v 8 h 8 v -8 z m 103,47 v 8 h 8 v -8 z m 104,53 v 8 h 8 v -8 z m 104,104 v 8 h 8 v -8 z m 104,62 v 8 h 8 v -8 z m 104,85 v 8 h 8 v -8 z"
            style="fill:#ff0000;stroke:#ff0000"
            id="path74" />
       </g>
       <g
          id="g140">
         <g
-           transform="translate(162,442)"
+           transform="translate(162,440)"
            id="g82">
           <path
-             d="M -58,2 H 45 V -2 H -58 Z"
+             d="M -58,0 H 45 v 0 z"
              style="fill:none"
              id="path78" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 2 M 3,2 H -3 M 0,0 v -2 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 m 3,0 h -6 m 3,0 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path80" />
         </g>
         <g
-           transform="translate(266,220)"
+           transform="translate(266,213)"
            id="g88">
           <path
-             d="M -58,7 H 45 V -7 H -58 Z"
+             d="M -58,0 H 45 v 0 z"
              style="fill:none"
              id="path84" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 7 M 3,7 H -3 M 0,0 v -7 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 m 3,0 h -6 m 3,0 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path86" />
         </g>
         <g
-           transform="translate(370,145)"
+           transform="translate(370,136)"
            id="g94">
           <path
-             d="M -58,9 H 45 V -9 H -58 Z"
+             d="M -58,1 H 45 V -1 H -58 Z"
              style="fill:none"
              id="path90" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 9 M 3,9 H -3 M 0,0 v -9 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 1 M 3,1 H -3 M 0,0 v -1 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path92" />
         </g>
         <g
-           transform="translate(474,157)"
+           transform="translate(474,148)"
            id="g100">
           <path
-             d="M -58,12 H 45 V -12 H -58 Z"
+             d="M -58,1 H 45 V -1 H -58 Z"
              style="fill:none"
              id="path96" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 v 12 m 3,0 H -3 M 0,0 v -12 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 1 M 3,1 H -3 M 0,0 v -1 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path98" />
         </g>
         <g
-           transform="translate(578,219)"
+           transform="translate(578,212)"
            id="g106">
           <path
-             d="M -58,14 H 45 V -14 H -58 Z"
+             d="M -58,1 H 45 V -1 H -58 Z"
              style="fill:none"
              id="path102" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 v 14 m 3,0 H -3 M 0,0 v -14 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 1 M 3,1 H -3 M 0,0 v -1 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path104" />
         </g>
         <g
-           transform="translate(681,295)"
+           transform="translate(681,290)"
            id="g112">
           <path
-             d="M -58,15 H 45 V -15 H -58 Z"
+             d="M -58,2 H 45 V -2 H -58 Z"
              style="fill:none"
              id="path108" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 v 15 m 3,0 H -3 M 0,0 v -15 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 2 M 3,2 H -3 M 0,0 v -2 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path110" />
         </g>
         <g
-           transform="translate(785,372)"
+           transform="translate(785,369)"
            id="g118">
           <path
-             d="M -58,15 H 45 V -15 H -58 Z"
+             d="M -58,2 H 45 V -2 H -58 Z"
              style="fill:none"
              id="path114" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 v 15 m 3,0 H -3 M 0,0 v -15 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 2 M 3,2 H -3 M 0,0 v -2 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path116" />
         </g>
         <g
-           transform="translate(889,442)"
+           transform="translate(889,440)"
            id="g124">
           <path
-             d="M -58,13 H 45 V -13 H -58 Z"
+             d="M -58,3 H 45 V -3 H -58 Z"
              style="fill:none"
              id="path120" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 v 13 m 3,0 H -3 M 0,0 v -13 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 3 M 3,3 H -3 M 0,0 v -3 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path122" />
         </g>
         <g
-           transform="translate(993,479)"
+           transform="translate(993,478)"
            id="g130">
           <path
-             d="M -58,11 H 45 V -11 H -58 Z"
+             d="M -58,3 H 45 V -3 H -58 Z"
              style="fill:none"
              id="path126" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 v 11 m 3,0 H -3 M 0,0 v -11 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 3 M 3,3 H -3 M 0,0 v -3 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path128" />
         </g>
@@ -304,16 +304,16 @@
            transform="translate(1097,517)"
            id="g136">
           <path
-             d="M -58,6 H 45 V -6 H -58 Z"
+             d="M -58,3 H 45 V -3 H -58 Z"
              style="fill:none"
              id="path132" />
           <path
-             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 6 M 3,6 H -3 M 0,0 v -6 m 3,0 h -6"
+             d="m 0,0 h -58 m 0,3 V -3 M 0,0 h 45 m 0,3 V -3 M 0,0 V 3 M 3,3 H -3 M 0,0 v -3 m 3,0 h -6"
              style="fill:none;stroke:#000000;stroke-width:1"
              id="path134" />
         </g>
         <path
-           d="m 158,438 v 8 h 8 v -8 z M 262,216 v 8 h 8 v -8 z m 104,-75 v 8 h 8 v -8 z m 104,12 v 8 h 8 v -8 z m 104,62 v 8 h 8 v -8 z m 103,76 v 8 h 8 v -8 z m 104,77 v 8 h 8 v -8 z m 104,70 v 8 h 8 v -8 z m 104,37 v 8 h 8 v -8 z m 104,38 v 8 h 8 v -8 z"
+           d="m 158,436 v 8 h 8 v -8 z M 262,209 v 8 h 8 v -8 z m 104,-77 v 8 h 8 v -8 z m 104,12 v 8 h 8 v -8 z m 104,64 v 8 h 8 v -8 z m 103,78 v 8 h 8 v -8 z m 104,79 v 8 h 8 v -8 z m 104,71 v 8 h 8 v -8 z m 104,38 v 8 h 8 v -8 z m 104,39 v 8 h 8 v -8 z"
            style="fill:#0000ff;stroke:#0000ff"
            id="path138" />
       </g>
@@ -383,17 +383,18 @@
                id="text168"> (GeV</text><text
                fill="#000000"
                font-size="14px"
-               transform="translate(81,-10)"
-               id="text170">2</text><text
+               id="text170"
+               x="87"
+               y="-10">2</text><text
                fill="#000000"
                font-size="23px"
-               x="89"
+               x="95"
                id="text172">)</text></g></g>
       </g>
       <g
          id="g200">
         <path
-           d="m 0,0 v 528 m 47,0 H 0 M 24,513 H 0 M 24,498 H 0 M 24,482 H 0 M 24,467 H 0 M 47,452 H 0 M 24,437 H 0 M 24,421 H 0 M 24,406 H 0 M 24,391 H 0 M 47,376 H 0 M 24,361 H 0 M 24,345 H 0 M 24,330 H 0 M 24,315 H 0 M 47,300 H 0 M 24,284 H 0 M 24,269 H 0 M 24,254 H 0 M 24,239 H 0 M 47,224 H 0 M 24,208 H 0 M 24,193 H 0 M 24,178 H 0 M 24,163 H 0 M 47,148 H 0 M 24,132 H 0 M 24,117 H 0 M 24,102 H 0 M 24,87 H 0 M 47,71 H 0 M 24,56 H 0 M 24,41 H 0 M 24,26 H 0 M 24,11 H 0"
+           d="m 0,0 v 528 m 47,0 H 0 M 24,512 H 0 M 24,497 H 0 M 24,481 H 0 M 24,466 H 0 M 47,450 H 0 M 24,435 H 0 M 24,419 H 0 M 24,403 H 0 M 24,388 H 0 M 47,372 H 0 M 24,357 H 0 M 24,341 H 0 M 24,326 H 0 M 24,310 H 0 M 47,294 H 0 M 24,279 H 0 M 24,263 H 0 M 24,248 H 0 M 24,232 H 0 M 47,217 H 0 M 24,201 H 0 M 24,186 H 0 M 24,170 H 0 M 24,154 H 0 M 47,139 H 0 M 24,123 H 0 M 24,108 H 0 M 24,92 H 0 M 24,77 H 0 M 47,61 H 0 M 24,45 H 0 M 24,30 H 0 M 24,14 H 0"
            style="stroke:#000000;stroke-width:1"
            id="path180" />
         <g
@@ -407,22 +408,22 @@
              transform="translate(-3,528)"
              id="text182">0</text><text
              dominant-baseline="middle"
-             transform="translate(-3,452)"
+             transform="translate(-3,450)"
              id="text184">0.1</text><text
              dominant-baseline="middle"
-             transform="translate(-3,376)"
+             transform="translate(-3,372)"
              id="text186">0.2</text><text
              dominant-baseline="middle"
-             transform="translate(-3,300)"
+             transform="translate(-3,294)"
              id="text188">0.3</text><text
              dominant-baseline="middle"
-             transform="translate(-3,224)"
+             transform="translate(-3,217)"
              id="text190">0.4</text><text
              dominant-baseline="middle"
-             transform="translate(-3,148)"
+             transform="translate(-3,139)"
              id="text192">0.5</text><text
              dominant-baseline="middle"
-             transform="translate(-3,71)"
+             transform="translate(-3,61)"
              id="text194">0.6</text></g>
         <rect
            x="-35"
@@ -473,58 +474,58 @@
 .jsroot svg:not(:root) { overflow: hidden; }</style>
   </g>
   <g
-     transform="translate(969,16)"
+     transform="translate(1092,16)"
      font-family="Arial"
-     font-size="49px"
+     font-size="23px"
      xml:space="preserve"
      id="g254"><path
-       d="M 0,0 H 290 V 119 H 0 Z"
+       d="M 0,0 H 167 V 56 H 0 Z"
        style="fill:#ffffff;stroke:#000000;stroke-width:1"
        id="path224" /><path
-       d="M 9,32 H 64"
+       d="M 5,15 H 37"
        style="stroke:#000000;stroke-width:1"
        id="path226" /><path
-       d="m 33,28 v 8 h 8 v -8 z"
+       d="m 17,11 v 8 h 8 v -8 z"
        style="fill:#ff0000;stroke:#ff0000"
        id="path228" /><text
        fill="#000000"
        text-anchor="start"
        dominant-baseline="middle"
-       transform="translate(73,32)"
+       transform="translate(42,15)"
        id="text230">DC</text><path
-       d="M 9,87 H 64"
+       d="M 5,41 H 37"
        style="stroke:#000000;stroke-width:1"
        id="path232" /><path
-       d="m 33,83 v 8 h 8 v -8 z"
+       d="m 17,37 v 8 h 8 v -8 z"
        style="fill:#0000ff;stroke:#0000ff"
        id="path234" /><text
        fill="#000000"
        text-anchor="start"
        dominant-baseline="middle"
-       transform="translate(73,88)"
+       transform="translate(42,41)"
        id="text236">FMT</text><path
        d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
        style="opacity:0"
        id="path238" /><path
-       d="m 288,2 h -15 v -5 h 20 v 20 h -5 z"
+       d="m 165,2 h -15 v -5 h 20 v 20 h -5 z"
        style="opacity:0"
        id="path240" /><path
-       d="m 2,117 h 15 v 5 H -3 v -20 h 5 z"
+       d="m 2,54 h 15 v 5 H -3 V 39 h 5 z"
        style="opacity:0"
        id="path242" /><path
-       d="m 288,117 h -15 v 5 h 20 v -20 h -5 z"
+       d="m 165,54 h -15 v 5 h 20 V 39 h -5 z"
        style="opacity:0"
        id="path244" /><path
-       d="m -3,18 h 5 v 83 h -5 z"
+       d="M -3,18 H 2 V 38 H -3 Z"
        style="opacity:0"
        id="path246" /><path
-       d="m 293,18 h -5 v 83 h 5 z"
+       d="m 170,18 h -5 v 20 h 5 z"
        style="opacity:0"
        id="path248" /><path
-       d="M 18,-3 V 2 H 272 V -3 Z"
+       d="M 18,-3 V 2 H 149 V -3 Z"
        style="opacity:0"
        id="path250" /><path
-       d="m 18,122 v -5 h 254 v 5 z"
+       d="m 18,59 v -5 h 131 v 5 z"
        style="opacity:0"
        id="path252" /></g>
 </svg>

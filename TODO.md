@@ -8,13 +8,13 @@
 
 ---
 ###### Thesis Work
-* Estimate acceptance correction error using method in Sebastian Moran's thesis.
 * Get rid of FMT3 lines in all plots after Section 14.10.
 * Choose vz bins to use based on maximizing the phase-space of the 5 variables and getting the largest statistics.
 * After target location is chosen, run a GEMC simulation to see how well the target behaves at that location in simulation (talk w/ Esteban).
 
 ---
 ###### Thesis Text
+* Finish up Section 14.22.
 * Mention in Section 14.20 that acceptance distribution should be symmetric, so any remaining asymetries come from unestimated systematic errors.
 * Get a render of a track made with CED.
 * Include # of events per run to the presentation and the thesis itself.

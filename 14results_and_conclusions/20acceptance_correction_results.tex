@@ -7,18 +7,39 @@
     These numbers represent the percentage of thrown particles that were detected by the DC, 2 FMT layers, and 3 FMT layers in the \texttt{gemc} simulation.
 
     Since they represent the acceptance percentage, all plots display a calculated division as follows
-    \begin{equation*}
-        y_\text{acc} = \frac{y_d}{y_t},
-    \end{equation*}
-    where $y_\text{acc}$ is the percentage of accepted particles, $y_d$ is the number of detected particles by the studied detector, and $y_t$ is the number of particles thrown by LEPTO.
-    To propagate the error of $y_d$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), the following procedure is followed
     \begin{equation}
-        e_\text{acc} = \frac{y_d}{y_t} \cdot \sqrt{
-            \left(\frac{e_t - e_d}{e_t\cdot e_d}\right)
-        }.
+        y_\text{acc} = \frac{y_d}{y_t},
+        \label{eq::14.20::acc}
+    \end{equation}
+    where $y_\text{acc}$ is the percentage of accepted particles, $y_d$ is the number of detected particles by the studied detector, and $y_t$ is the number of particles thrown by LEPTO.
+
+    Then, to propagate the error of $y_d$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), we get
+    \begin{align}
+        e_\text{acc} &= \delta \left(\frac{y_r}{y_t}\right)
+        \nonumber \\
+        &= y_\text{acc} \cdot \sqrt{
+            \left( \frac{e_r}{y_r} \right)^2 + \left( \frac{e_t}{y_t} \right)^2
+        },
+        \nonumber
+        \intertext{since $y_t$ is the number of trials, we can assume $e_t = 0$, and thus}
+        &= y_\text{acc} \cdot \frac{e_r}{y_r}.
+        \label{eq::14.20::acc_error_estimation}
+    \end{align}
+
+    From the Central Limit Theorem it can be proven that, assuming a normal distribution, the variance $e_r^2$ is
+    \begin{equation*}
+        e_r^2 = y_t \cdot y_\text{acc} (1 - y_\text{acc}),
+    \end{equation*}
+    which, replaced in Equation \eqref{eq::14.20::acc_error_estimation}, yields
+    \begin{equation*}
+        e_\text{acc} = y_\text{acc} \cdot \frac{\sqrt{y_t y_\text{acc}(1 - y_\text{acc})}}{y_r}.
+    \end{equation*}
+
+    Replacing $y_\text{acc}$ here by its definition in Equation \eqref{eq::14.20::acc} gives us a final error of
+    \begin{equation}
+        e_\text{acc} = \sqrt{\frac{y_\text{acc}(1-y_\text{acc})}{y_t}}.
         \label{eq::14.20::acc_error}
     \end{equation}
-    % NOTE. If I have the time, it would be a good idea to explain how to obtain these errors (count detected and non-detected particles).
 
     \input{14results_and_conclusions/21electron_variables}
     \input{14results_and_conclusions/22hadronic_variables}
