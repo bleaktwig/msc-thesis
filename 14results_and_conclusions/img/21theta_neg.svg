@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1328.9871"
+   height="610.28186"
+   version="1.1"
+   id="svg182"
+   sodipodi:docname="21theta_neg.svg"
+   inkscape:version="1.2.2 (1:1.2.2+202305151914+b0a8486541)"
+   inkscape:export-filename="21theta_neg.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview184"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.71515151"
+     inkscape:cx="687.9661"
+     inkscape:cy="141.22881"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg182" />
+  <defs
+     id="defs32">
+    <pattern
+       id="pat_3001_1"
+       patternUnits="userSpaceOnUse"
+       width="2"
+       height="2">
+      <path
+         d="M0,0h1v1h-1zM1,1h1v1h-1z"
+         style="fill: rgb(0, 0, 0);"
+         id="path2" />
+    </pattern>
+    <pattern
+       id="pat_3002_1"
+       patternUnits="userSpaceOnUse"
+       width="4"
+       height="2">
+      <path
+         d="M1,0h1v1h-1zM3,1h1v1h-1z"
+         style="fill: rgb(0, 0, 0);"
+         id="path5" />
+    </pattern>
+    <pattern
+       id="pat_3003_1"
+       patternUnits="userSpaceOnUse"
+       width="4"
+       height="4">
+      <path
+         d="M2,1h1v1h-1zM0,3h1v1h-1z"
+         style="fill: rgb(0, 0, 0);"
+         id="path8" />
+    </pattern>
+    <pattern
+       id="pat_3004_1"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8">
+      <path
+         d="M8,0L0,8"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1;"
+         id="path11" />
+    </pattern>
+    <pattern
+       id="pat_3005_1"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8">
+      <path
+         d="M0,0L8,8"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1;"
+         id="path14" />
+    </pattern>
+    <pattern
+       id="pat_3006_1"
+       patternUnits="userSpaceOnUse"
+       width="4"
+       height="4">
+      <path
+         d="M1,0v4"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1;"
+         id="path17" />
+    </pattern>
+    <pattern
+       id="pat_3007_1"
+       patternUnits="userSpaceOnUse"
+       width="4"
+       height="4">
+      <path
+         d="M0,1h4"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1;"
+         id="path20" />
+    </pattern>
+    <pattern
+       id="pat_3010_1"
+       patternUnits="userSpaceOnUse"
+       width="10"
+       height="10">
+      <path
+         d="M0,2h10M0,7h10M2,0v2M7,2v5M2,7v3"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1;"
+         id="path23" />
+    </pattern>
+    <pattern
+       id="pat_3021_1"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8">
+      <path
+         d="M8,2h-2v4h-4v2M2,0v2h-2"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: none;"
+         id="path26" />
+    </pattern>
+    <pattern
+       id="pat_3022_1"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8">
+      <path
+         d="M0,2h2v4h4v2M6,0v2h2"
+         style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: none;"
+         id="path29" />
+    </pattern>
+  </defs>
+  <g
+     transform="translate(68,32.520112)"
+     id="g116">
+    <title
+       id="title36" />
+    <path
+       d="M 0,0 H 1246 V 528 H 0 Z"
+       style="fill:none;stroke:#000000;stroke-width:1"
+       id="path38" />
+    <svg
+       x="0"
+       y="0"
+       overflow="hidden"
+       width="1246"
+       height="528"
+       viewBox="0 0 1246 528"
+       version="1.1"
+       id="svg44">
+      <g
+         id="g42">
+        <path
+           d="m 0,519 h 6 v 9 h 175 v -2 h 6 v -7 h 6 v -20 h 6 v -35 h 7 v -43 h 6 v -47 h 6 v -42 h 6 v -45 h 7 v -38 h 6 v -41 h 6 v -38 h 6 v -32 h 6 v -30 h 7 V 81 h 6 V 61 h 6 V 47 h 6 v -7 h 7 v -9 h 6 v -6 h 6 v 6 h 6 v 5 h 7 v 12 h 6 v -2 h 6 v 10 h 6 v 7 h 6 v 6 h 7 v 12 h 6 v 7 h 6 v 8 h 6 v 18 h 7 v 13 h 6 v 9 h 6 v 13 h 6 v 12 h 6 v 10 h 7 v 8 h 6 v 4 h 6 v 13 h 6 v 12 h 7 v 1 h 6 v 17 h 6 v 16 h 6 v 13 h 7 v 9 h 6 v 10 h 6 v 8 h 6 v 15 h 6 v 13 h 7 v 13 h 6 v 5 h 6 v 15 h 6 v 8 h 7 v 10 h 6 v 8 h 6 v 13 h 6 v 6 h 7 v 7 h 6 v 7 h 6 v 7 h 6 v 7 h 6 v 11 h 7 v 4 h 6 v 5 h 6 v 8 h 6 v 1 h 7 v 6 h 6 v 5 h 12 v 8 h 7 v 1 h 6 v 3 h 6 v 3 h 6 v 4 h 6 v 4 h 7 v 3 h 6 v 3 h 6 v 3 h 6 v 3 h 7 v 2 h 6 v 3 h 6 v 2 h 6 v 2 h 7 v 1 h 6 v 2 h 6 v 2 h 19 v 2 h 12 v 1 h 6 v 1 h 13 v 1 h 6 v 1 h 6 v 1 h 7 v 1 h 12 v 1 h 6 v 2 h 31 v 1 h 7 v 1 h 12 v 1 h 13 v -1 h 6 v 1 h 18 v 1 h 13 v 1 h 12 v 1 h 13 v 1 h 6 v -1 h 6 v 1 h 31 v 1 h 13 v 1 h 12 v 1 h 50 v 1 h 6 v -1 h 7 v 1 h 106 v 1 h 6 v -1 h 6 v 1 h 31 v -1 h 6 v 1 h 44 v 3 H 0 Z"
+           style="fill:none;stroke:#000099;stroke-width:1;stroke-linejoin:miter"
+           id="path40" />
+      </g>
+    </svg>
+    <g
+       id="g96">
+      <g
+         transform="translate(0,528)"
+         id="g76">
+        <path
+           d="M 0,0 H 1246 M 0,-20 V 0 M 31,-10 V 0 M 62,-10 V 0 M 93,-10 V 0 m 32,-10 V 0 m 31,-20 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 32,-20 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-20 V 0 m 31,-10 V 0 m 32,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-20 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 32,-10 V 0 m 31,-20 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-20 V 0 m 32,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-20 V 0 m 31,-10 V 0 m 32,-10 V 0 m 31,-10 V 0 m 31,-10 V 0 m 31,-20 V 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path46" />
+        <g
+           font-family="Arial"
+           font-size="23px"
+           xml:space="preserve"
+           fill="#000000"
+           text-anchor="middle"
+           id="g66"><text
+             dy="0.80000001em"
+             transform="translate(0,5)"
+             id="text48">0</text><text
+             dy="0.80000001em"
+             transform="translate(156,5)"
+             id="text50">0.1</text><text
+             dy="0.80000001em"
+             transform="translate(312,5)"
+             id="text52">0.2</text><text
+             dy="0.80000001em"
+             transform="translate(467,5)"
+             id="text54">0.3</text><text
+             dy="0.80000001em"
+             transform="translate(623,5)"
+             id="text56">0.4</text><text
+             dy="0.80000001em"
+             transform="translate(779,5)"
+             id="text58">0.5</text><text
+             dy="0.80000001em"
+             transform="translate(934,5)"
+             id="text60">0.6</text><text
+             dy="0.80000001em"
+             transform="translate(1090,5)"
+             id="text62">0.7</text><text
+             dy="0.80000001em"
+             transform="translate(1246,5)"
+             id="text64">0.8</text></g>
+        <rect
+           x="0"
+           y="0"
+           width="1246"
+           height="26"
+           style="opacity:0"
+           id="rect68" />
+        <g
+           font-family="Arial"
+           font-size="23px"
+           xml:space="preserve"
+           transform="translate(1246,37)"
+           id="g74"><g
+             transform="translate(-69,8)"
+             id="g72"><text
+               fill="#000000"
+               font-size="23px"
+               id="text70">θ (rad)</text></g></g>
+      </g>
+      <g
+         id="g94">
+        <path
+           d="m 0,0 v 528 m 47,0 H 0 M 24,506 H 0 M 24,484 H 0 M 24,462 H 0 M 24,440 H 0 M 47,418 H 0 M 24,396 H 0 M 24,374 H 0 M 24,351 H 0 M 24,329 H 0 M 47,307 H 0 M 24,285 H 0 M 24,263 H 0 M 24,241 H 0 M 24,219 H 0 M 47,197 H 0 M 24,175 H 0 M 24,153 H 0 M 24,131 H 0 M 24,109 H 0 M 47,87 H 0 M 24,65 H 0 M 24,42 H 0 M 24,20 H 0"
+           style="stroke:#000000;stroke-width:1"
+           id="path78" />
+        <g
+           font-family="Arial"
+           font-size="23px"
+           xml:space="preserve"
+           fill="#000000"
+           text-anchor="end"
+           id="g90"><text
+             dominant-baseline="middle"
+             transform="translate(-3,528)"
+             id="text80">0</text><text
+             dominant-baseline="middle"
+             transform="translate(-3,418)"
+             id="text82">5000</text><text
+             dominant-baseline="middle"
+             transform="translate(-3,307)"
+             id="text84">10000</text><text
+             dominant-baseline="middle"
+             transform="translate(-3,197)"
+             id="text86">15000</text><text
+             dominant-baseline="middle"
+             transform="translate(-3,87)"
+             id="text88">20000</text></g>
+        <rect
+           x="-68"
+           y="0"
+           width="68"
+           height="528"
+           style="opacity:0"
+           id="rect92" />
+      </g>
+    </g>
+    <path
+       d="M 2,2 H 17 V -3 H -3 v 20 h 5 z"
+       style="opacity:0"
+       id="path98" />
+    <path
+       d="m 1244,2 h -15 v -5 h 20 v 20 h -5 z"
+       style="opacity:0"
+       id="path100" />
+    <path
+       d="m 2,526 h 15 v 5 H -3 v -20 h 5 z"
+       style="opacity:0"
+       id="path102" />
+    <path
+       d="m 1244,526 h -15 v 5 h 20 v -20 h -5 z"
+       style="opacity:0"
+       id="path104" />
+    <path
+       d="M -3,18 H 2 V 510 H -3 Z"
+       style="opacity:0"
+       id="path106" />
+    <path
+       d="m 1249,18 h -5 v 492 h 5 z"
+       style="opacity:0"
+       id="path108" />
+    <path
+       d="M 18,-3 V 2 H 1228 V -3 Z"
+       style="opacity:0"
+       id="path110" />
+    <path
+       d="m 18,531 v -5 h 1210 v 5 z"
+       style="opacity:0"
+       id="path112" />
+    <style
+       id="style114">
+.jsroot rect.h1bin { stroke: #4572A7; fill: #4572A7; opacity: 0; }
+.jsroot rect.zoom { stroke: steelblue; fill-opacity: 0.1; }
+.jsroot path.zoom { stroke: steelblue; fill-opacity: 0.1; }
+.jsroot svg:not(:root) { overflow: hidden; }</style>
+  </g>
+  <g
+     transform="matrix(1.091,0,0,1.091,681.89857,23.700483)"
+     id="g122"
+     style="font-size:30px;font-family:Arial">
+    <text
+       fill="#000000"
+       font-size="30px"
+       id="text120">θ</text>
+  </g>
+</svg>
