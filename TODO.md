@@ -20,7 +20,7 @@
 * Include # of events per run to the presentation and the thesis itself.
 * Extract 1-layer efficiency and use the number to estimate if there's any outside effect that's worsening efficiency.
 * Write more information about the RG-F target. Room temperature D2 gas, target walls and beam pipe window, etc.
-* Mention in thesis section 14.30 that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
+* Mention in Section 14.30 that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
 * After writing a section, proofread using ChatGPT.
 * Run a spell check on overleaf.
 

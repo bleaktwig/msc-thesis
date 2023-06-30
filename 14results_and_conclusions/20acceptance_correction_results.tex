@@ -8,12 +8,12 @@
 
     Since they represent the acceptance percentage, all plots display a calculated division as follows
     \begin{equation}
-        y_\text{acc} = \frac{y_d}{y_t},
+        y_\text{acc} = \frac{y_r}{y_t},
         \label{eq::14.20::acc}
     \end{equation}
-    where $y_\text{acc}$ is the percentage of accepted particles, $y_d$ is the number of detected particles by the studied detector, and $y_t$ is the number of particles thrown by LEPTO.
+    where $y_\text{acc}$ is the percentage of accepted particles, $y_r$ is the number of reconstructed particles by the studied detector in the GEMC simulation, and $y_t$ is the number of particles thrown by LEPTO.
 
-    Then, to propagate the error of $y_d$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), we get
+    Then, to propagate the error of $y_r$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), we get
     \begin{align}
         e_\text{acc} &= \delta \left(\frac{y_r}{y_t}\right)
         \nonumber \\
