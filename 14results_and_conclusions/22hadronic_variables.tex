@@ -5,12 +5,23 @@
     Each one is presented in integrated kinematical region for all electron variables and other hadronic variables.
 
     % Lower acceptance.
-    It's worth noting that these acceptances are lower than those for electron variables.
+    As can be seen in the figures, acceptance for the hadronic variables is lower than that for electron variables.
     This is to be expected, since they require both the trigger electron and at least one hadron to be accepted by the detector.
     This same effect is seen in the $e^-\pi^+$ and $e^-\pi^-$ entries presented in the efficiency Table \ref{tab::14.14::fmt_efficiency_study}.
 
     % Particle charge-dependent acceptance.
-    % TODO. Add phi vs theta (positive particles) plot and explain the difference in acceptances between pi+ and pi- based on that.
+    Furthermore, the hadronic variables acceptance for $e^-\pi^-$ is shown to be about half of that for $e^-\pi^+$.
+    This again is related to the $\theta$ acceptance of CLAS12 which, due to the non-trivial magnetic field of the solenoid, bends the tracks of particles.
+
+    During run 12016, the solenoid field was configured to have a polarity of $-0.75$.
+    This in turn causes negative particle tracks to bend inward, towards the low-$\theta$ region of the DC, as explained in Section \ref{14.21::electron_variables}.
+    Positive particle tracks, in contrast, bend outward, casting them towards the high-$\theta$ region of the detector.
+    The $\phi$ and $\theta$ acceptances of the detector for negative particles can be seen in Figure \ref{fig::14.21::theta_study_neg}, while those for positive particles in shown in Figure \ref{fig::14.22::theta_study_pos}.
+
+    As the plots show, the DC are generally much more receptive to positive particles.
+    This means that more $\pi^+$ are going to be detected than $\pi^-$, thus explaining differences in the acceptance of hadronic variables between $e^-\pi^+$ and $e^-\pi^-$.
+
+    % TODO. Talk about each plot. Check how each hadronic variable depends on \theta and draw conclusions on their acceptance based on that. Blame any remaining assymetry on unestimated systematic errors.
 
     \begin{figure}
         \centering
@@ -69,4 +80,30 @@
         The bin markers are slightly shifted in $x$ to improve legibility.}
         \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
         \label{fig::14.22::hadronic_acc}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        % phi vs theta.
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{22phi_theta_pos.pdf}
+            \caption[$\phi$ vs $\theta$ for positive particles]
+            {$\phi$ vs $\theta$ for positive particles detected by DC.
+            The sector with less acceptance than the rest is caused by \textbf{TODO}.}
+            \label{fig::14.22::phi_theta_pos}
+        \end{subfigure}
+        % theta.
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{22theta_pos.pdf}
+            \caption[$\theta$ for positive particles]
+            {$\theta$ for positive particles detected by DC.}
+            \label{fig::14.22::theta_pos}
+        \end{subfigure}
+        \caption[$\theta$ study for positive particles]
+        {$\theta$ study for positive particles.
+        Simulated data.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.22::theta_study_pos}
     \end{figure}

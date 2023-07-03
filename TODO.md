@@ -1,4 +1,4 @@
-## Administrative TODOs
+## TODO
 ###### Defense Coordination
 * Plan out milestones (hitos) with dates and send to Hayk.
     * Document ready by the 10th of August.
