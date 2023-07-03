@@ -14,8 +14,6 @@
 
 ---
 ###### Thesis Text
-* Finish up Section 14.22.
-* Mention in Section 14.20 that acceptance distribution should be symmetric, so any remaining asymetries come from unestimated systematic errors.
 * Get a render of a track made with CED.
 * Include # of events per run to the presentation and the thesis itself.
 * Extract 1-layer efficiency and use the number to estimate if there's any outside effect that's worsening efficiency.

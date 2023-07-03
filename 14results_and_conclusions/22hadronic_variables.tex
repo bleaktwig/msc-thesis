@@ -21,7 +21,29 @@
     As the plots show, the DC are generally much more receptive to positive particles.
     This means that more $\pi^+$ are going to be detected than $\pi^-$, thus explaining differences in the acceptance of hadronic variables between $e^-\pi^+$ and $e^-\pi^-$.
 
-    % TODO. Talk about each plot. Check how each hadronic variable depends on \theta and draw conclusions on their acceptance based on that. Blame any remaining assymetry on unestimated systematic errors.
+    % zh.
+    $z_h$ has no dependance on the $\theta$ angle of either the hadron or the scattered electron.
+    This means that the $z_h$ acceptance ratios that we see in both Figures \ref{fig::14.22::zh_acc_211} and \ref{fig::14.22::zh_acc_-211} are related only to the intrinsic $z_h$ acceptance of CLAS12.
+
+    % pt2.
+    $p_T^2$, first described in Section \ref{13.40::acceptance_correction}, is defined as
+    \begin{equation*}
+        p_T^2 = p_h^2 \cdot \left(1 - \cos^2(\theta_{PQ})\right),
+    \end{equation*}
+    where $p_h$ is the momentum of the hadron in the lab frame, and $\theta_{PQ}$ is the angle between the virtual interation photon and the detected hadron.
+    Both $p_h$ and $\theta_{PQ}$ have a non-trivial dependence on the $\theta$ of both the scattered electron and the detected hadron.
+    We can see the variable plotted in Figures \ref{fig::14.22::pt2_acc_211} and \ref{fig::14.22::pt2_acc_-211}.
+    % NOTE. A 3D plot with \theta on the x axis, \phi on the y axis, and \theta_PQ on the z axis would be able to disentangle this non-trivial dependence, but that's beyond the scope of this thesis.
+
+    In addition to its shape, we can perceive an increase in both value and uncertainty at $p_T^2 \gsim 1.4$ for both DC and FMT acceptance.
+    This is merely a statistical uncertainty, as very few particles with these values of $p_T^2$ are accepted by CLAS12 in the produced simulations.
+    This uncertainties will later be inherited by the plots obtained in Section \ref{14.30::study_results}.
+
+    % phipq.
+    % NOTE. At the end of the day, the equation would confuse people more than just saying what the variable is, so fuck it we ball.
+    $\phi_{PQ}$, as defined in Section \ref{13.40::acceptance_correction}, is the angle between the leptonic and the hadronic planes.
+    This variable in particular has a very non-trivial relationship with the $\theta$ and $\phi$ angles of both scattered electron and detected hadron.
+    Despite this, we do know that $\phi_{PQ}$ acceptance commonly follows a shape similar to what we see in Figures \ref{fig::14.22::phipq_acc_211} and \ref{fig::14.22::phipq_acc_-211}, as can be seen in DIS analysis publications such as \cite{moran2022}.
 
     \begin{figure}
         \centering
@@ -107,3 +129,5 @@
         \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
         \label{fig::14.22::theta_study_pos}
     \end{figure}
+
+    \pagebreak
