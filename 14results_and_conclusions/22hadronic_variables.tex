@@ -1,49 +1,47 @@
 % !TEX root = ../main.tex
 \subsubsection{Hadronic Variables}
 \label{14.22::hadronic_variables}
-    The acceptance of the hadronic variables $z_h$, $p_T^2$, and $\phi_{PQ}$ for $e^-\pi^+$ and $e^-\pi^-$ are presented in Figure \ref{fig::14.22::hadronic_acc}.
-    Each one is presented in integrated kinematical region for all electron variables and other hadronic variables.
+    The acceptance of the hadronic variables $z_h$, $p_T^2$, and $\phi_{PQ}$ for $e^-\pi^+$ and $e^-\pi^-$ is presented in Figure \ref{fig::14.22::hadronic_acc}.
+    Each plot shows the acceptance in an integrated kinematical region for all electron variables and other hadronic variables.
 
     % Lower acceptance.
-    As can be seen in the figures, acceptance for the hadronic variables is lower than that for electron variables.
-    This is to be expected, since they require both the trigger electron and at least one hadron to be accepted by the detector.
-    This same effect is seen in the $e^-\pi^+$ and $e^-\pi^-$ entries presented in the efficiency Table \ref{tab::14.14::fmt_efficiency_study}.
+    It can be observed from the figures that the acceptance for the hadronic variables is lower compared to that of the electron variables.
+    This is expected since the detection of the hadronic variables requires both the trigger electron and at least one hadron to be detected by the CLAS12 detector.
+    This effect is also reflected in the entries for $e^-\pi^+$ and $e^-\pi^-$ in the efficiency Table \ref{tab::14.14::fmt_efficiency_study}.
 
     % Particle charge-dependent acceptance.
-    Furthermore, the hadronic variables acceptance for $e^-\pi^-$ is shown to be about half of that for $e^-\pi^+$.
-    This again is related to the $\theta$ acceptance of CLAS12 which, due to the non-trivial magnetic field of the solenoid, bends the tracks of particles.
+    Furthermore, the acceptance for the hadronic variables is shown to be approximately half for $e^-\pi^-$ compared to $e^-\pi^+$.
+    This difference is related to the $\theta$ acceptance of CLAS12, which is influenced by the non-trivial magnetic field of the solenoid.
+    As explained in Section \ref{14.21::electron_variables}, during the majority of run 12016, the solenoid field was configured to a polarity of $-0.75$.
+    This causes negative particle tracks to bend inward towards the low-$\theta$ region of the Drift Chambers (DC), while positive particle tracks bend outward towards the high-$\theta$ region.
 
-    During run 12016, the solenoid field was configured to have a polarity of $-0.75$.
-    This in turn causes negative particle tracks to bend inward, towards the low-$\theta$ region of the DC, as explained in Section \ref{14.21::electron_variables}.
-    Positive particle tracks, in contrast, bend outward, casting them towards the high-$\theta$ region of the detector.
-    The $\phi$ and $\theta$ acceptances of the detector for negative particles can be seen in Figure \ref{fig::14.21::theta_study_neg}, while those for positive particles in shown in Figure \ref{fig::14.22::theta_study_pos}.
-
-    As the plots show, the DC are generally much more receptive to positive particles.
-    This means that more $\pi^+$ are going to be detected than $\pi^-$, thus explaining differences in the acceptance of hadronic variables between $e^-\pi^+$ and $e^-\pi^-$.
+    The $\phi$ and $\theta$ acceptances of the detector for negative particles can be seen in Figure \ref{fig::14.21::theta_study_neg}, whereas those for positive particles are shown in Figure \ref{fig::14.22::theta_study_pos}.
+    These plots clearly demonstrate that the DC is generally more receptive to positive particles.
+    Consequently, there is a higher detection efficiency for $\pi^+$ compared to $\pi^-$, which explains the differences in the acceptance of the hadronic variables between $e^-\pi^+$ and $e^-\pi^-$.
 
     % zh.
-    $z_h$ has no dependance on the $\theta$ angle of either the hadron or the scattered electron.
-    This means that the $z_h$ acceptance ratios that we see in both Figures \ref{fig::14.22::zh_acc_211} and \ref{fig::14.22::zh_acc_-211} are related only to the intrinsic $z_h$ acceptance of CLAS12.
+    The variable $z_h$ does not depend on the $\theta$ angle of either the hadron or the scattered electron, as can be seen in Equation \eqref{eq::10.32::zh}.
+    Therefore, the observed $z_h$ acceptance ratios in Figures \ref{fig::14.22::zh_acc_211} and \ref{fig::14.22::zh_acc_-211} are solely related to the intrinsic $z_h$ acceptance of CLAS12.
 
     % pt2.
-    $p_T^2$, first described in Section \ref{13.40::acceptance_correction}, is defined as
+    Regarding $p_T^2$, which was initially described in Section \ref{13.40::acceptance_correction}, it is defined as follows
     \begin{equation*}
         p_T^2 = p_h^2 \cdot \left(1 - \cos^2(\theta_{PQ})\right),
     \end{equation*}
-    where $p_h$ is the momentum of the hadron in the lab frame, and $\theta_{PQ}$ is the angle between the virtual interation photon and the detected hadron.
-    Both $p_h$ and $\theta_{PQ}$ have a non-trivial dependence on the $\theta$ of both the scattered electron and the detected hadron.
-    We can see the variable plotted in Figures \ref{fig::14.22::pt2_acc_211} and \ref{fig::14.22::pt2_acc_-211}.
-    % NOTE. A 3D plot with \theta on the x axis, \phi on the y axis, and \theta_PQ on the z axis would be able to disentangle this non-trivial dependence, but that's beyond the scope of this thesis.
+    where $p_h$ represents the momentum of the hadron in the lab frame, and $\theta_{PQ}$ is the angle between the virtual interaction photon and the detected hadron.
+    Both $p_h$ and $\theta_{PQ}$ have a non-trivial dependence on the $\theta$ angles of both the scattered electron and the detected hadron.
+    The variable $p_T^2$ is presented in Figures \ref{fig::14.22::pt2_acc_211} and \ref{fig::14.22::pt2_acc_-211}.
 
-    In addition to its shape, we can perceive an increase in both value and uncertainty at $p_T^2 \gsim 1.4$ for both DC and FMT acceptance.
-    This is merely a statistical uncertainty, as very few particles with these values of $p_T^2$ are accepted by CLAS12 in the produced simulations.
-    This uncertainties will later be inherited by the plots obtained in Section \ref{14.30::study_results}.
+    In addition to its shape, an increase in both value and uncertainty can be observed for $p_T^2 \gsim 1.4$ in both the DC and FMT acceptance plots.
+    This increase is purely due to statistical uncertainty, as very few particles with these values of $p_T^2$ are accepted by CLAS12 in the simulated data.
+    These uncertainties will subsequently be inherited by the plots obtained in Section \ref{14.30::study_results} of the thesis.
 
     % phipq.
     % NOTE. At the end of the day, the equation would confuse people more than just saying what the variable is, so fuck it we ball.
-    $\phi_{PQ}$, as defined in Section \ref{13.40::acceptance_correction}, is the angle between the leptonic and the hadronic planes.
-    This variable in particular has a very non-trivial relationship with the $\theta$ and $\phi$ angles of both scattered electron and detected hadron.
-    Despite this, we do know that $\phi_{PQ}$ acceptance commonly follows a shape similar to what we see in Figures \ref{fig::14.22::phipq_acc_211} and \ref{fig::14.22::phipq_acc_-211}, as can be seen in DIS analysis publications such as \cite{moran2022}.
+    The variable $\phi_{PQ}$, as described in Section \ref{13.40::acceptance_correction}, represents the angle between the leptonic and hadronic planes.
+    It has a highly non-trivial relationship with the $\theta$ and $\phi$ angles of both the scattered electron and the detected hadron.
+    Despite this complexity, it is known that the $\phi_{PQ}$ acceptance generally follows a similar shape as observed in Figures \ref{fig::14.22::phipq_acc_211} and \ref{fig::14.22::phipq_acc_-211}.
+    This behavior has been observed and documented in DIS analysis publications such as \cite{moran2022}.
 
     \begin{figure}
         \centering

@@ -3,7 +3,7 @@
 * Plan out milestones (hitos) with dates and send to Hayk.
     * Document ready by the 10th of August.
     * Defense by the end of August / start of September
-* Check with Raffaella for restrictions regarding defense date & time.
+    * Check with Raffaella for restrictions regarding defense date & time.
 * Reply to Angelica's email with a defense date.
 
 ---
@@ -33,7 +33,7 @@
 | 13    | x       | x         | x           | x      | x         |
 | 14    |         |           |             |        |           |
 | 14.10 | x       | x         | x           | x      | x         |
-| 14.20 | x       |           |             |        |           |
+| 14.20 | x       | x         |             |        |           |
 | 14.30 |         |           |             |        |           |
 | 14.40 |         |           |             |        |           |
 | 20    |         |           |             |        | --        |

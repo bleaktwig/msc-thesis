@@ -1,10 +1,9 @@
 % !TEX root = ../main.tex
 \subsection{Acceptance Correction Results}
 \label{14.20::acceptance_correction_results}
-    % TODO. Remove FMT3 tracks from here onward.
     DC and FMT acceptances were obtained by following the procedure described in Section \ref{13.13::acc_corr}.
-    In this section, we'll study the acceptance percentage for each electron and hadronic variable.
-    These numbers represent the percentage of thrown particles that were detected by the DC, 2 FMT layers, and 3 FMT layers in the \texttt{gemc} simulation.
+    In this section, we will study the acceptance percentage for each electron and hadronic variable.
+    These numbers represent the percentage of thrown particles that were detected by the DC and by 2 or 3 FMT layers in addition to DC in the GEMC simulation.
 
     Since they represent the acceptance percentage, all plots display a calculated division as follows
     \begin{equation}
@@ -13,7 +12,7 @@
     \end{equation}
     where $y_\text{acc}$ is the percentage of accepted particles, $y_r$ is the number of reconstructed particles by the studied detector in the GEMC simulation, and $y_t$ is the number of particles thrown by LEPTO.
 
-    Then, to propagate the error of $y_r$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), we get
+    Then, to propagate the error of $y_r$ ($e_d$) and $y_t$ ($e_t$) to $y_\text{acc}$ ($e_\text{acc}$), we have
     \begin{align}
         e_\text{acc} &= \delta \left(\frac{y_r}{y_t}\right)
         \nonumber \\
@@ -26,16 +25,17 @@
         \label{eq::14.20::acc_error_estimation}
     \end{align}
 
-    From the Central Limit Theorem it can be proven that, assuming a normal distribution, the variance $e_r^2$ is
+    From the Central Limit Theorem, assuming a normal distribution, the variance $e_r^2$ is given by
     \begin{equation*}
-        e_r^2 = y_t \cdot y_\text{acc} (1 - y_\text{acc}),
+        e_r^2 = y_t \cdot y_\text{acc} (1 - y_\text{acc}).
     \end{equation*}
-    which, replaced in Equation \eqref{eq::14.20::acc_error_estimation}, yields
+
+    Replacing this in Equation \eqref{eq::14.20::acc_error_estimation}, we obtain
     \begin{equation*}
         e_\text{acc} = y_\text{acc} \cdot \frac{\sqrt{y_t y_\text{acc}(1 - y_\text{acc})}}{y_r}.
     \end{equation*}
 
-    Replacing $y_\text{acc}$ here by its definition in Equation \eqref{eq::14.20::acc} gives us a final error of
+    Now, replacing $y_\text{acc}$ with its definition from Equation \eqref{eq::14.20::acc}, we arrive at the final error expression
     \begin{equation}
         e_\text{acc} = \sqrt{\frac{y_\text{acc}(1-y_\text{acc})}{y_t}}.
         \label{eq::14.20::acc_error}
