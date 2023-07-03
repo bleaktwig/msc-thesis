@@ -19,22 +19,27 @@
 * Extract 1-layer efficiency and use the number to estimate if there's any outside effect that's worsening efficiency.
 * Write more information about the RG-F target. Room temperature D2 gas, target walls and beam pipe window, etc.
 * Mention in Section 14.30 that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
+* Finish up Section 14.30.
+* Write Section 14.40.
 * After writing a section, proofread using ChatGPT.
 * Run a spell check on overleaf.
 
-|                             | Proofread | Spell check | Labels | Figsource |
-| ----------------------------|-----------|-------------|--------|-----------|
-| 00 First Pages              | x         | x           | x      | x         |
-| 10 Physics Motivation       | x         | x           | x      | x         |
-| 11 Experiment               | x         | x           | x      | x         |
-| 12 FMT Alignment            | x         | x           | x      | x         |
-| 13 Data Analysis            | x         | x           | x      | x         |
-| 14 Results and Conclusions  |           |             |        |           |
-| 14.10 FMT Efficiency        | x         | x           | x      | x         |
-| 14.20 Acceptance Correction |           |             |        |           |
-| 14.30 Study Results         |           |             |        |           |
-| 14.40 Conclusions           |           |             |        |           |
-| 20 Addenda                  | x         | x           | x      | --        |
+|       | Written | Proofread | Spell check | Labels | Figsource |
+| ------|---------|-----------|-------------|--------|-----------|
+| 00    | x       | x         | x           | x      | x         |
+| 10    | x       | x         | x           | x      | x         |
+| 11    | x       | x         | x           | x      | x         |
+| 12    | x       | x         | x           | x      | x         |
+| 13    | x       | x         | x           | x      | x         |
+| 14    |         |           |             |        |           |
+| 14.10 | x       | x         | x           | x      | x         |
+| 14.20 | x       |           |             |        |           |
+| 14.30 |         |           |             |        |           |
+| 14.40 |         |           |             |        |           |
+| 20    |         |           |             |        | --        |
+| 20.10 | --      | --        | --          | --     | --        |
+| 20.20 | x       | x         | x           | x      | --        |
+| 20.30 |         |           |             |        |           |
 
 ---
 ###### Miscellaneous
@@ -43,10 +48,11 @@
 * Find out beam pipe window and RG-F target walls materials and thickness.
 * Plan a meeting with Raffaella & the RG-E people for the week of the 17th.
 * Scale vz bin plots to whole frame in defense, improve legibility in general.
-* Plot DIS variables without acceptance correction.
-* Plot DIS variables without Yb cut.
+* Plot DIS variables without acceptance correction and without Yb cut.
+    * Perhaps these plots could be added to addenda.
 * Plot DIS variables in theta bins.
 * Plot phi distribution in theta and p bins for each sector separately, and talk about potential application of fiducial cuts based on these plots.
+    * Maybe consider mentioning this in an addendum?
 
 ---
 ## ChatGPT Proofreading Prompt
