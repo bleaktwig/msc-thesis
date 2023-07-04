@@ -1,7 +1,12 @@
 % !TEX root = ../main.tex
 \subsection{Study Results}
 \label{14.30::study_results}
+    % TODO. Explain binning scheme selected.
 
+    % TODO. Explain how "good" bins will be selected.
+    %   * TODO. First criterium for selecting a good bin is maximising the phase space of each variable.
+    %   * TODO. Then, the second criterium is maximising the statistics of that variable.
+    %   * NOTE. As Hayk if I should use the results without acceptance correction to deduce the statistics?
 
     % statistical error estimation.
     The total statistical error on the acceptance corrected result $e_\text{corr}$ needs to consider both the statistical error of the measurements $e_\text{meas}$ and that of the acceptance correction $e_\text{acc}$.
@@ -20,14 +25,109 @@
     % TODO. systematic error "estimation".
     %   * TODO. Ask Raffaella for a reference about the "average" systematic error we should consider.
 
-    % \input{14results_and_conclusions/31integrated_dis}
-    % TODO. DIS variables over all the region.
+    % resulting plots.
+    Each of the acceptance corrected DIS variables can be seen separated in $v_z$ bins in Figures \ref{fig::14.30::q2_vz} to \ref{fig::14.30::phipq_vz_-211}.
+    The electron variables distributions, $Q^2$ and $\nu$, can be seen in Figures \ref{fig::14.30::q2_vz} and \ref{fig::14.30::nu_vz} respectively.
+    Then, $z_h$ can be observed in Figures \ref{fig::14.30::zh_211_vz} for $e^-\pi^+$, and in \ref{fig::14.30::zh_-211_vz} for $e^-\pi^-$.
+    $p_T^2$ for $e^-\pi^+$ can be seen in Figure \ref{fig::14.30::pt2_211_vz}, and for $e^-\pi^-$ in Figure \ref{fig::14.30::pt2_-211_vz}.
+    At last, the $\phi_{PQ}$ distributions for $e^-\pi^+$ can be observed in Figure \ref{fig::14.30::phipq_211_vz}, while for $e^-\pi^-$ in Figure \ref{fig::14.30::phipq_-211_vz}.
 
-    % TODO. First criterium for selecting a good bin is maximising the phase space of each variable.
-    % TODO. Then, the second criterium is maximising the statistics of that variable.
-        % NOTE. As Hayk if I should use the results without acceptance correction to deduce the statistics?
+    % Q2.
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30q2_vz.png}
+        \caption[Acceptance-corrected $Q^2$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $Q^2$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::q2_vz}
+    \end{figure}
 
-    % \input{14results_and_conclusions/32binned_dis}
-    % TODO. DIS variables separated over vz.
+    % nu.
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30nu_vz.png}
+        \caption[Acceptance-corrected $\nu$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $\nu$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::nu_vz}
+    \end{figure}
 
-% TODO. Fits. Talk about fits.
+    % zh.
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30zh_vz_211.png}
+        \caption[Acceptance-corrected $z_h$ for $e^-\pi^+$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $z_h$ for $e^-\pi^+$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::zh_211_vz}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30zh_vz_-211.png}
+        \caption[Acceptance-corrected $z_h$ for $e^-\pi^-$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $z_h$ for $e^-\pi^-$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::zh_-211_vz}
+    \end{figure}
+
+    % pt2.
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30pt2_vz_211.png}
+        \caption[Acceptance-corrected $p_T^2$ for $e^-\pi^+$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $p_T^2$ for $e^-\pi^+$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::pt2_211_vz}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30pt2_vz_-211.png}
+        \caption[Acceptance-corrected $p_T^2$ for $e^-\pi^-$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $p_T^2$ for $e^-\pi^-$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::pt2_-211_vz}
+    \end{figure}
+
+    % phipq.
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30phipq_vz_211.png}
+        \caption[Acceptance-corrected $\phi_{PQ}$ for $e^-\pi^+$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $\phi_{PQ}$ for $e^-\pi^+$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::phipq_211_vz}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{30phipq_vz_-211.png}
+        \caption[Acceptance-corrected $\phi_{PQ}$ for $e^-\pi^-$ separated in $v_z$ bins, run 12016]
+        {Acceptance-corrected $\phi_{PQ}$ for $e^-\pi^-$ detected by DC and FMT, separated in $v_z$ bins.
+        Run 12016.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.30::phipq_-211_vz}
+    \end{figure}
+
+    % TODO. draw conclusions.
+
+    % TODO. Mention nu and zh and how they shouldn't (and don't) show any dependence.
+
+    % TODO. Metnion and show that Q2, pt2, and phiPQ show dependence on theta angle.
+
+    % TODO. Decide on a range based on Q2 phase space. Show that the same can be concluded from pt2 and phiPQ, but Q2 is easier to study due to only coming from the e-.
+    As can be seen on the figure, the higher end of the variable's phase space is limited for $v_z < -5$ cm, with the effect becoming more pronounced the further upstream we go.
+    This effect can be understood by compounding the $\theta$ efficiency for negative particles (see Figure \ref{fig::14.21::theta_study_neg}) and the limited acceptance region of FMT given by Equation \eqref{eq::12.42::fmt_geometry_cut} (see Figure \ref{eq::12.42::vz_vs_theta}): the higher end of $\theta$ becomes limited for lower $v_z$ values.
+
+    With the stated objective of maximising the phase space of each variable, this draws us to set the minimum $v_z$ for the RG-E target to $-5$ cm.
+    Furthermore, we can limit the maximum $v_z$ to $10$ cm, since the low values of $\theta$ become limited by the lower end of the FMT's acceptance region.
+
+    % TODO. Decide on a final position based on statistics.

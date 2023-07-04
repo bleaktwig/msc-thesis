@@ -6,10 +6,22 @@
     * Check with Raffaella for restrictions regarding defense date & time.
 * Reply to Angelica's email with a defense date.
 
+###### Milestones
+* **07/04 - 07/12.** Define a 5 cm vz region to place the RG-E target based on maximizing phase-space and highest statistics.
+* **07/13 - 07/18.** Simulate the RG-E target in the chosen region. Reconstruct and study behavior of DIS variables.
+* **07/18.** Meet with Raffaella + RG-E team, show results so far.
+* **07/19 - 07/27.** Apply feedback from group, work on thesis.
+* **07/28 - 08/03.** *Free week due to marriage license.*
+* **08/04 - 08/10.** Finish up thesis, write conclusions.
+* **08/10.** Freeze thesis, allow thesis commitee to correct mistakes and provide feedback.
+* **08/11 - 09/01.** Apply feedback and work on thesis defense presentation.
+* **09/04.** Defend thesis.
+
 ---
 ###### Thesis Work
 * Choose vz bins to use based on maximizing the phase-space of the 5 variables and getting the largest statistics.
-* After target location is chosen, run a GEMC simulation to see how well the target behaves at that location in simulation (talk w/ Esteban).
+* After target location is chosen, run a GEMC simulation to see how well the target behaves at that location in simulation.
+    * Check with Esteban on 07/06.
 
 ---
 ###### Thesis Text
@@ -17,8 +29,8 @@
 * Include # of events per run to the presentation and the thesis itself.
 * Extract 1-layer efficiency and use the number to estimate if there's any outside effect that's worsening efficiency.
 * Write more information about the RG-F target. Room temperature D2 gas, target walls and beam pipe window, etc.
-* Mention in Section 14.30 that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
 * Finish up Section 14.30.
+* Mention in Section 14.40 that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
 * Write Section 14.40.
 * After writing a section, proofread using ChatGPT.
 * Run a spell check on overleaf.
@@ -35,7 +47,7 @@
 | 14.20 | x       | x         | x           | x      | x         |
 | 14.30 |         |           |             |        |           |
 | 14.40 |         |           |             |        |           |
-| 20    |         |           |             |        | --        |
+| 20    |         |           |             |        |           |
 | 20.10 | --      | --        | --          | --     | --        |
 | 20.20 | x       | x         | x           | x      | --        |
 | 20.30 |         |           |             |        |           |
@@ -43,12 +55,12 @@
 ---
 ###### Miscellaneous
 * Send Raffaella the reconstructed 12016 run location in the farm so she can check if DC alignment is related to the efficiency issue.
-    * Mention in text & presentation that efficiency issue comes from DC alignment.
+    * If that's the case, mention in text & presentation that efficiency issue comes from DC alignment.
 * Find out beam pipe window and RG-F target walls materials and thickness.
 * Plan a meeting with Raffaella & the RG-E people for the week of the 17th.
 * Scale vz bin plots to whole frame in defense, improve legibility in general.
 * Plot DIS variables without acceptance correction and without Yb cut.
-    * Perhaps these plots could be added to addenda.
+    * Perhaps these plots could be added to my thesis' addenda.
 * Plot DIS variables in theta bins.
 * Plot phi distribution in theta and p bins for each sector separately, and talk about potential application of fiducial cuts based on these plots.
     * Maybe consider mentioning this in an addendum?
