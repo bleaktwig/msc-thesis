@@ -1,6 +1,25 @@
 % !TEX root = ../main.tex
 \subsection{Study Results}
 \label{14.30::study_results}
+
+
+    % statistical error estimation.
+    The total statistical error on the acceptance corrected result $e_\text{corr}$ needs to consider both the statistical error of the measurements $e_\text{meas}$ and that of the acceptance correction $e_\text{acc}$.
+    The former is purely statistical in nature, and is thus given by
+    \begin{equation*}
+        e_\text{meas} = \frac{\delta y_\text{meas}}{y_\text{meas}},
+    \end{equation*}
+    and the latter was derived in Equation \eqref{eq::14.20::acc_error}.
+
+    Considering the fact that $e_\text{meas}$ comes purely from experimental data and $e_\text{acc}$ comes purely from simulation, they are completely uncorrelated.
+    Thus, we can estimate the total statistical error of the acceptance corrected result as the quadratic addition of the two, or
+    \begin{equation*}
+        e_\text{corr} = \sqrt{e_\text{meas}^2 + e_\text{acc}^2}.
+    \end{equation*}
+
+    % TODO. systematic error "estimation".
+    %   * TODO. Ask Raffaella for a reference about the "average" systematic error we should consider.
+
     % \input{14results_and_conclusions/31integrated_dis}
     % TODO. DIS variables over all the region.
 
