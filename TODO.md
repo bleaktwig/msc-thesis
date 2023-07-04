@@ -20,6 +20,7 @@
 ---
 ###### Thesis Work
 * Choose vz bins to use based on maximizing the phase-space of the 5 variables and getting the largest statistics.
+* Understand what is going on with nu at vz > -5 cm.
 * After target location is chosen, run a GEMC simulation to see how well the target behaves at that location in simulation.
     * Check with Esteban on 07/06.
 
