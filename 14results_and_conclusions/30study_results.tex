@@ -1,24 +1,28 @@
 % !TEX root = ../main.tex
 \subsection{Study Results}
 \label{14.30::study_results}
-    % TODO. Explain binning scheme selected.
+    % Explain binning scheme selected.
+    To select a region in $v_z$ to place the RG-E target, two criteria were considered: a phase space study and a statistics study.
+    In the phase space study, the RG-F target gas region ($-30 < v_z < 20$ cm) was divided into ten 5 cm bins, and the phase space of each kinematic variable was analysed in each bin.
+    The results of this study are presented in Section \ref{14.31::phase_space_study}.
+    For the statistics study, the region chosen in the phase space study was further divided into 1 cm bins.
+    The study aimed to determine which 7 cm region within the chosen range had the largest statistics.
+    The validity of this choice was evaluated using a gemc simulation of the RG-E target system.
+    The results of this study are presented in Section \ref{14.32::statistics_study}.
 
-    % statistical error estimation.
-    The total statistical error on the acceptance corrected result $e_\text{corr}$ needs to consider both the statistical error of the measurements $e_\text{meas}$ and that of the acceptance correction $e_\text{acc}$.
-    The former is purely statistical in nature, and is thus given by
+    % Statistical error estimation.
+    Regarding the statistical error estimation, the total statistical error on the acceptance-corrected result, denoted as $e_\text{corr}$, needs to consider both the statistical error of the measurements ($e_\text{meas}$) and the acceptance correction ($e_\text{acc}$).
+    The statistical error of the measurements, $e_\text{meas}$, is purely statistical in nature and is given by
     \begin{equation*}
         e_\text{meas} = \frac{\delta y_\text{meas}}{y_\text{meas}},
     \end{equation*}
-    and the latter was derived in Equation \eqref{eq::14.20::acc_error}.
+    The acceptance correction error, $e_\text{acc}$, was derived in Equation \eqref{eq::14.20::acc_error}.
 
-    Considering the fact that $e_\text{meas}$ comes purely from experimental data and $e_\text{acc}$ comes purely from simulation, they are completely uncorrelated.
-    Thus, we can estimate the total statistical error of the acceptance corrected result as the quadratic addition of the two, or
+    Since $e_\text{meas}$ arises purely from experimental data and $e_\text{acc}$ is purely from simulation, they are considered to be completely uncorrelated.
+    Therefore, the total statistical error of the acceptance-corrected result can be estimated as the quadratic addition of the two errors, i.e.,
     \begin{equation*}
         e_\text{corr} = \sqrt{e_\text{meas}^2 + e_\text{acc}^2}.
     \end{equation*}
-
-    % TODO. systematic error "estimation".
-    %   * TODO. Ask Raffaella for a reference about the "average" systematic error we should consider.
 
     \input{14results_and_conclusions/31phase_space_study}
     \input{14results_and_conclusions/32statistics_study}
