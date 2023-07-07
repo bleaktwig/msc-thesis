@@ -9,11 +9,6 @@
 * **08/21 - 09/11.** Apply feedback from committee and work on thesis defense presentation.
 * **09/14.** Defend thesis.
 
-###### Defense Coordination
-* Wait for Hayk to answer about milestones.
-* Check with Raffaella for restrictions regarding defense date & time.
-* Reply to Angelica's email with a defense date.
-
 ###### Text Work
 * Run a GEMC simulation to see how well the target behaves at the chosen location (-5 to 2 cm) in simulation -> Check with Esteban.
 * Finish up Section 14.32 with simulation stuff.
@@ -23,6 +18,9 @@
 * Run a spell check on overleaf.
 
 ###### Defense Work
+* Wait for Hayk to answer about milestones.
+* Check with Raffaella for restrictions regarding defense date & time.
+* Reply to Angelica's email with a defense date.
 * Scale vz bin plots to whole frame, improve legibility in general.
 
 ###### Miscellaneous Work
