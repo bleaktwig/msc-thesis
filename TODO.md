@@ -9,7 +9,7 @@
 * **08/21 - 09/11.** Apply feedback from committee and work on thesis defense presentation.
 * **09/14.** Defend thesis.
 
-###### Text Work
+###### Text
 * Run a GEMC simulation to see how well the target behaves at the chosen location (-5 to 2 cm) in simulation -> Check with Esteban.
 * Finish up Section 14.32 with simulation stuff.
 * Write Section 14.40.
@@ -17,18 +17,19 @@
 * After writing a section, proofread using ChatGPT.
 * Run a spell check on overleaf.
 
-###### Defense Work
+###### Defense
 * Wait for Hayk to answer about milestones.
 * Check with Raffaella for restrictions regarding defense date & time.
 * Reply to Angelica's email with a defense date.
 * Scale vz bin plots to whole frame, improve legibility in general.
 
-###### Miscellaneous Work
+###### Miscellaneous
 * Plan a meeting with Raffaella & the RG-E people for the week of August 14th.
-* Get a render of a track made with CED.
-* Include # of events per run to the presentation and the thesis itself.
+* *Get a render of a track made with CED?*
 * Extract 1-layer efficiency and use the number to estimate if there's any outside effect that's worsening efficiency.
-* Write more information about the RG-F target. Room temperature D2 gas, target walls and beam pipe window thicknesses, etc.
+* Write more information about the RG-F target. Room temperature H2 or D2 gas, target walls and beam pipe window thicknesses, etc.
+
+###### Addenda
 * Plot DIS variables without acceptance correction and without Yb cut.
     * Perhaps these plots could be added to my thesis' addenda.
 * Plot phi distribution in theta and p bins for each sector separately, and talk about potential application of fiducial cuts based on these plots.
