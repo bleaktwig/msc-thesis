@@ -1,9 +1,7 @@
 ## TODO
 ###### Defense Coordination
-* Plan out milestones (hitos) with dates and send to Hayk.
-    * Document ready by the 10th of August.
-    * Defense by the end of August / start of September
-    * Check with Raffaella for restrictions regarding defense date & time.
+* Wait for Hayk to answer about milestones.
+* Check with Raffaella for restrictions regarding defense date & time.
 * Reply to Angelica's email with a defense date.
 
 ###### Milestones
