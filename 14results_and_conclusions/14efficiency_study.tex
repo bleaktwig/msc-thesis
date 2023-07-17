@@ -29,14 +29,13 @@
     \end{table}
 
     % --+ Error estimation +----------------------------------------------------
-    Since we have the efficiency measured for 2 and 3-layer tracks, we can estimate the efficiency of one FMT layer, and use this result to estimate an error for the two types of tracks.
-    First, we define $P(L_n)$ as the probability of layer $n$ detecting a particle, with $1 \leq n \leq 3$.
-
-    Assumming all layers have the same efficiency, or
+    % ---
+    To estimate the efficiency of one FMT layer and the associated errors for the two types of tracks, we define $P(L_n)$ as the probability of layer $n$ detecting a particle, with $1 \leq n \leq 3$.
+    Assuming that all layers have the same efficiency, denoted as $E_1$,
     \begin{equation*}
         P(L_1) = P(L_2) = P(L_3) = E_1,
     \end{equation*}
-    the 2-layer efficiency $E_2$ is
+    the efficiency $E_2$ for 2-layer tracks can be obtained using the probabilities $P(L_n)$ as follows
     \begin{align}
         E_2 &= P(L_1)P(L_2)\left(1 - P(L_3)\right)                \nonumber \\
              &\hspace{24pt} + P(L_2)P(L_3)\left(1 - P(L_1)\right) \nonumber \\
@@ -49,7 +48,7 @@
     \end{align}
     where $E_{1(2)}$ is the 1-layer efficiency estimated from 2-layer tracks.
 
-    For 3-layer tracks, efficiency is simpler to obtain
+    For 3-layer tracks, the efficiency $E_3$ can be directly obtained as
     \begin{align}
         E_3 &= P(L_1)P(L_2)P(L_3)
         \nonumber \\
@@ -58,37 +57,37 @@
     \end{align}
     where $E_{1(3)}$ is the 1-layer efficiency estimated from 3-layer tracks.
 
-    Using \eqref{eq::14.14::efficiency2} and \eqref{eq::14.14::efficiency3}, we can estimate the weighted average efficiency $\xoverline{E_1}$ as
+    Using equations \eqref{eq::14.14::efficiency2} and \eqref{eq::14.14::efficiency3}, we can estimate the weighted average efficiency $\xoverline{E_1}$ as
     \begin{equation*}
         \xoverline{E_1} = \frac{4E_{1(2)} + E_{1(3)}}{5},
     \end{equation*}
-    where the weights are assigned based on the number of ways 2 and 3-layer tracks can be obtained, 4 and 1 respectively.
+    where the weights are assigned based on the number of ways 2 and 3-layer tracks can be obtained, 4 and 1, respectively.
 
-    From $\xoverline{E_1}$, we can now estimate the errors on $E_{1(2)}$ and $E_{1(3)}$ as
+    From $\xoverline{E_1}$, we can estimate the errors on $E_{1(2)}$ and $E_{1(3)}$ as
     \begin{align*}
         \delta(E_{1(2)}) = |\xoverline{E_1} - E_{1(2)}|, \\
         \delta(E_{1(3)}) = |\xoverline{E_1} - E_{1(3)}|.
     \end{align*}
 
-    We can propagate this error to the efficiencies $E_2$ and $E_3$, using the variance formula
+    To propagate these errors to the efficiencies $E_2$ and $E_3$, we use the variance formula
     \begin{equation*}
         \delta\left(f(x)\right) = \frac{\partial f(x)}{\partial x} \cdot \delta(x),
     \end{equation*}
-    such that $\delta(E_2)$, from \eqref{eq::14.14::efficiency2}, is
+    where $\delta(E_2)$, obtained from equation \eqref{eq::14.14::efficiency2}, is
     \begin{align*}
         \delta(E_2) &= \frac{\partial}{\partial E_{1(2)}} \left( 3E_{1(2)}^2 - 2E_{1(2)}^3 \right)
             \cdot \delta(E_{1(2)}) \\
         \delta(E_2) &= \left( 6E_{1(2)} - 6E_{1(2)}^2 \right) \cdot \delta(E_{1(2)}) \\
         \delta(E_2) &= 6E_{1(2)} \cdot \left( 1 - E_{1(2)} \right) \cdot \delta(E_{1(2)}),
     \end{align*}
-    and $\delta(E_3)$, from \eqref{eq::14.14::efficiency3}, is
+    and $\delta(E_3)$, obtained from equation \eqref{eq::14.14::efficiency3}, is
     \begin{align*}
         \delta(E_3) &= \frac{\partial}{\partial E_{1(3)}} \left( E_{1(3)}^3 \right) \cdot \delta(E_{1(3)}) \\
         \delta(E_3) &= 3E_{1(3)}^2 \cdot \delta(E_{1(3)}).
     \end{align*}
 
-    A simple procedure was written in Python to obtain $E_2$ and $E_3$ from each measurement shown in Table \ref{tab::14.14::fmt_efficiency_study}.
-    The errors obtained are included in the table.
+    A Python procedure was written to calculate $E_2$ and $E_3$ from each measurement shown in Table \ref{tab::14.14::fmt_efficiency_study}.
+    The corresponding errors were obtained and included in the table.
 
     % --+ Conclusions drawn from table +----------------------------------------
     The table illustrates the positive impact of switching to Spring 2020 data and applying the geometry cut.
