@@ -7,26 +7,50 @@
 
     \begin{table}[b]
         \begin{center}
-            \begin{tabularx}{0.92\textwidth}{Xlcllcllcll}
+            \begin{tabularx}{0.88\textwidth}{Xlcllcll}
                 \toprule
-                & & & \multicolumn{2}{c}{\textbf{Run 12933}} & & \multicolumn{2}{c}{\textbf{Run 12016}} & & \multicolumn{2}{c}{\textbf{Simulation}} \\
-                                    &          & & raw  & w/ cut   & & raw  & w/ cut   & & raw    & w/ cut \\
+                & & & \multicolumn{2}{c}{\textbf{Run 12933}} & & \multicolumn{2}{c}{\textbf{Run 12016}} \\
+                                    &          & & raw            & w/ cut         & & raw             & w/ cut         \\
                 \midrule \midrule
-                \textbf{$e^-$}      & 2 layers & & 25.1\% & 37.5\% & & 32.7\% & 53.7\% & & 71.7\% & 92.1\% \\
-                                    & 3 layers & &  5.6\% &  8.5\% & &  9.9\% & 16.4\% & & 59.8\% & 78.7\% \\
+                \textbf{$e^-$}      & 2 layers & & 25.1 $\pm$ 1.5 & 37.5 $\pm$ 0.7 & & 32.7 $\pm$  2.5 & 53.7 $\pm$ 0.8 \\
+                                    & 3 layers & &  5.6 $\pm$ 8.8 &  8.5 $\pm$ 5.0 & &  9.9 $\pm$ 17.2 & 16.4 $\pm$ 8.3 \\
                 \midrule
-                \textbf{$e^-\pi^+$} & 2 layers & &  6.5\% & 13.7\% & & 11.1\% & 28.0\% & & 39.1\% & 73.2\% \\
-                                    & 3 layers & &  0.3\% &  0.7\% & &  1.0\% &  2.7\% & & 24.3\% & 47.5\% \\
+                \textbf{$e^-\pi^+$} & 2 layers & &  6.5 $\pm$ 0.2 & 13.7 $\pm$ 0.9 & & 11.1 $\pm$  0.2 & 28.0 $\pm$ 1.3 \\
+                                    & 3 layers & &  0.3 $\pm$ 0.6 &  0.7 $\pm$ 2.7 & &  1.0 $\pm$  0.6 &  2.7 $\pm$ 5.8 \\
                 \midrule
-                \textbf{$e^-\pi^-$} & 2 layers & &  5.6\% & 14.2\% & &  8.9\% & 29.5\% & & 26.7\% & 57.1\% \\
-                                    & 3 layers & &  0.3\% &  0.7\% & &  0.9\% &  2.9\% & & 13.2\% & 29.5\% \\
+                \textbf{$e^-\pi^-$} & 2 layers & &  5.6 $\pm$ 0.0 & 14.2 $\pm$ 1.0 & &  8.9 $\pm$  0.4 & 29.5 $\pm$ 3.4 \\
+                                    & 3 layers & &  0.3 $\pm$ 0.0 &  0.7 $\pm$ 3.0 & &  0.9 $\pm$  1.7 &  2.9 $\pm$ 6.4 \\
                 \bottomrule
             \end{tabularx}
         \end{center}
         \caption[FMT efficiency study results]
-        {Results of the FMT efficiency study performed.}
+        {Results of the FMT efficiency study performed in $\%$.}
         \label{tab::14.14::fmt_efficiency_study}
     \end{table}
+
+    % NOTE. Table with simulation data -- too wide for page.
+    % \begin{table}[b]
+    %     \begin{center}
+    %         \begin{tabularx}{0.92\textwidth}{Xlcllcllcll}
+    %             \toprule
+    %             & & & \multicolumn{2}{c}{\textbf{Run 12933}} & & \multicolumn{2}{c}{\textbf{Run 12016}} & & \multicolumn{2}{c}{\textbf{Simulation}} \\
+    %                                 &          & & raw  & w/ cut   & & raw  & w/ cut   & & raw    & w/ cut \\
+    %             \midrule \midrule
+    %             \textbf{$e^-$}      & 2 layers & & 25.1 $\pm$ 1.5 & 37.5 $\pm$ 0.7 & & 32.7 $\pm$  2.5 & 53.7 $\pm$ 0.8 & & 71.7 $\pm$ 5.7 & 92.1 $\pm$ 1.3 \\
+    %                                 & 3 layers & &  5.6 $\pm$ 8.8 &  8.5 $\pm$ 5.0 & &  9.9 $\pm$ 17.2 & 16.4 $\pm$ 8.3 & & 59.8 $\pm$ 2.9 & 78.7 $\pm$ 7.4 \\
+    %             \midrule
+    %             \textbf{$e^-\pi^+$} & 2 layers & &  6.5 $\pm$ 0.2 & 13.7 $\pm$ 0.9 & & 11.1 $\pm$ 0.2 & 28.0 $\pm$ 1.3 & & 39.1 $\pm$ 1.5 & 73.2 $\pm$ 4.0 \\
+    %                                 & 3 layers & &  0.3 $\pm$ 0.6 &  0.7 $\pm$ 2.7 & &  1.0 $\pm$ 0.6 &  2.7 $\pm$ 5.8 & & 24.3 $\pm$ 6.0 & 47.5 $\pm$ 2.6 \\
+    %             \midrule
+    %             \textbf{$e^-\pi^-$} & 2 layers & &  5.6 $\pm$ 0.0 & 14.2 $\pm$ 1.0 & &  8.9 $\pm$ 0.4 & 29.5 $\pm$ 3.4 & & 26.7 $\pm$ 2.1 & 57.1 $\pm$ 7.4 \\
+    %                                 & 3 layers & &  0.3 $\pm$ 0.0 &  0.7 $\pm$ 3.0 & &  0.9 $\pm$ 1.7 &  2.9 $\pm$ 6.4 & & 13.2 $\pm$ 6.7 & 29.5 $\pm$ 4.3 \\
+    %             \bottomrule
+    %         \end{tabularx}
+    %     \end{center}
+    %     \caption[FMT efficiency study results]
+    %     {Results of the FMT efficiency study performed in $\%$.}
+    %     \label{tab::14.14::fmt_efficiency_study}
+    % \end{table}
 
     % --+ Error estimation +----------------------------------------------------
     To estimate the efficiency of one FMT layer and the associated errors for the two types of tracks, we define $P(L_n)$ as the probability of layer $n$ detecting a particle, with $1 \leq n \leq 3$.
@@ -100,6 +124,10 @@
     Furthermore, by applying the geometry cut based on $v_z$ and $\theta$, an additional $64.2\%$ increase in trigger electrons is achieved, resulting in a total increase of $113.9\%$.
     The pion yield experiences a substantial enhancement, with positive pions increasing by $150.2\%$ and negative pions increasing by $231.5\%$, resulting in a total increase of $330.8\%$ and $426.8\%$, respectively.
 
+    For 2-layer tracks, the estimated error remains within acceptable parameters for all computed values.
+    For 3-layer tracks, however, the estimated error often surpases the computed efficiency value.
+    This is a somewhat expected result due to the low statistics obtained for 3-layer tracks.
+
 % --+ Separated. +--------------------------------------------------------------
     Next, we need to ensure that we are not introducing a systematic error by applying these corrections.
     To achieve this, we must investigate the effect of the geometry cut on different detected variables for electrons ($e^-$), positive pions ($e^-\pi^+$), and negative pions ($e^-\pi^-$).
@@ -172,5 +200,6 @@
     Consequently, the increase in FMT efficiency becomes more pronounced in these valleys, as demonstrated in Figure \ref{fig::14.14::phi_geomcut}.
 
     As can be seen in Table \ref{tab::14.14::fmt_efficiency_study} and Figures \ref{fig::14.14::fmt_efficiencies} and \ref{fig::14.14::phi_study}, the pion efficiency for 3-layer tracks does not exceed $3\%$.
+    In addition to this, the errors for 3-layer tracks often excedes their efficiency.
     Consequently, it is not practical to work exclusively with FMT tracks that traverse all three FMT layers in this study.
     For the remainder of the document, 2 and 3-layer tracks will be considered together, and will be collectively referred to as FMT tracks.

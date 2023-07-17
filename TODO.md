@@ -26,7 +26,6 @@
 ###### Miscellaneous
 * Plan a meeting with Raffaella & the RG-E people for the week of August 14th.
 * *Get a render of a track made with CED?*
-* Extract 1-layer efficiency and use the number to estimate if there's any outside effect that's worsening efficiency.
 * Write more information about the RG-F target. Room temperature H2 or D2 gas, target walls and beam pipe window thicknesses, etc.
 
 ###### Addenda
