@@ -1,0 +1,65 @@
+% !TEX root = ../main.tex
+\subsection*{Addendum 1: Reproducibility}
+\addcontentsline{toc}{subsection}{Reproducibility}
+\label{20.01::reproducibility}
+    In order to ensure the reproducibility of the research presented in this thesis, we provide access to all datasets and code used in the development of our study.
+    We believe that transparency and accessibility are crucial for scientific integrity and to facilitate further investigations by the research community.
+
+    We encourage interested readers and fellow researchers to access and utilise these resources for the purpose of reproducibility and advancing scientific knowledge.
+    Should there be any inquiries or issues regarding the datasets or code, please do not hesitate to contact the author at \href{mailto:bruno.benkel@gmail.com}{\texttt{bruno.benkel@gmail.com}} for further assistance.
+
+    We believe that open access to data and code fosters collaboration, accelerates scientific progress, and ensures the robustness of research findings.
+    By making these resources available, we aim to contribute to the collective effort of reproducible and transparent scientific research.
+
+    % --+ Datasets +------------------------------------------------------------
+    \paragraph{Datasets}
+        Regrettably, there is no website or location to openly share datasets in the \textit{Universidad Técnica Federico Santa María} (UTFSM) or the \textit{Centro Científico Tecnológico de Valparaíso} (CCTVal).
+        For readers with access to the JLab farm, all used datasets are available at
+
+        \begin{center}
+            \texttt{/work/clas12/users/benkel/thesis-datasets}
+        \end{center}
+
+        For individuals who do not have access to the JLab farm, please feel free to contact the author, and we will explore alternative methods to share the relevant datasets.
+
+    % --+ Code +----------------------------------------------------------------
+    \paragraph{Code}
+        The sources for the code used for data processing, analysis, and generating figures are shared on Table \ref{tab::20.01::code_locations}.
+        By providing the code, we aim to enable researchers to replicate our findings, perform additional analyses, or build upon our work.
+
+        \begin{table}[b!]
+            \begin{center}
+                \begin{tabularx}{0.90\textwidth}{ll}
+                    \toprule
+                    \textbf{Software}  & \textbf{Link} \\
+                    \midrule \midrule
+                    RG-E Slow Controls &
+                        \href{https://github.com/bleaktwig/rge-epics-support}
+                        {\texttt{github.com/bleaktwig/rge-epics-support}} \\
+                    \midrule
+                    CLAS12 Alignment   &
+                        \href{https://github.com/JeffersonLab/clas12alignment}
+                        {\texttt{github.com/JeffersonLab/clas12alignment}} \\
+                    \midrule
+                    thesis-simul       &
+                        \href{https://github.com/bleaktwig/thesis-simul}
+                        {\texttt{github.com/bleaktwig/thesis-simul}} \\
+                    thesis-data        &
+                        \href{https://github.com/bleaktwig/thesis-data}
+                        {\texttt{github.com/bleaktwig/thesis-data}} \\
+                    RG-E Analysis      &
+                        \href{https://github.com/bleaktwig/clas12-rge-analysis}
+                        {\texttt{github.com/bleaktwig/clas12-rge-analysis}} \\
+                    GEMC               &
+                        \href{https://github.com/gemc/source}
+                        {\texttt{github.com/gemc/source}} \\
+                    Coatjava           &
+                        \href{https://github.com/JeffersonLab/coatjava}
+                        {\texttt{github.com/JeffersonLab/coatjava}} \\
+                \bottomrule
+            \end{tabularx}
+        \end{center}
+
+        \caption{Table with code locations.}
+        \label{tab::20.01::code_locations}
+    \end{table}
