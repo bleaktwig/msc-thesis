@@ -24,7 +24,7 @@
 * Scale vz bin plots to whole frame, improve legibility in general.
 
 ###### Miscellaneous
-* Plan a meeting with Raffaella & the RG-E people for the week of August 14th.
+* Plan a meeting with Raffaella & the RG-E people for the week of August 21st.
 * *Get a render of a track made with CED?*
 * Write more information about the RG-F target. Room temperature H2 or D2 gas, target walls and beam pipe window thicknesses, etc.
 
@@ -50,9 +50,9 @@
 | 14.32 |         |           |             |        |           |
 | 14.40 |         |           |             |        |           |
 | 20    |         |           |             |        |           |
-| 20.10 | --      | --        | --          | --     | --        |
-| 20.20 | x       | x         | x           | x      | --        |
-| 20.30 |         |           |             |        |           |
+| 20.01 | x       | x         | x           | x      | --        |
+| 20.02 | --      | --        | --          | --     | --        |
+| 20.03 | x       | x         | x           | x      | --        |
 
 ---
 ## ChatGPT Proofreading Prompt

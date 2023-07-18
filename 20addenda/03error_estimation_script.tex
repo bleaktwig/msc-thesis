@@ -2,4 +2,49 @@
 \subsection*{Addendum 3: FMT Layer Efficiency Error Estimation}
 \addcontentsline{toc}{subsection}{FMT Layer Efficiency Error Estimation}
 \label{20.03::fmt_layer_efficiency_error_estimation}
-    % TODO.
+    This addendum presents the Python script described in Section \ref{14.14::efficiency_study}.
+    The script utilises the formulae outlined in that section to estimate the errors in the efficiency of the 2-layer and 3-layer tracks.
+    It should be noted, as mentioned in the section, that the efficiency $E_{1(2)}$ (referred to as \verb|E12| in the code) was obtained through numerical methods.
+
+    \begin{lstlisting}[language=Python]
+    import sys
+    def printf(format, *args):
+        sys.stdout.write(format % args)
+    def f_E13(E3):
+        return E3**(1/3)
+    def f_E1(E12, E13):
+        return (4*E12 + E13)/5
+    def f_dE12(E1, E12):
+        return abs(E1 - E12)
+    def f_dE13(E1, E13):
+        return abs(E1 - E13)
+    def f_dE2(E12, dE12):
+        return (6*E12 - 9*E12**2) * dE12
+    def f_dE3(E13, dE13):
+        return 3*E13**2 * dE13
+
+    # Input.
+    #      Run 12933.                    Run 12016.
+    E2  = [.251,.065,.056,.375,.137,.142,.327,.111,.089,.537,.280,.295]
+    E3  = [.056,.003,.003,.085,.007,.007,.099,.010,.009,.164,.027,.029]
+    E12 = [.306,.157,.144,.402,.239,.244,.339,.206,.180,.497,.364,.377]
+
+    # Run functions.
+    E13  = list(map(f_E13,  E3))
+    E1   = list(map(f_E1,   E12, E13))
+    dE12 = list(map(f_dE12, E1,  E12))
+    dE13 = list(map(f_dE13, E1,  E13))
+    dE2  = list(map(f_dE2,  E12, dE12))
+    dE3  = list(map(f_dE3,  E13, dE13))
+
+    # Print.
+    print("dE2:")
+    for i in dE2:
+        printf("%5.1f,", 100*i)
+
+    print("dE3:")
+    for i in dE3:
+        printf("%5.1f,", 100*i)
+    \end{lstlisting}
+
+    \pagebreak
