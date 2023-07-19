@@ -1,24 +1,24 @@
 ## TODO
 ###### Milestones
-* **07/17 - 07/19.** Define a 5 cm vz region to place the RG-E target based on maximizing phase-space and highest statistics.
-* **07/20 - 07/27.** Simulate the RG-E target in the chosen region. Reconstruct and study behavior of DIS variables.
-* **07/28 - 08/10.** *Weeks off due to marriage license.*
-* **08/14.** Meet with Raffaella + RG-E group, show results so far.
-* **08/14 - 08/21.** Apply feedback from Raffaella and group, work on thesis.
-* **08/21.** Freeze thesis. Allow thesis committee time to correct mistakes and provide feedback.
-* **08/21 - 09/11.** Apply feedback from committee and work on thesis defense presentation.
+* **07/19 - 07/21.** Simulate the RG-E target in the chosen region. Reconstruct and study behavior of DIS variables.
+* **07/24 - 07/27.** Finish up thesis text.
+* **07/27.** Freeze thesis. Allow commitee time to correct mistakes and provide feedback.
+* **07/28 - 08/06.** *Days off due to marriage license.*
+* **08/07 - 08/20.** Work on thesis defense presentation.
+* **08/21 - 08/27.** Meet w/ Raffaella + RG-E group, show results and thesis defense so far. Apply feedback based on meeting.
+* **08/28 - 09/13.** Work on thesis defense presentation and regularily present to commitee for feedback.
 * **09/14.** Defend thesis.
 
 ###### Text
-* Run a GEMC simulation to see how well the target behaves at the chosen location (-5 to 2 cm) in simulation -> Check with Esteban.
+* Run a GEMC simulation to see how well the target behaves at the chosen location (-5 to 2 cm) in simulation.
 * Finish up Section 14.32 with simulation stuff.
 * Write Section 14.40.
     * Mention in Section that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
+    * Check Raffaella's email about this systematic error and figure out approximated systematic error for my variables.
 * After writing a section, proofread using ChatGPT.
 * Run a spell check on overleaf.
 
 ###### Defense
-* Wait for Hayk to answer about milestones.
 * Check with Raffaella for restrictions regarding defense date & time.
 * Reply to Angelica's email with a defense date.
 * Scale vz bin plots to whole frame, improve legibility in general.
@@ -29,11 +29,7 @@
 * Write more information about the RG-F target. Room temperature H2 or D2 gas, target walls and beam pipe window thicknesses, etc.
 
 ###### Addenda
-* Plot DIS variables without acceptance correction and without Yb cut.
-    * Perhaps these plots could be added to my thesis' addenda.
 * Plot phi distribution in theta and p bins for each sector separately, and talk about potential application of fiducial cuts based on these plots.
-    * Mention this in an addendum.
-* Plot DIS variables in theta bins.
 
 |       | Written | Proofread | Spell check | Labels | Figsource |
 | ------|---------|-----------|-------------|--------|-----------|
@@ -53,6 +49,7 @@
 | 20.01 | x       | x         | x           | x      | --        |
 | 20.02 | --      | --        | --          | --     | --        |
 | 20.03 | x       | x         | x           | x      | --        |
+| 20.04 | x       | x         | x           | x      | x         |
 
 ---
 ## ChatGPT Proofreading Prompt
