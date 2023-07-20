@@ -46,7 +46,7 @@
 | 20.02 | --      | --        | --          | --     | --        |
 | 20.03 | x       | x         | x           | x      | --        |
 | 20.04 | x       | x         | x           | x      | x         |
-| 20.05 | x       |           |             | x      |           |
+| 20.05 | x       | x         | x           | x      | x         |
 
 ---
 ## ChatGPT Proofreading Prompt
