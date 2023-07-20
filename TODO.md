@@ -15,11 +15,10 @@
 * Write Section 14.40.
     * Mention in Section that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
     * Check Raffaella's email about this systematic error and figure out approximated systematic error for my variables.
-* After writing a section, proofread using ChatGPT.
-* Run a spell check on overleaf.
+* Include references to the Addenda where relevant.
 
 ###### Defense
-* Check with Raffaella for restrictions regarding defense date & time.
+* Check with Raffaella for restrictions regarding defense date & time (email sent).
 * Reply to Angelica's email with a defense date.
 * Scale vz bin plots to whole frame, improve legibility in general.
 
@@ -28,11 +27,8 @@
 * *Get a render of a track made with CED?*
 * Write more information about the RG-F target. Room temperature H2 or D2 gas, target walls and beam pipe window thicknesses, etc.
 
-###### Addenda
-* Plot phi distribution in theta and p bins for each sector separately, and talk about potential application of fiducial cuts based on these plots.
-
 |       | Written | Proofread | Spell check | Labels | Figsource |
-| ------|---------|-----------|-------------|--------|-----------|
+|-------|---------|-----------|-------------|--------|-----------|
 | 00    | x       | x         | x           | x      | x         |
 | 10    | x       | x         | x           | x      | x         |
 | 11    | x       | x         | x           | x      | x         |
@@ -50,6 +46,7 @@
 | 20.02 | --      | --        | --          | --     | --        |
 | 20.03 | x       | x         | x           | x      | --        |
 | 20.04 | x       | x         | x           | x      | x         |
+| 20.05 | x       |           |             | x      |           |
 
 ---
 ## ChatGPT Proofreading Prompt
