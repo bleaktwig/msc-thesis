@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 \subsection{Fiducial Cuts}
-\label{20.05::fiducial_cuts}
+\label{20.02::fiducial_cuts}
     % What are fiducial cuts?
     In detector physics, the fiducial region is defined as the region considered reliable and suitable for analysis.
     Fiducial cuts are constraints applied to experimental data in order to define this region.
@@ -19,27 +19,37 @@
     Finally, different curves would be needed for each PID being processed.
 
     % Show plots.
-    Examples of $\phi$ vs $\theta$ distributions for different $p$ bins can be seen in Figures \ref{fig::20.05::fiducial_cuts_pid11} and \ref{fig::20.05::fiducial_cuts_pid211}, where we show the distributions for $e^-$ and $\pi^+$.
-    As can be seen in the plots, the separation between the detector sensitive area and its edges is easily observed.
+    Examples of $\phi$ vs $\theta$ distributions for different $p$ bins can be seen in Figures \ref{fig::20.02::fiducial_cuts_pid11}, \ref{fig::20.02::fiducial_cuts_pid211}, and \ref{fig::20.02::fiducial_cuts_pid-211}, where we show the distributions for $e^-$, $\pi^+$, and $\pi^-$.
+    As can be seen in the plots, the separation between the DC's areas and its edges are easily observed in a layer-by-layer basis.
 
     % e-.
-    \begin{figure}
+    \begin{figure}[b!]
         \centering
-        \includegraphics[width=\textwidth]{05fidcuts_11.png}
+        \includegraphics[width=\textwidth]{02fidcuts_11.png}
         \caption[$\phi$ vs $\theta$ of $e^-$ in $p$ bins]
         {$\phi$ vs $\theta$ of $e^-$ detected by DC, separated in $p$ bins.
         Run 12016.}
         \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
-        \label{fig::20.05::fiducial_cuts_pid11}
+        \label{fig::20.02::fiducial_cuts_pid11}
     \end{figure}
 
-    % pi+.
     \begin{figure}
-        \centering
-        \includegraphics[width=\textwidth]{05fidcuts_211.png}
-        \caption[$\phi$ vs $\theta$ of $\pi^+$ in $p$ bins]
-        {$\phi$ vs $\theta$ of $\pi^+$ detected by DC, separated in $p$ bins.
+        % pi+.
+        \begin{subfigure}[b]{\textwidth}
+            \includegraphics[width=\textwidth]{02fidcuts_211.png}
+            \caption{$\phi$ vs $\theta$ of $\pi^+$.}
+            \label{fig::20.02::fiducial_cuts_pid211}
+        \end{subfigure}
+        % pi-.
+        \begin{subfigure}[b]{\textwidth}
+            \includegraphics[width=\textwidth]{02fidcuts_-211.png}
+            \caption{$\phi$ vs $\theta$ of $\pi^-$.}
+            \label{fig::20.02::fiducial_cuts_pid-211}
+        \end{subfigure}
+
+        \caption[$\phi$ vs $\theta$ of $\pi^+$ and $\pi^-$, separated in $p$ bins.]
+        {$\phi$ vs $\theta$ of $\pi^+$ and $\pi^-$ detected by DC, separated in $p$ bins.
         Run 12016.}
         \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
-        \label{fig::20.05::fiducial_cuts_pid211}
+        \label{fig::20.02::fiducial_cuts_pions}
     \end{figure}
