@@ -16,10 +16,11 @@
     * Mention in Section that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
     * Check Raffaella's email about this systematic error and figure out approximated systematic error for my variables.
 * Include references to the Addenda where relevant.
+* Add more information on the RG-F target.
+* Meat-up those addenda.
 
 ###### Defense
-* Check with Raffaella for restrictions regarding defense date & time (email sent).
-* Reply to Angelica's email with a defense date.
+* Wait for Angelica's response regarding the defense date.
 * Scale vz bin plots to whole frame, improve legibility in general.
 
 ###### Miscellaneous
