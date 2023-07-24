@@ -11,7 +11,7 @@
 
 ###### Text
 * Run a GEMC simulation to see how well the target behaves at the chosen location (-5 to 2 cm) in simulation.
-* Finish up Section 14.32 with simulation stuff.
+* Finish up Section 14.33 with simulation stuff.
 * Write Section 14.40.
     * Mention in Section that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
     * Check Raffaella's email about this systematic error and figure out approximated systematic error for my variables.
