@@ -20,7 +20,7 @@
 * Meat-up those addenda.
 
 ###### Defense
-* Wait for Angelica's response regarding the defense date.
+* Defense is scheduled for September 14th at 10 hrs.
 * Scale vz bin plots to whole frame, improve legibility in general.
 
 ###### Miscellaneous
@@ -40,7 +40,8 @@
 | 14.20 | x       | x         | x           | x      | x         |
 | 14.30 | x       | x         | x           | x      | x         |
 | 14.31 | x       | x         | x           | x      | x         |
-| 14.32 |         |           |             |        |           |
+| 14.32 | x       |           |             | x      | x         |
+| 14.33 |         |           |             |        |           |
 | 14.40 |         |           |             |        |           |
 | 20    |         |           |             |        |           |
 | 20.01 | x       | x         | x           | x      | --        |
