@@ -15,9 +15,7 @@
 * Write Section 14.40.
     * Mention in Section that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
     * Check Raffaella's email about this systematic error and figure out approximated systematic error for my variables.
-* Include references to the Addenda where relevant.
-* Add more information on the RG-F target.
-* Meat-up those addenda.
+* *Add more information on the RG-F target?*
 
 ###### Defense
 * Defense is scheduled for September 14th at 10 hrs.
