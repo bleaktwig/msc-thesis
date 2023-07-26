@@ -19,7 +19,10 @@
             We hope that the radiative cut described in Section \ref{13.23::dis_cuts} ($Y_b < 0.85$) addresses most of this uncertainty.
 
         \item
-            TODO. Bin migration.
+            Bin migration can arise due to experimental resolutions and uncertainties in the measurement process.
+            To estimate the systematic error that comes from this effect, we would need to create a migration matrix that describes the probabilities of events moving from their true bin to the reconstructed bin.
+            For this, we could use the same simulation used for acceptance correction in Section \ref{14.20::acceptance_correction_results}.
+            Based on this migration matrix, we would be able to apply an event reweighting, from which then we would be able to provide a systematic error assessment.
 
         \item
             Systematic uncertainties can arise in the Monte Carlo simulation described in Section \ref{13.40::acceptance_correction}.
@@ -27,10 +30,9 @@
             Then, we would need to study how well GEMC accounts for the CLAS12 response to these cross sections, based on publications such as \cite{ungaro2020gemc}.
 
         \item
-            TODO. e- momentum correction through sampling fraction.
             There is an uncertainty associated to the process of momentum correction, such as the one done for $e^-$ via sampling fraction, described in Section \ref{13.30::sampling_fraction}.
             Based on the methodology and formulae described in that same section, we could derive a function to estimate the momentum-dependent systematic error inherent to the method.
     \end{itemize}
 
     After studying all these effects in detail, we would need to sum them in quadrature.
-    We hope to be able to do this study for future analyses that come from this document.
+    We hope to be able to perform this study in future analyses that come from this document.
