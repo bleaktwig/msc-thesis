@@ -24,7 +24,6 @@
 ###### Miscellaneous
 * Plan a meeting with Raffaella & the RG-E people for the week of August 21st.
 * *Get a render of a track made with CED?*
-* Write more information about the RG-F target. Room temperature H2 or D2 gas, target walls and beam pipe window thicknesses, etc.
 
 |       | Written | Proofread | Spell check | Labels | Figsource |
 |-------|---------|-----------|-------------|--------|-----------|

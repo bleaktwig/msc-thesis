@@ -3,12 +3,6 @@
     \label{14.40::conclusions}
     This thesis consisted of three subjects: the alignment of the FMT detector, the development of a standard analysis software for RG-E, and the selection of a location for the RG-E target.
 
-% --+ Sampling Fraction & Acceptance Correction Procedures +--------------------
-    % TODO.
-
-% --+ Efficiency Studies +------------------------------------------------------
-    % TODO.
-
 % --+ FMT Alignment +-----------------------------------------------------------
     About FMT alignment, we developed the standard FMT alignment software which works by minimising the track residuals.
     We also developed certain modifications to the FMT reconstruction software to integrate the alignment.
@@ -32,8 +26,49 @@
     A validation of the region was then made by running a simulation of the RG-E target placed in it.
     This analysis is detailed in Section \ref{14.30::study_results}.
 
-% --+ Unestimated Systematic Errors +-------------------------------------------
-    % TODO. Mention issue of large systematic errors (~10%) not considered in the work.
+% --+ Sampling Fraction & Acceptance Correction Procedures +--------------------
+    In order to improve the quality of the results, procedures for sampling fraction estimation and detector acceptance correction were proposed and applied.
+    Both were done successfuly, and the statistical error from the acceptance correction process was summarily propagated to the results.
+    The application of the former is detailed in Section \ref{13.30::sampling_fraction}, and of the latter in Sections \ref{13.40::acceptance_correction} and \ref{14.20::acceptance_correction_results}.
 
-% --+ Future Plans +------------------------------------------------------------
-    % TODO. Publish something to help other run groups in the future.
+% --+ Efficiency Studies +------------------------------------------------------
+    In addition to the described analyses, a detector efficiency study was done to FMT.
+    The three main factors in this efficiency were found and studied: one is related to the detector alignment, one to its geometry, and one to its offline reconstruction.
+    A geometry cut was derived from the second, helping the accuracy of the entire study presented in this document.
+    The process and results is described in Section \ref{14.10::fmt_efficiency}.
+
+% --+ Unestimated Systematic Errors +-------------------------------------------
+    % TODO. This grew too much. Should be moved to its own subsection.
+    As the attentive reader will notice, no systematic errors were applied to the results of this document.
+    This is only due to the broadness of the analysis, and a more detailed one would of course need to include them.
+    Based on the list provided in \cite{osipenko2010}, the source of systematic uncertainties we estimate would be relevant to this study are the following:
+    \begin{itemize}
+        \item
+            Previous CLAS DIS measurements \cite{osipenko2006} on deuterium targets showed that the combined efficiency-acceptance systematic uncertainty of CLAS data averages to $4.5\%$.
+            We must be careful when extrapolating the results of this study to CLAS12 data, but the error dependence on $\nu/E_b$ allows us to estimate that the higher beam energy of CLAS12 would reduce this uncertainty.
+
+        \item
+            As was mentioned in Section \ref{11.230::offline_reconstruction}, particle misidentification can be a significant source of systematic error.
+            Based on the results presented in Table \ref{tab::11.232::reconstruction_pid}, we assume that the $e^-$ misidentification uncertainty would be minor, while that for $\pi^\pm$ would need to be studied with closer scrutiny.
+            For the estimation of this systematic error, we would need to study the particle identification scheme as described in Section \ref{11.230::offline_reconstruction}, and understand the accuracy of each detector involved.
+
+        \item
+            No radiative corrections were applied in this document, so we can assume that a significant systematic error related to radiative effects is left unestimated in the analysis.
+            We hope that the radiative cut described in Section \ref{13.23::dis_cuts} ($Y_b < 0.85$) addresses most of this uncertainty.
+
+        \item
+            TODO. Bin migration.
+
+        \item
+            Systematic uncertainties can arise in the Monte Carlo simulation described in Section \ref{13.40::acceptance_correction}.
+            To account for these, we would need to study the precision of LEPTO in predicting the cross sections relevant to DIS.
+            Then, we would need to study how well GEMC accounts for the CLAS12 response to these cross sections, based on publications such as \cite{ungaro2020gemc}.
+
+        \item
+            TODO. e- momentum correction through sampling fraction.
+            There is an uncertainty associated to the process of momentum correction, such as the one done for $e^-$ via sampling fraction, described in Section \ref{13.30::sampling_fraction}.
+            Based on the methodology and formulae described in that same section, we could derive a function to estimate the momentum-dependent systematic error inherent to the method.
+    \end{itemize}
+
+    After studying all these effects in detail, we would need to sum them in quadrature.
+    We hope to be able to do this study for future analyses that come from this document.
