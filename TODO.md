@@ -1,6 +1,5 @@
 ## TODO
 ###### Milestones
-* **07/19 - 07/21.** Simulate the RG-E target in the chosen region. Reconstruct and study behavior of DIS variables.
 * **07/24 - 07/27.** Finish up thesis text.
 * **07/27.** Freeze thesis. Allow commitee time to correct mistakes and provide feedback.
 * **07/28 - 08/06.** *Days off due to marriage license.*
@@ -10,20 +9,12 @@
 * **09/14.** Defend thesis.
 
 ###### Text
-* Run a GEMC simulation to see how well the target behaves at the chosen location (-5 to 2 cm) in simulation.
 * Finish up Section 14.33 with simulation stuff.
-* Write Section 14.40.
-    * Mention in Section that simulation cannot compensate for all efficiencies, and there's an unestimated systematic error of about 10%.
-    * Check Raffaella's email about this systematic error and figure out approximated systematic error for my variables.
-* *Add more information on the RG-F target?*
 
 ###### Defense
 * Defense is scheduled for September 14th at 10 hrs.
-* Scale vz bin plots to whole frame, improve legibility in general.
-
-###### Miscellaneous
 * Plan a meeting with Raffaella & the RG-E people for the week of August 21st.
-* *Get a render of a track made with CED?*
+* Scale vz bin plots to whole frame, improve legibility in general.
 
 |       | Written | Proofread | Spell check | Labels | Figsource |
 |-------|---------|-----------|-------------|--------|-----------|
