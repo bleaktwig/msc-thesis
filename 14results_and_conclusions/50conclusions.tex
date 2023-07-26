@@ -1,38 +1,38 @@
 % !TEX root = ../main.tex
 \subsection{Conclusions}
-    \label{14.50::conclusions}
+\label{14.50::conclusions}
     This thesis consisted of three subjects: the alignment of the FMT detector, the development of a standard analysis software for RG-E, and the selection of a location for the RG-E target.
 
 % --+ FMT Alignment +-----------------------------------------------------------
-    About FMT alignment, we developed the standard FMT alignment software which works by minimising the track residuals.
-    We also developed certain modifications to the FMT reconstruction software to integrate the alignment.
-    This work resulted in an $e^-$ $z$ resolution of $\sigma_\text{FMT} = 0.387$ cm for low luminosity ($50$ nA) runs, and one of $\sigma_\text{FMT} = 0.596$ cm for high luminosity ($250$ nA) runs.
-    A detail rundown of the subject can be read in Section \ref{12::fmt_alignment_and_reconstruction}.
+    Regarding the FMT alignment, we developed the standard FMT alignment software, which works by minimising the track residuals.
+    Certain modifications to the FMT reconstruction software were also developed to integrate the alignment.
+    This work resulted in an $e^-$ $z$ resolution of $\sigma_\text{FMT} = 0.387$ cm for low luminosity ($50$ nA) runs and $\sigma_\text{FMT} = 0.596$ cm for high luminosity ($250$ nA) runs.
+    A detailed rundown of the subject can be read in Section \ref{12::fmt_alignment_and_reconstruction}.
 
 % --+ Analysis Software +-------------------------------------------------------
     Regarding the standard analysis software, the entire toolset was developed as part of the work related to this thesis.
     The software works as expected.
-    As evidence of this, all the analysis done in Sections \ref{13.30::sampling_fraction}, \ref{13.40::acceptance_correction}, and \ref{14::results_and_conclusions} was made using this same software.
-    Most of the Figures presented on this thesis were obtained using this software, as is shown on their sources.
+    As evidence of this, all the analyses done in Sections \ref{13.30::sampling_fraction}, \ref{13.40::acceptance_correction}, and \ref{14::results_and_conclusions} were made using this same code.
+    Most of the figures presented in this thesis were obtained using this software, as shown in their sources.
     Additionally, other preparatory analyses for the RG-E experiment have used the software to obtain their results.
     The software itself is explained in Section \ref{13.10::clas12_rge_analysis}.
 
 % --+ Target Location +---------------------------------------------------------
-    Using the software just described, we selected the best location for the RG-E target based on phase space and statistics studies.
+    Using the code just described, we selected the best location for the RG-E target based on phase space and statistics studies.
     For the phase space study, the range of two electron variables -- $Q^2$ and $\nu$ -- and three hadronic variables -- $z_h$, $p_T^2$, and $\phi_{PQ}$ -- was studied for ten 5 cm bins in $v_z$.
-    A range from $-5$ to $10$ cm was obtained from this study, based on maximising the phase spaces.
-    Then, for the statistic study, a 7 cm region was picked in this range based on maximising the number of events.
+    A range from $-5$ to $10$ cm was obtained from this study, based on maximizing the phase spaces.
+    Then, for the statistic study, a 7 cm region was chosen in this range based on maximizing the number of events.
     The region chosen was from $-5$ to $2$ cm.
-    A validation of the region was then made by running a simulation of the RG-E target placed in it.
+    A validation of the region was then performed by running a simulation of the RG-E target placed in it.
     This analysis is detailed in Section \ref{14.30::study_results}.
 
 % --+ Sampling Fraction & Acceptance Correction Procedures +--------------------
     In order to improve the quality of the results, procedures for sampling fraction estimation and detector acceptance correction were proposed and applied.
-    Both were done successfuly, and the statistical error from the acceptance correction process was summarily propagated to the results.
-    The application of the former is detailed in Section \ref{13.30::sampling_fraction}, and of the latter in Sections \ref{13.40::acceptance_correction} and \ref{14.20::acceptance_correction_results}.
+    Both were done successfully, and the statistical error from the acceptance correction process was summarily propagated to the results.
+    The application of the former is detailed in Section \ref{13.30::sampling_fraction}, and that of the latter in Sections \ref{13.40::acceptance_correction} and \ref{14.20::acceptance_correction_results}.
 
 % --+ Efficiency Studies +------------------------------------------------------
-    In addition to the described analyses, a detector efficiency study was done to FMT.
+    In addition to the described analyses, a detector efficiency study was conducted on the FMT.
     The three main factors in this efficiency were found and studied: one is related to the detector alignment, one to its geometry, and one to its offline reconstruction.
-    A geometry cut was derived from the second, helping the accuracy of the entire study presented in this document.
-    The process and results is described in Section \ref{14.10::fmt_efficiency}.
+    A geometry cut was derived from the second, contributing to the accuracy of the entire study presented in this document.
+    The process and results are described in Section \ref{14.10::fmt_efficiency}.

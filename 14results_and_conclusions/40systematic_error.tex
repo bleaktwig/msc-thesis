@@ -1,18 +1,19 @@
 % !TEX root = ../main.tex
 \subsection{Systematic Error Estimation}
-    \label{14.40::systematic_error_estimation}
+\label{14.40::systematic_error_estimation}
     As the attentive reader will notice, no systematic errors were applied to the results of the previous section.
-    This is only due to the broadness of the analysis, and a more detailed one would of course need to include them.
-    Based on the list provided in \cite{osipenko2010}, the source of systematic uncertainties we estimate would be relevant to this study are the following:
+    This is only due to the broadness of the analysis, and a more detailed one would, of course, need to include them.
+    Based on the list provided in \cite{osipenko2010}, the sources of systematic uncertainties that we estimate to be relevant to this study are the following:
+
     \begin{itemize}
         \item
             Previous CLAS DIS measurements \cite{osipenko2006} on deuterium targets showed that the combined efficiency-acceptance systematic uncertainty of CLAS data averages to $4.5\%$.
-            We must be careful when extrapolating the results of this study to CLAS12 data, but the error dependence on $\nu/E_b$ allows us to estimate that the higher beam energy of CLAS12 would reduce this uncertainty.
+            We must be cautious when extrapolating the results of this study to CLAS12 data, but the error dependence on $\nu/E_b$ allows us to estimate that the higher beam energy of CLAS12 would likely reduce this uncertainty.
 
         \item
-            As was mentioned in Section \ref{11.230::offline_reconstruction}, particle misidentification can be a significant source of systematic error.
+            As mentioned in Section \ref{11.230::offline_reconstruction}, particle misidentification can be a significant source of systematic error.
             Based on the results presented in Table \ref{tab::11.232::reconstruction_pid}, we assume that the $e^-$ misidentification uncertainty would be minor, while that for $\pi^\pm$ would need to be studied with closer scrutiny.
-            For the estimation of this systematic error, we would need to study the particle identification scheme as described in Section \ref{11.230::offline_reconstruction}, and understand the accuracy of each detector involved.
+            To estimate this systematic error, we would need to study the particle identification scheme as described in Section \ref{11.230::offline_reconstruction} and understand the accuracy of each detector involved.
 
         \item
             No radiative corrections were applied in this document, so we can assume that a significant systematic error related to radiative effects is left unestimated in the analysis.
@@ -22,7 +23,7 @@
             Bin migration can arise due to experimental resolutions and uncertainties in the measurement process.
             To estimate the systematic error that comes from this effect, we would need to create a migration matrix that describes the probabilities of events moving from their true bin to the reconstructed bin.
             For this, we could use the same simulation used for acceptance correction in Section \ref{14.20::acceptance_correction_results}.
-            Based on this migration matrix, we would be able to apply an event reweighting, from which then we would be able to provide a systematic error assessment.
+            Based on this migration matrix, we would be able to apply an event reweighting, from which we could then provide a systematic error assessment.
 
         \item
             Systematic uncertainties can arise in the Monte Carlo simulation described in Section \ref{13.40::acceptance_correction}.
@@ -30,8 +31,8 @@
             Then, we would need to study how well GEMC accounts for the CLAS12 response to these cross sections, based on publications such as \cite{ungaro2020gemc}.
 
         \item
-            There is an uncertainty associated to the process of momentum correction, such as the one done for $e^-$ via sampling fraction, described in Section \ref{13.30::sampling_fraction}.
-            Based on the methodology and formulae described in that same section, we could derive a function to estimate the momentum-dependent systematic error inherent to the method.
+            There is an uncertainty associated with the process of momentum correction, such as the one done for $e^-$ via sampling fraction, described in Section \ref{13.30::sampling_fraction}.
+            Based on the methodology and formulae described in that same section, we could derive a function to estimate the momentum-dependent systematic error inherent in the method.
     \end{itemize}
 
     After studying all these effects in detail, we would need to sum them in quadrature.
