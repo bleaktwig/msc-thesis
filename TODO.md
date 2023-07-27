@@ -1,14 +1,15 @@
 ## TODO
 ###### Milestones
-* **07/24 - 07/27.** Finish up thesis text.
-* **07/27.** Freeze thesis. Allow commitee time to correct mistakes and provide feedback.
 * **07/28 - 08/06.** *Days off due to marriage license.*
-* **08/07 - 08/20.** Work on thesis defense presentation.
+* **08/07 - 08/12.** Figure out simulation shit and fix. Finish up thesis text with simulation plots.
+* **08/12.** Freeze thesis. Allow committee time to correct mistakes and provide feedback.
+* **08/13 - 08/20.** Work on thesis defense presentation.
 * **08/21 - 08/27.** Meet w/ Raffaella + RG-E group, show results and thesis defense so far. Apply feedback based on meeting.
-* **08/28 - 09/13.** Work on thesis defense presentation and regularily present to commitee for feedback.
+* **08/28 - 09/13.** Work on thesis defense presentation and regularly present to committee for feedback.
 * **09/14.** Defend thesis.
 
 ###### Text
+* Understand what the fuck is wrong with the simulation code and fix.
 * Finish up Section 14.33 with simulation stuff.
 
 ###### Defense
