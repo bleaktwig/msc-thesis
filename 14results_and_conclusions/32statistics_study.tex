@@ -12,3 +12,36 @@
     It is trivial to note that, in the studied range, the more upstream we look, the more statistics are seen.
     Therefore, the best region for the placement of the target is from $-5$ to $2$ cm.
     This result is only reinforced by the results observed in $e^-\pi^+$ and $e^-\pi^-$ statistics, which can be seen in Figures \ref{fig::14.32::statistics_211} and \ref{fig::14.32::statistics_-211}.
+
+    % statistics.
+    \begin{figure}
+        \centering
+        % e-.
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{32statistics_11.png}
+            \caption{$e^-$ statistics.}
+            \label{fig::14.32::statistics_11}
+        \end{subfigure}
+        \centering
+        % e-pi+.
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{32statistics_211.png}
+            \caption{$e^-\pi^+$ statistics.}
+            \label{fig::14.32::statistics_211}
+        \end{subfigure}
+        \hfill
+        % e-pi-.
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{32statistics_-211.png}
+            \caption{$e^-\pi^-$ statistics.}
+            \label{fig::14.32::statistics_-211}
+        \end{subfigure}
+        \caption[Statistics for $e^-$, $e^-\pi^+$, and $e^-\pi^-$ against $v_z$]
+        {$e^-$, $e^-\pi^+$, and $e^-\pi^-$ statistics against $v_z$ for run 12016.
+        No acceptance correction was applied to these results.}
+        \floatfoot{Source: Own elaboration, using the \href{https://github.com/bleaktwig/clas12-rge-analysis}{clas12-rge-analysis} software.}
+        \label{fig::14.32::statistics}
+    \end{figure}
