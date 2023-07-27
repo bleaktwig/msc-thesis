@@ -1,4 +1,20 @@
 % !TEX root = ../main.tex
 \subsubsection{RG-E Target Simulation}
 \label{14.33::rge_target_simulation}
-    % TODO. Result validation through simulation.
+% --+ Setup +-------------------------------------------------------------------
+    As a way to verify the validity of the results, we determined to run a simulation with the RG-E target placed in the selected location.
+    The methology for this simulation is the same as the one used with the RG-F target explained in Section \ref{13.40::acceptance_correction}.
+
+    10 million events were generated in deep inelastic kinematics using LEPTO \cite{ingelman1997}.
+    Half of these were done with a D2 target, and the other half with the C target.
+    The $v_z$ of the D2 kinematics were randomised considering the 3 cm long liquid target, placed from $-5$ to $-2$ cm.
+    The $v_z$ of the C kinematics were placed at 2 cm considering a negligible target width.
+    These positions are based on the results obtained in Sections \ref{14.31::phase_space_study} and \ref{14.32::statistics_study}.
+
+    Subsequently, the events were simulated in the same experimental conditions as those for the RG-F experiment in CLAS12 using \texttt{gemc} \cite{ungaro2020gemc}.
+    Again, the simulation was set with a torus field polarity of $-1$ and a solenoid field polarity of $-0.745033$.
+    The events were then reconstructing using \texttt{coatjava} \cite{ziegler2020}.
+
+% --+ TODO. Results +-----------------------------------------------------------
+
+% --+ TODO. Plots +-------------------------------------------------------------
