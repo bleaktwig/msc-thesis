@@ -1,6 +1,5 @@
 ## TODO
 ###### Milestones
-* **07/28 - 08/06.** *Days off due to marriage license.*
 * **08/07 - 08/12.** Figure out simulation shit and fix. Finish up thesis text with simulation plots.
 * **08/12.** Freeze thesis. Allow committee time to correct mistakes and provide feedback.
 * **08/13 - 08/20.** Work on thesis defense presentation.
