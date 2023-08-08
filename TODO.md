@@ -14,7 +14,7 @@
 ###### Defense
 * Defense is scheduled for September 14th at 10 hrs.
 * Plan a meeting with Raffaella & the RG-E people for the week of August 21st.
-* Scale vz bin plots to whole frame, improve legibility in general.
+* Scale vz bin plots to whole frame.
 
 |       | Written | Proofread | Spell check | Labels | Figsource |
 |-------|---------|-----------|-------------|--------|-----------|
@@ -36,7 +36,7 @@
 ## ChatGPT Proofreading Prompt
 I need you to proofread my thesis. Here are some guidelines:
 * The thesis should be written in British English.
-* Focus on proofreading the syntax, ortography, and grammar in general.
+* Focus on proofreading the syntax, orthography, and grammar in general.
 * The document is a M.Sc. thesis in physics, so please tell me if I make some inconsistencies.
 * Please, *never* mix expectations or suppositions with observations. That would invalidate the document in its entirety.
 * I personally like short sentences, so feel free to separate longer ones as long as it doesn't damage the message.
