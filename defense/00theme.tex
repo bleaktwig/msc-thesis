@@ -1,0 +1,109 @@
+% !TEX root = main.tex
+\setbeamertemplate{navigation symbols}{}
+
+% Custom commands.
+\newcommand{\lsim}{\lesssim}
+\newcommand{\gsim}{\gtrsim}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+
+% Tight fboxes.
+\setlength{\fboxsep}{0pt}
+
+% Fancy empheq box.
+\newlength\mytemplen
+\newsavebox\mytempbox
+
+\makeatletter
+\newcommand\eqbox{
+    \@ifnextchar[
+        {\@eqbox}
+        {\@eqbox[0pt]}
+}
+
+\def\@eqbox[#1]{
+    \@ifnextchar[
+        {\@@eqbox[#1]}
+        {\@@eqbox[#1][0pt]}
+}
+
+\def\@@eqbox[#1][#2]#3{
+    \sbox\mytempbox{#3}
+    \mytemplen\ht\mytempbox
+    \advance\mytemplen #1\relax
+    \ht\mytempbox\mytemplen
+    \mytemplen\dp\mytempbox
+    \advance\mytemplen #2\relax
+    \dp\mytempbox\mytemplen
+    \colorbox{color_box}{\hspace{1em}\usebox{\mytempbox}\hspace{1em}}
+}
+
+\makeatother
+
+% Title page.
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \vspace*{90pt}
+    {\centering
+        \usebeamerfont{title}\usebeamercolor[color_ef]{title}\textbf{\inserttitle}\par
+        \usebeamerfont{author}\usebeamercolor[color_fg]{author}\insertauthor\par
+    }
+    \vskip72pt%
+    {\centering
+        \usebeamerfont{date}\insertdate\par
+    }
+    \vfill
+}
+
+% Add a number to each frame (but not the total number of frames!)
+\addtobeamertemplate{navigation symbols}{}{
+    \usebeamerfont{footline}
+    \usebeamercolor[fg]{footline}
+    \hspace{1em}
+    \insertframenumber
+}
+
+% === EVERFOREST DARK HARD =====================================================
+\definecolor{efd_bg}    {HTML}{272e33}
+\definecolor{efd_fg}    {HTML}{d3c6aa}
+\definecolor{efd_red}   {HTML}{e67e80}
+\definecolor{efd_orange}{HTML}{e69875}
+\definecolor{efd_yellow}{HTML}{dbbc7f}
+\definecolor{efd_green} {HTML}{a7c080}
+\definecolor{efd_dgreen}{HTML}{425047}
+\definecolor{efd_aqua}  {HTML}{83c092}
+\definecolor{efd_blue}  {HTML}{7fbbb3}
+\definecolor{efd_purple}{HTML}{d699b6}
+
+% === EMPHASIS COMMANDS ========================================================
+\newcommand{\ef}[1]{\textbf{\textcolor{color_ef}{#1}}}
+\newcommand{\eft}[1]{\texttt{\ef{#1}}}
+
+\newcommand{\ered}   [1]{\textbf{\textcolor{efd_red}   {#1}}}
+\newcommand{\eorange}[1]{\textbf{\textcolor{efd_orange}{#1}}}
+\newcommand{\eyellow}[1]{\textbf{\textcolor{efd_yellow}{#1}}}
+\newcommand{\egreen} [1]{\textbf{\textcolor{efd_green} {#1}}}
+\newcommand{\eaqua}  [1]{\textbf{\textcolor{efd_aqua}  {#1}}}
+\newcommand{\eblue}  [1]{\textbf{\textcolor{efd_blue}  {#1}}}
+\newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}}
+
+
+% === THEME ====================================================================
+% These three colors will be the palette of the presentation.
+\colorlet{color_bg}{efd_bg}      % Background color of each slide.
+\colorlet{color_fg}{efd_fg}      % Foreground color, mainly used by text.
+\colorlet{color_ef}{efd_green}   % Emphasis color, uses for titles, etc.
+\colorlet{color_box}{efd_dgreen} % Box color.
+
+% Don't touch stuff beyond this point!
+\setbeamercolor{normal text}{bg=color_fg,fg=color_fg}
+\setbeamercolor{item}{bg=color_ef,fg=color_ef}
+\setbeamercolor{background canvas}{bg=color_bg}
+\setbeamercolor{palette primary}{bg=color_ef,fg=color_bg}
+\setbeamercolor{palette secondary}{bg=color_fg,fg=color_bg}
+\setbeamercolor{palette tertiary}{bg=color_fg,fg=color_bg}
+\setbeamercolor{palette quaternary}{bg=color_fg,fg=color_bg}
+\setbeamercolor{structure}{fg=color_ef} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=color_ef} % TOC sections

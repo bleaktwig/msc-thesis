@@ -1,7 +1,6 @@
 ## TODO
 ###### Milestones
-* **08/12.** Freeze thesis. Allow committee time to correct mistakes and provide feedback.
-* **08/13 - 08/20.** Work on thesis defense presentation.
+* **08/09 - 08/20.** Work on thesis defense presentation.
 * **08/21 - 08/27.** Meet w/ Raffaella + RG-E group, show results and thesis defense so far. Apply feedback based on meeting.
 * **08/28 - 09/13.** Work on thesis defense presentation and regularly present to committee for feedback.
 * **09/14.** Defend thesis.

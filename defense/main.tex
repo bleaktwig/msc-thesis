@@ -1,0 +1,59 @@
+% --+ SETUP +-------------------------------------------------------------------
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+% \usepackage[T1]{fontenc}
+% \usepackage[ruled]{algorithm2e}
+% \usepackage{amssymb}    % \lesssim and \gtrsim.
+% \usepackage{animate}
+% \usepackage{booktabs}   % Beautiful tabular.
+% \usepackage{empheq}
+% \usepackage{hyperref}   % Hyperlinks.
+% \usepackage{incgraph,tikz}
+% \usepackage{incgraph}   % Include pdf file as page.
+% \usepackage{multicol}
+% \usepackage{pifont}
+% \usepackage{tabularx}   % \textwidth tabular.
+% \usepackage{textgreek}  % Greek letters in text mode.
+
+% --+ THEME +-------------------------------------------------------------------
+\input{00theme}
+
+% --+ TITLEPAGE SETUP +---------------------------------------------------------
+\title{Acceptance Study of the CLAS12 Detector Using the Forward Micromegas Tracker for Run Group E}
+\author{Bruno Benkel}
+\date{2023-09-14}
+% TODO. Add shit
+
+% --+ DOCUMENT +----------------------------------------------------------------
+\begin{document}
+    \colorlet{color_ef}{efd_green}
+
+    % --+ FIRST PAGES +---------------------------------------------------------
+    % ------+ TITLEPAGE +-------------------------------------------------------
+    \titlepage
+    % ------+ SUMMARY & TABLE OF CONTENTS +-------------------------------------
+
+    % --+ CONTEXT +-------------------------------------------------------------
+    \graphicspath{{10context/img}}
+    \input{10context/00index}
+
+    % --+ DATA ANALYSIS +-------------------------------------------------------
+    \graphicspath{{11data_analysis/img}}
+    \input{11data_analysis/00index}
+
+    % --+ STUDY RESULTS +-------------------------------------------------------
+    \graphicspath{{12study_results/img}}
+    \input{12study_results/00index}
+
+    % --+ APPENDICES +----------------------------------------------------------
+    \graphicspath{{20appendices/img}}
+    \input{20appendices/00index}
+
+    % Run configuration.
+    % All Figures in this section that show results for data are from RG-F run 12016.
+    % For this run, a gas H2 target was used.
+    % The beam energy was set to $10.4$ GeV, and the luminosity to $250$ nA.
+    % The solenoid field was set to an inbending polarity ($-0.75$), and the torus to its regular polarity of $-1$.
+    % The run has a total of $10,046,225$ events.
+\end{document}
