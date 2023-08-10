@@ -2,6 +2,7 @@
 % --+ 11.51 INTRODUCTION +------------------------------------------------------
 \begin{frame}{Acceptance Correction: Generation + Simulation}
     \label{11.51::introduction}
+
     \begin{itemize}
         \item
             To apply acceptance correction, 10M DIS events were generated in \ef{LEPTO}.
@@ -130,6 +131,8 @@
 
 % --+ 11.54 ZH +----------------------------------------------------------------
 \begin{frame}{Acceptance Correction: $z_h$}
+    \label{11.54::zh}
+
     \begin{itemize}
         % \item
         %     \ef{$z_h$} does not depend on the \ef{$\theta$} of either the hadron or the scattered $e^-$.
@@ -180,44 +183,57 @@
     \end{flushright}
 \end{frame}
 
+% --+ 11.55 PT2 +---------------------------------------------------------------
+\begin{frame}{Acceptance Correction: $p_T^2$}
+    \label{11.55::pt2}
+
+    \begin{itemize}
+        \item
+            \ef{$p_T^2$} has a non-trivial dependence on the \ef{$\theta$} of both the produced hadron and the scattered electron.
+
+        \vspace{6pt}
+        \item
+            Very few particles have a \ef{$p_T^2 \gsim 1.4$}, thus the strange values and large error bars.
+    \end{itemize}
+
+    \vspace{-12pt}
+    \begin{columns}
+        \begin{column}{.49\linewidth}
+            \begin{center}
+                \begin{figure}[t]
+                    \centering{
+                        \fbox{\includegraphics[width=\textwidth]{55pt2_acc_-211.pdf}}
+                    }
+                    \scriptsize{\textit{
+                        \ef{$p_T^2$} acceptance for \ef{$\pi^-$}.
+                        Other DIS variables are integrated.
+                    }}
+                \end{figure}
+            \end{center}
+        \end{column}
+
+        \begin{column}{.49\linewidth}
+            \begin{center}
+                \begin{figure}[t]
+                    \centering{
+                        \fbox{\includegraphics[width=\textwidth]{55pt2_acc_211.pdf}}
+                    }
+                    \scriptsize{\textit{
+                        \ef{$p_T^2$} acceptance for \ef{$\pi^+$}.
+                        Other DIS variables are integrated.
+                    }}
+                \end{figure}
+            \end{center}
+        \end{column}
+    \end{columns}
+
+    \begin{flushright}
+        \tiny{\textit{Bin markers are slightly shifted in $x$ for legibility.}}
+        \tiny{\textit{Acceptance error estimation is explained in Slides \textcolor{efd_purple}{\ref{20.05::acceptance_error_estimation}} to \textcolor{efd_purple}{\ref{20.05::acceptance_error_estimation_end}}.}}
+    \end{flushright}
+\end{frame}
+
 % --+ THE REST +----------------------------------------------------------------
-% \begin{frame}{Acceptance Correction: $P_T^2$}
-%     \vspace{-18pt}
-%     \begin{columns}
-%         \begin{column}{.05\linewidth}\end{column} % Centering column.
-
-%         \begin{column}{.40\linewidth}
-%             \begin{center}
-%                 \begin{figure}[t]
-%                     \centering{
-%                         \fbox{\includegraphics[width=\textwidth]{pt2_acc_211.pdf}}
-%                     }
-%                 \end{figure}
-%                 \vspace{-12pt}
-%                 \textit{\ef{$P_T^2$} acceptance for \ef{$\pi^+$}}
-%             \end{center}
-%         \end{column}
-
-%         \begin{column}{.40\linewidth}
-%             \begin{center}
-%                 \begin{figure}[t]
-%                     \centering{
-%                         \fbox{\includegraphics[width=\textwidth]{pt2_acc_-211.pdf}}
-%                     }
-%                 \end{figure}
-%                 \vspace{-12pt}
-%                 \textit{\ef{$P_T^2$} acceptance for \ef{$\pi^-$}}
-%             \end{center}
-%         \end{column}
-
-%         \begin{column}{.05\linewidth}\end{column} % Centering column.
-%     \end{columns}
-%     \vspace{6pt}
-%     \begin{flushright}
-%         \tiny{\textit{*Bin markers are slightly shifted in $x$ for legibility.}}
-%     \end{flushright}
-% \end{frame}
-
 % \begin{frame}{Acceptance Correction: $\phi_{PQ}$}
 %     \vspace{-18pt}
 %     \begin{columns}
