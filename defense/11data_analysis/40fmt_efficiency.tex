@@ -91,3 +91,28 @@
     \end{center}
 \end{frame}
 
+% --+ 11.43 GEOMETRY EFFECT +---------------------------------------------------
+\begin{frame}{FMT Efficiency: Geometry Effect}
+    \label{11.43::geometry_effect}
+    \begin{itemize}
+        \item
+            Due to its position, FMT has a non-trivial efficiency curve along the \ef{$z$ axis} and \ef{$\theta$ angle}.
+
+        \vspace{6pt}
+        \item
+            If we want to understand the behavior of DIS variables, we need to study this effect and disentangle it from acceptance.
+    \end{itemize}
+
+    \vspace{12pt}
+    We can define this \ef{efficiency region} by projecting straight lines between the $z$ axis and the detector\appref{20.02::fmt_acceptance_curve}, such that
+    \begin{empheq}[box={\eqbox[5pt][5pt]}]{equation*}
+        \theta_\text{min}(z) = 57.29^\circ \cdot \text{atan}\left( \frac{R_\text{min}}{z_0 - z} \right),
+        \hspace{10pt}
+        \theta_\text{max}(z) = 57.29^\circ \cdot \text{atan}\left( \frac{R_\text{max}}{z_0 - z} \right),
+    \end{empheq}
+    where \ef{$R_\text{min}$} and \ef{$R_\text{max}$} are the radii of FMT, and \ef{$z_0$} is the first layer's $z$ position.
+
+    \vspace{6pt}
+    We then apply a cut on DC and FMT tracks based on this region.
+\end{frame}
+
