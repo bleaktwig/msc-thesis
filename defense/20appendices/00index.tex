@@ -3,6 +3,28 @@
     \centering \Huge{\ef{Appendices}}
 \end{frame}
 
+% --+ 20.01 CCDB +--------------------------------------------------------------
+\begin{frame}{Calibration Constants Database}
+    \label{20.01::ccdb}
+    \begin{itemize}
+        \item
+        \vspace{12pt}
+        In simple terms, the Calibration Constants Database (CCDB) is a central repository where the CLAS12 \ef{calibration constants} are stored.
+        \item
+            The stored data includes geometry constants, corrections for different imperfections, drifts in the electronics, etc.
+
+        \vspace{12pt}
+        \item
+            A CCDB \ef{variation} (e.g. \eft{rgf\_spring2020}) is a ``version'' of the CCDB for a particular experiment season.
+
+        \vspace{12pt}
+        \item
+            In addition, there are special variations for gemc simulations (e.g. \eft{rgf\_spring2020\_mc}), so as to not include calibration data from the real world into the simulation world.
+    \end{itemize}
+
+    \backref{11.42::alignment_effect}
+\end{frame}
+
 % --+ FMT DETAILS +-------------------------------------------------------------
 % --+ FMT ALIGNMENT +-----------------------------------------------------------
 % --+ SYSTEMATIC ERROR ESTIMATION +---------------------------------------------

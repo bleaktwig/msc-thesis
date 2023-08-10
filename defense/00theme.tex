@@ -80,7 +80,6 @@
 % === EMPHASIS COMMANDS ========================================================
 \newcommand{\ef}[1]{\textbf{\textcolor{color_ef}{#1}}}
 \newcommand{\eft}[1]{\texttt{\ef{#1}}}
-
 \newcommand{\ered}   [1]{\textbf{\textcolor{efd_red}   {#1}}}
 \newcommand{\eorange}[1]{\textbf{\textcolor{efd_orange}{#1}}}
 \newcommand{\eyellow}[1]{\textbf{\textcolor{efd_yellow}{#1}}}
@@ -89,6 +88,15 @@
 \newcommand{\eblue}  [1]{\textbf{\textcolor{efd_blue}  {#1}}}
 \newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}}
 
+% === APPENDIX REFERENCE =======================================================
+\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{\ref{#1}}}}
+\newcommand{\backref}[1]{
+    \vskip0pt plus 1 filll
+    \begin{flushright}
+        \tiny{\textit{Ref'd by \textcolor{efd_purple}{\ref{#1}}.}}
+    \end{flushright}
+    \smallskip
+}
 
 % === THEME ====================================================================
 % These three colors will be the palette of the presentation.
