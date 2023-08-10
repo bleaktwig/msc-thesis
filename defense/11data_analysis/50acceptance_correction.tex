@@ -189,7 +189,7 @@
 
     \begin{itemize}
         \item
-            \ef{$p_T^2$} has a non-trivial dependence on the \ef{$\theta$} of both the produced hadron and the scattered electron.
+            \ef{$p_T^2$} has a non-trivial dependence on the \ef{$\theta$} of both the $e^-$ and the $\pi$.
 
         \vspace{6pt}
         \item
@@ -233,40 +233,52 @@
     \end{flushright}
 \end{frame}
 
-% --+ THE REST +----------------------------------------------------------------
-% \begin{frame}{Acceptance Correction: $\phi_{PQ}$}
-%     \vspace{-18pt}
-%     \begin{columns}
-%         \begin{column}{.05\linewidth}\end{column} % Centering column.
+% --+ 11.56 PHIPQ +-------------------------------------------------------------
+\begin{frame}{Acceptance Correction: $\phi_{PQ}$}
+    \label{11.56::phipq}
 
-%         \begin{column}{.40\linewidth}
-%             \begin{center}
-%                 \begin{figure}[t]
-%                     \centering{
-%                         \fbox{\includegraphics[width=\textwidth]{phipq_acc_211.pdf}}
-%                     }
-%                 \end{figure}
-%                 \vspace{-12pt}
-%                 \textit{\ef{$\phi_{PQ}$} acceptance for \ef{$\pi^+$}}
-%             \end{center}
-%         \end{column}
+    \begin{itemize}
+        \item
+            \ef{$\phi_{PQ}$} has a highly non-trivial dependence on the \ef{$\theta$} and \ef{$\varphi$} of the $e^-$ and the $\pi$.
 
-%         \begin{column}{.40\linewidth}
-%             \begin{center}
-%                 \begin{figure}[t]
-%                     \centering{
-%                         \fbox{\includegraphics[width=\textwidth]{phipq_acc_-211.pdf}}
-%                     }
-%                 \end{figure}
-%                 \vspace{-12pt}
-%                 \textit{\ef{$\phi_{PQ}$} acceptance for \ef{$\pi^-$}}
-%             \end{center}
-%         \end{column}
+        \vspace{6pt}
+        \item
+            Distribution shows a similar shape as what is expected from previous analyses.
+    \end{itemize}
 
-%         \begin{column}{.05\linewidth}\end{column} % Centering column.
-%     \end{columns}
-%     \vspace{6pt}
-%     \begin{flushright}
-%         \tiny{\textit{*Bin markers are slightly shifted in $x$ for legibility.}}
-%     \end{flushright}
-% \end{frame}
+    \vspace{-12pt}
+    \begin{columns}
+        \begin{column}{.49\linewidth}
+            \begin{center}
+                \begin{figure}[t]
+                    \centering{
+                        \fbox{\includegraphics[width=\textwidth]{56phipq_acc_-211.pdf}}
+                    }
+                    \scriptsize{\textit{
+                        \ef{$\phi_{PQ}$} acceptance for \ef{$\pi^-$}.
+                        Other variables are integrated.
+                    }}
+                \end{figure}
+            \end{center}
+        \end{column}
+
+        \begin{column}{.49\linewidth}
+            \begin{center}
+                \begin{figure}[t]
+                    \centering{
+                        \fbox{\includegraphics[width=\textwidth]{56phipq_acc_211.pdf}}
+                    }
+                    \scriptsize{\textit{
+                        \ef{$\phi_{PQ}$} acceptance for \ef{$\pi^+$}.
+                        Other variables are integrated.
+                    }}
+                \end{figure}
+            \end{center}
+        \end{column}
+    \end{columns}
+
+    \begin{flushright}
+        \tiny{\textit{Bin markers are slightly shifted in $x$ for legibility.}}
+        \tiny{\textit{Acceptance error estimation is explained in Slides \textcolor{efd_purple}{\ref{20.05::acceptance_error_estimation}} to \textcolor{efd_purple}{\ref{20.05::acceptance_error_estimation_end}}.}}
+    \end{flushright}
+\end{frame}
