@@ -36,10 +36,103 @@
     \backref{11.43::geometry_effect}
 \end{frame}
 
+% --+ 20.03 FMT EFFICIENCY ERROR ESTIMATION +-----------------------------------
+\begin{frame}{FMT Efficiency Error Estimation}
+    \label{20.03::fmt_efficiency_error_estimation}
+
+    \vspace{18pt}
+
+    We define \ef{$P(L_n)$} as the probability of layer \ef{$n$} detecting a particle.
+    Assuming all layers have the same efficiency \ef{$E_1$},
+    \begin{equation*}
+        P(L_1) = P(L_2) = P(L_3) = E_1,
+    \end{equation*}
+    the efficiency for 3-layer tracks \ef{$E_3$} can be obtained using \ef{$P(L_n)$} as follows
+    \begin{align}
+        E_3 &= P(L_1)P(L_2)P(L_3)
+        \nonumber \\
+        E_3 &= E_{1(3)}^3,
+        \label{eq::14.14::efficiency3}
+    \end{align}
+    where \ef{$E_{1(3)}$} is the 1-layer efficiency estimated from 3-layer tracks.
+
+    \vspace{18pt}
+
+    From \eqref{eq::14.14::efficiency3}, we can estimate \ef{$E_{1(3)}$} as
+    \begin{equation}
+        E_{1(3)} = \sqrt[3]{E_3}.
+        \label{eq::14.14::efficiency1(3)}
+    \end{equation}
+
+    \backref{11.44::reconstruction_effect}
+\end{frame}
+
+\begin{frame}{FMT Efficiency Error Estimation}
+    \vspace{18pt}
+
+    For 2-layer tracks, the efficiency \ef{$E_2$} can be obtained as
+    \begin{align}
+        E_2 &= P(L_1)P(L_2)\left(1 - P(L_3)\right)                \nonumber \\
+             &\hspace{24pt} + P(L_2)P(L_3)\left(1 - P(L_1)\right) \nonumber \\
+             &\hspace{24pt} + P(L_3)P(L_1)\left(1 - P(L_2)\right) \nonumber \\
+             &\hspace{24pt} + P(L_1)P(L_2)P(L_3)                  \nonumber \\
+        E_2 &= 3E_{1(2)}^2\left(1 - E_{1(2)}\right) + E_{1(3)}^3
+            \nonumber \\
+        E_2 &= 3E_{1(2)}^2 \cdot \left( 1 - E_{1(2)} \right) + E_3,
+        \label{eq::14.14::efficiency2}
+    \end{align}
+    where \ef{$E_{1(2)}$} is the 1-layer efficiency estimated from 2-layer tracks.
+
+    \vspace{18pt}
+
+    \ef{$E_{1(2)}$} cannot be obtained explicitly from \eqref{eq::14.14::efficiency2}, but we can estimate it numerically.
+
+    \backref{11.44::reconstruction_effect}
+\end{frame}
+
+\begin{frame}{FMT Efficiency Error Estimation}
+    \vspace{18pt}
+
+    Using Equations \eqref{eq::14.14::efficiency2} and \eqref{eq::14.14::efficiency1(3)}, we can estimate the weighted average efficiency \ef{$\xoverline{E_1}$} as
+    \begin{equation*}
+        \xoverline{E_1} = \frac{4E_{1(2)} + E_{1(3)}}{5},
+    \end{equation*}
+    where the weights are assigned based on the number of ways 2 and 3-layer tracks can be obtained, 4 and 1, respectively.
+
+    \vspace{18pt}
+
+    From \ef{$\xoverline{E_1}$}, we can estimate the errors on \ef{$E_{1(2)}$} and \ef{$E_{1(3)}$} as
+    \begin{align*}
+        \delta(E_{1(2)}) = |\xoverline{E_1} - E_{1(2)}|, \\
+        \delta(E_{1(3)}) = |\xoverline{E_1} - E_{1(3)}|.
+    \end{align*}
+
+    \backref{11.44::reconstruction_effect}
+\end{frame}
+
+\begin{frame}{FMT Efficiency Error Estimation}
+    To propagate these errors to the efficiencies \ef{$E_2$} and \ef{$E_3$}, we use the variance formula
+    \begin{equation*}
+        \delta\left(f(x)\right) = \frac{\partial f(x)}{\partial x} \cdot \delta(x),
+    \end{equation*}
+    where \ef{$\delta(E_2)$}, obtained from Equation \eqref{eq::14.14::efficiency2}, is
+    \begin{align*}
+        \delta(E_2) &= \frac{\partial}{\partial E_{1(2)}} \left( 3E_{1(2)}^2 - 3E_{1(2)}^3 + E_{1(3)}^3 \right)
+            \cdot \delta \left( E_{1(2)} \right) \\
+        \delta(E_2) &= \left( 6E_{1(2)} - 9E_{1(2)}^2 \right) \cdot \delta \left( E_{1(2)} \right)
+    \end{align*}
+    and \ef{$\delta(E_3)$}, obtained from Equation \eqref{eq::14.14::efficiency3}, is
+    \begin{align*}
+        \delta(E_3) &= \frac{\partial}{\partial E_{1(3)}} \left( E_{1(3)}^3 \right) \cdot \delta \left( E_{1(3)} \right) \\
+        \delta(E_3) &= 3E_{1(3)}^2 \cdot \delta \left( E_{1(3)} \right).
+    \end{align*}
+
+    \backref{11.44::reconstruction_effect}
+\end{frame}
+
 % --+ FMT DETAILS +-------------------------------------------------------------
 % --+ FMT ALIGNMENT +-----------------------------------------------------------
 % --+ SYSTEMATIC ERROR ESTIMATION +---------------------------------------------
 % --+ REPRODUCIBILITY +---------------------------------------------------------
 % --+ FIDUCIAL CUTS +-----------------------------------------------------------
-% --+ FMT LAYER EFFICIENCY ERROR ESTIMATION +-----------------------------------
 % --+ UNCORRECTED DIS PLOTS +---------------------------------------------------
