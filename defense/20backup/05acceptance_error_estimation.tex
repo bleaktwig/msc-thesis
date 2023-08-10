@@ -1,0 +1,55 @@
+% !TEX root = ../main.tex
+% --+ 20.05 ACCEPTANCE ERROR ESTIMATION +---------------------------------------
+\begin{frame}{Acceptance Error Estimation}
+    \label{20.05::acceptance_error_estimation}
+
+    The acceptance fraction is computed as follows
+    \begin{equation}
+        y_\text{acc} = \frac{y_r}{y_t},
+        \label{eq::14.20::acc}
+    \end{equation}
+    where \ef{$y_\text{acc}$} is the percentage of accepted particles, \ef{$y_r$} is the number of reconstructed particles by the studied detector in the GEMC simulation, and \ef{$y_t$} is the number of particles thrown by LEPTO.
+
+    \vspace{6pt}
+
+    Then, to propagate the error of \ef{$y_r$} (\ef{$e_d$}) and \ef{$y_t$} (\ef{$e_t$}) to \ef{$y_\text{acc}$} (\ef{$e_\text{acc}$}), we have
+    \begin{align}
+        e_\text{acc} &= \delta \left(\frac{y_r}{y_t}\right)
+        \nonumber \\
+        &= y_\text{acc} \cdot \sqrt{
+            \left( \frac{e_r}{y_r} \right)^2 + \left( \frac{e_t}{y_t} \right)^2
+        },
+        \nonumber
+        \intertext{since \ef{$y_t$} is the number of trials, we can assume \ef{$e_t = 0$}, and thus}
+        &= y_\text{acc} \cdot \frac{e_r}{y_r}.
+        \label{eq::14.20::acc_error_estimation}
+    \end{align}
+
+    \backref{11.52::electron_variables}
+\end{frame}
+
+\begin{frame}{Acceptance Error Estimation}
+    \label{20.05::acceptance_error_estimation_end}
+
+    From the Central Limit Theorem, assuming a normal distribution, the variance \ef{$e_r^2$} is given by
+    \begin{equation*}
+        e_r^2 = y_t \cdot y_\text{acc} (1 - y_\text{acc}).
+    \end{equation*}
+
+    \vspace{12pt}
+
+    Replacing this in Equation \eqref{eq::14.20::acc_error_estimation}, we obtain
+    \begin{equation*}
+        e_\text{acc} = y_\text{acc} \cdot \frac{\sqrt{y_t y_\text{acc}(1 - y_\text{acc})}}{y_r}.
+    \end{equation*}
+
+    \vspace{12pt}
+
+    Now, replacing \ef{$y_\text{acc}$} with its definition from Equation \eqref{eq::14.20::acc}, we arrive at the final error expression
+    \begin{equation}
+        e_\text{acc} = \sqrt{\frac{y_\text{acc}(1-y_\text{acc})}{y_t}}.
+        \label{eq::14.20::acc_error}
+    \end{equation}
+
+    \backref{11.52::electron_variables}
+\end{frame}
