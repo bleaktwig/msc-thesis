@@ -1,0 +1,34 @@
+% !TEX root = ../main.tex
+% --+ 11.11 CLAS12 RG-E ANALYSIS +----------------------------------------------
+\begin{frame}{\texttt{clas12-rge-analysis}}
+    To perform the analysis, we developed an extensive C/C++ library that runs over ROOT.
+    The library includes five executables:
+
+    \vspace{12pt}
+
+    \begin{itemize}
+        \item
+            \eft{hipo2root} converts a HIPO file into ROOT trees, filtering out irrelevant data.
+
+        \vspace{3pt}
+        \item
+            \eft{extract\_sf} obtains the $e^-$ sampling fraction for its posterior use.
+
+        \vspace{3pt}
+        \item
+            \eft{acc\_corr} obtains acceptance correction from simulation in 5-dimensional bins.
+
+        \vspace{3pt}
+        \item
+            \eft{make\_ntuples} generates tuples with particle data for DIS analysis.
+
+        \vspace{3pt}
+        \item
+            \eft{draw\_plots} quickly draws plots from the tuples based on user input.
+    \end{itemize}
+
+    \vspace{24pt}
+
+    The program and its source code are shared under the GNU LGPLv3 license.
+\end{frame}
+
