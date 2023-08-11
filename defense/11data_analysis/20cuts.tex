@@ -33,3 +33,55 @@
             \ef{DIS cuts} to narrow down analysis region on DIS.
     \end{itemize}
 \end{frame}
+
+% --+ 11.22 DIS CUTS +----------------------------------------------------------
+\begin{frame}{DIS Cuts}
+    \label{11.22::dis_cuts}
+
+    Three DIS cuts are applied to the trigger $e^-$ of an event to restrict the phase space:
+
+    \begin{itemize}
+        \item
+            DIS processes require a high enough virtual photon mass: \ef{$Q^2 > 1 \text{ GeV}^2$}.
+
+        \item
+            To exclude nucleon resonances, the squared mass of the final hadronic state $W^2$ is restricted: \ef{$W^2 > 4 \text{ GeV}^2$}.
+
+        \item
+            To mitigate radiative effects, we constrain the Bjorken-Y $Y_b$: \ef{$Y_b < 0.85$}.
+    \end{itemize}
+
+    \vspace{-18pt}
+
+    \begin{columns}[onlytextwidth,T]
+
+    \begin{column}{.05\linewidth}\end{column} % Centering column.
+
+    \begin{column}{.44\linewidth}
+        \begin{center}
+            \begin{figure}[t]
+                \centering{
+                    \fbox{\includegraphics[width=\textwidth]{22nocut.pdf}}
+                }
+                \scriptsize{\textit{$Q^2$ vs. $\nu$, \ef{no DIS cuts}.}}
+            \end{figure}
+        \end{center}
+    \end{column}
+
+    \begin{column}{.015\linewidth}\end{column} % Centering column.
+
+    \begin{column}{.44\linewidth}
+        \begin{center}
+            \begin{figure}[t]
+                \centering{
+                    \fbox{\includegraphics[width=\textwidth]{22wcuts.pdf}}
+                }
+                \scriptsize{\textit{$Q^2$ vs. $\nu$ \ef{w/ DIS cuts}.}}
+            \end{figure}
+        \end{center}
+    \end{column}
+
+    \begin{column}{.05\linewidth}\end{column} % Centering column.
+
+    \end{columns}
+\end{frame}
