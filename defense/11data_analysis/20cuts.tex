@@ -1,0 +1,27 @@
+% !TEX root = ../main.tex
+% --+ 11.21 SUMMARY +-----------------------------------------------------------
+\begin{frame}{Cuts}
+    \label{11.21::summary}
+
+    To improve particle quality, three types of cuts are applied:
+    \begin{itemize}
+        \item
+            \ef{Tracking cut} to exclude particles that fail a \ef{$\chi^2$ test}: $\chi^2/\text{NDF} < 15$.
+
+        \item
+            \ef{Geometry cuts} that define a valid analysis region:
+            \begin{itemize}
+                \item
+                    Particle vertex is constrained to the beamline: $\sqrt{v_z^2 + v_y^2} < 4 \text{ cm}$.
+
+                \item
+                    Particle vertex originates from the RG-F target: $-40 \text{ cm} < v_z < z_0 \text{ cm}$, where $z_0$ is the $z$ position of the first FMT layer.
+
+                \item
+                    No fiducial cuts were applied in this study\appref{20.06::fiducial_cuts}.
+            \end{itemize}
+
+        \item
+            \ef{DIS cuts} to narrow down analysis region on DIS.
+    \end{itemize}
+\end{frame}
