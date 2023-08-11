@@ -1,6 +1,8 @@
 % !TEX root = ../main.tex
 % --+ 11.11 CLAS12 RG-E ANALYSIS +----------------------------------------------
 \begin{frame}{\texttt{clas12-rge-analysis}}
+    \label{11.11::clas12-rge-analysis}
+
     To perform the analysis, we developed an extensive C/C++ library that runs over ROOT.
     The library includes five executables:
 
@@ -32,3 +34,38 @@
     The program and its source code are shared under the GNU LGPLv3 license.
 \end{frame}
 
+% --+ 11.12 PARTICLE IDENTIFICATION TRUTH +-------------------------------------
+\begin{frame}{Particle Identification Truth}
+    \label{11.12::particle_identification_truth}
+
+    \begin{itemize}
+        \item
+            The \eft{make\_ntuples} program assigns a Particle ID (PID) to each particle in the same manner as in CLAS12 reconstruction.
+
+        % \item
+        %     Misidentification in this assignment is an important source of systematic errors.
+
+        \item
+            To quantify misidentification, we can run a simulation to compare the program's identification with the original PID in the simulation.
+    \end{itemize}
+
+    \begin{center}
+        \begin{tabularx}{230pt}{Xllllll}
+            \toprule
+                          & \ef{$e$} & \ef{$\pi$} & \ef{$K$} & \ef{$p$} & \ef{$n$} & \ef{$\gamma$} \\
+            \midrule
+            \ef{$e$}      &     0.98 &            &          &          &          &               \\
+            \ef{$\pi$}    &          &       0.93 &     0.10 &     0.00 &          &               \\
+            \ef{$K$}      &          &       0.03 &     0.80 &     0.00 &          &               \\
+            \ef{$p$}      &          &       0.03 &     0.02 &     0.98 &          &               \\
+            \ef{$n$}      &          &            &          &          &     0.66 &          0.01 \\
+            \ef{$\gamma$} &          &            &          &          &     0.14 &          0.95 \\
+            \bottomrule
+        \end{tabularx}
+    \end{center}
+    \scriptsize{\textit{
+        Particle identification truth matrix.
+        Rows are the PID truth, Columns are the PID as identified by \eft{make\_ntuples}.
+        Diagonal elements are correctly identified, off-diagonal elements are misidentified.
+    }}
+\end{frame}
