@@ -57,7 +57,7 @@
     \begin{column}{.39\linewidth}
         \vspace{30pt}
         \scriptsize{\textit{
-            CLAS12 diagram.
+            \ef{CLAS12 diagram.}
             \begin{itemize}
                 \vspace{6pt}
                 \item
@@ -71,6 +71,59 @@
                 \vspace{6pt}
                 \item
                     \ef{DC} and \ef{FMT} (not pictured) are particle trackers.
+            \end{itemize}
+        }}
+    \end{column}
+
+    \end{columns}
+
+    % NOTE. Some appendix slides containing more information on each detector might be useful, but maybe overkill.
+\end{frame}
+
+\begin{frame}{Drift Chambers (DC)}
+    \label{10.23::dc}
+
+    \begin{itemize}
+        \item
+            The DC is the main \ef{tracking detector} of the FD.
+
+        \item
+            DC detectors use an array of HV wires to detect \ef{ionising particles}.
+
+        \item
+            The tracker has a \ef{momentum resolution of $\Delta p/p < 0.5\%$}, allowing for accurate reconstruction of particle trajectories.
+    \end{itemize}
+
+    \vspace{-12pt}
+    \begin{columns}[onlytextwidth,T]
+
+    \begin{column}{.44\linewidth}
+        \begin{center}
+            \begin{figure}[t]
+                \centering{
+                    \fbox{\includegraphics[width=\textwidth]{23dc.png}}
+                }
+            \end{figure}
+        \end{center}
+    \end{column}
+
+    \begin{column}{.55\linewidth}
+        \vspace{42pt}
+        \scriptsize{\textit{
+            \ef{3d render of the DC.}
+            \begin{itemize}
+                \vspace{6pt}
+                \item
+                    Three independent drift chambers are installed in each of the six sectors of the torus magnet.
+                \vspace{6pt}
+                \item
+                    Each sector contains a total of \ef{36 DC layers}, each with \ef{112 sense wires}.
+                \vspace{6pt}
+                \item
+                    Polar resolution: \ef{$\Delta\theta < 2 \text{ mrad}$}.
+                \vspace{6pt}
+                \item
+                    azimuthal resolution: \ef{$\Delta\phi < 2 \text{ mrad}$}.
             \end{itemize}
         }}
     \end{column}
