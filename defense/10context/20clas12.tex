@@ -1,5 +1,5 @@
 % !TEX root = ../main.tex
-% --+ 10.21 CEBAF +----------------------------------------------
+% --+ 10.21 CEBAF +-------------------------------------------------------------
 \begin{frame}{Continuous Electron Beam Accelerator Facility (CEBAF)}
     \label{10.21::cebaf}
 
@@ -13,6 +13,7 @@
         \item
             Designed for high-energy $e^-$ experiments, CEBAF is ideal for DIS studies.
     \end{itemize}
+
     \begin{center}
         \begin{figure}[t]
             \centering{
@@ -27,6 +28,7 @@
     \end{center}
 \end{frame}
 
+% --+ 10.22 CLAS12 +------------------------------------------------------------
 \begin{frame}{CEBAF Large Acceptance Spectrometer for 12 GeV (CLAS12)}
     \label{10.22::clas}
 
@@ -80,6 +82,7 @@
     % NOTE. Some appendix slides containing more information on each detector might be useful, but maybe overkill.
 \end{frame}
 
+% --+ 10.23 DC +----------------------------------------------------------------
 \begin{frame}{Drift Chambers (DC)}
     \label{10.23::dc}
 
@@ -131,3 +134,47 @@
     \end{columns}
 \end{frame}
 
+% --+ 10.24 FMT +---------------------------------------------------------------
+\begin{frame}{Forward Micromegas Tracker (FMT)}
+    \label{10.24::fmt}
+
+    \begin{columns}[onlytextwidth,T]
+
+    \begin{column}{.48\linewidth}
+        \vspace{6pt}
+        \begin{itemize}
+            \item
+                FMT is the forwards part of the Micromegas Vertex Tracker (MVT).
+                It's first layer sits at \ef{$z \approx 26$ cm}.
+
+            \vspace{6pt}
+            \item
+                It uses micromegas tracking technology to detect charged particles that cross it\appref{20.07::micromegas_tracking}.
+
+            \vspace{6pt}
+            \item
+                The detector works in tandem with the DC to do \ef{forward particle tracking}.
+
+            \vspace{6pt}
+            \item
+                To get an accurate picture of the passing particle, FMT has \ef{3 layers}, each rotated $60\degree$ with respect to the previous one\appref{20.08::fmt_geometry}.
+
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{.50\linewidth}
+        \begin{center}
+            \begin{figure}[t]
+                \fbox{\includegraphics[width=0.95\textwidth]{24mvt_geometry.png}}
+
+                \scriptsize{\textit{
+                    \ef{3d render of MVT.}
+                    The red dot denotes $z=0$.
+                    The red line denote an arbitrary track crossing FMT.
+                }}
+            \end{figure}
+        \end{center}
+    \end{column}
+
+    \end{columns}
+\end{frame}
