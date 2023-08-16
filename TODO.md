@@ -9,3 +9,4 @@
 * Defense is scheduled for September 14th at 10 hrs.
 * Plan a meeting with Raffaella & the RG-E people for the week of August 21st.
 * Scale vz bin plots to whole frame.
+* Run through a grammar + spellcheck.

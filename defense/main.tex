@@ -31,9 +31,11 @@
     \colorlet{color_ef}{efd_green}
 
     % --+ FIRST PAGES +---------------------------------------------------------
-    \titlepage
-    % ------+ SUMMARY & TABLE OF CONTENTS +-------------------------------------
+    \pagenumbering{gobble}
+    \titlepage       \pagebreak
+    \tableofcontents \pagebreak
 
+    \pagenumbering{arabic}
     % --+ CONTEXT +-------------------------------------------------------------
     \graphicspath{{10context/img}}
     \input{10context/00index}
