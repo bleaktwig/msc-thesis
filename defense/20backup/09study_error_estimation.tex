@@ -1,0 +1,28 @@
+% !TEX root = ../main.tex
+% --+ 20.09 STUDY ERROR ESTIMATION +--------------------------------------------
+\begin{frame}{Study Error Estimation}
+    \label{20.09::study_error_estimation}
+
+    The statistical error on the acceptance-corrected result \ef{$e_\text{corr}$} needs to consider two statistical errors: that of the measurements \ef{$e_\text{meas}$}, and that of acceptance correction \ef{$e_\text{acc}$}.
+
+    \vspace{9pt}
+
+    \ef{$e_\text{meas}$} is purely statistical and is given by
+    \begin{equation*}
+        e_\text{meas} = \frac{\delta y_\text{meas}}{y_\text{meas}},
+    \end{equation*}
+
+    \vspace{9pt}
+
+    The acceptance correction error, \ef{$e_\text{acc}$}, was derived in Slide \textcolor{efd_purple}{\ref{20.05::acceptance_error_estimation}}.
+
+    \vspace{9pt}
+
+    Since \ef{$e_\text{meas}$} is experimental and $e_\text{acc}$ is from simulation, they are uncorrelated.
+    Therefore, the \ef{total statistical error of the acceptance-corrected result} is the quadratic addition of the two errors, i.e.,
+    \begin{equation*}
+        e_\text{corr} = \sqrt{e_\text{meas}^2 + e_\text{acc}^2}.
+    \end{equation*}
+
+    \backref{12.11::summary}
+\end{frame}
