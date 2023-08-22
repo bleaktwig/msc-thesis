@@ -12,22 +12,38 @@
 % --+ THEME +-------------------------------------------------------------------
 \input{00theme}
 
-% --+ TITLEPAGE SETUP +---------------------------------------------------------
-\title{Acceptance Study of the CLAS12 Detector Using the Forward Micromegas Tracker for Run Group E}
-\author{Bruno Benkel}
-\date{2023-09-14}
-% TODO. Add shit and make pretty.
-
 % --+ DOCUMENT +----------------------------------------------------------------
 \begin{document}
     \colorlet{color_ef}{efd_green}
 
     % --+ FIRST PAGES +---------------------------------------------------------
-    \begin{frame}[plain]
+    \begin{frame}
         \titlepage
     \end{frame}
-    % TODO. An summary slide before the TOC would be cool.
-    % Mention the objective, the main project of the thesis, + the RG-E slow controls system, + FMT alignment.
+
+    \begin{frame}{Summary}
+        Three subjects were explored in the thesis:
+
+        \vspace{12pt}
+
+        \begin{itemize}
+            \item
+                An \ef{acceptance study} of the different DIS variables accross $v_z$.
+
+            \vspace{6pt}
+            \item
+                The development of \ef{alignment software} for the FMT detector.
+
+            \vspace{6pt}
+            \item
+                The development of the \ef{RG-E target slow controls system}.
+        \end{itemize}
+
+        \vspace{12pt}
+
+        This defense will only cover the \ef{acceptance study}, in which we'll explain how we found the $v_z$ region where the RG-E target will be placed.
+    \end{frame}
+
     \tableofcontents \pagebreak
 
     % --+ PAGE NUMBER SETUP +---------------------------------------------------
