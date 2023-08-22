@@ -44,7 +44,9 @@
         This defense will only cover the \ef{acceptance study}, in which we'll explain how we found the $v_z$ region where the RG-E target will be placed.
     \end{frame}
 
-    \tableofcontents \pagebreak
+    \begin{frame}{Table of Contents}
+        \tableofcontents
+    \end{frame}
 
     % --+ PAGE NUMBER SETUP +---------------------------------------------------
     \pagenumbering{arabic}
@@ -57,7 +59,9 @@
         \insertframenumber
     }
 
-    \addtocounter{framenumber}{-1}
+    % Fix page number.
+    \addtocounter{framenumber}{-3}
+
     % --+ CONTEXT +-------------------------------------------------------------
     \graphicspath{{10context/img}}
     \input{10context/00index}
@@ -70,7 +74,7 @@
     \graphicspath{{12study_results/img}}
     \input{12study_results/00index}
 
-    % --+ APPENDICES +----------------------------------------------------------
+    % --+ BACKUP SLIDES +-------------------------------------------------------
     \colorlet{color_ef}{efd_purple}
     \graphicspath{{20backup/img}}
     \input{20backup/00index}
