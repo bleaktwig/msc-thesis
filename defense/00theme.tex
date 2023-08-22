@@ -1,7 +1,7 @@
 % !TEX root = main.tex
 \setbeamertemplate{navigation symbols}{}
 
-% Custom commands.
+% === CUSTOM COMMANDS ==========================================================
 \newcommand{\labeq}{\stackrel{\mathclap{\normalfont\mbox{\tiny{lab}}}}{=}}
 \newcommand{\lsim}{\lesssim}
 \newcommand{\gsim}{\gtrsim}
@@ -64,27 +64,38 @@
         \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
     \fi}
 
+% === PRESENTATION DESIGN ======================================================
 % Title page.
 \defbeamertemplate*{title page}{customized}[1][]
 {
-    \vspace*{90pt}
-    {\centering
+    \vspace{21pt}
+
+    \begin{center}
         \usebeamerfont{title}\usebeamercolor[color_ef]{title}\textbf{\inserttitle}\par
         \usebeamerfont{author}\usebeamercolor[color_fg]{author}\insertauthor\par
-    }
-    \vskip72pt%
-    {\centering
-        \usebeamerfont{date}\insertdate\par
-    }
-    \vfill
-}
 
-% Add a number to each frame (but not the total number of frames!)
-\addtobeamertemplate{navigation symbols}{}{
-    \usebeamerfont{footline}
-    \usebeamercolor[fg]{footline}
-    \hspace{1em}
-    \insertframenumber
+        \vspace{24pt}
+
+        \noindent\rule{2cm}{0.8pt}
+    \end{center}
+
+    \vspace{24pt}
+
+    \ef{Evaluating Committee}
+    \begin{itemize}
+        \item
+            Hayk Hakobyan, Ph.D.
+        \item
+            Will Brooks, Ph.D.
+        \item
+            Raffaella De Vita, Ph.D.
+    \end{itemize}
+
+    \begin{flushright}
+        \usebeamerfont{date}\insertdate\par
+    \end{flushright}
+
+    \vfill
 }
 
 % === EVERFOREST DARK HARD =====================================================
@@ -111,7 +122,7 @@
 \newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}}
 
 % === APPENDIX REFERENCE =======================================================
-\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{\ref{#1}}}}
+\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{[\ref{#1}]}}}
 \newcommand{\backref}[1]{
     \vskip0pt plus 1 filll
     \begin{flushright}

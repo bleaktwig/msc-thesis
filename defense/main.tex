@@ -9,15 +9,6 @@
 \usepackage{tabularx}          % \textwidth tabular.
 \usepackage{textcomp, gensymb} % \degree.
 
-% \usepackage[T1]{fontenc}
-% \usepackage[ruled]{algorithm2e}
-% \usepackage{amssymb}    % \lesssim and \gtrsim.
-% \usepackage{incgraph,tikz}
-% \usepackage{incgraph}   % Include pdf file as page.
-% \usepackage{multicol}
-% \usepackage{pifont}
-% \usepackage{textgreek}  % Greek letters in text mode.
-
 % --+ THEME +-------------------------------------------------------------------
 \input{00theme}
 
@@ -32,13 +23,25 @@
     \colorlet{color_ef}{efd_green}
 
     % --+ FIRST PAGES +---------------------------------------------------------
-    \pagenumbering{gobble}
-    \titlepage       \pagebreak
+    \begin{frame}[plain]
+        \titlepage
+    \end{frame}
     % TODO. An summary slide before the TOC would be cool.
     % Mention the objective, the main project of the thesis, + the RG-E slow controls system, + FMT alignment.
     \tableofcontents \pagebreak
 
+    % --+ PAGE NUMBER SETUP +---------------------------------------------------
     \pagenumbering{arabic}
+
+    % Add a number to each frame (but not the total number of frames!)
+    \addtobeamertemplate{navigation symbols}{}{
+        \usebeamerfont{footline}
+        \usebeamercolor[fg]{footline}
+        \hspace{1em}
+        \insertframenumber
+    }
+
+    \addtocounter{framenumber}{-1}
     % --+ CONTEXT +-------------------------------------------------------------
     \graphicspath{{10context/img}}
     \input{10context/00index}
