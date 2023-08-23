@@ -1,19 +1,104 @@
 % !TEX root = main.tex
 
-% --+ CONFIGURE FOOTER +--------------------------------------------------------
+% --+ PRESENTATION DESIGN +-----------------------------------------------------
+% Title page.
+\title{Acceptance Study of the CLAS12 Detector Using the Forward Micromegas Tracker for Run Group E}
+\author{Bruno Benkel}
+\date{2023-09-14}
+
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \vspace{21pt}
+
+    \begin{center}
+        \usebeamerfont{title}\usebeamercolor[color_ef]{title}\textbf{\inserttitle}\par
+        \usebeamerfont{author}\usebeamercolor[color_fg]{author}\insertauthor\par
+    \end{center}
+
+    \vspace{48pt}
+
+    \ef{Evaluating Committee}
+    \begin{itemize}
+        \item[]
+            Hayk Hakobyan, Ph.D.
+
+        \item[]
+            Will Brooks, Ph.D.
+
+        \item[]
+            Raffaella De Vita, Ph.D.
+    \end{itemize}
+
+    \begin{flushright}
+        \usebeamerfont{date}\insertdate\par
+    \end{flushright}
+
+    \vfill
+}
+
+% Footer - additional configuration found in main.tex, after the first pages.
 \setbeamertemplate{navigation symbols}{}
 
-% --+ CUSTOM COMMANDS +---------------------------------------------------------
-\newcommand{\labeq}{\stackrel{\mathclap{\normalfont\mbox{\tiny{lab}}}}{=}}
-\newcommand{\lsim}{\lesssim}
-\newcommand{\gsim}{\gtrsim}
-\newcommand{\cmark}{\ding{51}}
-\newcommand{\xmark}{\ding{55}}
-\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
-\hspace{-2.5pt}}
+% --+ PALETTE: EVERFOREST DARK HARD +-------------------------------------------
+\definecolor{efd_bg}    {HTML}{272e33}
+\definecolor{efd_fg}    {HTML}{d3c6aa}
+\definecolor{efd_red}   {HTML}{e67e80}
+\definecolor{efd_orange}{HTML}{e69875}
+\definecolor{efd_yellow}{HTML}{dbbc7f}
+\definecolor{efd_green} {HTML}{a7c080}
+\definecolor{efd_dgreen}{HTML}{425047}
+\definecolor{efd_aqua}  {HTML}{83c092}
+\definecolor{efd_blue}  {HTML}{7fbbb3}
+\definecolor{efd_purple}{HTML}{d699b6}
 
-% Tight fboxes.
-\setlength{\fboxsep}{0pt}
+% --+ PRESENTATION COLORS +-----------------------------------------------------
+% These four colors will be the palette of the presentation.
+\colorlet{color_bg} {efd_bg}      % Background color of each slide.
+\colorlet{color_fg} {efd_fg}      % Foreground color, mainly used by text.
+\colorlet{color_ef} {efd_green}   % Emphasis color, uses for titles, etc.
+\colorlet{color_box}{efd_dgreen} % Emphasis box color.
+
+% Set the colors of the beamer presentation.
+\setbeamercolor{normal text}       {bg=color_fg,fg=color_fg}
+\setbeamercolor{background canvas} {bg=color_bg}
+\setbeamercolor{structure}         {fg=color_ef} % itemize, enumerate, etc.
+\setbeamercolor{item}              {bg=color_ef,fg=color_ef}
+\setbeamercolor{palette primary}   {bg=color_ef,fg=color_bg}
+\setbeamercolor{palette secondary} {bg=color_fg,fg=color_bg}
+\setbeamercolor{palette tertiary}  {bg=color_fg,fg=color_bg}
+\setbeamercolor{palette quaternary}{bg=color_fg,fg=color_bg}
+\setbeamercolor{section in toc}    {fg=color_ef}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --+ CUSTOM COMMANDS +---------------------------------------------------------
+% Equality sign with text above.
+\newcommand{\labeq}{\stackrel{\mathclap{\normalfont\mbox{\tiny{lab}}}}{=}}
+\newcommand{\lsim}{\lesssim} % \sim + >.
+\newcommand{\gsim}{\gtrsim}  % \sim + <.
+
+% Emphasis.
+\newcommand{\ef}     [1]{\textbf{\textcolor{color_ef}{#1}}}   % Simple emphasis.
+\newcommand{\eft}    [1]{\texttt{\ef{#1}}}                    % Emphasis + texttt.
+\newcommand{\ered}   [1]{\textbf{\textcolor{efd_red}   {#1}}} % Red emphasis.
+\newcommand{\eorange}[1]{\textbf{\textcolor{efd_orange}{#1}}} % Orange emphasis.
+\newcommand{\eyellow}[1]{\textbf{\textcolor{efd_yellow}{#1}}} % Yellow emphasis.
+\newcommand{\egreen} [1]{\textbf{\textcolor{efd_green} {#1}}} % Green emphasis.
+\newcommand{\eaqua}  [1]{\textbf{\textcolor{efd_aqua}  {#1}}} % Aqua emphasis.
+\newcommand{\eblue}  [1]{\textbf{\textcolor{efd_blue}  {#1}}} % Blue emphasis.
+\newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}} % Purple emphasis.
+
+% Ref from presentation to backup slides.
+\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{[\ref{#1}]}}}
+
+% Ref from backup slides to presentation.
+\newcommand{\backref}[1]{
+    \vskip0pt plus 1 filll
+    \begin{flushright}
+        \tiny{\textit{Ref'd by \textcolor{efd_green}{\ref{#1}}.}}
+    \end{flushright}
+    \smallskip
+}
 
 % Fancy empheq box.
 \newlength\mytemplen
@@ -45,7 +130,7 @@
 
 \makeatother
 
-% custom overline from, https://tex.stackexchange.com/questions/22100/the-bar-and-overline-commands.
+% Custom overline (from tex.stackexchange.com/questions/22100/the-bar-and-overline-commands).
 \makeatletter
 \newsavebox\myboxA
 \newsavebox\myboxB
@@ -64,92 +149,8 @@
        \rlap{\hskip 0.5\mylenA\usebox\myboxB}{\usebox\myboxA}%
     \else
         \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
-    \fi}
-
-% --+ PRESENTATION DESIGN +-----------------------------------------------------
-\title{Acceptance Study of the CLAS12 Detector Using the Forward Micromegas Tracker for Run Group E}
-\author{Bruno Benkel}
-\date{2023-09-14}
-
-% Title page.
-\defbeamertemplate*{title page}{customized}[1][]
-{
-    \vspace{21pt}
-
-    \begin{center}
-        \usebeamerfont{title}\usebeamercolor[color_ef]{title}\textbf{\inserttitle}\par
-        \usebeamerfont{author}\usebeamercolor[color_fg]{author}\insertauthor\par
-    \end{center}
-
-    \vspace{48pt}
-
-    \ef{Evaluating Committee}
-    \begin{itemize}
-        \item[]
-            Hayk Hakobyan, Ph.D.
-
-        \item[]
-            Will Brooks, Ph.D.
-
-        \item[]
-            Raffaella De Vita, Ph.D.
-    \end{itemize}
-
-    \begin{flushright}
-        \usebeamerfont{date}\insertdate\par
-    \end{flushright}
-
-    \vfill
+    \fi
 }
 
-% --+ PALETTE: EVERFOREST DARK HARD +-------------------------------------------
-\definecolor{efd_bg}    {HTML}{272e33}
-\definecolor{efd_fg}    {HTML}{d3c6aa}
-\definecolor{efd_red}   {HTML}{e67e80}
-\definecolor{efd_orange}{HTML}{e69875}
-\definecolor{efd_yellow}{HTML}{dbbc7f}
-\definecolor{efd_green} {HTML}{a7c080}
-\definecolor{efd_dgreen}{HTML}{425047}
-\definecolor{efd_aqua}  {HTML}{83c092}
-\definecolor{efd_blue}  {HTML}{7fbbb3}
-\definecolor{efd_purple}{HTML}{d699b6}
-
-% --+ EMPHASIS COMMANDS +-------------------------------------------------------
-\newcommand{\ef}[1]{\textbf{\textcolor{color_ef}{#1}}}
-\newcommand{\eft}[1]{\texttt{\ef{#1}}}
-\newcommand{\ered}   [1]{\textbf{\textcolor{efd_red}   {#1}}}
-\newcommand{\eorange}[1]{\textbf{\textcolor{efd_orange}{#1}}}
-\newcommand{\eyellow}[1]{\textbf{\textcolor{efd_yellow}{#1}}}
-\newcommand{\egreen} [1]{\textbf{\textcolor{efd_green} {#1}}}
-\newcommand{\eaqua}  [1]{\textbf{\textcolor{efd_aqua}  {#1}}}
-\newcommand{\eblue}  [1]{\textbf{\textcolor{efd_blue}  {#1}}}
-\newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}}
-
-% --+ APPENDIX REFERENCE +------------------------------------------------------
-\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{[\ref{#1}]}}}
-\newcommand{\backref}[1]{
-    \vskip0pt plus 1 filll
-    \begin{flushright}
-        \tiny{\textit{Ref'd by \textcolor{efd_green}{\ref{#1}}.}}
-    \end{flushright}
-    \smallskip
-}
-
-% --+ THEME +-------------------------------------------------------------------
-% These three colors will be the palette of the presentation.
-\colorlet{color_bg}{efd_bg}      % Background color of each slide.
-\colorlet{color_fg}{efd_fg}      % Foreground color, mainly used by text.
-\colorlet{color_ef}{efd_green}   % Emphasis color, uses for titles, etc.
-\colorlet{color_box}{efd_dgreen} % Box color.
-
-% Don't touch stuff beyond this point!
-\setbeamercolor{normal text}{bg=color_fg,fg=color_fg}
-\setbeamercolor{item}{bg=color_ef,fg=color_ef}
-\setbeamercolor{background canvas}{bg=color_bg}
-\setbeamercolor{palette primary}{bg=color_ef,fg=color_bg}
-\setbeamercolor{palette secondary}{bg=color_fg,fg=color_bg}
-\setbeamercolor{palette tertiary}{bg=color_fg,fg=color_bg}
-\setbeamercolor{palette quaternary}{bg=color_fg,fg=color_bg}
-\setbeamercolor{structure}{fg=color_ef} % itemize, enumerate, etc
-\setbeamercolor{section in toc}{fg=color_ef} % TOC sections
-\setbeamercolor{section in head/foot}{fg=white, bg=black}
+% --+ MISCELLANEOUS +-----------------------------------------------------------
+\setlength{\fboxsep}{0pt} % Tight fboxes.
