@@ -9,6 +9,11 @@
 \usepackage{tabularx}          % \textwidth tabular.
 \usepackage{textcomp, gensymb} % \degree.
 
+% TODO.
+%   * Mention # of events per run for both data runs and simul used for acceptance correction.
+%   * Describe the RG-F target at the footer of its figure. Leftmost - glass beampipe, then aluminium window of RG-F target.
+%   * Coordinate a dry run with Hayk on Friday 25th.
+
 % --+ THEME +-------------------------------------------------------------------
 \input{00theme}
 
@@ -51,12 +56,8 @@
     % --+ PAGE NUMBER SETUP +---------------------------------------------------
     \pagenumbering{arabic}
 
-    % Add a number to each frame (but not the total number of frames!)
-    \addtobeamertemplate{navigation symbols}{}{
-        \usebeamerfont{footline}
-        \usebeamercolor[fg]{footline}
-        \hspace{1em}
-        \insertframenumber
+    \setbeamertemplate{footline}[text line]{
+        \parbox{\linewidth}{\vspace*{-8pt}\ef{\insertsection}\hfill\ef{\insertpagenumber}}
     }
 
     % Fix page number.

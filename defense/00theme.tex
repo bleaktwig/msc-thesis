@@ -1,7 +1,9 @@
 % !TEX root = main.tex
+
+% --+ CONFIGURE FOOTER +--------------------------------------------------------
 \setbeamertemplate{navigation symbols}{}
 
-% === CUSTOM COMMANDS ==========================================================
+% --+ CUSTOM COMMANDS +---------------------------------------------------------
 \newcommand{\labeq}{\stackrel{\mathclap{\normalfont\mbox{\tiny{lab}}}}{=}}
 \newcommand{\lsim}{\lesssim}
 \newcommand{\gsim}{\gtrsim}
@@ -64,7 +66,7 @@
         \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
     \fi}
 
-% === PRESENTATION DESIGN ======================================================
+% --+ PRESENTATION DESIGN +-----------------------------------------------------
 \title{Acceptance Study of the CLAS12 Detector Using the Forward Micromegas Tracker for Run Group E}
 \author{Bruno Benkel}
 \date{2023-09-14}
@@ -77,13 +79,9 @@
     \begin{center}
         \usebeamerfont{title}\usebeamercolor[color_ef]{title}\textbf{\inserttitle}\par
         \usebeamerfont{author}\usebeamercolor[color_fg]{author}\insertauthor\par
-
-        \vspace{24pt}
-
-        \noindent\rule{2cm}{0.8pt}
     \end{center}
 
-    \vspace{24pt}
+    \vspace{48pt}
 
     \ef{Evaluating Committee}
     \begin{itemize}
@@ -104,7 +102,7 @@
     \vfill
 }
 
-% === EVERFOREST DARK HARD =====================================================
+% --+ PALETTE: EVERFOREST DARK HARD +-------------------------------------------
 \definecolor{efd_bg}    {HTML}{272e33}
 \definecolor{efd_fg}    {HTML}{d3c6aa}
 \definecolor{efd_red}   {HTML}{e67e80}
@@ -116,7 +114,7 @@
 \definecolor{efd_blue}  {HTML}{7fbbb3}
 \definecolor{efd_purple}{HTML}{d699b6}
 
-% === EMPHASIS COMMANDS ========================================================
+% --+ EMPHASIS COMMANDS +-------------------------------------------------------
 \newcommand{\ef}[1]{\textbf{\textcolor{color_ef}{#1}}}
 \newcommand{\eft}[1]{\texttt{\ef{#1}}}
 \newcommand{\ered}   [1]{\textbf{\textcolor{efd_red}   {#1}}}
@@ -127,7 +125,7 @@
 \newcommand{\eblue}  [1]{\textbf{\textcolor{efd_blue}  {#1}}}
 \newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}}
 
-% === APPENDIX REFERENCE =======================================================
+% --+ APPENDIX REFERENCE +------------------------------------------------------
 \newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{[\ref{#1}]}}}
 \newcommand{\backref}[1]{
     \vskip0pt plus 1 filll
@@ -137,7 +135,7 @@
     \smallskip
 }
 
-% === THEME ====================================================================
+% --+ THEME +-------------------------------------------------------------------
 % These three colors will be the palette of the presentation.
 \colorlet{color_bg}{efd_bg}      % Background color of each slide.
 \colorlet{color_fg}{efd_fg}      % Foreground color, mainly used by text.
@@ -154,3 +152,4 @@
 \setbeamercolor{palette quaternary}{bg=color_fg,fg=color_bg}
 \setbeamercolor{structure}{fg=color_ef} % itemize, enumerate, etc
 \setbeamercolor{section in toc}{fg=color_ef} % TOC sections
+\setbeamercolor{section in head/foot}{fg=white, bg=black}
