@@ -9,7 +9,7 @@
 
     \begin{itemize}
         \item
-            \ef{Tracking cut} to exclude particles that fail a \ef{$\chi^2$ test}: $\chi^2/\text{NDF} < 15$.
+            \ef{Tracking cut} to exclude badly reconstructed particles: \textcolor{efd_green}{$\chi^2/\text{NDF} < 15$}.
 
         \vspace{6pt}
         \item
@@ -21,7 +21,7 @@
 
                 \vspace{3pt}
                 \item
-                    Particle vertex originates from the RG-F target: \textcolor{efd_green}{$-40 \text{ cm} < v_z < z_0 \text{ cm}$}, where \ef{$z_0$} is the $z$ position of the first FMT layer.
+                    Particle vertex originates from the RG-F target: \textcolor{efd_green}{$-30 \text{ cm} < v_z < 20 \text{ cm}$}.
 
                 \vspace{3pt}
                 \item
@@ -38,17 +38,17 @@
 \begin{frame}{DIS Cuts}
     \label{11.22::dis_cuts}
 
-    Three DIS cuts are applied to the trigger $e^-$ of an event to restrict the phase space:
+    To restrict the phase space to that of DIS, three cuts are applied on the trigger $e^-$:
 
     \begin{itemize}
         \item
-            DIS processes require a high enough virtual photon mass: \textcolor{efd_green}{$Q^2 > 1 \text{ GeV}^2$}.
+            DIS processes require a high virtual photon mass: \textcolor{efd_red}{$Q^2 > 1 \text{ GeV}^2$}.
 
         \item
-            To exclude nucleon resonances, the squared mass of the final hadronic state $W^2$\appref{12.14::dis_variables} is restricted: \textcolor{efd_green}{$W^2 > 4 \text{ GeV}^2$}.
+            To exclude nucleon resonances, the squared mass of the final hadronic state\appref{12.14::dis_variables} is restricted: \textcolor{efd_yellow}{$W^2 > 4 \text{ GeV}^2$}.
 
         \item
-            To mitigate radiative effects, we constrain the Bjorken-Y $Y_b$: \textcolor{efd_green}{$Y_b = \nu/E_b < 0.85$}.
+            To mitigate radiative effects, we constrain the Bjorken-Y $Y_b$: \textcolor{efd_blue}{$Y_b \labeq \nu/E_b < 0.85$}.
     \end{itemize}
 
     \vspace{-18pt}
@@ -68,7 +68,7 @@
         \end{center}
     \end{column}
 
-    \begin{column}{.015\linewidth}\end{column} % Centering column.
+    \begin{column}{.015\linewidth}\end{column} % Separation column.
 
     \begin{column}{.40\linewidth}
         \begin{center}

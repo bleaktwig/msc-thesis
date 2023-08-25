@@ -69,8 +69,6 @@
 \setbeamercolor{palette quaternary}{bg=color_fg,fg=color_bg}
 \setbeamercolor{section in toc}    {fg=color_ef}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % --+ CUSTOM COMMANDS +---------------------------------------------------------
 % Equality sign with text above.
 \newcommand{\labeq}{\stackrel{\mathclap{\normalfont\mbox{\tiny{lab}}}}{=}}
@@ -79,6 +77,7 @@
 
 % Emphasis.
 \newcommand{\ef}     [1]{\textbf{\textcolor{color_ef}{#1}}}   % Simple emphasis.
+\newcommand{\efe}    [1]{\textcolor{color_ef}{#1}}            % Emphasis + eq.
 \newcommand{\eft}    [1]{\texttt{\ef{#1}}}                    % Emphasis + texttt.
 \newcommand{\ered}   [1]{\textbf{\textcolor{efd_red}   {#1}}} % Red emphasis.
 \newcommand{\eorange}[1]{\textbf{\textcolor{efd_orange}{#1}}} % Orange emphasis.
@@ -89,7 +88,7 @@
 \newcommand{\epurple}[1]{\textbf{\textcolor{efd_purple}{#1}}} % Purple emphasis.
 
 % Ref from presentation to backup slides.
-\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{[\ref{#1}]}}}
+\newcommand{\appref}[1]{\textsuperscript{\textcolor{efd_purple}{\ref{#1}}}}
 
 % Ref from backup slides to presentation.
 \newcommand{\backref}[1]{
