@@ -84,49 +84,58 @@
 \begin{frame}{Drift Chambers (DC)}
     \label{10.33::dc}
 
-    \begin{itemize}
-        \item
-            The DC is the main \ef{tracking detector} of the FD.
-
-        \item
-            DC detectors use an array of HV wires to detect \ef{ionising particles}.
-
-        \item
-            The tracker has a \ef{momentum resolution of $\Delta p/p < 0.5\%$}, allowing for accurate reconstruction of particle trajectories.
-    \end{itemize}
-
-    \vspace{-12pt}
     \begin{columns}[onlytextwidth,T]
 
-    \begin{column}{.44\linewidth}
-        \begin{center}
-            \begin{figure}[t]
-                \centering{
-                    \fbox{\includegraphics[width=\textwidth]{33dc.png}}
-                }
-            \end{figure}
-        \end{center}
+    \begin{column}{.43\linewidth}
+        \vspace{36pt}
+        \begin{itemize}
+            \item
+                The DC are the main tracking detectors in the FD.
+
+            \vspace{12pt}
+            \item
+                They use an array of HV wires to detect \ef{ionising particles}.
+
+            \vspace{12pt}
+            \item
+                The particle's track is reconstructed from these signals.
+        \end{itemize}
     \end{column}
 
     \begin{column}{.55\linewidth}
-        \vspace{42pt}
+        \vspace{-12pt}
+        \begin{figure}[t]
+            \centering{
+                \fbox{\includegraphics[width=\textwidth]{33dc.png}}
+            }
+        \end{figure}
+        \vspace{-21pt}
         \scriptsize{\textit{
-            \ef{3d render of the DC.}
-            \begin{itemize}
-                \vspace{6pt}
-                \item
-                    Three independent drift chambers are installed in each of the six sectors of the torus magnet.
-                \vspace{6pt}
-                \item
-                    Each sector contains a total of \ef{36 DC layers}, each with \ef{112 sense wires}.
-                \vspace{6pt}
-                \item
-                    Polar resolution: \ef{$\Delta\theta < 2$} \textcolor{efd_green}{mrad}.
-                \vspace{6pt}
-                \item
-                    azimuthal resolution: \ef{$\Delta\phi < 2$} \textcolor{efd_green}{mrad}.
-            \end{itemize}
+            \ef{3D render of the DC.}
+            Three independent drift chambers are installed for each of the six sectors of the torus magnet.
         }}
+
+        % \small{\textit{
+        %     \ef{3d render of the DC.}
+        %     Three independent drift chambers are installed for each of the six sectors.
+        %     \begin{itemize}
+        %         \vspace{6pt}
+        %         \item
+        %             Three independent drift chambers are installed in each of the six sectors of the torus magnet.
+        %         \vspace{6pt}
+        %         \item
+        %             Each sector contains a total of \ef{36 DC layers}, each with \ef{112 sense wires}.
+        %         \vspace{6pt}
+        %         \item
+        %             Momentum resolution: $\Delta p/p < 0.5\%$.
+        %         \vspace{6pt}
+        %         \item
+        %             Polar resolution: \ef{$\Delta\theta < 2$} \textcolor{efd_green}{mrad}.
+        %         \vspace{6pt}
+        %         \item
+        %             azimuthal resolution: \ef{$\Delta\phi < 2$} \textcolor{efd_green}{mrad}.
+        %     \end{itemize}
+        % }}
     \end{column}
 
     \end{columns}
@@ -138,40 +147,37 @@
 
     \begin{columns}[onlytextwidth,T]
 
-    \begin{column}{.48\linewidth}
-        \vspace{6pt}
-        \begin{itemize}
-            \item
-                FMT is the forwards part of the Micromegas Vertex Tracker (MVT).
-                It's first layer sits at \ef{$z \approx 26$} \textcolor{efd_green}{cm}.
+    \begin{column}{.50\linewidth}
+        \vspace{-12pt}
+        \begin{figure}[t]
+            \centering{
+                \fbox{\includegraphics[width=\textwidth]{34mvt_geometry.png}}
+            }
+        \end{figure}
+        \vspace{-21pt}
+        \scriptsize{\textit{
+            \ef{3D render of FMT.}
+            The red dot denotes $z=0$.
+            The red line denotes an arbitrary track crossing FMT.
+        }}
 
-            \vspace{6pt}
-            \item
-                It uses micromegas tracking technology to detect charged particles that cross it\appref{20.07::micromegas_tracking}.
-
-            \vspace{6pt}
-            \item
-                The detector works in tandem with the DC to do \ef{forward particle tracking}.
-
-            \vspace{6pt}
-            \item
-                To get an accurate picture of the passing particle, FMT has \ef{3 layers}, each rotated $60\degree$ with respect to the previous one\appref{20.08::fmt_geometry}.
-
-        \end{itemize}
     \end{column}
 
-    \begin{column}{.50\linewidth}
-        \begin{center}
-            \begin{figure}[t]
-                \fbox{\includegraphics[width=0.95\textwidth]{34mvt_geometry.png}}
+    \begin{column}{.48\linewidth}
+        \vspace{24pt}
+        \begin{itemize}
+            \item
+                FMT is a tracking detector which works in tandem with the DC.
 
-                \scriptsize{\textit{
-                    \ef{3d render of MVT.}
-                    The red dot denotes $z=0$.
-                    The red line denote an arbitrary track crossing FMT.
-                }}
-            \end{figure}
-        \end{center}
+            \vspace{12pt}
+            \item
+                It uses micromegas tracking technology\appref{20.07::micromegas_tracking} to detect \ef{ionising particles}.
+
+            \vspace{12pt}
+            \item
+                FMT has \ef{3 layers}\appref{20.08::fmt_geometry}.
+                The first sits at \ef{$z \approx 26$} \textcolor{efd_green}{cm}.
+        \end{itemize}
     \end{column}
 
     \end{columns}
