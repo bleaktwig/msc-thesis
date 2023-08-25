@@ -5,7 +5,7 @@
 
     \begin{itemize}
         \item
-            Initially, the plan was to work with run \ef{12933} (10.4 GeV beam, 250 nA), but analysis showed a very poor FMT efficiency.
+            Initially, our plan was to work with \ef{RG-F run 12933} (10.4 GeV beam, 250 nA), but analysis showed a very poor FMT efficiency.
 
         \item
             This issue comes from three sources: \ef{alignment}, \ef{reconstruction}, and \ef{geometry}.
@@ -57,7 +57,7 @@
             Alignment problem comes from an issue with the \ef{Summer 2020} alignment table in the Calibration Constants Database\appref{20.01::ccdb}.
 
         \item
-            To work around this, we switch to \ef{Spring 2020} data.
+            To work around this, we switch to \ef{Spring 2020} data: \ef{RG-F run 12016}.
     \end{itemize}
 
     \vspace{-12pt}
@@ -103,11 +103,11 @@
 
     \begin{itemize}
         \item
-            Due to its position, FMT has a non-trivial efficiency curve along the \ef{$z$ axis} and \ef{$\theta$ angle}.
+            Due to its distance to the target, FMT has a non-trivial efficiency curve along the \ef{$z$ axis} and \ef{$\theta$ angle}.
 
         \vspace{6pt}
         \item
-            If we want to understand the behaviour of DIS variables, we need to study this effect and disentangle it from acceptance.
+            If we want to study DIS, we need to understand this effect and disentangle it from the detector's acceptance.
     \end{itemize}
 
     \vspace{12pt}
@@ -127,7 +127,7 @@
 \begin{frame}{FMT Efficiency: Geometry Effect}
     \label{11.44::geometry_effect_2}
 
-    Graphically, the correspondance of \ef{$R_\text{min}$} and \ef{$R_\text{max}$} with FMT's acceptance is evident.
+    Graphically, the correspondance of \efe{$\theta_\text{min}$} and \efe{$\theta_\text{max}$} with FMT's acceptance is evident.
 
     \begin{center}
         \begin{figure}[t]
@@ -136,8 +136,8 @@
             }
         \end{figure}
         \scriptsize{\textit{
-            \ef{$v_z$} vs. \ef{$\theta$} for DC and FMT.
-            The \ef{$R_\text{min}$} and \ef{$R_\text{max}$} curves are highlighted in red.
+            \efe{$v_z$} vs. \efe{$\theta$} for DC and FMT.
+            The \efe{$\theta_\text{min}$} and \efe{$\theta_\text{max}$} curves are highlighted in red.
         }}
     \end{center}
 \end{frame}
@@ -148,14 +148,14 @@
 
     \begin{itemize}
         \item
-            After correcting both effects, FMT efficiency remains low.
+            After both corrections, efficiency remains lower than previous measurements.
 
         \item
-            It was determined that this effect is not correlated with run number, beam energy, or beam luminosity.
-            Thus, it is attributed to reconstruction.
+            we determined that this effect is not correlated with run number, beam energy, or beam luminosity.
+            Thus, \ef{it is attributed to reconstruction}.
 
         \item
-            If we define FMT efficiency as the \ef{\% of DC tracks that get accepted by FMT}\appref{20.03::fmt_efficiency_error_estimation}, we see:
+            We define FMT efficiency as the \ef{\% of DC tracks that get accepted by FMT}\appref{20.03::fmt_efficiency_error_estimation}, to see:
     \end{itemize}
 
     \begin{center}
