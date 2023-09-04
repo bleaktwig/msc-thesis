@@ -49,8 +49,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.21634615"
-     inkscape:cx="2186.3112"
-     inkscape:cy="709.51113"
+     inkscape:cx="2294.9334"
+     inkscape:cy="617.06668"
      inkscape:window-width="1920"
      inkscape:window-height="1171"
      inkscape:window-x="0"
@@ -76,20 +76,20 @@
        id="image1" />
     <path
        style="fill:none;stroke:#fdf6e3;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
-       d="M 1412.8143,1331.054 4240.3928,869.11898"
+       d="M 2479.5816,1136.3663 3699.2332,933.93913"
        id="path1"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:160px;line-height:1.25;font-family:lato;-inkscape-font-specification:'lato Light'"
-       x="2327.9858"
-       y="1521.5681"
+       x="2280.3833"
+       y="1495.1842"
        id="text1"
        transform="rotate(-9.56011)"><tspan
          sodipodi:role="line"
          id="tspan1"
-         x="2327.9858"
-         y="1521.5681"
+         x="2280.3833"
+         y="1495.1842"
          style="font-size:160px;fill:#fdf6e3;fill-opacity:1">Downstream (<tspan
    style="font-style:italic;font-size:160px;fill:#fdf6e3;fill-opacity:1"
    id="tspan2">+z</tspan>)</tspan></text>
