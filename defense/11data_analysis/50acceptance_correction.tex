@@ -5,13 +5,13 @@
 
     \begin{itemize}
         \item
-            To correct for acceptance effects, we generated 10M DIS events in \ef{LEPTO}.
+            Acceptance correction is used to account for the detector efficiency.
 
         \item
-            Then, they were simulated with \ef{GEMC 5.2} with run 12016's conditions.
+            It is the ratio between the \ef{generated events} and \ef{accepted events}.
 
         \item
-            Finally, they were reconstructed with \ef{Coatjava 8.2.0}.
+            10M DIS events we generated in \ef{LEPTO}, simulated in \ef{GEMC 5.2}, and reconstructed with \ef{Coatjava 8.2.0}.
     \end{itemize}
 
     \vspace{-12pt}
@@ -37,7 +37,7 @@
                 \centering{
                     \fbox{\includegraphics[width=\textwidth]{51vz_999106.png}}
                 }
-                \scriptsize{\textit{Simulated data.}}
+                \scriptsize{\textit{Reconstructed simulation.}}
             \end{figure}
         \end{center}
     \end{column}
@@ -48,7 +48,7 @@
 
     \begin{center}
         \scriptsize{\textit{
-            \ef{$v_z$} for \textbf{\textcolor[HTML]{c7eca6}{DC (green)}} and \textbf{\textcolor[HTML]{8dcfbf}{FMT (cyan)}} tracks.
+            \ef{$v_z$} for \textbf{\textcolor[HTML]{c7eca6}{DC (green)}} and \textbf{\textcolor[HTML]{8dcfbf}{DC+FMT (cyan)}} tracks.
         }}
     \end{center}
 \end{frame}
